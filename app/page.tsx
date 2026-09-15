@@ -7,6 +7,7 @@ const cv = {
   name: "Mohamed Gamal",
   phone: "+20 1553194093",
   email: "mohamed987gamal2005@gmail.com",
+
   linkedin:
     "https://linkedin.com/in/mohamed-gamal-devops",
 
@@ -14,14 +15,15 @@ const cv = {
     "https://github.com/mohamedgamal-35",
 
   title: "Cloud & DevOps Engineer",
+
   secondaryTitle:
     "Cloud Infrastructure / DevOps Intern",
 
   objective:
-    "Computer Science student specializing in Information Technology with hands-on AWS cloud architecture experience and ongoing DevOps training through DEPI. Focused on cloud infrastructure, Linux, networking, Infrastructure as Code, CI/CD, automation, and deployment workflows.",
+    "IT-focused Computer Science student building skills in AWS Cloud and DevOps, with a focus on infrastructure, Linux, networking, and automation.",
 
   objectiveAr:
-    "طالب علوم حاسب متخصص في تكنولوجيا المعلومات، لديه خبرة عملية في تصميم حلول Cloud باستخدام AWS ويطوّر حاليًا مهاراته في DevOps من خلال DEPI. أركز على Cloud Infrastructure وLinux والشبكات وInfrastructure as Code وCI/CD والأتمتة وعمليات الـDeployment.",
+    "طالب علوم حاسب متخصص في IT، أطور مهاراتي في AWS وDevOps مع التركيز على الـInfrastructure وLinux والشبكات والأتمتة.",
 
   aboutMe:
     "I enjoy understanding how systems work behind the scenes and turning that understanding into reliable infrastructure. I am still growing professionally, but I take every project and training experience seriously and learn by building.",
@@ -185,7 +187,13 @@ const cv = {
 
   project: {
     name:
-      "AWS Enterprise Scalable & Secure Cloud Infrastructure",
+      "AWS Enterprise Cloud Infrastructure",
+
+    projectLabel:
+      "Scalable & Secure Multi-AZ Architecture",
+
+    projectLabelAr:
+      "بنية Multi-AZ قابلة للتوسع وآمنة",
 
     description:
       "Architected and deployed a highly available, fault-tolerant AWS infrastructure built around a Multi-AZ 3-tier VPC design, scalable application delivery, secure network segmentation, global traffic management, protected data services, and layered security controls.",
@@ -215,18 +223,18 @@ const cv = {
       "/2.jpeg",
 
     imageAlt:
-      "AWS Enterprise Scalable and Secure Cloud Infrastructure architecture overview",
+      "AWS Enterprise Cloud Infrastructure architecture overview",
 
     imageAltAr:
-      "صورة توضح بنية مشروع AWS Enterprise Scalable and Secure Cloud Infrastructure",
+      "صورة توضح بنية مشروع AWS Enterprise Cloud Infrastructure",
 
     points: [
       "Multi-AZ 3-tier VPC architecture across Public, Private, and Isolated Subnets",
-      "Application Load Balancers with Auto Scaling Groups for dynamic traffic management and high availability",
-      "Route 53, CloudFront, AWS WAF, and AWS Shield for DNS, edge delivery, and application protection",
+      "Application Load Balancers with Auto Scaling Groups for traffic management and high availability",
+      "Route 53, CloudFront, AWS WAF, and AWS Shield for DNS, edge delivery, and protection",
       "Multi-AZ database clusters with synchronous replication in isolated subnets",
       "Amazon EFS for shared file systems and AWS Backup for automated data protection",
-      "HTTPS encryption through AWS Certificate Manager with Secrets Manager for sensitive credentials",
+      "HTTPS through AWS Certificate Manager with Secrets Manager for sensitive credentials",
       "Strict Security Groups and NAT Gateways for controlled access and secure outbound connectivity",
     ],
 
@@ -309,9 +317,9 @@ const cv = {
     {
       name: "Krishnakumar Kesavan",
       role:
-        "Program Manager | AWS/GCP Cloud Architect",
+        "AWS/GCP Cloud Architect",
       roleAr:
-        "Program Manager | AWS/GCP Cloud Architect",
+        "AWS/GCP Cloud Architect",
 
       quote:
         "Is a high score the best indicator of true understanding in complex areas like cloud computing?",
@@ -348,8 +356,10 @@ const cv = {
 
     {
       name: "Youssef Yasser",
-      role: "Fullstack Developer",
-      roleAr: "Fullstack Developer",
+      role:
+        "Fullstack Developer",
+      roleAr:
+        "Fullstack Developer",
 
       quote:
         "Congratulations 🎊",
@@ -367,9 +377,9 @@ const cv = {
     {
       name: "Ahmed Hossam",
       role:
-        "Software Engineer | Junior Backend .NET Developer",
+        "Junior Backend .NET Developer",
       roleAr:
-        "Software Engineer | Junior Backend .NET Developer",
+        "Junior Backend .NET Developer",
 
       quote:
         "Congratulations 🎊",
@@ -385,29 +395,11 @@ const cv = {
     },
 
     {
-      name: "Mohamed Mahmoud",
-      role: "IT Student",
-      roleAr: "طالب IT",
-
-      quote:
-        "Congratulations bro 🎊",
-
-      quoteAr:
-        "مبروك يا برو 🎊",
-
-      postUrl:
-        "https://lnkd.in/p/dU7wAPXJ",
-
-      source: "LinkedIn",
-      sourceAr: "LinkedIn",
-    },
-
-    {
       name: "Omar Saleh",
       role:
-        "Data Analyst & ML | GCI Scholar",
+        "Data Analyst & ML",
       roleAr:
-        "Data Analyst & ML | GCI Scholar",
+        "Data Analyst & ML",
 
       quote:
         "Congrats 👏",
@@ -423,31 +415,11 @@ const cv = {
     },
 
     {
-      name: "Hana Abdo",
-      role:
-        "Aspiring Data Analyst",
-      roleAr:
-        "Aspiring Data Analyst",
-
-      quote:
-        "Wishing you the best♥️",
-
-      quoteAr:
-        "أتمنى لك كل التوفيق ❤️",
-
-      postUrl:
-        "https://lnkd.in/p/dU7wAPXJ",
-
-      source: "LinkedIn",
-      sourceAr: "LinkedIn",
-    },
-
-    {
       name: "Ahmed Maghrabi",
       role:
-        "Data Analyst | Microsoft Data Engineering Trainee",
+        "Data Analyst",
       roleAr:
-        "Data Analyst | Microsoft Data Engineering Trainee",
+        "Data Analyst",
 
       quote:
         "Congratulations 👏",
@@ -507,7 +479,7 @@ const cv = {
 
     {
       name:
-        "AWS Academy Graduate - Cloud Architecting - Training Badge",
+        "AWS Academy Graduate - Cloud Architecting",
       provider: "AWS Academy",
       date: "",
       topics: [
@@ -521,7 +493,7 @@ const cv = {
 
     {
       name:
-        "AWS Academy Graduate - Cloud Foundations - Training Badge",
+        "AWS Academy Graduate - Cloud Foundations",
       provider: "AWS Academy",
       date: "",
       topics: [
@@ -580,7 +552,6 @@ const cv = {
       "Lambda",
       "SQS",
       "CloudFormation",
-      "Elastic Beanstalk",
       "Elastic Load Balancing",
       "Auto Scaling",
     ],
@@ -595,26 +566,57 @@ const cv = {
 
     "Networking & Security": [
       "VPC",
-      "Subnets",
+      "Public / Private / Isolated Subnets",
       "Route Tables",
-      "Routing",
       "Security Groups",
+      "Routing",
       "Network Architecture",
     ],
 
-    "Systems & Databases": [
+    "Systems & Technical": [
       "Linux",
       "SQL",
       "Amazon RDS",
-    ],
-
-    "Core Competencies": [
       "System Design",
-      "Problem Solving",
-      "Cloud Infrastructure",
       "Troubleshooting",
+      "Cloud Infrastructure",
     ],
   },
+
+  softSkills: [
+    {
+      en: "Problem Solving",
+      ar: "حل المشكلات",
+    },
+    {
+      en: "Continuous Learning",
+      ar: "التعلم المستمر",
+    },
+    {
+      en: "Communication",
+      ar: "التواصل",
+    },
+    {
+      en: "Teamwork",
+      ar: "العمل الجماعي",
+    },
+    {
+      en: "Attention to Detail",
+      ar: "الاهتمام بالتفاصيل",
+    },
+    {
+      en: "Adaptability",
+      ar: "القدرة على التكيف",
+    },
+    {
+      en: "Responsibility",
+      ar: "تحمل المسؤولية",
+    },
+    {
+      en: "Time Management",
+      ar: "إدارة الوقت",
+    },
+  ],
 };
 
 function Tech({
@@ -664,6 +666,15 @@ const i = {
     <Icon>
       <path d="M5 12h13" />
       <path d="M13 6l6 6-6 6" />
+    </Icon>
+  ),
+
+  contact: (
+    <Icon>
+      <path d="M20 11.2c0 4.5-3.6 8.1-8 8.1-1.1 0-2.2-.2-3.1-.6L4 20l1.3-3.7A8 8 0 1 1 20 11.2Z" />
+      <path d="M8.2 11.2h.01" />
+      <path d="M12 11.2h.01" />
+      <path d="M15.8 11.2h.01" />
     </Icon>
   ),
 
@@ -850,6 +861,15 @@ const i = {
       <path d="M21 12h1" />
     </Icon>
   ),
+
+  people: (
+    <Icon>
+      <circle cx="9" cy="8" r="3" />
+      <circle cx="17" cy="9" r="2.4" />
+      <path d="M3.5 19c.6-3.1 2.4-5 5.5-5s4.9 1.9 5.5 5" />
+      <path d="M14.2 14.5c2.7.1 4.5 1.6 5 4.1" />
+    </Icon>
+  ),
 };
 
 export default function Page() {
@@ -908,8 +928,8 @@ export default function Page() {
       : "Experience",
 
     project: isArabic
-      ? "المشاريع"
-      : "Projects",
+      ? "المشروع"
+      : "Project",
 
     services: isArabic
       ? "الخدمات"
@@ -1020,8 +1040,8 @@ export default function Page() {
 
     certificationNote:
       isArabic
-        ? "الشهادات والتدريبات المرتبطة بالـCloud والـInfrastructure، مع توضيح أهم الـSkills المرتبطة بكل واحدة."
-        : "Formal cloud and infrastructure training, with the main skills and topics associated with each credential.",
+        ? "الشهادات والتدريبات المرتبطة بالـCloud والـInfrastructure."
+        : "Formal cloud and infrastructure training.",
 
     skillsTitle:
       isArabic
@@ -1030,8 +1050,8 @@ export default function Page() {
 
     skillsNote:
       isArabic
-        ? "المهارات منظمة حسب المجال بحيث يكون ارتباطها بالـCloud والـDevOps واضح."
-        : "Skills are grouped by domain so their relationship to Cloud and DevOps work is clear.",
+        ? "المهارات الأساسية مرتبة بشكل أوضح بين Technical Skills وSoft Skills."
+        : "Core capabilities organized across technical and soft skills.",
 
     capabilityMap:
       isArabic
@@ -1040,8 +1060,8 @@ export default function Page() {
 
     capabilityNote:
       isArabic
-        ? "مرتبة حسب المجالات الأساسية في مسار Cloud وDevOps."
-        : "Organized around the core areas of the Cloud / DevOps path.",
+        ? "مجموعة المهارات العملية المستخدمة في مسار Cloud وDevOps."
+        : "A practical map of the capabilities behind my Cloud / DevOps path.",
 
     primaryFocus:
       isArabic
@@ -1051,6 +1071,36 @@ export default function Page() {
     awsCloudInfrastructure:
       "AWS Cloud Infrastructure",
 
+    technicalSkills:
+      isArabic
+        ? "المهارات التقنية"
+        : "Technical skills",
+
+    technicalSkillsNote:
+      isArabic
+        ? "الأدوات والتقنيات التي أبني بها الـCloud Infrastructure والـDevOps workflows."
+        : "Tools and technologies used to build cloud infrastructure and DevOps workflows.",
+
+    softSkills:
+      isArabic
+        ? "المهارات الشخصية"
+        : "Soft skills",
+
+    softSkillsNote:
+      isArabic
+        ? "مهارات تساعدني على التعلم والتعاون والتعامل مع مشاكل الـInfrastructure بشكل عملي."
+        : "The working habits and interpersonal skills that support technical growth and teamwork.",
+
+    practicalMindset:
+      isArabic
+        ? "Practical mindset"
+        : "Practical mindset",
+
+    practicalMindsetNote:
+      isArabic
+        ? "بناء، تجربة، حل المشكلة، ثم تحسين الحل."
+        : "Build it, test it, solve the issue, then improve the solution.",
+
     experienceTitle:
       isArabic
         ? "خبرة مبنية على التطبيق."
@@ -1058,8 +1108,8 @@ export default function Page() {
 
     experienceNote:
       isArabic
-        ? "كل تجربة موضحة من التحدي إلى التنفيذ والنتيجة، مع الحفاظ على التفاصيل الموجودة فعليًا في الـCV."
-        : "Each experience is presented through challenge, action, and result while staying within the information available in the CV.",
+        ? "كل تجربة موضحة من التحدي إلى التنفيذ والنتيجة."
+        : "Each experience is presented through challenge, action, and result.",
 
     challenge: isArabic
       ? "التحدي"
@@ -1098,11 +1148,13 @@ export default function Page() {
 
     projectNote:
       isArabic
-        ? "مشروع معروض كقصة Infrastructure واضحة بدلًا من Card تقليدي."
-        : "A focused infrastructure case study instead of a generic portfolio card.",
+        ? "مشروع Infrastructure معروض بشكل مختصر وواضح."
+        : "A focused infrastructure case study.",
 
     scalableArchitecture:
-      "AWS / Enterprise Architecture",
+      isArabic
+        ? cv.project.projectLabelAr
+        : cv.project.projectLabel,
 
     topology: isArabic
       ? "Cloud Topology"
@@ -1110,8 +1162,8 @@ export default function Page() {
 
     actualProjectElements:
       isArabic
-        ? "العناصر الفعلية للمشروع"
-        : "Actual project elements from the architecture",
+        ? "العناصر الأساسية للمشروع"
+        : "Core architecture elements",
 
     cloudEnvironment:
       isArabic
@@ -1138,8 +1190,8 @@ export default function Page() {
 
     cloudStorage:
       isArabic
-        ? "Shared Storage Layer"
-        : "Shared storage layer",
+        ? "Shared Storage & Data Layer"
+        : "Shared storage & data layer",
 
     compute: isArabic
       ? "حوسبة"
@@ -1161,7 +1213,7 @@ export default function Page() {
     projectImageNote:
       isArabic
         ? "لمحة بصرية سريعة عن الـCloud Architecture."
-        : "A visual overview of the cloud architecture.",
+        : "A quick visual overview of the architecture.",
 
     viewProjectImage:
       isArabic
@@ -1175,8 +1227,8 @@ export default function Page() {
 
     servicesNote:
       isArabic
-        ? "مجالات عملية في AWS وDevOps وLinux والشبكات والأتمتة وعمليات الـDeployment."
-        : "Practical areas across AWS, DevOps, Linux, networking, automation, and deployment.",
+        ? "AWS وDevOps وLinux والشبكات والأتمتة."
+        : "AWS, DevOps, Linux, networking, automation, and deployment.",
 
     achievementsTitle:
       isArabic
@@ -1185,8 +1237,8 @@ export default function Page() {
 
     achievementsNote:
       isArabic
-        ? "مؤشرات مبنية على الخبرة التدريبية والأكاديمية الحالية، بدون إضافة إنجازات غير موجودة."
-        : "Current academic and training milestones without inventing additional achievements.",
+        ? "مؤشرات مبنية على الخبرة التدريبية والأكاديمية الحالية."
+        : "Current academic and training milestones.",
 
     testimonialsTitle:
       isArabic
@@ -1195,8 +1247,8 @@ export default function Page() {
 
     testimonialsNote:
       isArabic
-        ? "تعليقات فعلية من LinkedIn مرتبطة بالمنشور والمصدر."
-        : "Real LinkedIn comments linked back to their source post.",
+        ? "تعليقات فعلية من LinkedIn مرتبطة بالمصدر."
+        : "Real LinkedIn comments linked to the source.",
 
     viewPost:
       isArabic
@@ -1215,8 +1267,8 @@ export default function Page() {
 
     contactNote:
       isArabic
-        ? "متاح لفرص Cloud وDevOps Internship المرتبطة بالـAWS والـInfrastructure والـLinux والـNetworking والـAutomation."
-        : "Open to Cloud and DevOps internship opportunities around AWS, infrastructure, Linux, networking, and automation.",
+        ? "متاح لفرص Cloud وDevOps المرتبطة بالـAWS والـInfrastructure."
+        : "Open to Cloud and DevOps opportunities around AWS and infrastructure.",
 
     openToOpportunitiesAgain:
       isArabic
@@ -1271,6 +1323,36 @@ export default function Page() {
 
     training:
       isArabic ? "Training" : "Training",
+
+    footerStatus:
+      isArabic
+        ? "متاح لفرص Cloud وDevOps"
+        : "Open to Cloud & DevOps opportunities",
+
+    footerConnect:
+      isArabic
+        ? "لنبنِ شيئًا موثوقًا."
+        : "Let's build something reliable.",
+
+    footerExplore:
+      isArabic
+        ? "استكشف"
+        : "Explore",
+
+    footerContact:
+      isArabic
+        ? "تواصل"
+        : "Contact",
+
+    footerSocial:
+      isArabic
+        ? "روابط"
+        : "Links",
+
+    footerCopyright:
+      isArabic
+        ? "جميع الحقوق محفوظة."
+        : "All rights reserved.",
   };
 
   const nav = useMemo(
@@ -1292,9 +1374,7 @@ export default function Page() {
 
   useEffect(() => {
     const onScroll = () => {
-      setScrolled(
-        window.scrollY > 20
-      );
+      setScrolled(window.scrollY > 20);
     };
 
     onScroll();
@@ -1351,11 +1431,12 @@ export default function Page() {
         },
         {
           rootMargin:
-            "-110px 0px -62% 0px",
+            "-96px 0px -58% 0px",
           threshold: [
-            0.08,
-            0.18,
-            0.3,
+            0.05,
+            0.12,
+            0.2,
+            0.35,
             0.5,
           ],
         }
@@ -1377,15 +1458,11 @@ export default function Page() {
         setMenu(false);
 
         if (selectedCertificate) {
-          setSelectedCertificate(
-            null
-          );
+          setSelectedCertificate(null);
         }
 
         if (selectedProjectImage) {
-          setSelectedProjectImage(
-            null
-          );
+          setSelectedProjectImage(null);
         }
       }
     };
@@ -1430,7 +1507,7 @@ export default function Page() {
 
     if (!element) return;
 
-    const navOffset = 96;
+    const navOffset = 88;
 
     const top =
       element.getBoundingClientRect()
@@ -1506,21 +1583,46 @@ export default function Page() {
               aria-label="Main navigation"
             >
               {nav.map(
-                ([id, label]) => (
-                  <button
-                    key={id}
-                    className={
-                      active === id
-                        ? "active"
-                        : ""
-                    }
-                    onClick={() =>
-                      go(id)
-                    }
-                  >
-                    {label}
-                  </button>
-                )
+                ([id, label]) => {
+                  const isContact =
+                    id === "contact";
+
+                  return (
+                    <button
+                      key={id}
+                      className={[
+                        active === id
+                          ? "active"
+                          : "",
+                        isContact
+                          ? "nav-contact"
+                          : "",
+                      ]
+                        .filter(Boolean)
+                        .join(" ")}
+                      onClick={() =>
+                        go(id)
+                      }
+                      aria-current={
+                        active === id
+                          ? "page"
+                          : undefined
+                      }
+                    >
+                      <span>
+                        {label}
+                      </span>
+
+                      {isContact
+                        ? (
+                            <span className="nav-contact-icon">
+                              {i.contact}
+                            </span>
+                          )
+                        : null}
+                    </button>
+                  );
+                }
               )}
             </nav>
           </div>
@@ -1552,8 +1654,7 @@ export default function Page() {
               className="theme-button"
               onClick={() =>
                 setLightMode(
-                  (value) =>
-                    !value
+                  (value) => !value
                 )
               }
               aria-label={
@@ -1571,20 +1672,11 @@ export default function Page() {
               </span>
             </button>
 
-            <a
-              className="nav-mail"
-              href={`mailto:${cv.email}`}
-            >
-              {t.letsConnect}
-              {i.arrow}
-            </a>
-
             <button
               className="menu-btn"
               onClick={() =>
                 setMenu(
-                  (value) =>
-                    !value
+                  (value) => !value
                 )
               }
               aria-label="Toggle navigation"
@@ -1614,21 +1706,41 @@ export default function Page() {
         >
           <div className="mobile-menu-inner">
             {nav.map(
-              ([id, label]) => (
-                <button
-                  key={id}
-                  className={
-                    active === id
-                      ? "active"
-                      : ""
-                  }
-                  onClick={() =>
-                    go(id)
-                  }
-                >
-                  {label}
-                </button>
-              )
+              ([id, label]) => {
+                const isContact =
+                  id === "contact";
+
+                return (
+                  <button
+                    key={id}
+                    className={[
+                      active === id
+                        ? "active"
+                        : "",
+                      isContact
+                        ? "nav-contact mobile-nav-contact"
+                        : "",
+                    ]
+                      .filter(Boolean)
+                      .join(" ")}
+                    onClick={() =>
+                      go(id)
+                    }
+                  >
+                    <span>
+                      {label}
+                    </span>
+
+                    {isContact
+                      ? (
+                          <span className="nav-contact-icon">
+                            {i.contact}
+                          </span>
+                        )
+                      : null}
+                  </button>
+                );
+              }
             )}
           </div>
         </div>
@@ -1640,7 +1752,7 @@ export default function Page() {
 
       <section
         id="home"
-        className="container hero"
+        className="container hero hero-compact"
       >
         <div className="hero-content">
           <div className="eyebrow">
@@ -1655,6 +1767,8 @@ export default function Page() {
             <br />
             <span>Gamal.</span>
           </h1>
+
+          <h3>{cv.title}</h3>
 
           <p className="hero-description">
             {isArabic
@@ -1672,6 +1786,7 @@ export default function Page() {
               {
                 t.exploreArchitecture
               }
+
               {i.arrow}
             </button>
 
@@ -1684,57 +1799,9 @@ export default function Page() {
               {i.external}
             </a>
           </div>
-
-          {/* <div className="hero-socials">
-            <a
-              className="hero-social"
-              href={cv.linkedin}
-              target="_blank"
-              rel="noreferrer"
-              dir="ltr"
-            >
-              {i.linkedin}
-
-              <span>
-                LinkedIn
-              </span>
-
-              {i.external}
-            </a>
-
-            {cv.github ? (
-              <a
-                className="hero-social"
-                href={cv.github}
-                target="_blank"
-                rel="noreferrer"
-                dir="ltr"
-              >
-                {i.github}
-
-                <span>
-                  GitHub
-                </span>
-
-                {i.external}
-              </a>
-            ) : null}
-
-            <a
-              className="hero-social"
-              href={`mailto:${cv.email}`}
-              dir="ltr"
-            >
-              {i.email}
-
-              <span>
-                Email
-              </span>
-            </a>
-          </div> */}
         </div>
 
-        <div className="hero-art">
+        <div className="hero-art hero-art-compact">
           <div className="art-paper" />
           <div className="art-lines" />
 
@@ -1787,13 +1854,11 @@ export default function Page() {
 
             <strong>
               Cloud architecture
-              focus
             </strong>
 
             <p dir="ltr">
               EC2 · S3 · VPC · RDS ·
-              Lambda · SQS ·
-              CloudFormation
+              Lambda · SQS
             </p>
           </div>
 
@@ -1860,7 +1925,7 @@ export default function Page() {
 
       <section
         id="about"
-        className="section"
+        className="section section-tight"
       >
         <div className="container">
           <div className="section-head">
@@ -1914,9 +1979,7 @@ export default function Page() {
 
               <div className="stats">
                 <div className="stat">
-                  <strong>
-                    11
-                  </strong>
+                  <strong>11</strong>
 
                   <span>
                     {
@@ -1926,9 +1989,7 @@ export default function Page() {
                 </div>
 
                 <div className="stat">
-                  <strong>
-                    02
-                  </strong>
+                  <strong>02</strong>
 
                   <span>
                     {
@@ -1938,9 +1999,7 @@ export default function Page() {
                 </div>
 
                 <div className="stat">
-                  <strong>
-                    2027
-                  </strong>
+                  <strong>2027</strong>
 
                   <span>
                     {
@@ -2010,7 +2069,7 @@ export default function Page() {
 
       <section
         id="education"
-        className="section"
+        className="section section-tight"
       >
         <div className="container">
           <div className="section-head">
@@ -2104,8 +2163,7 @@ export default function Page() {
                   </strong>
 
                   <span>
-                    Practical parallel
-                    track
+                    Practical track
                   </span>
                 </div>
               </div>
@@ -2161,7 +2219,7 @@ export default function Page() {
 
       <section
         id="certification"
-        className="section"
+        className="section section-tight"
       >
         <div className="container">
           <div className="section-head">
@@ -2309,7 +2367,7 @@ export default function Page() {
 
       <section
         id="skills"
-        className="section"
+        className="section section-tight skills-section-improved"
       >
         <div className="container">
           <div className="section-head">
@@ -2324,104 +2382,244 @@ export default function Page() {
             </div>
           </div>
 
-          <div className="stack-layout">
-            <aside className="stack-intro">
-              <h3>
-                {t.capabilityMap}
-              </h3>
+          <div className="skills-dashboard">
+            <div className="technical-skills-panel">
+              <div className="skills-panel-header">
+                <div>
+                  <div className="panel-kicker">
+                    TECH / 01
+                  </div>
 
-              <p>
-                {t.capabilityNote}
-              </p>
+                  <h3>
+                    {t.technicalSkills}
+                  </h3>
 
-              <div className="focus">
-                <small>
-                  {t.primaryFocus}
-                </small>
+                  <p>
+                    {
+                      t.technicalSkillsNote
+                    }
+                  </p>
+                </div>
+
+                <div className="skills-panel-icon">
+                  {i.layers}
+                </div>
+              </div>
+
+              <div className="technical-skills-grid">
+                {Object.entries(
+                  cv.skills
+                ).map(
+                  (
+                    [category, items],
+                    index
+                  ) => {
+                    const icon =
+                      category.includes(
+                        "Cloud"
+                      )
+                        ? i.cloud
+                        : category.includes(
+                            "AWS"
+                          )
+                          ? i.server
+                          : category.includes(
+                              "DevOps"
+                            )
+                            ? i.bolt
+                            : category.includes(
+                                "Networking"
+                              )
+                              ? i.network
+                              : i.terminal;
+
+                    const categoryDescription =
+                      category.includes(
+                        "Cloud"
+                      )
+                        ? isArabic
+                          ? "Cloud platforms والـarchitecture الأساسية."
+                          : "Cloud platforms and architecture fundamentals."
+                        : category.includes(
+                            "AWS"
+                          )
+                          ? isArabic
+                            ? "خدمات AWS المستخدمة في الـcompute والـstorage والـmanagement."
+                            : "AWS services across compute, storage, and cloud management."
+                          : category.includes(
+                              "DevOps"
+                            )
+                            ? isArabic
+                              ? "Automation وCI/CD وInfrastructure delivery."
+                              : "Automation, CI/CD, and infrastructure delivery."
+                            : category.includes(
+                                "Networking"
+                              )
+                              ? isArabic
+                                ? "تصميم الشبكات وتأمين الـCloud connectivity."
+                                : "Network design and controlled cloud connectivity."
+                              : isArabic
+                                ? "Linux والأنظمة وحل المشكلات التقنية."
+                                : "Linux, systems thinking, and technical troubleshooting.";
+
+                    return (
+                      <article
+                        className="skill-card-modern"
+                        key={category}
+                      >
+                        <div className="skill-card-top">
+                          <span className="skill-card-index">
+                            {String(
+                              index + 1
+                            ).padStart(
+                              2,
+                              "0"
+                            )}
+                          </span>
+
+                          <span className="skill-card-icon">
+                            {icon}
+                          </span>
+                        </div>
+
+                        <div className="skill-card-title-row">
+                          <h4>
+                            {category}
+                          </h4>
+                        </div>
+
+                        <p className="skill-card-description">
+                          {
+                            categoryDescription
+                          }
+                        </p>
+
+                        <div className="skill-card-divider" />
+
+                        <div className="chips skill-chips-modern">
+                          {items.map(
+                            (
+                              item,
+                              itemIndex
+                            ) => (
+                              <span
+                                key={item}
+                                className={`chip ${
+                                  itemIndex ===
+                                  0
+                                    ? "main"
+                                    : ""
+                                }`}
+                                dir="ltr"
+                              >
+                                {item}
+                              </span>
+                            )
+                          )}
+                        </div>
+                      </article>
+                    );
+                  }
+                )}
+              </div>
+            </div>
+
+            <aside className="skills-side-column">
+              <div className="soft-skills-card">
+                <div className="soft-skills-header">
+                  <div>
+                    <div className="panel-kicker">
+                      PEOPLE / 02
+                    </div>
+
+                    <h3>
+                      {t.softSkills}
+                    </h3>
+                  </div>
+
+                  <span className="soft-skills-icon">
+                    {i.people}
+                  </span>
+                </div>
+
+                <p className="soft-skills-description">
+                  {t.softSkillsNote}
+                </p>
+
+                <div className="soft-skills-list">
+                  {cv.softSkills.map(
+                    (
+                      skill,
+                      index
+                    ) => (
+                      <div
+                        className="soft-skill-item"
+                        key={skill.en}
+                      >
+                        <span className="soft-skill-number">
+                          {String(
+                            index + 1
+                          ).padStart(
+                            2,
+                            "0"
+                          )}
+                        </span>
+
+                        <span className="soft-skill-name">
+                          {isArabic
+                            ? skill.ar
+                            : skill.en}
+                        </span>
+
+                        <span className="soft-skill-check">
+                          {i.check}
+                        </span>
+                      </div>
+                    )
+                  )}
+                </div>
+              </div>
+
+              <div className="skills-mindset-card">
+                <div className="mindset-icon">
+                  {i.bolt}
+                </div>
+
+                <div>
+                  <span className="panel-kicker">
+                    MINDSET / 03
+                  </span>
+
+                  <h4>
+                    {t.practicalMindset}
+                  </h4>
+
+                  <p>
+                    {
+                      t.practicalMindsetNote
+                    }
+                  </p>
+                </div>
+              </div>
+
+              <div className="skills-focus-card">
+                <span className="panel-kicker">
+                  PRIMARY FOCUS
+                </span>
 
                 <strong>
-                  {
-                    t.awsCloudInfrastructure
-                  }
+                  AWS Cloud Infrastructure
                 </strong>
+
+                <div className="focus-mini-tags">
+                  <span>AWS</span>
+                  <span>Linux</span>
+                  <span>Networking</span>
+                  <span>IaC</span>
+                  <span>CI/CD</span>
+                </div>
               </div>
             </aside>
-
-            <div className="stack-grid">
-              {Object.entries(
-                cv.skills
-              ).map(
-                (
-                  [category, items],
-                  index
-                ) => (
-                  <div
-                    className="skill"
-                    key={
-                      category
-                    }
-                  >
-                    <div className="skill-head">
-                      <h3>
-                        {category}
-                      </h3>
-
-                      <span className="skill-num">
-                        {String(
-                          index + 1
-                        ).padStart(
-                          2,
-                          "0"
-                        )}
-                      </span>
-                    </div>
-
-                    <div className="skill-icon">
-                      {index ===
-                      0
-                        ? i.cloud
-                        : index ===
-                            1
-                          ? i.server
-                          : index ===
-                              2
-                            ? i.bolt
-                            : index ===
-                                3
-                              ? i.network
-                              : index ===
-                                  4
-                                ? i.database
-                                : i.layers}
-                    </div>
-
-                    <div className="chips">
-                      {items.map(
-                        (
-                          item,
-                          itemIndex
-                        ) => (
-                          <span
-                            key={
-                              item
-                            }
-                            className={`chip ${
-                              itemIndex ===
-                              0
-                                ? "main"
-                                : ""
-                            }`}
-                            dir="ltr"
-                          >
-                            {item}
-                          </span>
-                        )
-                      )}
-                    </div>
-                  </div>
-                )
-              )}
-            </div>
           </div>
         </div>
       </section>
@@ -2432,7 +2630,7 @@ export default function Page() {
 
       <section
         id="experience"
-        className="section"
+        className="section section-tight"
       >
         <div className="container">
           <div className="section-head">
@@ -2589,12 +2787,12 @@ export default function Page() {
       </section>
 
       {/* =====================================================
-          06 / PROJECTS
+          06 / PROJECT
           ===================================================== */}
 
       <section
         id="project"
-        className="section"
+        className="section section-tight"
       >
         <div className="container">
           <div className="section-head">
@@ -2619,10 +2817,6 @@ export default function Page() {
           </div>
 
           <article className="project">
-            {/* =================================================
-                PROJECT MAIN CONTENT
-                ================================================= */}
-
             <div className="project-main">
               <div className="project-label">
                 <span className="eyebrow-dot" />
@@ -2632,7 +2826,7 @@ export default function Page() {
                 }
               </div>
 
-              <h3>
+              <h3 className="project-title-compact">
                 {cv.project.name}
               </h3>
 
@@ -2717,99 +2911,32 @@ export default function Page() {
               </div>
             </div>
 
-            {/* =================================================
-                PROJECT VISUAL / TOPOLOGY
-                ================================================= */}
-
             <div className="topology">
               <div className="topology-content">
-
-                {/* ---------------------------------------------
-                    PROJECT IMAGE
-                    --------------------------------------------- */}
-
-                <div
-                  className="project-image-card"
-                  style={{
-                    marginBottom:
-                      "28px",
-                    overflow:
-                      "hidden",
-                    border:
-                      "1px solid var(--line)",
-                    background:
-                      "var(--paper)",
-                  }}
-                >
-                  <div
-                    style={{
-                      padding:
-                        "14px 16px",
-                      borderBottom:
-                        "1px solid var(--line)",
-                      display:
-                        "flex",
-                      alignItems:
-                        "center",
-                      justifyContent:
-                        "space-between",
-                      gap: "12px",
-                    }}
-                  >
+                <div className="project-image-card project-image-card-compact">
+                  <div className="project-image-header">
                     <div>
-                      <strong
-                        style={{
-                          display:
-                            "block",
-                          fontSize:
-                            "12px",
-                          letterSpacing:
-                            "0.06em",
-                          textTransform:
-                            "uppercase",
-                        }}
-                      >
+                      <strong>
                         {
                           t.projectImage
                         }
                       </strong>
 
-                      <span
-                        style={{
-                          display:
-                            "block",
-                          marginTop:
-                            "4px",
-                          fontSize:
-                            "11px",
-                          opacity:
-                            0.55,
-                        }}
-                      >
+                      <span>
                         {
                           t.projectImageNote
                         }
                       </span>
                     </div>
 
-                    <span
-                      style={{
-                        fontSize:
-                          "10px",
-                        letterSpacing:
-                          "0.08em",
-                        opacity:
-                          0.45,
-                        textTransform:
-                          "uppercase",
-                      }}
-                    >
+                    <span className="project-image-id">
                       PROJECT / 001
                     </span>
                   </div>
 
                   <button
                     type="button"
+                    className="project-image-button"
                     onClick={() =>
                       setSelectedProjectImage(
                         cv.project.image
@@ -2818,41 +2945,8 @@ export default function Page() {
                     aria-label={
                       t.viewProjectImage
                     }
-                    style={{
-                      display:
-                        "block",
-                      position:
-                        "relative",
-                      width:
-                        "100%",
-                      padding:
-                        "14px",
-                      border:
-                        "none",
-                      background:
-                        "var(--bg)",
-                      cursor:
-                        "zoom-in",
-                    }}
                   >
-                    <div
-                      style={{
-                        position:
-                          "relative",
-                        width:
-                          "100%",
-                        height:
-                          "clamp(250px, 32vw, 440px)",
-                        display:
-                          "flex",
-                        alignItems:
-                          "center",
-                        justifyContent:
-                          "center",
-                        overflow:
-                          "hidden",
-                      }}
-                    >
+                    <div className="project-image-frame">
                       <img
                         src={
                           cv.project.image
@@ -2864,59 +2958,16 @@ export default function Page() {
                         }
                         loading="lazy"
                         decoding="async"
-                        style={{
-                          width:
-                            "100%",
-                          height:
-                            "100%",
-                          display:
-                            "block",
-                          objectFit:
-                            "contain",
-                          objectPosition:
-                            "center",
-                        }}
                       />
 
-                      <span
-                        style={{
-                          position:
-                            "absolute",
-                          right:
-                            "14px",
-                          bottom:
-                            "14px",
-                          display:
-                            "inline-flex",
-                          alignItems:
-                            "center",
-                          padding:
-                            "8px 11px",
-                          background:
-                            "rgba(0,0,0,0.65)",
-                          color:
-                            "#fff",
-                          border:
-                            "1px solid rgba(255,255,255,0.18)",
-                          fontSize:
-                            "10px",
-                          letterSpacing:
-                            "0.05em",
-                          textTransform:
-                            "uppercase",
-                          pointerEvents:
-                            "none",
-                        }}
-                      >
-                        {t.viewProjectImage}
+                      <span className="project-image-zoom">
+                        {
+                          t.viewProjectImage
+                        }
                       </span>
                     </div>
                   </button>
                 </div>
-
-                {/* ---------------------------------------------
-                    CLOUD TOPOLOGY
-                    --------------------------------------------- */}
 
                 <div className="topology-head">
                   <div>
@@ -3061,7 +3112,7 @@ export default function Page() {
 
                   <div className="topology-stat">
                     <strong dir="ltr">
-                      S3 / EFS
+                      EFS / RDS
                     </strong>
 
                     <span>
@@ -3081,7 +3132,7 @@ export default function Page() {
 
       <section
         id="services"
-        className="section"
+        className="section section-tight"
       >
         <div className="container">
           <div className="section-head">
@@ -3155,7 +3206,7 @@ export default function Page() {
 
       <section
         id="achievements"
-        className="section"
+        className="section section-tight"
       >
         <div className="container">
           <div className="section-head">
@@ -3225,10 +3276,10 @@ export default function Page() {
 
       <section
         id="testimonials"
-        className="section"
+        className="section section-tight"
       >
         <div className="container">
-          <div className="section-head">
+          <div className="section-head testimonial-section-head">
             <div>
               <div className="section-code">
                 09 /{" "}
@@ -3243,14 +3294,14 @@ export default function Page() {
             </div>
           </div>
 
-          <div className="testimonials-grid">
+          <div className="testimonials-grid testimonials-grid-compact">
             {cv.testimonials.map(
               (
                 testimonial,
                 index
               ) => (
                 <article
-                  className="testimonial"
+                  className="testimonial testimonial-compact"
                   key={`${testimonial.name}-${index}`}
                 >
                   <div className="testimonial-top">
@@ -3269,7 +3320,7 @@ export default function Page() {
                     </span>
                   </div>
 
-                  <p>
+                  <p className="testimonial-quote">
                     {isArabic
                       ? testimonial.quoteAr
                       : testimonial.quote}
@@ -3291,9 +3342,9 @@ export default function Page() {
 
                   <div className="testimonial-source">
                     <span className="testimonial-source-label">
-                      {isArabic
-                        ? testimonial.sourceAr
-                        : testimonial.source}
+                      {
+                        testimonial.source
+                      }
                     </span>
 
                     <a
@@ -3322,7 +3373,7 @@ export default function Page() {
 
       <section
         id="contact"
-        className="section"
+        className="section section-tight contact-section"
       >
         <div className="container">
           <div className="section-head">
@@ -3337,8 +3388,8 @@ export default function Page() {
             </div>
           </div>
 
-          <div className="contact">
-            <div className="contact-main">
+          <div className="contact contact-compact">
+            <div className="contact-main contact-main-enhanced">
               <div className="eyebrow">
                 <span className="eyebrow-dot" />
 
@@ -3382,61 +3433,23 @@ export default function Page() {
                   {i.external}
                 </a>
               </div>
+            </div>
 
-              <div className="hero-socials">
-                <a
-                  className="hero-social"
-                  href={
-                    cv.linkedin
-                  }
-                  target="_blank"
-                  rel="noreferrer"
-                  dir="ltr"
-                >
-                  {i.linkedin}
-
-                  <span>
-                    LinkedIn
-                  </span>
-
-                  {i.external}
-                </a>
-
-                {cv.github ? (
-                  <a
-                    className="hero-social"
-                    href={
-                      cv.github
-                    }
-                    target="_blank"
-                    rel="noreferrer"
-                    dir="ltr"
-                  >
-                    {i.github}
-
-                    <span>
-                      GitHub
-                    </span>
-
-                    {i.external}
-                  </a>
-                ) : null}
+            <div className="contact-side contact-side-enhanced">
+              <div className="contact-item">
+                <span className="contact-label">
+                  Email
+                </span>
 
                 <a
-                  className="hero-social"
+                  className="contact-value"
                   href={`mailto:${cv.email}`}
                   dir="ltr"
                 >
-                  {i.email}
-
-                  <span>
-                    Email
-                  </span>
+                  {cv.email}
                 </a>
               </div>
-            </div>
 
-            <div className="contact-side">
               <div className="contact-item">
                 <span className="contact-label">
                   LinkedIn
@@ -3533,17 +3546,167 @@ export default function Page() {
           FOOTER
           ===================================================== */}
 
-      <footer className="container footer">
-        <span>
-          ©{" "}
-          {new Date().getFullYear()}{" "}
-          {cv.name}
-        </span>
+      <footer className="site-footer">
+        <div className="container">
+          <div className="footer-main">
+            <div className="footer-brand">
+              <button
+                className="footer-brand-button"
+                onClick={() =>
+                  go("home")
+                }
+              >
+                <span className="footer-brand-mark">
+                  {i.cloud}
+                </span>
 
-        <span dir="ltr">
-          Cloud & DevOps · AWS ·
-          Linux · Networking · IaC
-        </span>
+                <span>
+                  <strong>
+                    {cv.name}
+                  </strong>
+
+                  <small>
+                    {cv.title}
+                  </small>
+                </span>
+              </button>
+
+              <p>
+                {t.footerConnect}
+              </p>
+
+              <div className="footer-status">
+                <span className="availability-dot" />
+
+                <span>
+                  {t.footerStatus}
+                </span>
+              </div>
+            </div>
+
+            <div className="footer-column">
+              <span className="footer-heading">
+                {t.footerExplore}
+              </span>
+
+              <button
+                onClick={() =>
+                  go("about")
+                }
+              >
+                {t.about}
+              </button>
+
+              <button
+                onClick={() =>
+                  go("skills")
+                }
+              >
+                {t.skills}
+              </button>
+
+              <button
+                onClick={() =>
+                  go("experience")
+                }
+              >
+                {t.experience}
+              </button>
+
+              <button
+                onClick={() =>
+                  go("project")
+                }
+              >
+                {t.project}
+              </button>
+            </div>
+
+            <div className="footer-column">
+              <span className="footer-heading">
+                {t.footerContact}
+              </span>
+
+              <a
+                href={`mailto:${cv.email}`}
+                dir="ltr"
+              >
+                {cv.email}
+              </a>
+
+              <a
+                href={`tel:${cv.phone.replace(
+                  /\s/g,
+                  ""
+                )}`}
+                dir="ltr"
+              >
+                {cv.phone}
+              </a>
+
+              <button
+                onClick={() =>
+                  go("contact")
+                }
+              >
+                {t.contact}
+              </button>
+            </div>
+
+            <div className="footer-column">
+              <span className="footer-heading">
+                {t.footerSocial}
+              </span>
+
+              <a
+                href={cv.linkedin}
+                target="_blank"
+                rel="noreferrer"
+                className="footer-social-link"
+              >
+                <span>
+                  {i.linkedin}
+                </span>
+
+                <span>
+                  LinkedIn
+                </span>
+              </a>
+
+              <a
+                href={cv.github}
+                target="_blank"
+                rel="noreferrer"
+                className="footer-social-link"
+              >
+                <span>
+                  {i.github}
+                </span>
+
+                <span>
+                  GitHub
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <div className="footer-bottom">
+            <span>
+              ©{" "}
+              {new Date().getFullYear()}{" "}
+              {cv.name}.{" "}
+              {t.footerCopyright}
+            </span>
+
+            <span
+              dir="ltr"
+              className="footer-stack"
+            >
+              Cloud & DevOps · AWS · Linux ·
+              Networking · IaC
+            </span>
+          </div>
+        </div>
       </footer>
 
       {/* =====================================================
@@ -3585,8 +3748,7 @@ export default function Page() {
                 "min(94vw, 1500px)",
               height:
                 "min(92vh, 1000px)",
-              display:
-                "flex",
+              display: "flex",
               alignItems:
                 "center",
               justifyContent:
@@ -3604,10 +3766,8 @@ export default function Page() {
                   "100%",
                 maxHeight:
                   "100%",
-                width:
-                  "auto",
-                height:
-                  "auto",
+                width: "auto",
+                height: "auto",
                 objectFit:
                   "contain",
               }}
@@ -3622,7 +3782,7 @@ export default function Page() {
 
       {selectedProjectImage && (
         <div
-          className="certificate-modal"
+          className="certificate-modal project-image-modal"
           role="dialog"
           aria-modal="true"
           aria-label="Project image preview"
@@ -3631,10 +3791,6 @@ export default function Page() {
               null
             )
           }
-          style={{
-            padding:
-              "24px",
-          }}
         >
           <button
             type="button"
@@ -3650,22 +3806,10 @@ export default function Page() {
           </button>
 
           <div
-            className="certificate-modal-content"
+            className="certificate-modal-content project-image-modal-content"
             onClick={(event) =>
               event.stopPropagation()
             }
-            style={{
-              width:
-                "min(96vw, 1800px)",
-              height:
-                "min(92vh, 1100px)",
-              display:
-                "flex",
-              alignItems:
-                "center",
-              justifyContent:
-                "center",
-            }}
           >
             <img
               src={
@@ -3676,26 +3820,745 @@ export default function Page() {
                   ? cv.project.imageAltAr
                   : cv.project.imageAlt
               }
-              style={{
-                display:
-                  "block",
-                maxWidth:
-                  "100%",
-                maxHeight:
-                  "100%",
-                width:
-                  "auto",
-                height:
-                  "auto",
-                objectFit:
-                  "contain",
-                objectPosition:
-                  "center",
-              }}
+              className="project-image-modal-image"
             />
           </div>
         </div>
       )}
+
+      {/* =====================================================
+          POLISH OVERRIDES
+          ===================================================== */}
+
+      <style jsx global>{`
+
+        /* =================================================
+           NAVBAR
+           ================================================= */
+
+        .site .topbar {
+          transition:
+            background 220ms ease,
+            border-color 220ms ease,
+            box-shadow 220ms ease,
+            backdrop-filter 220ms ease;
+        }
+
+        .site .topbar.scrolled {
+          border-bottom-color: color-mix(
+            in srgb,
+            var(--line) 85%,
+            var(--accent)
+          );
+
+          background: color-mix(
+            in srgb,
+            var(--bg) 90%,
+            transparent
+          );
+
+          box-shadow:
+            0 10px 32px
+              color-mix(
+                in srgb,
+                #000 9%,
+                transparent
+              );
+        }
+
+        .site .topbar-inner {
+          min-height: 74px;
+        }
+
+        .site .brand {
+          gap: 11px;
+        }
+
+        .site .brand-mark {
+          width: 38px;
+          height: 38px;
+          border-radius: 12px;
+          display: grid;
+          place-items: center;
+          flex: 0 0 38px;
+
+          border: 1px solid
+            color-mix(
+              in srgb,
+              var(--accent) 24%,
+              var(--line)
+            );
+
+          background: color-mix(
+            in srgb,
+            var(--accent) 7%,
+            transparent
+          );
+
+          transition:
+            transform 180ms ease,
+            border-color 180ms ease,
+            background 180ms ease;
+        }
+
+        .site .brand:hover .brand-mark {
+          transform: translateY(-1px);
+          border-color: color-mix(
+            in srgb,
+            var(--accent) 42%,
+            var(--line)
+          );
+
+          background: color-mix(
+            in srgb,
+            var(--accent) 11%,
+            transparent
+          );
+        }
+
+        .site .brand-copy strong {
+          font-size: 12px;
+          letter-spacing: -0.01em;
+        }
+
+        .site .brand-copy span {
+          font-size: 8.5px;
+          letter-spacing: 0.08em;
+          text-transform: uppercase;
+        }
+
+        .site .nav-links {
+          gap: 3px;
+          padding: 4px;
+          border: 1px solid var(--line);
+          border-radius: 13px;
+
+          background: color-mix(
+            in srgb,
+            var(--surface) 72%,
+            transparent
+          );
+        }
+
+        .site .nav-links button {
+          min-height: 34px;
+          padding: 0 9px;
+          border-radius: 9px;
+          gap: 7px;
+
+          font-size: 10.5px;
+          line-height: 1;
+          font-weight: 650;
+
+          color: var(--muted);
+
+          transition:
+            color 160ms ease,
+            background 160ms ease,
+            border-color 160ms ease,
+            transform 160ms ease;
+        }
+
+        .site .nav-links button:hover {
+          color: var(--text);
+          background: color-mix(
+            in srgb,
+            var(--surface) 78%,
+            transparent
+          );
+        }
+
+        .site .nav-links button.active {
+          color: var(--text);
+          background: color-mix(
+            in srgb,
+            var(--accent) 7%,
+            var(--surface)
+          );
+
+          box-shadow:
+            inset 0 0 0 1px
+              color-mix(
+                in srgb,
+                var(--accent) 18%,
+                var(--line)
+              );
+        }
+
+        /* ---------------------------------------------
+           CONTACT NAV CTA
+           --------------------------------------------- */
+
+        .site .nav-links button.nav-contact {
+          margin-left: 2px;
+          padding-inline: 11px;
+
+          color: var(--text);
+
+          border: 1px solid color-mix(
+            in srgb,
+            var(--accent) 30%,
+            var(--line)
+          );
+
+          background: color-mix(
+            in srgb,
+            var(--accent) 9%,
+            var(--surface)
+          );
+        }
+
+        .site .nav-links button.nav-contact:hover,
+        .site .nav-links button.nav-contact.active {
+          color: var(--text);
+
+          border-color: color-mix(
+            in srgb,
+            var(--accent) 55%,
+            var(--line)
+          );
+
+          background: color-mix(
+            in srgb,
+            var(--accent) 13%,
+            var(--surface)
+          );
+
+          transform: translateY(-1px);
+        }
+
+        .site .nav-contact-icon {
+          width: 19px;
+          height: 19px;
+
+          display: grid;
+          place-items: center;
+
+          border-radius: 6px;
+
+          color: var(--accent);
+
+          background: color-mix(
+            in srgb,
+            var(--accent) 9%,
+            transparent
+          );
+        }
+
+        .site .nav-contact-icon svg {
+          width: 14px;
+          height: 14px;
+        }
+
+        .site .nav-tools {
+          gap: 8px;
+        }
+
+        .site .availability {
+          padding: 0 9px;
+          min-height: 29px;
+          border-radius: 999px;
+
+          border: 1px solid var(--line);
+
+          background: color-mix(
+            in srgb,
+            var(--surface) 55%,
+            transparent
+          );
+
+          font-size: 8.5px;
+          font-weight: 650;
+        }
+
+        .site .availability-dot {
+          width: 6px;
+          height: 6px;
+          box-shadow:
+            0 0 0 3px
+              color-mix(
+                in srgb,
+                var(--accent) 7%,
+                transparent
+              );
+        }
+
+        .site .language-button,
+        .site .theme-button {
+          min-width: 31px;
+          min-height: 31px;
+          border-radius: 9px;
+
+          border: 1px solid var(--line);
+
+          background: color-mix(
+            in srgb,
+            var(--surface) 62%,
+            transparent
+          );
+        }
+
+        .site .language-button:hover,
+        .site .theme-button:hover {
+          border-color: color-mix(
+            in srgb,
+            var(--accent) 32%,
+            var(--line)
+          );
+
+          background: color-mix(
+            in srgb,
+            var(--accent) 7%,
+            var(--surface)
+          );
+        }
+
+        /* ---------------------------------------------
+           RTL NAV
+           --------------------------------------------- */
+
+        .site.rtl .nav-links {
+          direction: rtl;
+        }
+
+        .site.rtl .nav-links button.nav-contact {
+          margin-left: 0;
+          margin-right: 2px;
+        }
+
+        /* =================================================
+           MOBILE NAV
+           ================================================= */
+
+        .site .mobile-menu {
+          backdrop-filter: blur(18px);
+          background: color-mix(
+            in srgb,
+            var(--bg) 74%,
+            transparent
+          );
+        }
+
+        .site .mobile-menu-inner {
+          padding: 12px;
+          border: 1px solid var(--line);
+          border-radius: 18px;
+
+          background: var(--surface);
+
+          box-shadow:
+            0 20px 50px
+              color-mix(
+                in srgb,
+                #000 18%,
+                transparent
+              );
+        }
+
+        .site .mobile-menu-inner button {
+          min-height: 42px;
+          padding-inline: 13px;
+
+          border-radius: 11px;
+
+          font-size: 12px;
+          font-weight: 650;
+
+          transition:
+            background 160ms ease,
+            color 160ms ease,
+            transform 160ms ease;
+        }
+
+        .site .mobile-menu-inner button:hover,
+        .site .mobile-menu-inner button.active {
+          background: color-mix(
+            in srgb,
+            var(--accent) 8%,
+            transparent
+          );
+
+          color: var(--text);
+        }
+
+        .site .mobile-menu-inner
+          .mobile-nav-contact {
+          border: 1px solid color-mix(
+            in srgb,
+            var(--accent) 25%,
+            var(--line)
+          );
+
+          background: color-mix(
+            in srgb,
+            var(--accent) 6%,
+            transparent
+          );
+        }
+
+        /* =================================================
+           FOOTER
+           ================================================= */
+
+        .site .site-footer {
+          margin-top: 36px;
+          padding: 0 0 22px;
+          border-top: 1px solid var(--line);
+          background: color-mix(
+            in srgb,
+            var(--surface) 35%,
+            transparent
+          );
+        }
+
+        .site .site-footer > .container {
+          padding-top: 30px;
+        }
+
+        .site .footer-main {
+          display: grid;
+          grid-template-columns:
+            minmax(250px, 1.8fr)
+            repeat(3, minmax(130px, 0.8fr));
+
+          gap: 34px;
+          padding-bottom: 27px;
+        }
+
+        .site .footer-brand {
+          min-width: 0;
+          padding-right: 18px;
+        }
+
+        .site.rtl .footer-brand {
+          padding-right: 0;
+          padding-left: 18px;
+        }
+
+        .site .footer-brand-button {
+          display: inline-flex;
+          align-items: center;
+          gap: 11px;
+          padding: 0;
+          margin: 0;
+          border: 0;
+          background: transparent;
+          color: var(--text);
+          cursor: pointer;
+          text-align: left;
+        }
+
+        .site.rtl .footer-brand-button {
+          text-align: right;
+        }
+
+        .site .footer-brand-mark {
+          width: 39px;
+          height: 39px;
+          display: grid;
+          place-items: center;
+          flex: 0 0 39px;
+
+          border-radius: 12px;
+
+          color: var(--accent);
+
+          border: 1px solid
+            color-mix(
+              in srgb,
+              var(--accent) 24%,
+              var(--line)
+            );
+
+          background: color-mix(
+            in srgb,
+            var(--accent) 7%,
+            transparent
+          );
+        }
+
+        .site .footer-brand-button strong {
+          display: block;
+          font-size: 13px;
+          line-height: 1.15;
+        }
+
+        .site .footer-brand-button small {
+          display: block;
+          margin-top: 4px;
+
+          font-size: 8.5px;
+          line-height: 1;
+
+          color: var(--muted);
+
+          text-transform: uppercase;
+          letter-spacing: 0.08em;
+        }
+
+        .site .footer-brand p {
+          max-width: 350px;
+          margin: 17px 0 13px;
+
+          color: var(--muted);
+
+          font-size: 11px;
+          line-height: 1.75;
+        }
+
+        .site .footer-status {
+          display: inline-flex;
+          align-items: center;
+          gap: 7px;
+
+          min-height: 27px;
+          padding: 0 10px;
+
+          border-radius: 999px;
+
+          border: 1px solid
+            color-mix(
+              in srgb,
+              var(--accent) 18%,
+              var(--line)
+            );
+
+          background: color-mix(
+            in srgb,
+            var(--accent) 5%,
+            transparent
+          );
+
+          color: var(--muted);
+
+          font-size: 8.5px;
+          font-weight: 650;
+        }
+
+        .site .footer-status .availability-dot {
+          width: 6px;
+          height: 6px;
+        }
+
+        .site .footer-column {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 9px;
+          min-width: 0;
+        }
+
+        .site .footer-heading {
+          margin-bottom: 4px;
+
+          font-size: 9px;
+          line-height: 1;
+          font-weight: 700;
+
+          color: var(--text);
+
+          text-transform: uppercase;
+          letter-spacing: 0.16em;
+        }
+
+        .site .footer-column button,
+        .site .footer-column a {
+          padding: 0;
+
+          border: 0;
+          background: transparent;
+
+          color: var(--muted);
+
+          font-size: 10.5px;
+          line-height: 1.4;
+
+          text-decoration: none;
+
+          cursor: pointer;
+
+          transition:
+            color 160ms ease,
+            transform 160ms ease;
+        }
+
+        .site .footer-column button:hover,
+        .site .footer-column a:hover {
+          color: var(--text);
+          transform: translateX(2px);
+        }
+
+        .site.rtl .footer-column button:hover,
+        .site.rtl .footer-column a:hover {
+          transform: translateX(-2px);
+        }
+
+        .site .footer-social-link {
+          display: inline-flex !important;
+          align-items: center;
+          gap: 7px;
+        }
+
+        .site .footer-social-link span:first-child {
+          width: 21px;
+          height: 21px;
+
+          display: grid;
+          place-items: center;
+
+          border-radius: 6px;
+
+          color: var(--accent);
+
+          background: color-mix(
+            in srgb,
+            var(--accent) 7%,
+            transparent
+          );
+        }
+
+        .site .footer-social-link svg {
+          width: 13px;
+          height: 13px;
+        }
+
+        .site .footer-bottom {
+          min-height: 52px;
+
+          padding-top: 17px;
+
+          border-top: 1px solid var(--line);
+
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 20px;
+
+          color: var(--muted);
+
+          font-size: 8.5px;
+          line-height: 1.5;
+        }
+
+        .site .footer-stack {
+          text-transform: uppercase;
+          letter-spacing: 0.08em;
+          text-align: right;
+        }
+
+        .site.rtl .footer-stack {
+          text-align: left;
+        }
+
+        /* =================================================
+           RESPONSIVE
+           ================================================= */
+
+        @media (max-width: 1100px) {
+          .site .availability {
+            display: none;
+          }
+
+          .site .footer-main {
+            grid-template-columns:
+              minmax(220px, 1.5fr)
+              repeat(3, minmax(115px, 1fr));
+
+            gap: 24px;
+          }
+
+          .site .nav-links button {
+            padding-inline: 8px;
+            font-size: 10px;
+          }
+        }
+
+        @media (max-width: 900px) {
+          .site .nav-center {
+            display: none;
+          }
+
+          .site .menu-btn {
+            display: inline-grid;
+            place-items: center;
+          }
+
+          .site .footer-main {
+            grid-template-columns:
+              minmax(0, 1.6fr)
+              repeat(2, minmax(120px, 1fr));
+          }
+
+          .site .footer-column:last-child {
+            grid-column: 2;
+          }
+        }
+
+        @media (max-width: 700px) {
+          .site .topbar-inner {
+            min-height: 68px;
+          }
+
+          .site .brand-copy span {
+            font-size: 7.5px;
+          }
+
+          .site .footer-main {
+            grid-template-columns: 1fr 1fr;
+            gap: 25px 18px;
+          }
+
+          .site .footer-brand {
+            grid-column: 1 / -1;
+            padding: 0;
+          }
+
+          .site.rtl .footer-brand {
+            padding: 0;
+          }
+
+          .site .footer-column:last-child {
+            grid-column: auto;
+          }
+
+          .site .footer-bottom {
+            align-items: flex-start;
+            flex-direction: column;
+            gap: 8px;
+          }
+
+          .site .footer-stack,
+          .site.rtl .footer-stack {
+            text-align: left;
+          }
+
+          .site.rtl .footer-stack {
+            text-align: right;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .site .language-button,
+          .site .theme-button {
+            min-width: 29px;
+            min-height: 29px;
+          }
+
+          .site .footer-main {
+            grid-template-columns: 1fr 1fr;
+          }
+
+          .site .footer-brand p {
+            font-size: 10px;
+          }
+
+          .site .footer-column button,
+          .site .footer-column a {
+            font-size: 10px;
+          }
+        }
+
+      `}</style>
     </main>
   );
 }
