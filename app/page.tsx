@@ -2986,11 +2986,7 @@ export default function Page() {
               </h2>
             </div>
 
-            <p className="section-note">
-              {
-                t.testimonialsNote
-              }
-            </p>
+          
           </div>
 
           <div className="testimonials-grid">
