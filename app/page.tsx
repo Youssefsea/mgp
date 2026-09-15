@@ -185,56 +185,80 @@ const cv = {
 
   project: {
     name:
-      "AWS Scalable Cloud Architecture",
+      "AWS Enterprise Scalable & Secure Cloud Infrastructure",
 
     description:
-      "Designed and deployed a scalable web application infrastructure on AWS using EC2, S3, and VPC, with secure Linux servers and controlled network access.",
+      "Architected and deployed a highly available, fault-tolerant AWS infrastructure built around a Multi-AZ 3-tier VPC design, scalable application delivery, secure network segmentation, global traffic management, protected data services, and layered security controls.",
 
     descriptionAr:
-      "صممت ونشرت بنية تحتية قابلة للتوسع لتطبيق Web على AWS باستخدام EC2 وS3 وVPC، مع خوادم Linux مؤمنة وتحكم منظم في الوصول إلى الشبكة.",
+      "صممت ونشرت بنية AWS عالية التوافر ومقاومة للأعطال تعتمد على Multi-AZ 3-Tier VPC Architecture، مع قابلية عالية للتوسع وإدارة الـTraffic عالميًا وحماية البيانات وتطبيق طبقات متقدمة من الـSecurity.",
 
     challenge:
-      "The infrastructure needed a clear cloud structure with compute, storage, networking, and controlled access while keeping scalability and reliability in mind.",
+      "The infrastructure needed to support high availability, fault tolerance, dynamic traffic handling, secure network segmentation, protected data layers, and reliable access across multiple Availability Zones.",
 
     challengeAr:
-      "المشروع كان يحتاج إلى بنية Cloud واضحة تجمع بين الـCompute والـStorage والـNetworking والتحكم في الوصول مع مراعاة الـScalability والاعتمادية.",
+      "كان المشروع يحتاج إلى تحقيق High Availability وFault Tolerance مع التعامل الديناميكي مع ضغط الـTraffic، وتقسيم الشبكة بشكل آمن، وحماية طبقات البيانات، وضمان استمرارية الوصول عبر أكثر من Availability Zone.",
 
     action:
-      "Built an AWS environment around EC2-based Linux servers, S3 storage, VPC networking, custom route tables, and structured security group rules.",
+      "Designed a Multi-AZ 3-tier VPC architecture using Public, Private, and Isolated Subnets. Implemented Application Load Balancers with Auto Scaling Groups for EC2 application and administrative workloads, integrated Route 53, CloudFront, WAF, and Shield for DNS, edge delivery, and protection, and configured Multi-AZ database clusters, EFS, AWS Backup, ACM, Secrets Manager, Security Groups, and NAT Gateways.",
 
     actionAr:
-      "بنيت AWS Environment تعتمد على EC2 مع Linux Servers، وS3 للتخزين، وVPC للـNetworking، مع Route Tables مخصصة وقواعد Security Groups منظمة.",
+      "صممت Multi-AZ 3-Tier VPC Architecture باستخدام Public وPrivate وIsolated Subnets. طبقت Application Load Balancers مع Auto Scaling Groups لخوادم EC2 الخاصة بالتطبيق والإدارة، وربطت Route 53 وCloudFront وWAF وShield لإدارة الـDNS وتسريع الـContent Delivery والحماية، مع إعداد Multi-AZ Database Clusters وEFS وAWS Backup وACM وSecrets Manager وSecurity Groups وNAT Gateways.",
 
     result:
-      "Created a practical infrastructure architecture focused on scalability, security, structured networking, and deployment readiness.",
+      "Created an enterprise-oriented cloud architecture focused on availability, scalability, fault tolerance, secure access, global content delivery, database resilience, shared storage, automated backup, and layered security.",
 
     resultAr:
-      "تم بناء Architecture عملية تركز على Scalability وSecurity وStructured Networking والاستعداد لعمليات الـDeployment.",
+      "تم بناء Cloud Architecture بمستوى Enterprise تركز على Availability وScalability وFault Tolerance وSecure Access وGlobal Content Delivery وDatabase Resilience وShared Storage وAutomated Backup وLayered Security.",
+
+    image:
+      "/2.jpeg",
+
+    imageAlt:
+      "AWS Enterprise Scalable and Secure Cloud Infrastructure architecture overview",
+
+    imageAltAr:
+      "صورة توضح بنية مشروع AWS Enterprise Scalable and Secure Cloud Infrastructure",
 
     points: [
-      "EC2-based Linux server instances",
-      "S3 for cloud storage",
-      "VPC networking with custom route tables",
-      "Strict security group rules",
-      "Architecture focused on scalability, availability, security, and structured deployment",
+      "Multi-AZ 3-tier VPC architecture across Public, Private, and Isolated Subnets",
+      "Application Load Balancers with Auto Scaling Groups for dynamic traffic management and high availability",
+      "Route 53, CloudFront, AWS WAF, and AWS Shield for DNS, edge delivery, and application protection",
+      "Multi-AZ database clusters with synchronous replication in isolated subnets",
+      "Amazon EFS for shared file systems and AWS Backup for automated data protection",
+      "HTTPS encryption through AWS Certificate Manager with Secrets Manager for sensitive credentials",
+      "Strict Security Groups and NAT Gateways for controlled access and secure outbound connectivity",
     ],
 
     pointsAr: [
-      "خوادم Linux تعمل باستخدام EC2",
-      "استخدام S3 كطبقة للتخزين السحابي",
-      "تصميم VPC Network باستخدام Route Tables مخصصة",
-      "تطبيق قواعد Security Groups بشكل منظم",
-      "بنية تركز على Scalability وAvailability وSecurity وDeployment المنظم",
+      "تصميم Multi-AZ 3-Tier VPC Architecture باستخدام Public وPrivate وIsolated Subnets",
+      "استخدام Application Load Balancers مع Auto Scaling Groups لإدارة الـTraffic وتحقيق High Availability",
+      "دمج Route 53 وCloudFront وAWS WAF وAWS Shield لإدارة الـDNS وتسريع الـContent Delivery والحماية",
+      "إعداد Multi-AZ Database Clusters مع Synchronous Replication داخل Isolated Subnets",
+      "استخدام Amazon EFS للـShared File Systems وAWS Backup للحماية التلقائية للبيانات",
+      "تطبيق HTTPS باستخدام AWS Certificate Manager مع Secrets Manager لإدارة الـCredentials الحساسة",
+      "تطبيق Security Groups صارمة وNAT Gateways للتحكم في الوصول وتأمين الـOutbound Connectivity",
     ],
 
     stack: [
       "AWS",
-      "EC2",
-      "S3",
       "VPC",
-      "Linux",
-      "Route Tables",
+      "Multi-AZ",
+      "EC2",
+      "ALB",
+      "Auto Scaling",
+      "Route 53",
+      "CloudFront",
+      "AWS WAF",
+      "AWS Shield",
+      "RDS",
+      "EFS",
+      "AWS Backup",
+      "ACM",
+      "Secrets Manager",
+      "NAT Gateway",
       "Security Groups",
+      "Linux",
     ],
   },
 
@@ -281,12 +305,6 @@ const cv = {
     },
   ],
 
-  /*
-   * REAL LINKEDIN COMMENTS
-   *
-   * These are tied to the LinkedIn post supplied in the request.
-   * Add more entries here later whenever you get real comments.
-   */
   testimonials: [
     {
       name: "Krishnakumar Kesavan",
@@ -861,6 +879,11 @@ export default function Page() {
     setSelectedCertificate,
   ] = useState<string | null>(null);
 
+  const [
+    selectedProjectImage,
+    setSelectedProjectImage,
+  ] = useState<string | null>(null);
+
   const isArabic = language === "ar";
 
   const t = {
@@ -1079,7 +1102,7 @@ export default function Page() {
         : "A focused infrastructure case study instead of a generic portfolio card.",
 
     scalableArchitecture:
-      "AWS / Scalable Architecture",
+      "AWS / Enterprise Architecture",
 
     topology: isArabic
       ? "Cloud Topology"
@@ -1088,7 +1111,7 @@ export default function Page() {
     actualProjectElements:
       isArabic
         ? "العناصر الفعلية للمشروع"
-        : "Actual project elements from the CV",
+        : "Actual project elements from the architecture",
 
     cloudEnvironment:
       isArabic
@@ -1106,7 +1129,7 @@ export default function Page() {
         : "Application compute",
 
     subnetsRouteTables:
-      "Subnets + Route Tables",
+      "Public + Private + Isolated Subnets",
 
     controlledAccess:
       isArabic
@@ -1115,8 +1138,8 @@ export default function Page() {
 
     cloudStorage:
       isArabic
-        ? "Cloud Storage Layer"
-        : "Cloud storage layer",
+        ? "Shared Storage Layer"
+        : "Shared storage layer",
 
     compute: isArabic
       ? "حوسبة"
@@ -1129,6 +1152,21 @@ export default function Page() {
     storage: isArabic
       ? "تخزين"
       : "STORAGE",
+
+    projectImage:
+      isArabic
+        ? "صورة المشروع"
+        : "Project preview",
+
+    projectImageNote:
+      isArabic
+        ? "لمحة بصرية سريعة عن الـCloud Architecture."
+        : "A visual overview of the cloud architecture.",
+
+    viewProjectImage:
+      isArabic
+        ? "تكبير الصورة"
+        : "Click to enlarge",
 
     servicesTitle:
       isArabic
@@ -1343,6 +1381,12 @@ export default function Page() {
             null
           );
         }
+
+        if (selectedProjectImage) {
+          setSelectedProjectImage(
+            null
+          );
+        }
       }
     };
 
@@ -1357,11 +1401,16 @@ export default function Page() {
         onKeyDown
       );
     };
-  }, [selectedCertificate]);
+  }, [
+    selectedCertificate,
+    selectedProjectImage,
+  ]);
 
   useEffect(() => {
     document.body.style.overflow =
-      menu || selectedCertificate
+      menu ||
+      selectedCertificate ||
+      selectedProjectImage
         ? "hidden"
         : "";
 
@@ -1369,7 +1418,11 @@ export default function Page() {
       document.body.style.overflow =
         "";
     };
-  }, [menu, selectedCertificate]);
+  }, [
+    menu,
+    selectedCertificate,
+    selectedProjectImage,
+  ]);
 
   const go = (id: string) => {
     const element =
@@ -2566,6 +2619,10 @@ export default function Page() {
           </div>
 
           <article className="project">
+            {/* =================================================
+                PROJECT MAIN CONTENT
+                ================================================= */}
+
             <div className="project-main">
               <div className="project-label">
                 <span className="eyebrow-dot" />
@@ -2660,8 +2717,207 @@ export default function Page() {
               </div>
             </div>
 
+            {/* =================================================
+                PROJECT VISUAL / TOPOLOGY
+                ================================================= */}
+
             <div className="topology">
               <div className="topology-content">
+
+                {/* ---------------------------------------------
+                    PROJECT IMAGE
+                    --------------------------------------------- */}
+
+                <div
+                  className="project-image-card"
+                  style={{
+                    marginBottom:
+                      "28px",
+                    overflow:
+                      "hidden",
+                    border:
+                      "1px solid var(--line)",
+                    background:
+                      "var(--paper)",
+                  }}
+                >
+                  <div
+                    style={{
+                      padding:
+                        "14px 16px",
+                      borderBottom:
+                        "1px solid var(--line)",
+                      display:
+                        "flex",
+                      alignItems:
+                        "center",
+                      justifyContent:
+                        "space-between",
+                      gap: "12px",
+                    }}
+                  >
+                    <div>
+                      <strong
+                        style={{
+                          display:
+                            "block",
+                          fontSize:
+                            "12px",
+                          letterSpacing:
+                            "0.06em",
+                          textTransform:
+                            "uppercase",
+                        }}
+                      >
+                        {
+                          t.projectImage
+                        }
+                      </strong>
+
+                      <span
+                        style={{
+                          display:
+                            "block",
+                          marginTop:
+                            "4px",
+                          fontSize:
+                            "11px",
+                          opacity:
+                            0.55,
+                        }}
+                      >
+                        {
+                          t.projectImageNote
+                        }
+                      </span>
+                    </div>
+
+                    <span
+                      style={{
+                        fontSize:
+                          "10px",
+                        letterSpacing:
+                          "0.08em",
+                        opacity:
+                          0.45,
+                        textTransform:
+                          "uppercase",
+                      }}
+                    >
+                      PROJECT / 001
+                    </span>
+                  </div>
+
+                  <button
+                    type="button"
+                    onClick={() =>
+                      setSelectedProjectImage(
+                        cv.project.image
+                      )
+                    }
+                    aria-label={
+                      t.viewProjectImage
+                    }
+                    style={{
+                      display:
+                        "block",
+                      position:
+                        "relative",
+                      width:
+                        "100%",
+                      padding:
+                        "14px",
+                      border:
+                        "none",
+                      background:
+                        "var(--bg)",
+                      cursor:
+                        "zoom-in",
+                    }}
+                  >
+                    <div
+                      style={{
+                        position:
+                          "relative",
+                        width:
+                          "100%",
+                        height:
+                          "clamp(250px, 32vw, 440px)",
+                        display:
+                          "flex",
+                        alignItems:
+                          "center",
+                        justifyContent:
+                          "center",
+                        overflow:
+                          "hidden",
+                      }}
+                    >
+                      <img
+                        src={
+                          cv.project.image
+                        }
+                        alt={
+                          isArabic
+                            ? cv.project.imageAltAr
+                            : cv.project.imageAlt
+                        }
+                        loading="lazy"
+                        decoding="async"
+                        style={{
+                          width:
+                            "100%",
+                          height:
+                            "100%",
+                          display:
+                            "block",
+                          objectFit:
+                            "contain",
+                          objectPosition:
+                            "center",
+                        }}
+                      />
+
+                      <span
+                        style={{
+                          position:
+                            "absolute",
+                          right:
+                            "14px",
+                          bottom:
+                            "14px",
+                          display:
+                            "inline-flex",
+                          alignItems:
+                            "center",
+                          padding:
+                            "8px 11px",
+                          background:
+                            "rgba(0,0,0,0.65)",
+                          color:
+                            "#fff",
+                          border:
+                            "1px solid rgba(255,255,255,0.18)",
+                          fontSize:
+                            "10px",
+                          letterSpacing:
+                            "0.05em",
+                          textTransform:
+                            "uppercase",
+                          pointerEvents:
+                            "none",
+                        }}
+                      >
+                        {t.viewProjectImage}
+                      </span>
+                    </div>
+                  </button>
+                </div>
+
+                {/* ---------------------------------------------
+                    CLOUD TOPOLOGY
+                    --------------------------------------------- */}
+
                 <div className="topology-head">
                   <div>
                     <h4>
@@ -2710,7 +2966,7 @@ export default function Page() {
 
                     <div className="flow-copy">
                       <strong dir="ltr">
-                        EC2 + Linux
+                        ALB + EC2 + Auto Scaling
                       </strong>
 
                       <span>
@@ -2730,7 +2986,7 @@ export default function Page() {
 
                     <div className="flow-copy">
                       <strong dir="ltr">
-                        VPC Networking
+                        Multi-AZ VPC
                       </strong>
 
                       <span dir="ltr">
@@ -2750,7 +3006,7 @@ export default function Page() {
 
                     <div className="flow-copy">
                       <strong dir="ltr">
-                        Security Groups
+                        WAF + Shield + Security Groups
                       </strong>
 
                       <span>
@@ -2765,12 +3021,12 @@ export default function Page() {
 
                   <div className="flow-row">
                     <span className="flow-icon">
-                      {i.cloud}
+                      {i.database}
                     </span>
 
                     <div className="flow-copy">
                       <strong dir="ltr">
-                        S3 Storage
+                        Multi-AZ Database + EFS
                       </strong>
 
                       <span>
@@ -2805,7 +3061,7 @@ export default function Page() {
 
                   <div className="topology-stat">
                     <strong dir="ltr">
-                      S3
+                      S3 / EFS
                     </strong>
 
                     <span>
@@ -2985,8 +3241,6 @@ export default function Page() {
                 }
               </h2>
             </div>
-
-          
           </div>
 
           <div className="testimonials-grid">
@@ -3326,6 +3580,18 @@ export default function Page() {
             onClick={(event) =>
               event.stopPropagation()
             }
+            style={{
+              width:
+                "min(94vw, 1500px)",
+              height:
+                "min(92vh, 1000px)",
+              display:
+                "flex",
+              alignItems:
+                "center",
+              justifyContent:
+                "center",
+            }}
           >
             <img
               className="certificate-modal-image"
@@ -3333,6 +3599,99 @@ export default function Page() {
                 selectedCertificate
               }
               alt="Certificate enlarged preview"
+              style={{
+                maxWidth:
+                  "100%",
+                maxHeight:
+                  "100%",
+                width:
+                  "auto",
+                height:
+                  "auto",
+                objectFit:
+                  "contain",
+              }}
+            />
+          </div>
+        </div>
+      )}
+
+      {/* =====================================================
+          PROJECT IMAGE LIGHTBOX
+          ===================================================== */}
+
+      {selectedProjectImage && (
+        <div
+          className="certificate-modal"
+          role="dialog"
+          aria-modal="true"
+          aria-label="Project image preview"
+          onClick={() =>
+            setSelectedProjectImage(
+              null
+            )
+          }
+          style={{
+            padding:
+              "24px",
+          }}
+        >
+          <button
+            type="button"
+            className="certificate-modal-close"
+            onClick={() =>
+              setSelectedProjectImage(
+                null
+              )
+            }
+            aria-label="Close project image preview"
+          >
+            ×
+          </button>
+
+          <div
+            className="certificate-modal-content"
+            onClick={(event) =>
+              event.stopPropagation()
+            }
+            style={{
+              width:
+                "min(96vw, 1800px)",
+              height:
+                "min(92vh, 1100px)",
+              display:
+                "flex",
+              alignItems:
+                "center",
+              justifyContent:
+                "center",
+            }}
+          >
+            <img
+              src={
+                selectedProjectImage
+              }
+              alt={
+                isArabic
+                  ? cv.project.imageAltAr
+                  : cv.project.imageAlt
+              }
+              style={{
+                display:
+                  "block",
+                maxWidth:
+                  "100%",
+                maxHeight:
+                  "100%",
+                width:
+                  "auto",
+                height:
+                  "auto",
+                objectFit:
+                  "contain",
+                objectPosition:
+                  "center",
+              }}
             />
           </div>
         </div>
