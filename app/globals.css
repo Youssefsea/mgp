@@ -4489,3 +4489,75 @@ section[id] {
   display: block;
   overflow: visible;
 }
+/* =====================================================
+   LINKEDIN TESTIMONIALS
+   ===================================================== */
+
+.testimonial-source {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+
+  margin-top: 22px;
+  padding-top: 14px;
+
+  border-top: 1px solid var(--line);
+}
+
+.testimonial-source-label {
+  font-size: 10px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+
+.testimonial-post-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+
+  color: var(--text);
+  text-decoration: none;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  opacity: 0.78;
+
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+}
+
+.testimonial-post-link:hover {
+  opacity: 1;
+  transform: translateX(2px);
+}
+
+.testimonial-post-link svg {
+  width: 14px;
+  height: 14px;
+}
+
+.testimonial-author {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  margin-top: 20px;
+}
+
+.testimonial-author strong {
+  font-size: 14px;
+}
+
+.testimonial-author span {
+  font-size: 11px;
+  line-height: 1.5;
+  opacity: 0.55;
+}
+
+.testimonial p {
+  line-height: 1.75;
+}

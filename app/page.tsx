@@ -7,12 +7,15 @@ const cv = {
   name: "Mohamed Gamal",
   phone: "+20 1553194093",
   email: "mohamed987gamal2005@gmail.com",
-  linkedin: "https://linkedin.com/in/mohamed-gamal-devops",
+  linkedin:
+    "https://linkedin.com/in/mohamed-gamal-devops",
 
-  github: "https://github.com/mohamedgamal-35",
+  github:
+    "https://github.com/mohamedgamal-35",
 
   title: "Cloud & DevOps Engineer",
-  secondaryTitle: "Cloud Infrastructure / DevOps Intern",
+  secondaryTitle:
+    "Cloud Infrastructure / DevOps Intern",
 
   objective:
     "Computer Science student specializing in Information Technology with hands-on AWS cloud architecture experience and ongoing DevOps training through DEPI. Focused on cloud infrastructure, Linux, networking, Infrastructure as Code, CI/CD, automation, and deployment workflows.",
@@ -30,8 +33,10 @@ const cv = {
     school: "Menoufia University",
     degree: "Bachelor of Computer Science",
     specialization: "Information Technology",
-    period: "Sep. 2023 – Expected July 2027",
-    graduation: "Expected Graduation: July 2027",
+    period:
+      "Sep. 2023 – Expected July 2027",
+    graduation:
+      "Expected Graduation: July 2027",
     summary:
       "Academic background in Computer Science with an Information Technology specialization, alongside continuous practical development in Cloud and DevOps.",
   },
@@ -39,9 +44,12 @@ const cv = {
   educationAr: {
     school: "جامعة المنوفية",
     degree: "بكالوريوس علوم الحاسب",
-    specialization: "تكنولوجيا المعلومات",
-    period: "سبتمبر 2023 – متوقع التخرج يوليو 2027",
-    graduation: "متوقع التخرج: يوليو 2027",
+    specialization:
+      "تكنولوجيا المعلومات",
+    period:
+      "سبتمبر 2023 – متوقع التخرج يوليو 2027",
+    graduation:
+      "متوقع التخرج: يوليو 2027",
     summary:
       "دراسة أكاديمية في علوم الحاسب مع تخصص تكنولوجيا المعلومات، بالتوازي مع تطوير مهارات Cloud وDevOps بشكل عملي.",
   },
@@ -61,6 +69,7 @@ const cv = {
       descriptionAr:
         "خبرة عملية في 11 خدمة من AWS تم استخدامها ضمن تدريبات Cloud Architecture والـInfrastructure.",
     },
+
     {
       number: "02",
       title: "Training Tracks",
@@ -69,15 +78,17 @@ const cv = {
         "Cloud computing training through NTI and ongoing DevOps development through DEPI.",
       descriptionAr:
         "تدريب عملي في Cloud Computing من خلال NTI، مع تطوير مستمر لمهارات DevOps من خلال DEPI.",
-    }
+    },
   ],
 
   experience: [
     {
       role: "Cloud Computing Trainee (AWS)",
-      roleAr: "متدرب Cloud Computing (AWS)",
+      roleAr:
+        "متدرب Cloud Computing (AWS)",
 
-      company: "National Telecommunication Institute (NTI)",
+      company:
+        "National Telecommunication Institute (NTI)",
 
       logo:
         "https://commons.wikimedia.org/wiki/Special:FilePath/NTI%20Logo%20Tagline%20RGB.png",
@@ -127,9 +138,11 @@ const cv = {
 
     {
       role: "DevOps Track Trainee",
-      roleAr: "متدرب في مسار DevOps",
+      roleAr:
+        "متدرب في مسار DevOps",
 
-      company: "Digital Egypt Pioneers Initiative (DEPI)",
+      company:
+        "Digital Egypt Pioneers Initiative (DEPI)",
 
       logo:
         "https://tse3.mm.bing.net/th/id/OIP.Hp_gIm0AmgMhb2Jx1C4f3QAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
@@ -171,7 +184,8 @@ const cv = {
   ],
 
   project: {
-    name: "AWS Scalable Cloud Architecture",
+    name:
+      "AWS Scalable Cloud Architecture",
 
     description:
       "Designed and deployed a scalable web application infrastructure on AWS using EC2, S3, and VPC, with secure Linux servers and controlled network access.",
@@ -257,7 +271,8 @@ const cv = {
 
     {
       title: "Networking & Security",
-      titleAr: "Networking & Security",
+      titleAr:
+        "Networking & Security",
       description:
         "Configuring VPCs, subnets, route tables, security groups, and controlled cloud network access.",
       descriptionAr:
@@ -266,45 +281,167 @@ const cv = {
     },
   ],
 
+  /*
+   * REAL LINKEDIN COMMENTS
+   *
+   * These are tied to the LinkedIn post supplied in the request.
+   * Add more entries here later whenever you get real comments.
+   */
   testimonials: [
     {
-      name: "Youssef Yasser",
-      role: "Colleague",
-      roleAr: "زميل",
+      name: "Krishnakumar Kesavan",
+      role:
+        "Program Manager | AWS/GCP Cloud Architect",
+      roleAr:
+        "Program Manager | AWS/GCP Cloud Architect",
+
       quote:
-        "He is committed, respectful, and easy to work with.",
+        "Is a high score the best indicator of true understanding in complex areas like cloud computing?",
+
       quoteAr:
-        "هو شخص ملتزم ومحترم، والتعامل معه في الشغل مريح جدًا.",
+        "هل الدرجة العالية هي أفضل مؤشر على الفهم الحقيقي في مجالات معقدة مثل Cloud Computing؟",
+
+      postUrl:
+        "https://lnkd.in/p/dU7wAPXJ",
+
+      source: "LinkedIn",
+      sourceAr: "LinkedIn",
     },
 
     {
-      name: "Abdelrahman Amr",
-      role: "Colleague",
-      roleAr: "زميل",
+      name: "SHAHAB AHMAD",
+      role:
+        "Software Engineering & Technical Architect",
+      roleAr:
+        "Software Engineering & Technical Architect",
+
       quote:
-        "He handled the work professionally and always followed up.",
+        "The 90 hours of technical training seem thorough and beneficial.",
+
       quoteAr:
-        "تعامل مع الشغل باحتراف وكان دائمًا حريص على المتابعة.",
+        "يبدو أن الـ90 ساعة من التدريب التقني كانت شاملة ومفيدة.",
+
+      postUrl:
+        "https://lnkd.in/p/dU7wAPXJ",
+
+      source: "LinkedIn",
+      sourceAr: "LinkedIn",
+    },
+
+    {
+      name: "Youssef Yasser",
+      role: "Fullstack Developer",
+      roleAr: "Fullstack Developer",
+
+      quote:
+        "Congratulations 🎊",
+
+      quoteAr:
+        "مبروك 🎊",
+
+      postUrl:
+        "https://lnkd.in/p/dU7wAPXJ",
+
+      source: "LinkedIn",
+      sourceAr: "LinkedIn",
     },
 
     {
       name: "Ahmed Hossam",
-      role: "Colleague",
-      roleAr: "زميل",
+      role:
+        "Software Engineer | Junior Backend .NET Developer",
+      roleAr:
+        "Software Engineer | Junior Backend .NET Developer",
+
       quote:
-        "He learns quickly and takes responsibility for his work.",
+        "Congratulations 🎊",
+
       quoteAr:
-        "بيتعلم بسرعة وبيتحمل مسؤولية الشغل اللي بيعمله.",
+        "مبروك 🎊",
+
+      postUrl:
+        "https://lnkd.in/p/dU7wAPXJ",
+
+      source: "LinkedIn",
+      sourceAr: "LinkedIn",
     },
 
     {
-      name: "Hossam Saber",
-      role: "Colleague",
-      roleAr: "زميل",
+      name: "Mohamed Mahmoud",
+      role: "IT Student",
+      roleAr: "طالب IT",
+
       quote:
-        "He is reliable, organized, and serious about his work.",
+        "Congratulations bro 🎊",
+
       quoteAr:
-        "هو شخص يعتمد عليه، منظم، وجاد في شغله.",
+        "مبروك يا برو 🎊",
+
+      postUrl:
+        "https://lnkd.in/p/dU7wAPXJ",
+
+      source: "LinkedIn",
+      sourceAr: "LinkedIn",
+    },
+
+    {
+      name: "Omar Saleh",
+      role:
+        "Data Analyst & ML | GCI Scholar",
+      roleAr:
+        "Data Analyst & ML | GCI Scholar",
+
+      quote:
+        "Congrats 👏",
+
+      quoteAr:
+        "مبروك 👏",
+
+      postUrl:
+        "https://lnkd.in/p/dU7wAPXJ",
+
+      source: "LinkedIn",
+      sourceAr: "LinkedIn",
+    },
+
+    {
+      name: "Hana Abdo",
+      role:
+        "Aspiring Data Analyst",
+      roleAr:
+        "Aspiring Data Analyst",
+
+      quote:
+        "Wishing you the best♥️",
+
+      quoteAr:
+        "أتمنى لك كل التوفيق ❤️",
+
+      postUrl:
+        "https://lnkd.in/p/dU7wAPXJ",
+
+      source: "LinkedIn",
+      sourceAr: "LinkedIn",
+    },
+
+    {
+      name: "Ahmed Maghrabi",
+      role:
+        "Data Analyst | Microsoft Data Engineering Trainee",
+      roleAr:
+        "Data Analyst | Microsoft Data Engineering Trainee",
+
+      quote:
+        "Congratulations 👏",
+
+      quoteAr:
+        "مبروك 👏",
+
+      postUrl:
+        "https://lnkd.in/p/dU7wAPXJ",
+
+      source: "LinkedIn",
+      sourceAr: "LinkedIn",
     },
   ],
 
@@ -313,22 +450,32 @@ const cv = {
       name: "Red Hat System Administration",
       provider: "Red Hat",
       date: "",
-      topics: ["Linux", "System Administration", "Red Hat"],
+      topics: [
+        "Linux",
+        "System Administration",
+        "Red Hat",
+      ],
       image:
         "/certificates/Screenshot 2026-09-14 203632.png",
     },
 
     {
-      name: "Linux Red Hat Administration",
+      name:
+        "Linux Red Hat Administration",
       provider: "Red Hat",
       date: "",
-      topics: ["Linux", "Red Hat", "System Administration"],
+      topics: [
+        "Linux",
+        "Red Hat",
+        "System Administration",
+      ],
       image:
         "/certificates/Screenshot 2026-09-14 203713.png",
     },
 
     {
-      name: "Cloud Services Management and Operation",
+      name:
+        "Cloud Services Management and Operation",
       provider: "",
       date: "",
       topics: [
@@ -369,7 +516,8 @@ const cv = {
     },
 
     {
-      name: "General Knowledge of Cloud Computing",
+      name:
+        "General Knowledge of Cloud Computing",
       provider: "Huawei ICT Academy",
       date: "2026-08-28",
       topics: [
@@ -382,7 +530,8 @@ const cv = {
     },
 
     {
-      name: "HCIA-Cloud Service V3.5 Course",
+      name:
+        "HCIA-Cloud Service V3.5 Course",
       provider: "Huawei ICT Academy",
       date: "2026-08-27",
       topics: [
@@ -510,7 +659,13 @@ const i = {
 
   email: (
     <Icon>
-      <rect x="3" y="5" width="18" height="14" rx="2.5" />
+      <rect
+        x="3"
+        y="5"
+        width="18"
+        height="14"
+        rx="2.5"
+      />
       <path d="m4.5 7 7.5 6 7.5-6" />
     </Icon>
   ),
@@ -573,7 +728,6 @@ const i = {
       <circle cx="5" cy="5" r="2.2" />
       <circle cx="19" cy="5" r="2.2" />
       <circle cx="12" cy="19" r="2.2" />
-
       <path d="M6.8 6.2 10.2 16.8" />
       <path d="M17.2 6.2 13.8 16.8" />
       <path d="M7.3 5h9.4" />
@@ -592,7 +746,6 @@ const i = {
       <circle cx="6" cy="6" r="2.1" />
       <circle cx="18" cy="12" r="2.1" />
       <circle cx="6" cy="18" r="2.1" />
-
       <path d="m7.8 7.2 8.4 3.6" />
       <path d="m7.8 16.8 8.4-3.6" />
     </Icon>
@@ -600,7 +753,12 @@ const i = {
 
   database: (
     <Icon>
-      <ellipse cx="12" cy="5" rx="7" ry="2.8" />
+      <ellipse
+        cx="12"
+        cy="5"
+        rx="7"
+        ry="2.8"
+      />
       <path d="M5 5v7c0 1.7 3.1 3 7 3s7-1.3 7-3V5" />
       <path d="M5 12v7c0 1.7 3.1 3 7 3s7-1.3 7-3v-7" />
     </Icon>
@@ -666,7 +824,7 @@ const i = {
     <Icon>
       <path d="M9 18h6" />
       <path d="M10 22h4" />
-      <path d="M8.6 14.6A6 6 0 1 1 15.4 15c-.8.7-1.4 1.6-1.4 2.6h-4c0-1-.6-1.9-1.4-3Z" />
+      <path d="M8.6 14.6A6 6 0 1 1 15.4 15c-.8.7-1.4 1.6-1.4 2.6h-4c0-.8-.6-1.9-1.4-3Z" />
       <path d="M12 2v1" />
       <path d="m4.9 4.9.7.7" />
       <path d="M2 12h1" />
@@ -677,47 +835,79 @@ const i = {
 };
 
 export default function Page() {
-  const [active, setActive] = useState("home");
-  const [menu, setMenu] = useState(false);
+  const [active, setActive] =
+    useState("home");
+
+  const [menu, setMenu] =
+    useState(false);
+
   const [profileError, setProfileError] =
     useState(false);
-  const [copied, setCopied] = useState(false);
-  const [lightMode, setLightMode] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
+
+  const [copied, setCopied] =
+    useState(false);
+
+  const [lightMode, setLightMode] =
+    useState(false);
+
+  const [scrolled, setScrolled] =
+    useState(false);
+
   const [language, setLanguage] =
     useState<"en" | "ar">("en");
 
-  /* =====================================================
-     CERTIFICATE PREVIEW
-     ===================================================== */
-
-  const [selectedCertificate, setSelectedCertificate] =
-    useState<string | null>(null);
+  const [
+    selectedCertificate,
+    setSelectedCertificate,
+  ] = useState<string | null>(null);
 
   const isArabic = language === "ar";
 
   const t = {
     home: isArabic ? "الرئيسية" : "Home",
+
     about: isArabic ? "نبذة عني" : "About",
-    education: isArabic ? "التعليم" : "Education",
+
+    education: isArabic
+      ? "التعليم"
+      : "Education",
+
     certification: isArabic
       ? "الشهادات"
       : "Certifications",
-    skills: isArabic ? "المهارات" : "Skills",
-    experience: isArabic ? "الخبرة" : "Experience",
-    project: isArabic ? "المشاريع" : "Projects",
-    services: isArabic ? "الخدمات" : "Services",
+
+    skills: isArabic
+      ? "المهارات"
+      : "Skills",
+
+    experience: isArabic
+      ? "الخبرة"
+      : "Experience",
+
+    project: isArabic
+      ? "المشاريع"
+      : "Projects",
+
+    services: isArabic
+      ? "الخدمات"
+      : "Services",
+
     achievements: isArabic
       ? "الإنجازات"
       : "Achievements",
+
     testimonials: isArabic
       ? "الآراء"
       : "Testimonials",
-    contact: isArabic ? "تواصل" : "Contact",
 
-    openToOpportunities: isArabic
-      ? "متاح للفرص"
-      : "Open to opportunities",
+    contact: isArabic
+      ? "تواصل"
+      : "Contact",
+
+    openToOpportunities:
+      isArabic
+        ? "متاح للفرص"
+        : "Open to opportunities",
 
     letsConnect: isArabic
       ? "لنتواصل"
@@ -726,9 +916,10 @@ export default function Page() {
     cloudInfrastructureDevops:
       "Cloud Infrastructure / DevOps",
 
-    exploreArchitecture: isArabic
-      ? "استكشف الـArchitecture"
-      : "Explore architecture",
+    exploreArchitecture:
+      isArabic
+        ? "استكشف الـArchitecture"
+        : "Explore architecture",
 
     contactMe: isArabic
       ? "تواصل معي"
@@ -738,104 +929,114 @@ export default function Page() {
       ? "تحميل CV"
       : "Download CV",
 
-    viewLinkedin: isArabic
-      ? "LinkedIn"
-      : "LinkedIn",
+    viewLinkedin: "LinkedIn",
 
-    viewGithub: isArabic
-      ? "GitHub"
-      : "GitHub",
+    viewGithub: "GitHub",
 
     cloudFirst: isArabic
       ? "Cloud أولًا."
       : "Cloud first.",
 
-    systemsMinded: isArabic
-      ? "بعقلية هندسية للأنظمة."
-      : "Systems minded.",
+    systemsMinded:
+      isArabic
+        ? "بعقلية هندسية للأنظمة."
+        : "Systems minded.",
 
-    aboutNote: isArabic
-      ? "ملف Junior يركز على AWS Cloud Infrastructure وLinux والشبكات وInfrastructure as Code وCI/CD والأتمتة."
-      : "A junior engineering profile centered around AWS cloud architecture, Linux, networking, automation, Infrastructure as Code, and continuous delivery.",
+    engineeringProfile:
+      isArabic
+        ? "الملف الهندسي"
+        : "Engineering profile",
 
-    engineeringProfile: isArabic
-      ? "الملف الهندسي"
-      : "Engineering profile",
-
-    profileHeading: isArabic
-      ? "أحب أفهم الأنظمة من الداخل وأبني Infrastructure يعتمد عليها."
-      : "I like understanding systems from the inside and building infrastructure people can rely on.",
+    profileHeading:
+      isArabic
+        ? "أحب أفهم الأنظمة من الداخل وأبني Infrastructure يعتمد عليها."
+        : "I like understanding systems from the inside and building infrastructure people can rely on.",
 
     aboutMeLabel: isArabic
       ? "عن نفسي"
       : "A little about me",
 
-    awsServicesApplied: isArabic
-      ? "خدمات AWS مطبقة"
-      : "AWS services applied",
+    awsServicesApplied:
+      isArabic
+        ? "خدمات AWS مطبقة"
+        : "AWS services applied",
 
-    trainingTracks: isArabic
-      ? "مسارات تدريبية"
-      : "Training tracks",
+    trainingTracks:
+      isArabic
+        ? "مسارات تدريبية"
+        : "Training tracks",
 
-    expectedGraduation: isArabic
-      ? "التخرج المتوقع"
-      : "Expected graduation",
+    expectedGraduation:
+      isArabic
+        ? "التخرج المتوقع"
+        : "Expected graduation",
 
-    educationTitle: isArabic
-      ? "بكالوريوس علوم الحاسب."
-      : "Bachelor of Computer Science.",
+    educationTitle:
+      isArabic
+        ? "بكالوريوس علوم الحاسب."
+        : "Bachelor of Computer Science.",
 
-    educationNote: isArabic
-      ? "الخلفية الأكاديمية والتخصص الحالي مع توضيح موعد التخرج."
-      : "Academic background, specialization, and current graduation timeline.",
+    educationNote:
+      isArabic
+        ? "الخلفية الأكاديمية والتخصص الحالي مع توضيح موعد التخرج."
+        : "Academic background, specialization, and current graduation timeline.",
 
     languages: isArabic
       ? "اللغات"
       : "Languages",
 
-    academicFocus: isArabic
-      ? "التخصص الأكاديمي"
-      : "Academic specialization",
+    academicFocus:
+      isArabic
+        ? "التخصص الأكاديمي"
+        : "Academic specialization",
 
-    certificationTitle: isArabic
-      ? "تدريب وشهادات Cloud."
-      : "Cloud certifications & training.",
+    certificationTitle:
+      isArabic
+        ? "تدريب وشهادات Cloud."
+        : "Cloud certifications & training.",
 
-    certificationNote: isArabic
-      ? "الشهادات والتدريبات المرتبطة بالـCloud والـInfrastructure، مع توضيح أهم الـSkills المرتبطة بكل واحدة."
-      : "Formal cloud and infrastructure training, with the main skills and topics associated with each credential.",
+    certificationNote:
+      isArabic
+        ? "الشهادات والتدريبات المرتبطة بالـCloud والـInfrastructure، مع توضيح أهم الـSkills المرتبطة بكل واحدة."
+        : "Formal cloud and infrastructure training, with the main skills and topics associated with each credential.",
 
-    skillsTitle: isArabic
-      ? "التقنيات خلف الـInfrastructure."
-      : "The tools behind the infrastructure.",
+    skillsTitle:
+      isArabic
+        ? "التقنيات خلف الـInfrastructure."
+        : "The tools behind the infrastructure.",
 
-    skillsNote: isArabic
-      ? "المهارات منظمة حسب المجال بحيث يكون ارتباطها بالـCloud والـDevOps واضح."
-      : "Skills are grouped by domain so their relationship to Cloud and DevOps work is clear.",
+    skillsNote:
+      isArabic
+        ? "المهارات منظمة حسب المجال بحيث يكون ارتباطها بالـCloud والـDevOps واضح."
+        : "Skills are grouped by domain so their relationship to Cloud and DevOps work is clear.",
 
-    capabilityMap: isArabic
-      ? "خريطة المهارات"
-      : "Capability map",
+    capabilityMap:
+      isArabic
+        ? "خريطة المهارات"
+        : "Capability map",
 
-    capabilityNote: isArabic
-      ? "مرتبة حسب المجالات الأساسية في مسار Cloud وDevOps."
-      : "Organized around the core areas of the Cloud / DevOps path.",
+    capabilityNote:
+      isArabic
+        ? "مرتبة حسب المجالات الأساسية في مسار Cloud وDevOps."
+        : "Organized around the core areas of the Cloud / DevOps path.",
 
-    primaryFocus: isArabic
-      ? "التركيز الأساسي"
-      : "PRIMARY FOCUS",
+    primaryFocus:
+      isArabic
+        ? "التركيز الأساسي"
+        : "PRIMARY FOCUS",
 
     awsCloudInfrastructure:
       "AWS Cloud Infrastructure",
 
-    experienceTitle: isArabic
-      ? "خبرة مبنية على التطبيق."
-      : "Experience built through practice.",
+    experienceTitle:
+      isArabic
+        ? "خبرة مبنية على التطبيق."
+        : "Experience built through practice.",
 
-    experienceNote: isArabic
-      ? "كل تجربة موضحة من التحدي إلى التنفيذ والنتيجة، مع الحفاظ على التفاصيل الموجودة فعليًا في الـCV."
-      : "Each experience is presented through challenge, action, and result while staying within the information available in the CV.",
+    experienceNote:
+      isArabic
+        ? "كل تجربة موضحة من التحدي إلى التنفيذ والنتيجة، مع الحفاظ على التفاصيل الموجودة فعليًا في الـCV."
+        : "Each experience is presented through challenge, action, and result while staying within the information available in the CV.",
 
     challenge: isArabic
       ? "التحدي"
@@ -857,21 +1058,25 @@ export default function Page() {
       ? "المنصب"
       : "Position",
 
-    responsibilities: isArabic
-      ? "المسؤوليات"
-      : "Responsibilities",
+    responsibilities:
+      isArabic
+        ? "المسؤوليات"
+        : "Responsibilities",
 
-    featuredProject: isArabic
-      ? "المشروع المميز"
-      : "Featured project",
+    featuredProject:
+      isArabic
+        ? "المشروع المميز"
+        : "Featured project",
 
-    architectureStory: isArabic
-      ? "Architecture واضحة."
-      : "A clear architecture story.",
+    architectureStory:
+      isArabic
+        ? "Architecture واضحة."
+        : "A clear architecture story.",
 
-    projectNote: isArabic
-      ? "مشروع معروض كقصة Infrastructure واضحة بدلًا من Card تقليدي مليان تفاصيل."
-      : "A focused infrastructure case study instead of a generic portfolio card.",
+    projectNote:
+      isArabic
+        ? "مشروع معروض كقصة Infrastructure واضحة بدلًا من Card تقليدي."
+        : "A focused infrastructure case study instead of a generic portfolio card.",
 
     scalableArchitecture:
       "AWS / Scalable Architecture",
@@ -880,32 +1085,38 @@ export default function Page() {
       ? "Cloud Topology"
       : "Cloud topology",
 
-    actualProjectElements: isArabic
-      ? "العناصر الفعلية للمشروع"
-      : "Actual project elements from the CV",
+    actualProjectElements:
+      isArabic
+        ? "العناصر الفعلية للمشروع"
+        : "Actual project elements from the CV",
 
-    cloudEnvironment: isArabic
-      ? "AWS Environment"
-      : "AWS environment",
+    cloudEnvironment:
+      isArabic
+        ? "AWS Environment"
+        : "AWS environment",
 
-    cloudBoundary: isArabic
-      ? "حدود الـCloud Infrastructure"
-      : "Cloud infrastructure boundary",
+    cloudBoundary:
+      isArabic
+        ? "حدود الـCloud Infrastructure"
+        : "Cloud infrastructure boundary",
 
-    applicationCompute: isArabic
-      ? "Application Compute"
-      : "Application compute",
+    applicationCompute:
+      isArabic
+        ? "Application Compute"
+        : "Application compute",
 
     subnetsRouteTables:
       "Subnets + Route Tables",
 
-    controlledAccess: isArabic
-      ? "Controlled Access"
-      : "Controlled access",
+    controlledAccess:
+      isArabic
+        ? "Controlled Access"
+        : "Controlled access",
 
-    cloudStorage: isArabic
-      ? "Cloud Storage Layer"
-      : "Cloud storage layer",
+    cloudStorage:
+      isArabic
+        ? "Cloud Storage Layer"
+        : "Cloud storage layer",
 
     compute: isArabic
       ? "حوسبة"
@@ -919,83 +1130,109 @@ export default function Page() {
       ? "تخزين"
       : "STORAGE",
 
-    servicesTitle: isArabic
-      ? "مجالات الـInfrastructure التي أعمل عليها."
-      : "Infrastructure I work with.",
+    servicesTitle:
+      isArabic
+        ? "مجالات الـInfrastructure التي أعمل عليها."
+        : "Infrastructure I work with.",
 
-    servicesNote: isArabic
-      ? "مجالات عملية في AWS وDevOps وLinux والشبكات والأتمتة وعمليات الـDeployment."
-      : "Practical areas across AWS, DevOps, Linux, networking, automation, and deployment.",
+    servicesNote:
+      isArabic
+        ? "مجالات عملية في AWS وDevOps وLinux والشبكات والأتمتة وعمليات الـDeployment."
+        : "Practical areas across AWS, DevOps, Linux, networking, automation, and deployment.",
 
-    achievementsTitle: isArabic
-      ? "محطات واضحة في المسار."
-      : "Clear milestones in the path.",
+    achievementsTitle:
+      isArabic
+        ? "محطات واضحة في المسار."
+        : "Clear milestones in the path.",
 
-    achievementsNote: isArabic
-      ? "مؤشرات مبنية على الخبرة التدريبية والأكاديمية الحالية، بدون إضافة إنجازات غير موجودة."
-      : "Current academic and training milestones without inventing additional achievements.",
+    achievementsNote:
+      isArabic
+        ? "مؤشرات مبنية على الخبرة التدريبية والأكاديمية الحالية، بدون إضافة إنجازات غير موجودة."
+        : "Current academic and training milestones without inventing additional achievements.",
 
-    testimonialsTitle: isArabic
-      ? "ماذا يقول الزملاء."
-      : "What people say.",
+    testimonialsTitle:
+      isArabic
+        ? "ماذا يقول الناس."
+        : "What people say.",
 
-    testimonialsNote: isArabic
-      ? "آراء قصيرة ومباشرة."
-      : "Short and direct feedback.",
+    testimonialsNote:
+      isArabic
+        ? "تعليقات فعلية من LinkedIn مرتبطة بالمنشور والمصدر."
+        : "Real LinkedIn comments linked back to their source post.",
 
-    contactTitle: isArabic
-      ? "جاهز للخطوة التالية."
-      : "Ready for the next step.",
+    viewPost:
+      isArabic
+        ? "عرض المنشور"
+        : "View post",
 
-    contactNote: isArabic
-      ? "متاح لفرص Cloud وDevOps Internship المرتبطة بالـAWS والـInfrastructure والـLinux والـNetworking والـAutomation."
-      : "Open to Cloud and DevOps internship opportunities around AWS, infrastructure, Linux, networking, and automation.",
+    linkedinComment:
+      isArabic
+        ? "تعليق على LinkedIn"
+        : "LinkedIn comment",
 
-    openToOpportunitiesAgain: isArabic
-      ? "متاح للفرص"
-      : "Open to opportunities",
+    contactTitle:
+      isArabic
+        ? "جاهز للخطوة التالية."
+        : "Ready for the next step.",
 
-    letsBuild: isArabic
-      ? "لنبنِ Infrastructure موثوقة."
-      : "Let's build reliable infrastructure.",
+    contactNote:
+      isArabic
+        ? "متاح لفرص Cloud وDevOps Internship المرتبطة بالـAWS والـInfrastructure والـLinux والـNetworking والـAutomation."
+        : "Open to Cloud and DevOps internship opportunities around AWS, infrastructure, Linux, networking, and automation.",
 
-    contactDescription: isArabic
-      ? "للتدريب أو النقاشات التقنية أو الفرص المتعلقة بالـCloud Infrastructure وDevOps."
-      : "For internships, technical conversations, or opportunities around cloud infrastructure and DevOps.",
+    openToOpportunitiesAgain:
+      isArabic
+        ? "متاح للفرص"
+        : "Open to opportunities",
 
-    sendEmail: isArabic
-      ? "إرسال Email"
-      : "Send email",
+    letsBuild:
+      isArabic
+        ? "لنبنِ Infrastructure موثوقة."
+        : "Let's build reliable infrastructure.",
 
-    copyEmail: isArabic
-      ? "نسخ Email"
-      : "Copy email",
+    contactDescription:
+      isArabic
+        ? "للتدريب أو النقاشات التقنية أو الفرص المتعلقة بالـCloud Infrastructure وDevOps."
+        : "For internships, technical conversations, or opportunities around cloud infrastructure and DevOps.",
 
-    copied: isArabic
-      ? "تم النسخ"
-      : "Copied",
+    sendEmail:
+      isArabic
+        ? "إرسال Email"
+        : "Send email",
 
-    targetRole: isArabic
-      ? "الدور المستهدف"
-      : "Target role",
+    copyEmail:
+      isArabic
+        ? "نسخ Email"
+        : "Copy email",
 
-    coreFocus: isArabic
-      ? "التركيز الأساسي"
-      : "Core focus",
+    copied:
+      isArabic
+        ? "تم النسخ"
+        : "Copied",
 
-    langSwitch: isArabic ? "EN" : "AR",
+    targetRole:
+      isArabic
+        ? "الدور المستهدف"
+        : "Target role",
 
-    skillsTopics: isArabic
-      ? "Skills / Topics"
-      : "Skills / Topics",
+    coreFocus:
+      isArabic
+        ? "التركيز الأساسي"
+        : "Core focus",
 
-    provider: isArabic
-      ? "Provider"
-      : "Provider",
+    langSwitch:
+      isArabic ? "EN" : "AR",
 
-    training: isArabic
-      ? "Training"
-      : "Training",
+    skillsTopics:
+      isArabic
+        ? "Skills / Topics"
+        : "Skills / Topics",
+
+    provider:
+      isArabic ? "Provider" : "Provider",
+
+    training:
+      isArabic ? "Training" : "Training",
   };
 
   const nav = useMemo(
@@ -1017,14 +1254,20 @@ export default function Page() {
 
   useEffect(() => {
     const onScroll = () => {
-      setScrolled(window.scrollY > 20);
+      setScrolled(
+        window.scrollY > 20
+      );
     };
 
     onScroll();
 
-    window.addEventListener("scroll", onScroll, {
-      passive: true,
-    });
+    window.addEventListener(
+      "scroll",
+      onScroll,
+      {
+        passive: true,
+      }
+    );
 
     return () => {
       window.removeEventListener(
@@ -1035,7 +1278,8 @@ export default function Page() {
   }, []);
 
   useEffect(() => {
-    const sectionIds = nav.map(([id]) => id);
+    const sectionIds =
+      nav.map(([id]) => id);
 
     const sections = sectionIds
       .map((id) =>
@@ -1059,7 +1303,9 @@ export default function Page() {
                 a.intersectionRatio
             );
 
-          if (visible[0]?.target?.id) {
+          if (
+            visible[0]?.target?.id
+          ) {
             setActive(
               visible[0].target.id
             );
@@ -1081,7 +1327,8 @@ export default function Page() {
       observer.observe(section)
     );
 
-    return () => observer.disconnect();
+    return () =>
+      observer.disconnect();
   }, [nav]);
 
   useEffect(() => {
@@ -1092,7 +1339,9 @@ export default function Page() {
         setMenu(false);
 
         if (selectedCertificate) {
-          setSelectedCertificate(null);
+          setSelectedCertificate(
+            null
+          );
         }
       }
     };
@@ -1178,7 +1427,9 @@ export default function Page() {
         <div className="topbar-inner">
           <button
             className="brand"
-            onClick={() => go("home")}
+            onClick={() =>
+              go("home")
+            }
             aria-label="Go to home"
           >
             <span className="brand-mark">
@@ -1186,8 +1437,13 @@ export default function Page() {
             </span>
 
             <span className="brand-copy">
-              <strong>{cv.name}</strong>
-              <span>{cv.title}</span>
+              <strong>
+                {cv.name}
+              </strong>
+
+              <span>
+                {cv.title}
+              </span>
             </span>
           </button>
 
@@ -1196,26 +1452,32 @@ export default function Page() {
               className="nav-links"
               aria-label="Main navigation"
             >
-              {nav.map(([id, label]) => (
-                <button
-                  key={id}
-                  className={
-                    active === id
-                      ? "active"
-                      : ""
-                  }
-                  onClick={() => go(id)}
-                >
-                  {label}
-                </button>
-              ))}
+              {nav.map(
+                ([id, label]) => (
+                  <button
+                    key={id}
+                    className={
+                      active === id
+                        ? "active"
+                        : ""
+                    }
+                    onClick={() =>
+                      go(id)
+                    }
+                  >
+                    {label}
+                  </button>
+                )
+              )}
             </nav>
           </div>
 
           <div className="nav-tools">
             <span className="availability">
               <span className="availability-dot" />
-              {t.openToOpportunities}
+              {
+                t.openToOpportunities
+              }
             </span>
 
             <button
@@ -1237,7 +1499,8 @@ export default function Page() {
               className="theme-button"
               onClick={() =>
                 setLightMode(
-                  (value) => !value
+                  (value) =>
+                    !value
                 )
               }
               aria-label={
@@ -1267,7 +1530,8 @@ export default function Page() {
               className="menu-btn"
               onClick={() =>
                 setMenu(
-                  (value) => !value
+                  (value) =>
+                    !value
                 )
               }
               aria-label="Toggle navigation"
@@ -1296,19 +1560,23 @@ export default function Page() {
           }}
         >
           <div className="mobile-menu-inner">
-            {nav.map(([id, label]) => (
-              <button
-                key={id}
-                className={
-                  active === id
-                    ? "active"
-                    : ""
-                }
-                onClick={() => go(id)}
-              >
-                {label}
-              </button>
-            ))}
+            {nav.map(
+              ([id, label]) => (
+                <button
+                  key={id}
+                  className={
+                    active === id
+                      ? "active"
+                      : ""
+                  }
+                  onClick={() =>
+                    go(id)
+                  }
+                >
+                  {label}
+                </button>
+              )
+            )}
           </div>
         </div>
       )}
@@ -1324,7 +1592,9 @@ export default function Page() {
         <div className="hero-content">
           <div className="eyebrow">
             <span className="eyebrow-dot" />
-            {t.cloudInfrastructureDevops}
+            {
+              t.cloudInfrastructureDevops
+            }
           </div>
 
           <h1>
@@ -1346,7 +1616,9 @@ export default function Page() {
                 go("project")
               }
             >
-              {t.exploreArchitecture}
+              {
+                t.exploreArchitecture
+              }
               {i.arrow}
             </button>
 
@@ -1369,7 +1641,11 @@ export default function Page() {
               dir="ltr"
             >
               {i.linkedin}
-              <span>LinkedIn</span>
+
+              <span>
+                LinkedIn
+              </span>
+
               {i.external}
             </a>
 
@@ -1382,7 +1658,11 @@ export default function Page() {
                 dir="ltr"
               >
                 {i.github}
-                <span>GitHub</span>
+
+                <span>
+                  GitHub
+                </span>
+
                 {i.external}
               </a>
             ) : null}
@@ -1392,8 +1672,11 @@ export default function Page() {
               href={`mailto:${cv.email}`}
               dir="ltr"
             >
-              {i.external}
-              <span>Email</span>
+              {i.email}
+
+              <span>
+                Email
+              </span>
             </a>
           </div>
         </div>
@@ -1415,7 +1698,9 @@ export default function Page() {
                   loading="eager"
                   decoding="async"
                   onError={() =>
-                    setProfileError(true)
+                    setProfileError(
+                      true
+                    )
                   }
                 />
               ) : (
@@ -1448,12 +1733,14 @@ export default function Page() {
             />
 
             <strong>
-              Cloud architecture focus
+              Cloud architecture
+              focus
             </strong>
 
             <p dir="ltr">
-              EC2 · S3 · VPC · RDS · Lambda ·
-              SQS · CloudFormation
+              EC2 · S3 · VPC · RDS ·
+              Lambda · SQS ·
+              CloudFormation
             </p>
           </div>
 
@@ -1475,7 +1762,9 @@ export default function Page() {
                   {i.git}
                 </span>
 
-                <small>Source</small>
+                <small>
+                  Source
+                </small>
               </div>
 
               <div className="pipe">
@@ -1483,7 +1772,9 @@ export default function Page() {
                   {i.bolt}
                 </span>
 
-                <small>CI / CD</small>
+                <small>
+                  CI / CD
+                </small>
               </div>
 
               <div className="pipe">
@@ -1491,7 +1782,9 @@ export default function Page() {
                   {i.cloud}
                 </span>
 
-                <small>Cloud</small>
+                <small>
+                  Cloud
+                </small>
               </div>
 
               <div className="pipe">
@@ -1499,7 +1792,9 @@ export default function Page() {
                   {i.server}
                 </span>
 
-                <small>Deploy</small>
+                <small>
+                  Deploy
+                </small>
               </div>
             </div>
           </div>
@@ -1533,11 +1828,15 @@ export default function Page() {
             <div className="paper-card profile-main">
               <div>
                 <div className="eyebrow">
-                  {t.engineeringProfile}
+                  {
+                    t.engineeringProfile
+                  }
                 </div>
 
                 <h3>
-                  {t.profileHeading}
+                  {
+                    t.profileHeading
+                  }
                 </h3>
 
                 <p>
@@ -1562,23 +1861,38 @@ export default function Page() {
 
               <div className="stats">
                 <div className="stat">
-                  <strong>11</strong>
+                  <strong>
+                    11
+                  </strong>
+
                   <span>
-                    {t.awsServicesApplied}
+                    {
+                      t.awsServicesApplied
+                    }
                   </span>
                 </div>
 
                 <div className="stat">
-                  <strong>02</strong>
+                  <strong>
+                    02
+                  </strong>
+
                   <span>
-                    {t.trainingTracks}
+                    {
+                      t.trainingTracks
+                    }
                   </span>
                 </div>
 
                 <div className="stat">
-                  <strong>2027</strong>
+                  <strong>
+                    2027
+                  </strong>
+
                   <span>
-                    {t.expectedGraduation}
+                    {
+                      t.expectedGraduation
+                    }
                   </span>
                 </div>
               </div>
@@ -1656,8 +1970,6 @@ export default function Page() {
                 {t.educationTitle}
               </h2>
             </div>
-
-          
           </div>
 
           <div className="education-grid">
@@ -1692,7 +2004,9 @@ export default function Page() {
                 </div>
 
                 <div className="education-date">
-                  <small>Graduation</small>
+                  <small>
+                    Graduation
+                  </small>
 
                   <strong dir="ltr">
                     {isArabic
@@ -1715,7 +2029,9 @@ export default function Page() {
                   </strong>
 
                   <span>
-                    {t.academicFocus}
+                    {
+                      t.academicFocus
+                    }
                   </span>
                 </div>
 
@@ -1735,7 +2051,8 @@ export default function Page() {
                   </strong>
 
                   <span>
-                    Practical parallel track
+                    Practical parallel
+                    track
                   </span>
                 </div>
               </div>
@@ -1801,11 +2118,11 @@ export default function Page() {
               </div>
 
               <h2 className="section-title">
-                {t.certificationTitle}
+                {
+                  t.certificationTitle
+                }
               </h2>
             </div>
-
-           
           </div>
 
           <div className="credentials">
@@ -1820,10 +2137,6 @@ export default function Page() {
                     certificate.name
                   }
                 >
-                  {/* ===========================================
-                      CLICKABLE CERTIFICATE IMAGE
-                     =========================================== */}
-
                   <button
                     type="button"
                     className="credential-image-button"
@@ -1956,10 +2269,6 @@ export default function Page() {
                 {t.skillsTitle}
               </h2>
             </div>
-
-            {/* <p className="section-note">
-              {t.skillsNote}
-            </p> */}
           </div>
 
           <div className="stack-layout">
@@ -1978,7 +2287,9 @@ export default function Page() {
                 </small>
 
                 <strong>
-                  {t.awsCloudInfrastructure}
+                  {
+                    t.awsCloudInfrastructure
+                  }
                 </strong>
               </div>
             </aside>
@@ -2013,15 +2324,20 @@ export default function Page() {
                     </div>
 
                     <div className="skill-icon">
-                      {index === 0
+                      {index ===
+                      0
                         ? i.cloud
-                        : index === 1
+                        : index ===
+                            1
                           ? i.server
-                          : index === 2
+                          : index ===
+                              2
                             ? i.bolt
-                            : index === 3
+                            : index ===
+                                3
                               ? i.network
-                              : index === 4
+                              : index ===
+                                  4
                                 ? i.database
                                 : i.layers}
                     </div>
@@ -2073,18 +2389,28 @@ export default function Page() {
               </div>
 
               <h2 className="section-title">
-                {t.experienceTitle}
+                {
+                  t.experienceTitle
+                }
               </h2>
             </div>
-
-           
           </div>
 
           <div className="experience">
             <div className="exp-head">
-              <span>{t.record}</span>
-              <span>{t.position}</span>
-              <span>{t.responsibilities}</span>
+              <span>
+                {t.record}
+              </span>
+
+              <span>
+                {t.position}
+              </span>
+
+              <span>
+                {
+                  t.responsibilities
+                }
+              </span>
             </div>
 
             {cv.experience.map(
@@ -2121,7 +2447,9 @@ export default function Page() {
 
                     <img
                       className="exp-logo"
-                      src={exp.logo}
+                      src={
+                        exp.logo
+                      }
                       alt={`${exp.company} logo`}
                       loading="lazy"
                       decoding="async"
@@ -2219,26 +2547,32 @@ export default function Page() {
           <div className="section-head">
             <div>
               <div className="section-code">
-                06 / {t.featuredProject}
+                06 /{" "}
+                {t.featuredProject}
               </div>
 
               <h2 className="section-title">
                 {isArabic
                   ? "مشروع واحد."
                   : "One project."}
+
                 <br />
-                {t.architectureStory}
+
+                {
+                  t.architectureStory
+                }
               </h2>
             </div>
-
-          
           </div>
 
           <article className="project">
             <div className="project-main">
               <div className="project-label">
                 <span className="eyebrow-dot" />
-                {t.scalableArchitecture}
+
+                {
+                  t.scalableArchitecture
+                }
               </div>
 
               <h3>
@@ -2453,21 +2787,30 @@ export default function Page() {
                     <strong dir="ltr">
                       EC2
                     </strong>
-                    <span>{t.compute}</span>
+
+                    <span>
+                      {t.compute}
+                    </span>
                   </div>
 
                   <div className="topology-stat">
                     <strong dir="ltr">
                       VPC
                     </strong>
-                    <span>{t.network}</span>
+
+                    <span>
+                      {t.network}
+                    </span>
                   </div>
 
                   <div className="topology-stat">
                     <strong dir="ltr">
                       S3
                     </strong>
-                    <span>{t.storage}</span>
+
+                    <span>
+                      {t.storage}
+                    </span>
                   </div>
                 </div>
               </div>
@@ -2495,8 +2838,6 @@ export default function Page() {
                 {t.servicesTitle}
               </h2>
             </div>
-
-            
           </div>
 
           <div className="services-grid">
@@ -2564,15 +2905,16 @@ export default function Page() {
           <div className="section-head">
             <div>
               <div className="section-code">
-                08 / {t.achievements}
+                08 /{" "}
+                {t.achievements}
               </div>
 
               <h2 className="section-title">
-                {t.achievementsTitle}
+                {
+                  t.achievementsTitle
+                }
               </h2>
             </div>
-
-          
           </div>
 
           <div className="achievements-grid">
@@ -2633,15 +2975,22 @@ export default function Page() {
           <div className="section-head">
             <div>
               <div className="section-code">
-                09 / {t.testimonials}
+                09 /{" "}
+                {t.testimonials}
               </div>
 
               <h2 className="section-title">
-                {t.testimonialsTitle}
+                {
+                  t.testimonialsTitle
+                }
               </h2>
             </div>
 
-            
+            <p className="section-note">
+              {
+                t.testimonialsNote
+              }
+            </p>
           </div>
 
           <div className="testimonials-grid">
@@ -2652,9 +3001,7 @@ export default function Page() {
               ) => (
                 <article
                   className="testimonial"
-                  key={
-                    testimonial.name
-                  }
+                  key={`${testimonial.name}-${index}`}
                 >
                   <div className="testimonial-top">
                     <span className="testimonial-quote-icon">
@@ -2662,7 +3009,7 @@ export default function Page() {
                     </span>
 
                     <span className="testimonial-index">
-                      FEEDBACK /{" "}
+                      COMMENT /{" "}
                       {String(
                         index + 1
                       ).padStart(
@@ -2691,6 +3038,27 @@ export default function Page() {
                         : testimonial.role}
                     </span>
                   </div>
+
+                  <div className="testimonial-source">
+                    <span className="testimonial-source-label">
+                      {isArabic
+                        ? testimonial.sourceAr
+                        : testimonial.source}
+                    </span>
+
+                    <a
+                      href={
+                        testimonial.postUrl
+                      }
+                      target="_blank"
+                      rel="noreferrer"
+                      className="testimonial-post-link"
+                      dir="ltr"
+                    >
+                      {t.viewPost}
+                      {i.external}
+                    </a>
+                  </div>
                 </article>
               )
             )}
@@ -2717,8 +3085,6 @@ export default function Page() {
                 {t.contactTitle}
               </h2>
             </div>
-
-          
           </div>
 
           <div className="contact">
@@ -2767,12 +3133,57 @@ export default function Page() {
                 </a>
               </div>
 
-              {/* <div
-                className="email"
-                dir="ltr"
-              >
-                {cv.email}
-              </div> */}
+              <div className="hero-socials">
+                <a
+                  className="hero-social"
+                  href={
+                    cv.linkedin
+                  }
+                  target="_blank"
+                  rel="noreferrer"
+                  dir="ltr"
+                >
+                  {i.linkedin}
+
+                  <span>
+                    LinkedIn
+                  </span>
+
+                  {i.external}
+                </a>
+
+                {cv.github ? (
+                  <a
+                    className="hero-social"
+                    href={
+                      cv.github
+                    }
+                    target="_blank"
+                    rel="noreferrer"
+                    dir="ltr"
+                  >
+                    {i.github}
+
+                    <span>
+                      GitHub
+                    </span>
+
+                    {i.external}
+                  </a>
+                ) : null}
+
+                <a
+                  className="hero-social"
+                  href={`mailto:${cv.email}`}
+                  dir="ltr"
+                >
+                  {i.email}
+
+                  <span>
+                    Email
+                  </span>
+                </a>
+              </div>
             </div>
 
             <div className="contact-side">
@@ -2809,10 +3220,12 @@ export default function Page() {
                     rel="noreferrer"
                     dir="ltr"
                   >
-                    {cv.github.replace(
-                      /^https?:\/\//,
-                      ""
-                    )}
+                    {
+                      cv.github.replace(
+                        /^https?:\/\//,
+                        ""
+                      )
+                    }
                   </a>
                 </div>
               ) : null}
@@ -2843,7 +3256,9 @@ export default function Page() {
                   className="contact-value"
                   dir="ltr"
                 >
-                  {cv.secondaryTitle}
+                  {
+                    cv.secondaryTitle
+                  }
                 </span>
               </div>
 
@@ -2870,12 +3285,14 @@ export default function Page() {
 
       <footer className="container footer">
         <span>
-          © {new Date().getFullYear()}{" "}
+          ©{" "}
+          {new Date().getFullYear()}{" "}
           {cv.name}
         </span>
 
         <span dir="ltr">
-          Cloud & DevOps · AWS · Linux · Networking · IaC
+          Cloud & DevOps · AWS ·
+          Linux · Networking · IaC
         </span>
       </footer>
 
@@ -2890,14 +3307,18 @@ export default function Page() {
           aria-modal="true"
           aria-label="Certificate preview"
           onClick={() =>
-            setSelectedCertificate(null)
+            setSelectedCertificate(
+              null
+            )
           }
         >
           <button
             type="button"
             className="certificate-modal-close"
             onClick={() =>
-              setSelectedCertificate(null)
+              setSelectedCertificate(
+                null
+              )
             }
             aria-label="Close certificate preview"
           >
@@ -2912,7 +3333,9 @@ export default function Page() {
           >
             <img
               className="certificate-modal-image"
-              src={selectedCertificate}
+              src={
+                selectedCertificate
+              }
               alt="Certificate enlarged preview"
             />
           </div>
