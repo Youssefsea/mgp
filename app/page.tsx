@@ -1685,7 +1685,7 @@ export default function Page() {
             </a>
           </div>
 
-          <div className="hero-socials">
+          {/* <div className="hero-socials">
             <a
               className="hero-social"
               href={cv.linkedin}
@@ -1731,7 +1731,7 @@ export default function Page() {
                 Email
               </span>
             </a>
-          </div>
+          </div> */}
         </div>
 
         <div className="hero-art">
