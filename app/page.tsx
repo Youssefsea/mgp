@@ -971,7 +971,7 @@ export default function Page() {
         </div>
       )}
 
-      {/* HOME */}
+      {/* HOME — REDESIGNED HERO */}
       <section id="home" className="container hero hero-compact">
         <div className="hero-content">
           <div className="eyebrow"><span className="eyebrow-dot" />{t.cloudInfrastructureDevops}</div>
@@ -985,12 +985,11 @@ export default function Page() {
             <a className="btn" href="/cv.pdf" download>{t.downloadCv}{i.external}</a>
           </div>
         </div>
-        <div className="hero-art hero-art-compact">
-          <div className="art-paper" />
-          <div className="art-lines" />
-          <div className="portrait-wrap">
-            <span className="corner a" />
-            <span className="corner b" />
+
+        <div className="hero-art">
+          <div className="hero-portrait-stage">
+            <div className="hero-portrait-glow" />
+            <div className="hero-portrait-ring" />
             <div className="portrait">
               {!profileError ? (
                 <img src="/profile.jpg" alt={`${cv.name} portrait`}
@@ -1006,6 +1005,7 @@ export default function Page() {
               )}
             </div>
           </div>
+
           <div className="hero-card aws-card">
             <img className="aws-logo"
               src="https://commons.wikimedia.org/wiki/Special:FilePath/Amazon_Web_Services_2025.svg"
@@ -1013,6 +1013,7 @@ export default function Page() {
             <strong>Cloud architecture</strong>
             <p dir="ltr">EC2 · S3 · VPC · RDS · Lambda · SQS</p>
           </div>
+
           <div className="hero-card pipeline-card">
             <div className="card-row">
               <span className="card-label">DevOps workflow</span>
@@ -1061,7 +1062,6 @@ export default function Page() {
               </div>
             </div>
 
-            {/* COMPACT SIDE CARD */}
             <div className="paper-card profile-side compact-side">
               <div className="side-block">
                 <div className="label-row">
@@ -1155,7 +1155,6 @@ export default function Page() {
               </div>
             </article>
 
-            {/* COMPACT SIDE CARD */}
             <div className="paper-card profile-side compact-side">
               <div className="side-block">
                 <div className="label-row">
@@ -1956,6 +1955,14 @@ export default function Page() {
           0%, 100% { transform: scale(1); opacity: .85; }
           50% { transform: scale(1.22); opacity: 1; }
         }
+        @keyframes portrait-float {
+          0%, 100% { transform: translateY(0); }
+          50% { transform: translateY(-10px); }
+        }
+        @keyframes glow-pulse {
+          0%, 100% { opacity: .55; transform: scale(1); }
+          50% { opacity: .85; transform: scale(1.06); }
+        }
         @media (max-width: 1180px) {
           .nav-links { gap: 0; }
           .nav-links button { padding-inline: 8px; font-size: 10px; }
@@ -1996,6 +2003,243 @@ export default function Page() {
         :global(.sr-only) {
           position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
           overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
+        }
+
+        /* =====================================================
+           HERO ART — CLEAN REDESIGN
+           ===================================================== */
+        :global(.hero-art) {
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          min-height: 520px;
+          padding: 40px 20px;
+        }
+        :global(.hero-portrait-stage) {
+          position: relative;
+          width: min(340px, 78vw);
+          aspect-ratio: 1 / 1;
+          display: grid;
+          place-items: center;
+        }
+        :global(.hero-portrait-glow) {
+          position: absolute;
+          inset: -18%;
+          border-radius: 50%;
+          background: radial-gradient(circle at center,
+            rgba(167,131,255,.28) 0%,
+            rgba(167,131,255,.10) 40%,
+            transparent 70%);
+          filter: blur(24px);
+          z-index: 0;
+          animation: glow-pulse 5s ease-in-out infinite;
+          pointer-events: none;
+        }
+        :global(.hero-portrait-ring) {
+          position: absolute;
+          inset: -6px;
+          border-radius: 50%;
+          border: 1px solid ${lightMode ? "rgba(167,131,255,.32)" : "rgba(167,131,255,.28)"};
+          z-index: 0;
+          pointer-events: none;
+        }
+        :global(.hero-art .portrait) {
+          position: relative;
+          z-index: 1;
+          width: 100%;
+          height: 100%;
+          aspect-ratio: 1 / 1;
+          border-radius: 50%;
+          overflow: hidden;
+          display: block;
+          border: 3px solid ${lightMode ? "rgba(255,255,255,.85)" : "rgba(255,255,255,.10)"};
+          box-shadow:
+            0 22px 60px rgba(167,131,255,.22),
+            0 8px 24px ${lightMode ? "rgba(15,23,42,.12)" : "rgba(0,0,0,.42)"};
+          background: ${lightMode ? "#f3f4f8" : "#0d0e1a"};
+        }
+        :global(.hero-art .portrait img) {
+          width: 100%;
+          height: 100%;
+          display: block;
+          object-fit: cover;
+          object-position: center 20%;
+          border-radius: 50%;
+        }
+        :global(.hero-art .portrait-placeholder) {
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+          display: grid;
+          place-items: center;
+          text-align: center;
+          padding: 18px;
+          font-size: 11px;
+          line-height: 1.45;
+          color: ${lightMode ? "rgba(15,23,42,.55)" : "rgba(255,255,255,.55)"};
+        }
+        :global(.hero-art .portrait-placeholder strong) {
+          display: block;
+          font-size: 14px;
+          letter-spacing: .14em;
+          margin-bottom: 8px;
+          color: ${lightMode ? "#11131b" : "#f7f4ff"};
+        }
+        :global(.hero-art .aws-card) {
+          position: absolute;
+          top: 8%;
+          inset-inline-end: 0;
+          z-index: 3;
+          display: flex;
+          flex-direction: column;
+          gap: 6px;
+          padding: 16px 18px;
+          border-radius: 16px;
+          border: 1px solid ${lightMode ? "rgba(15,23,42,.08)" : "rgba(255,255,255,.10)"};
+          background: ${lightMode ? "rgba(255,255,255,.92)" : "rgba(13,14,26,.90)"};
+          backdrop-filter: blur(14px);
+          -webkit-backdrop-filter: blur(14px);
+          box-shadow: 0 18px 44px ${lightMode ? "rgba(15,23,42,.10)" : "rgba(0,0,0,.40)"};
+          width: 240px;
+        }
+        :global(.hero-art .aws-logo) {
+          width: 62px;
+          height: auto;
+          display: block;
+          margin-bottom: 2px;
+        }
+        :global(.hero-art .aws-card strong) {
+          font-size: 14px;
+          letter-spacing: -.01em;
+          color: ${lightMode ? "#11131b" : "#f7f4ff"};
+        }
+        :global(.hero-art .aws-card p) {
+          margin: 0;
+          font-size: 10.5px;
+          letter-spacing: .02em;
+          line-height: 1.5;
+          color: ${lightMode ? "rgba(15,23,42,.55)" : "rgba(255,255,255,.55)"};
+        }
+        :global(.hero-art .pipeline-card) {
+          position: absolute;
+          bottom: 6%;
+          inset-inline-start: 0;
+          z-index: 3;
+          padding: 16px 18px;
+          border-radius: 16px;
+          border: 1px solid ${lightMode ? "rgba(15,23,42,.08)" : "rgba(255,255,255,.10)"};
+          background: ${lightMode ? "rgba(255,255,255,.92)" : "rgba(13,14,26,.90)"};
+          backdrop-filter: blur(14px);
+          -webkit-backdrop-filter: blur(14px);
+          box-shadow: 0 18px 44px ${lightMode ? "rgba(15,23,42,.10)" : "rgba(0,0,0,.40)"};
+          width: 240px;
+        }
+        :global(.hero-art .pipeline-card .card-row) {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 10px;
+          margin-bottom: 12px;
+        }
+        :global(.hero-art .pipeline-card .card-label) {
+          font-size: 10px;
+          font-weight: 700;
+          letter-spacing: .10em;
+          text-transform: uppercase;
+          color: ${lightMode ? "rgba(15,23,42,.55)" : "rgba(255,255,255,.55)"};
+        }
+        :global(.hero-art .pipeline-card .status) {
+          display: inline-flex;
+          align-items: center;
+          gap: 6px;
+          font-size: 9px;
+          font-weight: 700;
+          letter-spacing: .08em;
+          text-transform: uppercase;
+          color: #A783FF;
+        }
+        :global(.hero-art .pipeline-card .status-dot) {
+          width: 6px;
+          height: 6px;
+          border-radius: 50%;
+          background: #A783FF;
+          box-shadow: 0 0 0 3px rgba(167,131,255,.16);
+        }
+        :global(.hero-art .pipeline-card .pipeline) {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 6px;
+        }
+        :global(.hero-art .pipeline-card .pipe) {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 5px;
+          flex: 1;
+        }
+        :global(.hero-art .pipeline-card .pipe-icon) {
+          width: 28px;
+          height: 28px;
+          display: grid;
+          place-items: center;
+          border-radius: 8px;
+          background: ${lightMode ? "rgba(167,131,255,.10)" : "rgba(167,131,255,.14)"};
+          color: #A783FF;
+          border: 1px solid ${lightMode ? "rgba(167,131,255,.22)" : "rgba(167,131,255,.26)"};
+        }
+        :global(.hero-art .pipeline-card .pipe small) {
+          font-size: 9px;
+          font-weight: 600;
+          letter-spacing: .04em;
+          color: ${lightMode ? "rgba(15,23,42,.55)" : "rgba(255,255,255,.55)"};
+        }
+
+        @media (max-width: 900px) {
+          :global(.hero-art) {
+            min-height: 460px;
+            padding: 30px 10px 60px;
+          }
+          :global(.hero-art .aws-card) {
+            top: 0;
+            inset-inline-end: 0;
+            width: min(210px, 55vw);
+            padding: 12px 14px;
+          }
+          :global(.hero-art .aws-logo) { width: 52px; }
+          :global(.hero-art .aws-card strong) { font-size: 12.5px; }
+          :global(.hero-art .aws-card p) { font-size: 9.5px; }
+          :global(.hero-art .pipeline-card) {
+            bottom: 0;
+            inset-inline-start: 0;
+            width: min(210px, 55vw);
+            padding: 12px 14px;
+          }
+          :global(.hero-art .pipeline-card .pipe-icon) { width: 24px; height: 24px; }
+          :global(.hero-art .pipeline-card .pipe small) { font-size: 8px; }
+        }
+        @media (max-width: 560px) {
+          :global(.hero-art) {
+            min-height: 420px;
+            padding: 20px 6px 70px;
+          }
+          :global(.hero-portrait-stage) { width: min(240px, 72vw); }
+          :global(.hero-art .aws-card) {
+            top: -6px;
+            width: 46vw;
+            padding: 10px 12px;
+            border-radius: 12px;
+          }
+          :global(.hero-art .aws-logo) { width: 44px; }
+          :global(.hero-art .pipeline-card) {
+            bottom: -6px;
+            width: 46vw;
+            padding: 10px 12px;
+            border-radius: 12px;
+          }
+          :global(.hero-art .pipeline-card .pipe-icon) { width: 20px; height: 20px; }
+          :global(.hero-art .pipeline-card .pipe small) { display: none; }
         }
 
         /* =====================================================
@@ -2040,49 +2284,6 @@ export default function Page() {
           padding: 5px 10px;
           font-size: 11px;
           border-radius: 8px;
-        }
-
-        /* =====================================================
-           CIRCULAR SMALLER PORTRAIT
-           ===================================================== */
-        :global(.hero-art .portrait) {
-          width: 220px;
-          height: 220px;
-          max-width: 55vw;
-          max-height: 55vw;
-          aspect-ratio: 1 / 1;
-          border-radius: 50%;
-          overflow: hidden;
-          position: relative;
-          margin: 0 auto;
-          display: block;
-        }
-        :global(.hero-art .portrait img) {
-          width: 100%;
-          height: 100%;
-          display: block;
-          object-fit: cover;
-          object-position: center 15%;
-          border-radius: 50%;
-        }
-        :global(.hero-art .portrait-placeholder) {
-          width: 100%;
-          height: 100%;
-          border-radius: 50%;
-          display: grid;
-          place-items: center;
-          text-align: center;
-          padding: 18px;
-          font-size: 11px;
-          line-height: 1.4;
-        }
-        @media (max-width: 700px) {
-          :global(.hero-art .portrait) {
-            width: 170px;
-            height: 170px;
-            max-width: 60vw;
-            max-height: 60vw;
-          }
         }
 
         .education-main-info { min-width: 0; }
