@@ -3747,12 +3747,12 @@ export default function Page() {
         }
 
         .footer-freelance-links {
-          margin-top: 34px;
-          padding-top: 24px;
+          margin-top: 30px;
+          padding-top: 22px;
           border-top: 1px solid
             ${lightMode
-              ? "rgba(15, 23, 42, 0.10)"
-              : "rgba(255, 255, 255, 0.10)"};
+              ? "rgba(15, 23, 42, 0.07)"
+              : "rgba(255, 255, 255, 0.075)"};
         }
 
         .footer-freelance-head {
@@ -3760,22 +3760,22 @@ export default function Page() {
           align-items: center;
           justify-content: space-between;
           gap: 16px;
-          margin-bottom: 13px;
+          margin-bottom: 12px;
         }
 
         .footer-freelance-note {
-          margin: 5px 0 0;
-          font-size: 12px;
-          line-height: 1.5;
-          opacity: 0.58;
+          margin: 4px 0 0;
+          font-size: 11px;
+          line-height: 1.45;
+          opacity: 0.5;
         }
 
         .footer-freelance-count {
           flex: 0 0 auto;
-          font-size: 10px;
-          letter-spacing: 0.08em;
+          font-size: 9px;
+          letter-spacing: 0.1em;
           text-transform: uppercase;
-          opacity: 0.48;
+          opacity: 0.38;
           white-space: nowrap;
         }
 
@@ -3783,106 +3783,98 @@ export default function Page() {
           display: flex;
           flex-wrap: wrap;
           align-items: center;
-          gap: 10px;
+          gap: 11px;
+          padding: 2px 0 4px;
+          margin: 0;
         }
 
         .footer-freelance-link {
           position: relative;
-          display: inline-grid;
-          place-items: center;
-          width: 52px;
-          height: 52px;
-          padding: 5px;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          width: 44px;
+          height: 44px;
+          padding: 0;
           border: 1px solid
             ${lightMode
-              ? "rgba(15, 23, 42, 0.16)"
-              : "rgba(255, 255, 255, 0.13)"};
-          border-radius: 15px;
+              ? "rgba(15, 23, 42, 0.11)"
+              : "rgba(255, 255, 255, 0.10)"};
+          border-radius: 12px;
           text-decoration: none;
           color: inherit;
           background:
             ${lightMode
-              ? "rgba(255,255,255,0.62)"
-              : "rgba(8, 18, 34, 0.42)"};
+              ? "rgba(255,255,255,0.55)"
+              : "rgba(255,255,255,0.025)"};
           box-shadow:
-            inset 0 1px 0
+            0 2px 8px
               ${lightMode
-                ? "rgba(255,255,255,0.72)"
-                : "rgba(255,255,255,0.055)"},
-            0 7px 18px
-              ${lightMode
-                ? "rgba(15, 23, 42, 0.08)"
-                : "rgba(0, 0, 0, 0.12)"};
+                ? "rgba(15, 23, 42, 0.045)"
+                : "rgba(0, 0, 0, 0.10)"};
           transition:
-            transform 180ms ease,
-            border-color 180ms ease,
-            background 180ms ease,
-            box-shadow 180ms ease;
-        }
-
-        .footer-freelance-link::after {
-          content: "";
-          position: absolute;
-          inset: 5px;
-          border-radius: 10px;
-          border: 1px solid
-            ${lightMode
-              ? "rgba(15, 23, 42, 0.07)"
-              : "rgba(255, 255, 255, 0.055)"};
-          pointer-events: none;
+            transform 160ms ease,
+            border-color 160ms ease,
+            background 160ms ease,
+            box-shadow 160ms ease;
         }
 
         .footer-freelance-link:hover {
-          transform: translateY(-3px);
+          transform: translateY(-2px);
           border-color:
             ${lightMode
-              ? "rgba(15, 23, 42, 0.28)"
-              : "rgba(255, 255, 255, 0.26)"};
+              ? "rgba(15, 23, 42, 0.22)"
+              : "rgba(255, 255, 255, 0.22)"};
           background:
             ${lightMode
-              ? "rgba(255,255,255,0.90)"
+              ? "rgba(255,255,255,0.88)"
               : "rgba(255,255,255,0.055)"};
           box-shadow:
-            inset 0 1px 0
+            0 7px 16px
               ${lightMode
-                ? "rgba(255,255,255,0.90)"
-                : "rgba(255,255,255,0.09)"},
-            0 10px 22px
-              ${lightMode
-                ? "rgba(15, 23, 42, 0.11)"
-                : "rgba(0, 0, 0, 0.18)"};
+                ? "rgba(15, 23, 42, 0.09)"
+                : "rgba(0, 0, 0, 0.16)"};
+        }
+
+        .footer-freelance-link:focus-visible {
+          outline: 2px solid
+            ${lightMode
+              ? "rgba(46, 103, 224, 0.48)"
+              : "rgba(105, 224, 255, 0.52)"};
+          outline-offset: 3px;
         }
 
         .footer-freelance-link .freelance-logo {
           position: relative;
           z-index: 1;
-          width: 34px;
-          height: 34px;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          width: 27px;
+          height: 27px;
           border: 0;
-          border-radius: 10px;
-          background:
-            ${lightMode
-              ? "rgba(15, 23, 42, 0.055)"
-              : "rgba(255,255,255,0.055)"};
-          box-shadow:
-            inset 0 1px 0
-              ${lightMode
-                ? "rgba(255,255,255,0.76)"
-                : "rgba(255,255,255,0.045)"};
+          border-radius: 7px;
+          background: transparent;
+          box-shadow: none;
         }
 
         .footer-freelance-link .freelance-logo img {
-          width: 22px;
-          height: 22px;
+          display: block;
+          width: 25px;
+          height: 25px;
           object-fit: contain;
         }
 
         .footer-freelance-link .freelance-logo-fallback {
-          width: 24px;
-          height: 24px;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          width: 25px;
+          height: 25px;
           border-radius: 7px;
-          font-size: 10px;
+          font-size: 9px;
           font-weight: 800;
+          letter-spacing: -0.02em;
         }
 
         .footer-freelance-name,
@@ -3907,34 +3899,37 @@ export default function Page() {
         }
 
         @media (max-width: 700px) {
+          .footer-freelance-links {
+            margin-top: 26px;
+            padding-top: 18px;
+          }
+
           .footer-freelance-head {
             align-items: flex-start;
             flex-direction: column;
+            gap: 5px;
+            margin-bottom: 11px;
           }
 
           .footer-freelance-count {
-            align-self: flex-start;
+            display: none;
           }
 
           .footer-freelance-grid {
-            gap: 8px;
+            gap: 9px;
           }
 
           .footer-freelance-link {
-            width: 48px;
-            height: 48px;
-            border-radius: 14px;
+            width: 42px;
+            height: 42px;
+            border-radius: 11px;
           }
 
-          .footer-freelance-link .freelance-logo {
-            width: 31px;
-            height: 31px;
-            border-radius: 9px;
-          }
-
-          .footer-freelance-link .freelance-logo img {
-            width: 20px;
-            height: 20px;
+          .footer-freelance-link .freelance-logo,
+          .footer-freelance-link .freelance-logo img,
+          .footer-freelance-link .freelance-logo-fallback {
+            width: 24px;
+            height: 24px;
           }
         }
       `}</style>
@@ -4099,9 +4094,7 @@ export default function Page() {
                 </p>
               </div>
 
-              <span className="footer-freelance-count" dir="ltr">
-                {cv.freelanceLinks.length.toString().padStart(2, "0")} profiles
-              </span>
+
             </div>
 
             <div className="footer-freelance-grid">
