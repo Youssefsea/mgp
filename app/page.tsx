@@ -1384,20 +1384,6 @@ export default function Page() {
     ) => {
       if (event.key === "Escape") {
         setMenu(false);
-        if (showOnboarding) {
-          setOnboardingExit(true);
-          window.setTimeout(() => {
-            try {
-              window.sessionStorage.setItem(
-                "mohamed-gamal-portfolio-onboarding-v1",
-                "seen"
-              );
-            } catch {}
-            setShowOnboarding(false);
-            setOnboardingExit(false);
-            setOnboardingReady(false);
-          }, 420);
-        }
         if (selectedCertificate) {
           setSelectedCertificate(null);
         }
@@ -1419,7 +1405,6 @@ export default function Page() {
   }, [
     selectedCertificate,
     selectedProjectImage,
-    showOnboarding,
   ]);
   useEffect(() => {
     document.body.style.overflow =
@@ -1531,26 +1516,6 @@ export default function Page() {
               <span />
             </div>
 
-            <button
-              type="button"
-              className="onboarding-skip"
-              onClick={() => {
-                setOnboardingExit(true);
-                window.setTimeout(() => {
-                  try {
-                    window.sessionStorage.setItem(
-                      "mohamed-gamal-portfolio-onboarding-v1",
-                      "seen"
-                    );
-                  } catch {}
-                  setShowOnboarding(false);
-                  setOnboardingExit(false);
-                  setOnboardingReady(false);
-                }, 420);
-              }}
-            >
-              Skip intro
-            </button>
           </section>
         </div>
       )}
@@ -3554,31 +3519,7 @@ export default function Page() {
           background: linear-gradient(90deg, transparent, #A783FF, #C1AAFF, transparent);
           animation: onboarding-scan 1.5s ease-in-out infinite;
         }
-        .onboarding-skip {
-          margin-top: 17px;
-          padding: 8px 12px;
-          border: 1px solid ${lightMode ? "rgba(17,19,27,.10)" : "rgba(255,255,255,.10)"};
-          border-radius: 999px;
-          background: transparent;
-          color: ${lightMode ? "rgba(17,19,27,.44)" : "rgba(255,255,255,.44)"};
-          font: inherit;
-          font-size: 10px;
-          letter-spacing: .11em;
-          text-transform: uppercase;
-          cursor: pointer;
-          opacity: 0;
-          transform: translateY(6px);
-          transition: opacity 450ms 850ms ease, transform 450ms 850ms cubic-bezier(.16,1,.3,1), color 180ms ease, border-color 180ms ease, background 180ms ease;
-        }
-        .onboarding-overlay.is-ready .onboarding-skip {
-          opacity: 1;
-          transform: none;
-        }
-        .onboarding-skip:hover {
-          color: #A783FF;
-          border-color: rgba(167,131,255,.34);
-          background: rgba(167,131,255,.07);
-        }
+
 
         .topbar {
           position: fixed;
@@ -3850,7 +3791,6 @@ export default function Page() {
           .onboarding-title,
           .onboarding-focus,
           .onboarding-progress,
-          .onboarding-skip,
           .brand-logo-image,
           .nav-links button,
           .language-button,
@@ -3864,8 +3804,7 @@ export default function Page() {
           .onboarding-overlay.is-ready .onboarding-name span,
           .onboarding-overlay.is-ready .onboarding-title,
           .onboarding-overlay.is-ready .onboarding-focus,
-          .onboarding-overlay.is-ready .onboarding-progress,
-          .onboarding-overlay.is-ready .onboarding-skip {
+          .onboarding-overlay.is-ready .onboarding-progress {
             transform: none !important;
             opacity: 1 !important;
             filter: none !important;
