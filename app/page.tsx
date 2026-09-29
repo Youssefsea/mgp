@@ -104,6 +104,16 @@ const cv = {
       "Expected Graduation: July 2027",
     summary:
       "Academic background in Computer Science with an Information Technology specialization, alongside continuous practical development in Cloud and DevOps.",
+    universityLogo:
+      "https://melc.menofia.edu.eg/student_activities_survey/assets/logo.png",
+    universityLogoAlt:
+      "Menoufia University logo",
+    facultyLogo:
+      "https://www.alrichd.com/wp-content/uploads/2024/03/1650197644tQmi1XCP3R.png",
+    facultyLogoAlt:
+      "Faculty of Computers & Information, Menoufia University logo",
+    facultyUrl:
+      "https://mu.menofia.edu.eg/FCI/Home/en",
   },
 
   educationAr: {
@@ -710,6 +720,38 @@ function SkillLogo({
         />
       ) : (
         <span>{mark}</span>
+      )}
+    </span>
+  );
+}
+
+function EducationLogo({
+  src,
+  alt,
+  mark,
+}: {
+  src: string;
+  alt: string;
+  mark: string;
+}) {
+  const [failed, setFailed] = useState(false);
+
+  return (
+    <span className="education-logo" aria-hidden={failed}>
+      {!failed ? (
+        <img
+          src={src}
+          alt={alt}
+          width={56}
+          height={56}
+          loading="lazy"
+          decoding="async"
+          onError={() => setFailed(true)}
+        />
+      ) : (
+        <span className="education-logo-fallback">
+          {mark}
+        </span>
       )}
     </span>
   );
@@ -2156,8 +2198,45 @@ export default function Page() {
           <div className="education-grid">
             <article className="paper-card education-summary">
               <div className="education-header-row">
-                <div>
-                  <div className="label-row">
+                <div className="education-main-info">
+                  <div className="education-institution-logos">
+                    <a
+                      href="https://www.menofia.edu.eg/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="education-logo-link"
+                      aria-label="Menoufia University"
+                      title="Menoufia University"
+                    >
+                      <EducationLogo
+                        src={cv.education.universityLogo}
+                        alt={cv.education.universityLogoAlt}
+                        mark="MU"
+                      />
+                    </a>
+
+                    <span
+                      className="education-logo-divider"
+                      aria-hidden="true"
+                    />
+
+                    <a
+                      href={cv.education.facultyUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="education-logo-link"
+                      aria-label="Faculty of Computers & Information"
+                      title="Faculty of Computers & Information"
+                    >
+                      <EducationLogo
+                        src={cv.education.facultyLogo}
+                        alt={cv.education.facultyLogoAlt}
+                        mark="FCI"
+                      />
+                    </a>
+                  </div>
+
+                  <div className="label-row education-label-row">
                     <span className="label-icon">
                       {i.education}
                     </span>
@@ -3639,6 +3718,113 @@ export default function Page() {
           clip: rect(0, 0, 0, 0);
           white-space: nowrap;
           border: 0;
+        }
+
+        .education-main-info {
+          min-width: 0;
+        }
+
+        .education-institution-logos {
+          display: inline-flex;
+          align-items: center;
+          gap: 14px;
+          margin-bottom: 18px;
+          padding: 8px 10px;
+          border: 1px solid
+            ${lightMode
+              ? "rgba(15, 23, 42, 0.08)"
+              : "rgba(255, 255, 255, 0.09)"};
+          border-radius: 14px;
+          background:
+            ${lightMode
+              ? "rgba(255,255,255,0.72)"
+              : "rgba(255,255,255,0.025)"};
+          width: fit-content;
+        }
+
+        .education-logo-link {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          text-decoration: none;
+          border-radius: 11px;
+        }
+
+        .education-logo {
+          width: 56px;
+          height: 56px;
+          display: grid;
+          place-items: center;
+          flex: 0 0 56px;
+          overflow: hidden;
+          border-radius: 11px;
+          background:
+            ${lightMode
+              ? "rgba(255,255,255,0.95)"
+              : "rgba(255,255,255,0.06)"};
+          border: 1px solid
+            ${lightMode
+              ? "rgba(15, 23, 42, 0.08)"
+              : "rgba(255,255,255,0.08)"};
+        }
+
+        .education-logo img {
+          width: 46px;
+          height: 46px;
+          display: block;
+          object-fit: contain;
+        }
+
+        .education-logo-fallback {
+          font-size: 11px;
+          font-weight: 800;
+          letter-spacing: 0.02em;
+          opacity: 0.72;
+        }
+
+        .education-logo-divider {
+          width: 1px;
+          height: 34px;
+          background:
+            ${lightMode
+              ? "rgba(15, 23, 42, 0.12)"
+              : "rgba(255,255,255,0.12)"};
+        }
+
+        .education-label-row {
+          margin-top: 2px;
+        }
+
+        .education-logo-link:hover .education-logo,
+        .education-logo-link:focus-visible .education-logo {
+          transform: translateY(-1px);
+          border-color:
+            ${lightMode
+              ? "rgba(15, 23, 42, 0.18)"
+              : "rgba(255,255,255,0.18)"};
+        }
+
+        @media (max-width: 700px) {
+          .education-institution-logos {
+            gap: 10px;
+            margin-bottom: 15px;
+            padding: 7px 8px;
+          }
+
+          .education-logo {
+            width: 50px;
+            height: 50px;
+            flex-basis: 50px;
+          }
+
+          .education-logo img {
+            width: 40px;
+            height: 40px;
+          }
+
+          .education-logo-divider {
+            height: 30px;
+          }
         }
 
         .skill-chip {
