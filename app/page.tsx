@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useMemo, useState } from "react";
 import type { ReactNode } from "react";
+
 const cv = {
   name: "Mohamed Gamal",
   logo:
@@ -11,80 +12,80 @@ const cv = {
     "https://linkedin.com/in/mohamed-gamal-devops",
   github:
     "https://github.com/mohamedgamal-35",
-freelanceLinks: [
-  {
-    name: "Khamsat",
-    nameAr: "خمسات",
-    url: "https://khamsat.com/user/mohamed_gamal35",
-    logo:
-      "https://www.google.com/s2/favicons?domain=khamsat.com&sz=128",
-    mark: "5",
-    description:
-      "Freelance profile on Khamsat.",
-    descriptionAr:
-      "الملف الشخصي على خمسات.",
-  },
-  {
-    name: "Mostaql",
-    nameAr: "مستقل",
-    url: "https://mostaql.com/u/Mohamedd_Gamal",
-    logo:
-      "https://www.google.com/s2/favicons?domain=mostaql.com&sz=128",
-    mark: "M",
-    description:
-      "Mostaql freelance account.",
-    descriptionAr:
-      "حساب العمل الحر على مستقل.",
-  },
-  {
-    name: "Nafezly",
-    nameAr: "نفذلي",
-    url: "https://nafezly.com/u/Mohamed_Gamal01",
-    logo:
-      "https://www.google.com/s2/favicons?domain=nafezly.com&sz=128",
-    mark: "N",
-    description:
-      "Freelance profile on Nafezly.",
-    descriptionAr:
-      "الملف الشخصي على نفذلي.",
-  },
-  {
-    name: "Kafiil",
-    nameAr: "كفيل",
-    url: "https://kafiil.com/u/Mohamedgamal013",
-    logo:
-      "https://www.google.com/s2/favicons?domain=kafiil.com&sz=128",
-    mark: "K",
-    description:
-      "Freelance profile on Kafiil.",
-    descriptionAr:
-      "الملف الشخصي على كفيل.",
-  },
-  {
-    name: "Freelanceyard",
-    nameAr: "Freelanceyard",
-    url: "https://freelanceyard.com/ar/freelancers/mohamed-gamal-87",
-    logo:
-      "https://freelanceyard.com/images/favicon.png",
-    mark: "FY",
-    description:
-      "Freelance profile on Freelanceyard.",
-    descriptionAr:
-      "الملف الشخصي على Freelanceyard.",
-  },
-  {
-    name: "Upwork",
-    nameAr: "Upwork",
-    url: "https://www.upwork.com/freelancers/~0118cb90c5c257edb1/modal-hourly-rate-set?pageTitle=Change%20hourly%20rate&_modalInfo=%5B%7B%22navType%22%3A%22modal%22,%22title%22%3A%22Change%20hourly%20rate%22,%22modalId%22%3A%221790708835711%22%7D%5D",
-    logo:
-      "https://www.google.com/s2/favicons?domain=upwork.com&sz=128",
-    mark: "U",
-    description:
-      "Freelance profile on Upwork.",
-    descriptionAr:
-      "الملف الشخصي على Upwork.",
-  },
-],
+  freelanceLinks: [
+    {
+      name: "Khamsat",
+      nameAr: "خمسات",
+      url: "https://khamsat.com/user/mohamed_gamal35",
+      logo:
+        "https://www.google.com/s2/favicons?domain=khamsat.com&sz=128",
+      mark: "5",
+      description:
+        "Freelance profile on Khamsat.",
+      descriptionAr:
+        "الملف الشخصي على خمسات.",
+    },
+    {
+      name: "Mostaql",
+      nameAr: "مستقل",
+      url: "https://mostaql.com/u/Mohamedd_Gamal",
+      logo:
+        "https://www.google.com/s2/favicons?domain=mostaql.com&sz=128",
+      mark: "M",
+      description:
+        "Mostaql freelance account.",
+      descriptionAr:
+        "حساب العمل الحر على مستقل.",
+    },
+    {
+      name: "Nafezly",
+      nameAr: "نفذلي",
+      url: "https://nafezly.com/u/Mohamed_Gamal01",
+      logo:
+        "https://www.google.com/s2/favicons?domain=nafezly.com&sz=128",
+      mark: "N",
+      description:
+        "Freelance profile on Nafezly.",
+      descriptionAr:
+        "الملف الشخصي على نفذلي.",
+    },
+    {
+      name: "Kafiil",
+      nameAr: "كفيل",
+      url: "https://kafiil.com/u/Mohamedgamal013",
+      logo:
+        "https://www.google.com/s2/favicons?domain=kafiil.com&sz=128",
+      mark: "K",
+      description:
+        "Freelance profile on Kafiil.",
+      descriptionAr:
+        "الملف الشخصي على كفيل.",
+    },
+    {
+      name: "Freelanceyard",
+      nameAr: "Freelanceyard",
+      url: "https://freelanceyard.com/ar/freelancers/mohamed-gamal-87",
+      logo:
+        "https://freelanceyard.com/images/favicon.png",
+      mark: "FY",
+      description:
+        "Freelance profile on Freelanceyard.",
+      descriptionAr:
+        "الملف الشخصي على Freelanceyard.",
+    },
+    {
+      name: "Upwork",
+      nameAr: "Upwork",
+      url: "https://www.upwork.com/freelancers/~0118cb90c5c257edb1/modal-hourly-rate-set?pageTitle=Change%20hourly%20rate&_modalInfo=%5B%7B%22navType%22%3A%22modal%22,%22title%22%3A%22Change%20hourly%20rate%22,%22modalId%22%3A%221790708835711%22%7D%5D",
+      logo:
+        "https://www.google.com/s2/favicons?domain=upwork.com&sz=128",
+      mark: "U",
+      description:
+        "Freelance profile on Upwork.",
+      descriptionAr:
+        "الملف الشخصي على Upwork.",
+    },
+  ],
   title: "Cloud & DevOps Engineer",
   secondaryTitle:
     "Cloud Infrastructure / DevOps Intern",
@@ -545,6 +546,7 @@ freelanceLinks: [
     },
   ],
 };
+
 function Tech({
   children,
 }: {
@@ -562,6 +564,7 @@ function Tech({
     </span>
   );
 }
+
 function Icon({
   children,
   size = 19,
@@ -585,6 +588,7 @@ function Icon({
     </svg>
   );
 }
+
 function PlatformLogo({
   src,
   mark,
@@ -616,6 +620,7 @@ function PlatformLogo({
     </span>
   );
 }
+
 const skillLogoSlugs: Record<string, string> = {
   AWS: "aws",
   "Huawei Cloud": "huaweicloud",
@@ -628,6 +633,7 @@ const skillLogoSlugs: Record<string, string> = {
   "GitLab": "gitlab",
   Docker: "docker",
 };
+
 function SkillLogo({
   label,
   slug,
@@ -653,6 +659,7 @@ function SkillLogo({
     </span>
   );
 }
+
 function EducationLogo({
   src,
   alt,
@@ -683,6 +690,7 @@ function EducationLogo({
     </span>
   );
 }
+
 const i = {
   arrow: (
     <Icon>
@@ -696,6 +704,16 @@ const i = {
       <path d="M8.2 11.2h.01" />
       <path d="M12 11.2h.01" />
       <path d="M15.8 11.2h.01" />
+    </Icon>
+  ),
+  phone: (
+    <Icon>
+      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+    </Icon>
+  ),
+  whatsapp: (
+    <Icon>
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
     </Icon>
   ),
   external: (
@@ -873,6 +891,7 @@ const i = {
     </Icon>
   ),
 };
+
 export default function Page() {
   const [active, setActive] =
     useState("home");
@@ -902,7 +921,9 @@ export default function Page() {
     useState(false);
   const [onboardingReady, setOnboardingReady] =
     useState(false);
+
   const isArabic = language === "ar";
+
   const t = {
     home: isArabic ? "الرئيسية" : "Home",
     about: isArabic ? "نبذة عني" : "About",
@@ -1265,6 +1286,7 @@ export default function Page() {
         ? "جميع الحقوق محفوظة."
         : "All rights reserved.",
   };
+
   const nav = useMemo(
     () => [
       ["home", t.home],
@@ -1281,6 +1303,7 @@ export default function Page() {
     ],
     [language]
   );
+
   useEffect(() => {
     const storageKey =
       "mohamed-gamal-portfolio-onboarding-v1";
@@ -1342,6 +1365,7 @@ export default function Page() {
       );
     };
   }, []);
+
   useEffect(() => {
     const sectionIds =
       nav.map(([id]) => id);
@@ -1351,6 +1375,7 @@ export default function Page() {
       )
       .filter(Boolean) as HTMLElement[];
     if (!sections.length) return;
+
     const observer =
       new IntersectionObserver(
         (entries) => {
@@ -1384,12 +1409,14 @@ export default function Page() {
           ],
         }
       );
+
     sections.forEach((section) =>
       observer.observe(section)
     );
     return () =>
       observer.disconnect();
   }, [nav]);
+
   useEffect(() => {
     const onKeyDown = (
       event: KeyboardEvent
@@ -1418,6 +1445,7 @@ export default function Page() {
     selectedCertificate,
     selectedProjectImage,
   ]);
+
   useEffect(() => {
     document.body.style.overflow =
       menu ||
@@ -1436,6 +1464,7 @@ export default function Page() {
     selectedProjectImage,
     showOnboarding,
   ]);
+
   const go = (id: string) => {
     const element =
       document.getElementById(id);
@@ -1453,6 +1482,7 @@ export default function Page() {
     setActive(id);
     setMenu(false);
   };
+
   const copyEmail = async () => {
     try {
       await navigator.clipboard.writeText(
@@ -1464,6 +1494,7 @@ export default function Page() {
       }, 1600);
     } catch {}
   };
+
   return (
     <main
       className={`site ${
@@ -1666,6 +1697,7 @@ export default function Page() {
           </div>
         </div>
       </header>
+
       {/* =====================================================
           MOBILE MENU
           \===================================================== */}
@@ -1720,6 +1752,7 @@ export default function Page() {
           </div>
         </div>
       )}
+
       {/* =====================================================
           00 / HOME
           \===================================================== */}
@@ -1868,6 +1901,7 @@ export default function Page() {
           </div>
         </div>
       </section>
+
       {/* =====================================================
           01 / ABOUT
           \===================================================== */}
@@ -1988,6 +2022,7 @@ export default function Page() {
           </div>
         </div>
       </section>
+
       {/* =====================================================
           02 / EDUCATION
           \===================================================== */}
@@ -2149,6 +2184,7 @@ export default function Page() {
           </div>
         </div>
       </section>
+
       {/* =====================================================
           03 / CERTIFICATION
           \===================================================== */}
@@ -2282,6 +2318,7 @@ export default function Page() {
           </div>
         </div>
       </section>
+
       {/* =====================================================
           04 / SKILLS
           \===================================================== */}
@@ -2525,6 +2562,7 @@ export default function Page() {
           </div>
         </div>
       </section>
+
       {/* =====================================================
           05 / EXPERIENCE
           \===================================================== */}
@@ -2668,6 +2706,7 @@ export default function Page() {
           </div>
         </div>
       </section>
+
       {/* =====================================================
           06 / PROJECT
           \===================================================== */}
@@ -2957,6 +2996,7 @@ export default function Page() {
           </article>
         </div>
       </section>
+
       {/* =====================================================
           07 / SERVICES
           \===================================================== */}
@@ -3024,6 +3064,7 @@ export default function Page() {
           </div>
         </div>
       </section>
+
       {/* =====================================================
           08 / ACHIEVEMENTS
           \===================================================== */}
@@ -3087,6 +3128,7 @@ export default function Page() {
           </div>
         </div>
       </section>
+
       {/* =====================================================
           09 / TESTIMONIALS
           \===================================================== */}
@@ -3180,6 +3222,7 @@ export default function Page() {
           </div>
         </div>
       </section>
+
       {/* =====================================================
           10 / CONTACT
           \===================================================== */}
@@ -3239,100 +3282,62 @@ export default function Page() {
               </div>
             </div>
             <div className="contact-side contact-side-enhanced">
-              <div className="contact-item">
-                <span className="contact-label">
-                  Email
-                </span>
-                <a
-                  className="contact-value"
-                  href={`mailto:${cv.email}`}
-                  dir="ltr"
-                >
-                  {cv.email}
-                </a>
-              </div>
-              <div className="contact-item">
-                <span className="contact-label">
-                  LinkedIn
-                </span>
-                <a
-                  className="contact-value"
-                  href={
-                    cv.linkedin
-                  }
-                  target="_blank"
-                  rel="noreferrer"
-                  dir="ltr"
-                >
-                  linkedin.com/in/mohamed-gamal-devops
-                </a>
-              </div>
-              {cv.github ? (
-                <div className="contact-item">
-                  <span className="contact-label">
-                    GitHub
-                  </span>
-                  <a
-                    className="contact-value"
-                    href={
-                      cv.github
-                    }
-                    target="_blank"
-                    rel="noreferrer"
-                    dir="ltr"
-                  >
-                    {
-                      cv.github.replace(
-                        /^https?:\/\//,
-                        ""
-                      )
-                    }
-                  </a>
+              <a className="contact-item-card" href={`mailto:${cv.email}`} dir="ltr">
+                <div className="contact-icon-box">{i.email}</div>
+                <div className="contact-text-stack">
+                  <span className="contact-label">Email</span>
+                  <span className="contact-value">{cv.email}</span>
                 </div>
-              ) : null}
-              <div className="contact-item">
-                <span className="contact-label">
-                  Phone
-                </span>
-                <a
-                  className="contact-value"
-                  href={`tel:${cv.phone.replace(
-                    /\s/g,
-                    ""
-                  )}`}
-                  dir="ltr"
-                >
-                  {cv.phone}
+              </a>
+              <a className="contact-item-card" href={cv.linkedin} target="_blank" rel="noreferrer" dir="ltr">
+                <div className="contact-icon-box">{i.linkedin}</div>
+                <div className="contact-text-stack">
+                  <span className="contact-label">LinkedIn</span>
+                  <span className="contact-value">linkedin.com/in/mohamed-gamal-devops</span>
+                </div>
+              </a>
+              {cv.github && (
+                <a className="contact-item-card" href={cv.github} target="_blank" rel="noreferrer" dir="ltr">
+                  <div className="contact-icon-box">{i.github}</div>
+                  <div className="contact-text-stack">
+                    <span className="contact-label">GitHub</span>
+                    <span className="contact-value">{cv.github.replace(/^https?:\/\//, "")}</span>
+                  </div>
                 </a>
+              )}
+              <a className="contact-item-card" href={`tel:${cv.phone.replace(/\s/g, "")}`} dir="ltr">
+                <div className="contact-icon-box">{i.phone}</div>
+                <div className="contact-text-stack">
+                  <span className="contact-label">Phone</span>
+                  <span className="contact-value">{cv.phone}</span>
+                </div>
+              </a>
+              <a className="contact-item-card" href={`https://wa.me/${cv.phone.replace(/[^0-9]/g, "")}`} target="_blank" rel="noreferrer" dir="ltr">
+                <div className="contact-icon-box">{i.whatsapp}</div>
+                <div className="contact-text-stack">
+                  <span className="contact-label">Phone / WhatsApp</span>
+                  <span className="contact-value">{cv.phone}</span>
+                </div>
+              </a>
+              <div className="contact-item-card" dir="ltr">
+                <div className="contact-icon-box">{i.terminal}</div>
+                <div className="contact-text-stack">
+                  <span className="contact-label">{t.targetRole}</span>
+                  <span className="contact-value">{cv.secondaryTitle}</span>
+                </div>
               </div>
-              <div className="contact-item">
-                <span className="contact-label">
-                  {t.targetRole}
-                </span>
-                <span
-                  className="contact-value"
-                  dir="ltr"
-                >
-                  {
-                    cv.secondaryTitle
-                  }
-                </span>
-              </div>
-              <div className="contact-item">
-                <span className="contact-label">
-                  {t.coreFocus}
-                </span>
-                <span
-                  className="contact-value"
-                  dir="ltr"
-                >
-                  AWS · Linux · IaC · CI/CD
-                </span>
+              <div className="contact-item-card" dir="ltr">
+                <div className="contact-icon-box">{i.cloud}</div>
+                <div className="contact-text-stack">
+                  <span className="contact-label">{t.coreFocus}</span>
+                  <span className="contact-value">AWS · Linux · IaC · CI/CD</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+
       <style jsx>{`
         .onboarding-overlay {
           position: fixed;
@@ -3407,1078 +3412,4 @@ export default function Page() {
           position: relative;
           display: grid;
           place-items: center;
-          min-height: 88px;
-          margin-bottom: 24px;
-          transform: translateY(12px) scale(.8);
-          opacity: 0;
-          transition: transform 900ms 70ms cubic-bezier(.16,1,.3,1), opacity 600ms 70ms ease;
-        }
-        .onboarding-overlay.is-ready .onboarding-logo-wrap {
-          transform: none;
-          opacity: 1;
-        }
-        .onboarding-logo-ring {
-          position: absolute;
-          width: 116px;
-          height: 116px;
-          border: 1px solid ${lightMode ? "rgba(167,131,255,.18)" : "rgba(167,131,255,.21)"};
-          border-radius: 50%;
-          box-shadow: 0 0 0 10px rgba(167,131,255,.025), 0 0 54px rgba(167,131,255,.17);
-          animation: onboarding-pulse 2.2s ease-in-out infinite;
-        }
-        .onboarding-logo {
-          position: relative;
-          z-index: 1;
-          display: block;
-          width: min(350px, 72vw);
-          max-height: 108px;
-          height: auto;
-          object-fit: contain;
-          filter: drop-shadow(0 14px 38px rgba(167,131,255,.17));
-        }
-        .onboarding-name {
-          display: flex;
-          flex-direction: column;
-          font-size: clamp(36px, 6.1vw, 74px);
-          line-height: .96;
-          font-weight: 900;
-          letter-spacing: .16em;
-          text-indent: .16em;
-          color: ${lightMode ? "#11131b" : "#f7f4ff"};
-          overflow: hidden;
-        }
-        .onboarding-name span {
-          display: block;
-          transform: translateY(100%);
-          opacity: 0;
-          transition: transform 820ms cubic-bezier(.16,1,.3,1), opacity 560ms ease;
-        }
-        .onboarding-name span:first-child { transition-delay: 220ms; }
-        .onboarding-name span:last-child { transition-delay: 310ms; }
-        .onboarding-overlay.is-ready .onboarding-name span {
-          transform: none;
-          opacity: 1;
-        }
-        .onboarding-divider {
-          width: min(280px, 52vw);
-          height: 1px;
-          margin: 22px 0 17px;
-          overflow: hidden;
-          background: ${lightMode ? "rgba(17,19,27,.10)" : "rgba(255,255,255,.10)"};
-        }
-        .onboarding-divider span {
-          display: block;
-          width: 100%;
-          height: 100%;
-          transform: translateX(-105%);
-          background: linear-gradient(90deg, transparent, #A783FF, transparent);
-          transition: transform 900ms 410ms cubic-bezier(.16,1,.3,1);
-        }
-        .onboarding-overlay.is-ready .onboarding-divider span { transform: translateX(105%); }
-        .onboarding-title {
-          margin: 0;
-          font-size: clamp(12px, 1.8vw, 16px);
-          line-height: 1.35;
-          font-weight: 800;
-          letter-spacing: .24em;
-          text-indent: .24em;
-          color: #A783FF;
-          transform: translateY(10px);
-          opacity: 0;
-          transition: transform 650ms 470ms cubic-bezier(.16,1,.3,1), opacity 520ms 470ms ease;
-        }
-        .onboarding-overlay.is-ready .onboarding-title {
-          transform: none;
-          opacity: 1;
-        }
-        .onboarding-focus {
-          margin: 11px 0 0;
-          max-width: 520px;
-          font-size: 10px;
-          line-height: 1.45;
-          letter-spacing: .13em;
-          text-transform: uppercase;
-          color: ${lightMode ? "rgba(17,19,27,.48)" : "rgba(255,255,255,.46)"};
-          transform: translateY(8px);
-          opacity: 0;
-          transition: transform 650ms 560ms cubic-bezier(.16,1,.3,1), opacity 520ms 560ms ease;
-        }
-        .onboarding-overlay.is-ready .onboarding-focus {
-          transform: none;
-          opacity: 1;
-        }
-        .onboarding-progress {
-          position: relative;
-          width: min(320px, 60vw);
-          height: 2px;
-          margin-top: 28px;
-          border-radius: 999px;
-          overflow: hidden;
-          background: ${lightMode ? "rgba(17,19,27,.08)" : "rgba(255,255,255,.08)"};
-          transform: scaleX(.35);
-          opacity: 0;
-          transition: transform 900ms 680ms cubic-bezier(.16,1,.3,1), opacity 520ms 680ms ease;
-        }
-        .onboarding-overlay.is-ready .onboarding-progress {
-          transform: scaleX(1);
-          opacity: 1;
-        }
-        .onboarding-progress span {
-          display: block;
-          width: 32%;
-          height: 100%;
-          border-radius: inherit;
-          background: linear-gradient(90deg, transparent, #A783FF, #C1AAFF, transparent);
-          animation: onboarding-scan 1.5s ease-in-out infinite;
-        }
-
-
-        .topbar {
-          position: fixed;
-          top: 0;
-          left: 0;
-          right: 0;
-          z-index: 120;
-          padding: 14px 18px;
-          transition: padding 220ms ease;
-        }
-        .topbar-inner {
-          position: relative;
-          width: min(1440px,100%);
-          min-height: 58px;
-          margin: 0 auto;
-          padding: 0 12px 0 18px;
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          gap: 18px;
-          border: 1px solid ${lightMode ? "rgba(15,23,42,.08)" : "rgba(255,255,255,.08)"};
-          border-radius: 18px;
-          background: ${lightMode ? "rgba(255,255,255,.84)" : "rgba(9,10,20,.70)"};
-          box-shadow: 0 16px 44px ${lightMode ? "rgba(15,23,42,.08)" : "rgba(0,0,0,.24)"};
-          backdrop-filter: blur(20px) saturate(150%);
-          -webkit-backdrop-filter: blur(20px) saturate(150%);
-        }
-        .topbar.scrolled {
-          padding-top: 9px;
-        }
-        .topbar.scrolled .topbar-inner {
-          min-height: 54px;
-          border-color: ${lightMode ? "rgba(15,23,42,.11)" : "rgba(255,255,255,.11)"};
-          background: ${lightMode ? "rgba(255,255,255,.92)" : "rgba(9,10,20,.88)"};
-        }
-        .brand {
-          position: relative;
-          min-width: 0;
-          flex: 0 0 auto;
-          display: inline-flex;
-          align-items: center;
-          padding: 0;
-          border: 0;
-          background: transparent;
-          color: inherit;
-          cursor: pointer;
-        }
-        .brand-logo-shell {
-          position: relative;
-          display: inline-flex;
-          align-items: center;
-          width: clamp(132px,13vw,182px);
-          height: 42px;
-          overflow: hidden;
-          border-radius: 10px;
-          flex: 0 0 auto;
-        }
-        .brand-logo-image {
-          display: block;
-          width: 100%;
-          height: 100%;
-          object-fit: contain;
-          object-position: left center;
-          transition: transform 220ms ease, filter 220ms ease;
-        }
-        .brand:hover .brand-logo-image {
-          transform: translateY(-1px) scale(1.015);
-          filter: drop-shadow(0 7px 18px rgba(167,131,255,.20));
-        }
-        .brand:focus-visible {
-          outline: 2px solid ${lightMode ? "rgba(167,131,255,.40)" : "rgba(167,131,255,.55)"};
-          outline-offset: 5px;
-          border-radius: 10px;
-        }
-        .nav-center {
-          flex: 1 1 auto;
-          min-width: 0;
-          display: flex;
-          justify-content: center;
-        }
-        .nav-links {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          gap: 3px;
-          min-width: 0;
-          overflow-x: auto;
-          scrollbar-width: none;
-        }
-        .nav-links::-webkit-scrollbar { display: none; }
-        .nav-links button {
-          position: relative;
-          display: inline-flex;
-          align-items: center;
-          justify-content: center;
-          gap: 7px;
-          min-height: 38px;
-          padding: 8px 10px;
-          border: 0;
-          border-radius: 11px;
-          background: transparent;
-          color: ${lightMode ? "rgba(15,23,42,.62)" : "rgba(255,255,255,.64)"};
-          font: inherit;
-          font-size: 11px;
-          font-weight: 650;
-          white-space: nowrap;
-          cursor: pointer;
-          transition: color 180ms ease, background 180ms ease, transform 180ms ease;
-        }
-        .nav-links button::after {
-          content: "";
-          position: absolute;
-          left: 12px;
-          right: 12px;
-          bottom: 4px;
-          height: 1px;
-          border-radius: 999px;
-          background: #A783FF;
-          transform: scaleX(0);
-          transition: transform 180ms ease;
-        }
-        .nav-links button:hover {
-          color: ${lightMode ? "#11131b" : "#f6f3ff"};
-          background: rgba(167,131,255,.08);
-          transform: translateY(-1px);
-        }
-        .nav-links button.active {
-          color: #A783FF;
-          background: rgba(167,131,255,.10);
-        }
-        .nav-links button.active::after { transform: scaleX(1); }
-        .nav-contact { color: #A783FF !important; }
-        .nav-contact-icon { display: inline-flex; opacity: .86; }
-        .nav-tools {
-          flex: 0 0 auto;
-          display: flex;
-          align-items: center;
-          gap: 8px;
-        }
-        .availability {
-          display: inline-flex;
-          align-items: center;
-          gap: 7px;
-          min-height: 32px;
-          padding: 7px 10px;
-          border-radius: 999px;
-          color: ${lightMode ? "rgba(15,23,42,.60)" : "rgba(255,255,255,.58)"};
-          background: ${lightMode ? "rgba(15,23,42,.035)" : "rgba(255,255,255,.045)"};
-          border: 1px solid ${lightMode ? "rgba(15,23,42,.07)" : "rgba(255,255,255,.08)"};
-          font-size: 9px;
-          font-weight: 700;
-          letter-spacing: .08em;
-          text-transform: uppercase;
-          white-space: nowrap;
-        }
-        .availability-dot {
-          width: 6px;
-          height: 6px;
-          flex: 0 0 6px;
-          border-radius: 50%;
-          background: #A783FF;
-          box-shadow: 0 0 0 4px rgba(167,131,255,.09), 0 0 16px rgba(167,131,255,.28);
-          animation: availability-pulse 2.2s ease-in-out infinite;
-        }
-        .language-button,
-        .theme-button,
-        .menu-btn {
-          display: inline-flex;
-          align-items: center;
-          justify-content: center;
-          min-width: 34px;
-          height: 34px;
-          padding: 0 9px;
-          border: 1px solid ${lightMode ? "rgba(15,23,42,.09)" : "rgba(255,255,255,.10)"};
-          border-radius: 10px;
-          background: ${lightMode ? "rgba(255,255,255,.50)" : "rgba(255,255,255,.035)"};
-          color: ${lightMode ? "rgba(15,23,42,.66)" : "rgba(255,255,255,.70)"};
-          font: inherit;
-          font-size: 10px;
-          font-weight: 750;
-          cursor: pointer;
-          transition: transform 180ms ease, border-color 180ms ease, background 180ms ease, color 180ms ease;
-        }
-        .language-button:hover,
-        .theme-button:hover,
-        .menu-btn:hover {
-          transform: translateY(-1px);
-          border-color: rgba(167,131,255,.34);
-          background: rgba(167,131,255,.08);
-          color: #A783FF;
-        }
-        .theme-button { position: relative; overflow: hidden; }
-        .theme-glow {
-          position: absolute;
-          inset: 4px;
-          border-radius: 8px;
-          background: radial-gradient(circle at center, rgba(167,131,255,.12), transparent 68%);
-          pointer-events: none;
-        }
-        .theme-icon { position: relative; z-index: 1; display: inline-flex; }
-        .menu-btn {
-          display: none;
-          font-size: 17px;
-          line-height: 1;
-        }
-        .mobile-menu {
-          position: fixed;
-          inset: 76px 18px auto;
-          z-index: 119;
-          max-height: calc(100vh - 92px);
-          overflow: auto;
-          padding: 12px;
-          border: 1px solid ${lightMode ? "rgba(15,23,42,.09)" : "rgba(255,255,255,.09)"};
-          border-radius: 18px;
-          background: ${lightMode ? "rgba(255,255,255,.95)" : "rgba(9,10,20,.96)"};
-          box-shadow: 0 24px 70px ${lightMode ? "rgba(15,23,42,.15)" : "rgba(0,0,0,.34)"};
-          backdrop-filter: blur(18px);
-          -webkit-backdrop-filter: blur(18px);
-        }
-        .mobile-menu .nav-links {
-          display: flex;
-          flex-direction: column;
-          align-items: stretch;
-        }
-        .mobile-menu .nav-links button {
-          justify-content: flex-start;
-          width: 100%;
-          min-height: 46px;
-          padding: 11px 12px;
-        }
-        @keyframes onboarding-pulse {
-          0%, 100% { transform: scale(.96); opacity: .7; }
-          50% { transform: scale(1.03); opacity: 1; }
-        }
-        @keyframes onboarding-scan {
-          0% { transform: translateX(-340%); }
-          100% { transform: translateX(420%); }
-        }
-        @keyframes availability-pulse {
-          0%, 100% { transform: scale(1); opacity: .85; }
-          50% { transform: scale(1.22); opacity: 1; }
-        }
-        @media (max-width: 1180px) {
-          .nav-links { gap: 0; }
-          .nav-links button { padding-inline: 8px; font-size: 10px; }
-          .availability { display: none; }
-        }
-        @media (max-width: 980px) {
-          .nav-center { display: none; }
-          .menu-btn { display: inline-flex; }
-          .topbar-inner { padding-left: 14px; }
-        }
-        @media (max-width: 620px) {
-          .topbar { padding-inline: 10px; }
-          .topbar-inner { min-height: 54px; padding: 0 9px 0 12px; border-radius: 15px; }
-          .brand-logo-shell { width: 132px; height: 38px; }
-          .language-button { min-width: 31px; padding-inline: 7px; }
-          .theme-button { display: none; }
-          .mobile-menu { inset-inline: 10px; top: 70px; }
-          .onboarding-content { padding-inline: 18px; }
-          .onboarding-logo { width: min(290px, 76vw); }
-        }
-        @media (prefers-reduced-motion: reduce) {
-          .onboarding-overlay,
-          .onboarding-content,
-          .onboarding-logo-wrap,
-          .onboarding-name span,
-          .onboarding-divider span,
-          .onboarding-title,
-          .onboarding-focus,
-          .onboarding-progress,
-          .brand-logo-image,
-          .nav-links button,
-          .language-button,
-          .theme-button,
-          .menu-btn {
-            animation: none !important;
-            transition-duration: 1ms !important;
-          }
-          .onboarding-overlay.is-ready .onboarding-content,
-          .onboarding-overlay.is-ready .onboarding-logo-wrap,
-          .onboarding-overlay.is-ready .onboarding-name span,
-          .onboarding-overlay.is-ready .onboarding-title,
-          .onboarding-overlay.is-ready .onboarding-focus,
-          .onboarding-overlay.is-ready .onboarding-progress {
-            transform: none !important;
-            opacity: 1 !important;
-            filter: none !important;
-          }
-        }
-
-
-        :global(.sr-only) {
-          position: absolute;
-          width: 1px;
-          height: 1px;
-          padding: 0;
-          margin: -1px;
-          overflow: hidden;
-          clip: rect(0, 0, 0, 0);
-          white-space: nowrap;
-          border: 0;
-        }
-        .education-main-info {
-          min-width: 0;
-        }
-        .education-institution-logos {
-          display: inline-flex;
-          align-items: center;
-          gap: 14px;
-          margin-bottom: 18px;
-          padding: 8px 10px;
-          border: 1px solid
-            ${lightMode
-              ? "rgba(15, 23, 42, 0.08)"
-              : "rgba(255, 255, 255, 0.09)"};
-          border-radius: 14px;
-          background:
-            ${lightMode
-              ? "rgba(255,255,255,0.72)"
-              : "rgba(255,255,255,0.025)"};
-          width: fit-content;
-        }
-        .education-logo-link {
-          display: inline-flex;
-          align-items: center;
-          justify-content: center;
-          text-decoration: none;
-          border-radius: 11px;
-        }
-        .education-logo {
-          width: 56px;
-          height: 56px;
-          display: grid;
-          place-items: center;
-          flex: 0 0 56px;
-          overflow: hidden;
-          border-radius: 11px;
-          background:
-            ${lightMode
-              ? "rgba(255,255,255,0.95)"
-              : "rgba(255,255,255,0.06)"};
-          border: 1px solid
-            ${lightMode
-              ? "rgba(15, 23, 42, 0.08)"
-              : "rgba(255,255,255,0.08)"};
-        }
-        .education-logo img {
-          width: 46px;
-          height: 46px;
-          display: block;
-          object-fit: contain;
-        }
-        .education-logo-fallback {
-          font-size: 11px;
-          font-weight: 800;
-          letter-spacing: 0.02em;
-          opacity: 0.72;
-        }
-        .education-logo-divider {
-          width: 1px;
-          height: 34px;
-          background:
-            ${lightMode
-              ? "rgba(15, 23, 42, 0.12)"
-              : "rgba(255,255,255,0.12)"};
-        }
-        .education-label-row {
-          margin-top: 2px;
-        }
-        .education-logo-link:hover .education-logo,
-        .education-logo-link:focus-visible .education-logo {
-          transform: translateY(-1px);
-          border-color:
-            ${lightMode
-              ? "rgba(15, 23, 42, 0.18)"
-              : "rgba(255,255,255,0.18)"};
-        }
-        @media (max-width: 700px) {
-          .education-institution-logos {
-            gap: 10px;
-            margin-bottom: 15px;
-            padding: 7px 8px;
-          }
-          .education-logo {
-            width: 50px;
-            height: 50px;
-            flex-basis: 50px;
-          }
-          .education-logo img {
-            width: 40px;
-            height: 40px;
-          }
-          .education-logo-divider {
-            height: 30px;
-          }
-        }
-        .skill-chip {
-          display: inline-flex;
-          align-items: center;
-          gap: 7px;
-        }
-        .skill-chip-label {
-          min-width: 0;
-        }
-        .skill-logo-mini {
-          width: 16px;
-          height: 16px;
-          display: inline-grid;
-          place-items: center;
-          flex: 0 0 16px;
-          border-radius: 5px;
-          border: 1px solid
-            ${lightMode
-              ? "rgba(15, 23, 42, 0.10)"
-              : "rgba(255, 255, 255, 0.11)"};
-          background:
-            ${lightMode
-              ? "rgba(15, 23, 42, 0.035)"
-              : "rgba(255,255,255,0.04)"};
-          overflow: hidden;
-        }
-        .skill-logo-mini img {
-          width: 11px;
-          height: 11px;
-          display: block;
-          object-fit: contain;
-        }
-        .skill-logo-mini span {
-          font-size: 7px;
-          line-height: 1;
-          font-weight: 800;
-          letter-spacing: -0.02em;
-          opacity: 0.72;
-        }
-        .soft-skill-name {
-          display: inline-flex;
-          align-items: center;
-          gap: 8px;
-          min-width: 0;
-        }
-        .recommendation-grid {
-          grid-template-columns: repeat(2, minmax(0, 1fr));
-        }
-        .recommendation-top {
-          margin-bottom: 18px;
-        }
-        .recommendation-author-block {
-          display: flex;
-          flex-direction: column;
-          gap: 5px;
-          margin-bottom: 16px;
-        }
-        .recommendation-author-block strong {
-          font-size: 17px;
-          line-height: 1.15;
-        }
-        .recommendation-role {
-          font-size: 12px;
-          line-height: 1.45;
-          opacity: 0.68;
-        }
-        .recommendation-meta {
-          display: inline-flex;
-          align-items: center;
-          gap: 7px;
-          flex-wrap: wrap;
-          font-size: 11px;
-          opacity: 0.52;
-        }
-        .recommendation-quote {
-          display: flex;
-          flex-direction: column;
-          gap: 11px;
-        }
-        .recommendation-quote p {
-          margin: 0;
-        }
-        .recommendation-source {
-          margin-top: 20px;
-        }
-        @media (max-width: 900px) {
-          .recommendation-grid {
-            grid-template-columns: 1fr;
-          }
-        }
-        .footer-freelance-links {
-          margin-top: 30px;
-          padding-top: 22px;
-          border-top: 1px solid
-            ${lightMode
-              ? "rgba(15, 23, 42, 0.07)"
-              : "rgba(255, 255, 255, 0.075)"};
-        }
-        .footer-freelance-head {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          gap: 16px;
-          margin-bottom: 12px;
-        }
-        .footer-freelance-note {
-          margin: 4px 0 0;
-          font-size: 11px;
-          line-height: 1.45;
-          opacity: 0.5;
-        }
-        .footer-freelance-count {
-          flex: 0 0 auto;
-          font-size: 9px;
-          letter-spacing: 0.1em;
-          text-transform: uppercase;
-          opacity: 0.38;
-          white-space: nowrap;
-        }
-        .footer-freelance-grid {
-          display: flex;
-          flex-wrap: wrap;
-          align-items: center;
-          gap: 11px;
-          padding: 2px 0 4px;
-          margin: 0;
-        }
-        .footer-freelance-link {
-          position: relative;
-          display: inline-flex;
-          align-items: center;
-          justify-content: center;
-          width: 44px;
-          height: 44px;
-          padding: 0;
-          border: 1px solid
-            ${lightMode
-              ? "rgba(15, 23, 42, 0.11)"
-              : "rgba(255, 255, 255, 0.10)"};
-          border-radius: 12px;
-          text-decoration: none;
-          color: inherit;
-          background:
-            ${lightMode
-              ? "rgba(255,255,255,0.55)"
-              : "rgba(255,255,255,0.025)"};
-          box-shadow:
-            0 2px 8px
-              ${lightMode
-                ? "rgba(15, 23, 42, 0.045)"
-                : "rgba(0, 0, 0, 0.10)"};
-          transition:
-            transform 160ms ease,
-            border-color 160ms ease,
-            background 160ms ease,
-            box-shadow 160ms ease;
-        }
-        .footer-freelance-link:hover {
-          transform: translateY(-2px);
-          border-color:
-            ${lightMode
-              ? "rgba(15, 23, 42, 0.22)"
-              : "rgba(255, 255, 255, 0.22)"};
-          background:
-            ${lightMode
-              ? "rgba(255,255,255,0.88)"
-              : "rgba(255,255,255,0.055)"};
-          box-shadow:
-            0 7px 16px
-              ${lightMode
-                ? "rgba(15, 23, 42, 0.09)"
-                : "rgba(0, 0, 0, 0.16)"};
-        }
-        .footer-freelance-link:focus-visible {
-          outline: 2px solid
-            ${lightMode
-              ? "rgba(46, 103, 224, 0.48)"
-              : "rgba(105, 224, 255, 0.52)"};
-          outline-offset: 3px;
-        }
-        .footer-freelance-link .freelance-logo {
-          position: relative;
-          z-index: 1;
-          display: inline-flex;
-          align-items: center;
-          justify-content: center;
-          width: 27px;
-          height: 27px;
-          border: 0;
-          border-radius: 7px;
-          background: transparent;
-          box-shadow: none;
-        }
-        .footer-freelance-link .freelance-logo img {
-          display: block;
-          width: 25px;
-          height: 25px;
-          object-fit: contain;
-        }
-        .footer-freelance-link .freelance-logo-fallback {
-          display: inline-flex;
-          align-items: center;
-          justify-content: center;
-          width: 25px;
-          height: 25px;
-          border-radius: 7px;
-          font-size: 9px;
-          font-weight: 800;
-          letter-spacing: -0.02em;
-        }
-        .footer-freelance-name,
-        .footer-freelance-arrow {
-          position: absolute;
-          width: 1px;
-          height: 1px;
-          padding: 0;
-          margin: -1px;
-          overflow: hidden;
-          clip: rect(0, 0, 0, 0);
-          white-space: nowrap;
-          border: 0;
-        }
-        .rtl .footer-freelance-head {
-          flex-direction: row-reverse;
-        }
-        .rtl .footer-freelance-grid {
-          justify-content: flex-start;
-        }
-        @media (max-width: 700px) {
-          .footer-freelance-links {
-            margin-top: 26px;
-            padding-top: 18px;
-          }
-          .footer-freelance-head {
-            align-items: flex-start;
-            flex-direction: column;
-            gap: 5px;
-            margin-bottom: 11px;
-          }
-          .footer-freelance-count {
-            display: none;
-          }
-          .footer-freelance-grid {
-            gap: 9px;
-          }
-          .footer-freelance-link {
-            width: 42px;
-            height: 42px;
-            border-radius: 11px;
-          }
-          .footer-freelance-link .freelance-logo,
-          .footer-freelance-link .freelance-logo img,
-          .footer-freelance-link .freelance-logo-fallback {
-            width: 24px;
-            height: 24px;
-          }
-        }
-      `}</style>
-      {/* =====================================================
-          FOOTER
-          \===================================================== */}
-      <footer className="site-footer">
-        <div className="container">
-          <div className="footer-main">
-            <div className="footer-brand">
-              <button
-                className="footer-brand-button"
-                onClick={() =>
-                  go("home")
-                }
-              >
-                <span className="footer-brand-mark">
-                  {i.cloud}
-                </span>
-                <span>
-                  <strong>
-                    {cv.name}
-                  </strong>
-                  <small>
-                    {cv.title}
-                  </small>
-                </span>
-              </button>
-              <p>
-                {t.footerConnect}
-              </p>
-              <div className="footer-status">
-                <span className="availability-dot" />
-                <span>
-                  {t.footerStatus}
-                </span>
-              </div>
-            </div>
-            <div className="footer-column">
-              <span className="footer-heading">
-                {t.footerExplore}
-              </span>
-              <button
-                onClick={() =>
-                  go("about")
-                }
-              >
-                {t.about}
-              </button>
-              <button
-                onClick={() =>
-                  go("skills")
-                }
-              >
-                {t.skills}
-              </button>
-              <button
-                onClick={() =>
-                  go("experience")
-                }
-              >
-                {t.experience}
-              </button>
-              <button
-                onClick={() =>
-                  go("project")
-                }
-              >
-                {t.project}
-              </button>
-            </div>
-            <div className="footer-column">
-              <span className="footer-heading">
-                {t.footerContact}
-              </span>
-              <a
-                href={`mailto:${cv.email}`}
-                dir="ltr"
-              >
-                {cv.email}
-              </a>
-              <a
-                href={`tel:${cv.phone.replace(
-                  /\s/g,
-                  ""
-                )}`}
-                dir="ltr"
-              >
-                {cv.phone}
-              </a>
-              <button
-                onClick={() =>
-                  go("contact")
-                }
-              >
-                {t.contact}
-              </button>
-            </div>
-            <div className="footer-column">
-              <span className="footer-heading">
-                {t.footerSocial}
-              </span>
-              <a
-                href={cv.linkedin}
-                target="_blank"
-                rel="noreferrer"
-                className="footer-social-link"
-              >
-                <span>
-                  {i.linkedin}
-                </span>
-                <span>
-                  LinkedIn
-                </span>
-              </a>
-              <a
-                href={cv.github}
-                target="_blank"
-                rel="noreferrer"
-                className="footer-social-link"
-              >
-                <span>
-                  {i.github}
-                </span>
-                <span>
-                  GitHub
-                </span>
-              </a>
-            </div>
-          </div>
-          <div className="footer-freelance-links">
-            <div className="footer-freelance-head">
-              <div>
-                <span className="footer-heading">
-                  {t.freelancePlatforms}
-                </span>
-                <p className="footer-freelance-note">
-                  {t.freelancePlatformsNote}
-                </p>
-              </div>
-            </div>
-            <div className="footer-freelance-grid">
-              {cv.freelanceLinks.map((platform) => (
-                <a
-                  key={platform.name}
-                  href={platform.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="footer-freelance-link"
-                  dir="ltr"
-                  aria-label={`${platform.name} profile`}
-                  title={isArabic ? platform.nameAr : platform.name}
-                >
-                  <PlatformLogo
-                    src={platform.logo}
-                    mark={platform.mark}
-                    name={platform.name}
-                  />
-                  <span className="footer-freelance-name">
-                    {isArabic ? platform.nameAr : platform.name}
-                  </span>
-                  <span className="footer-freelance-arrow" aria-hidden="true">
-                    {i.external}
-                  </span>
-                </a>
-              ))}
-            </div>
-          </div>
-          <div className="footer-bottom">
-            <span>
-              ©{" "}
-              {new Date().getFullYear()}{" "}
-              {cv.name}.{" "}
-              {t.footerCopyright}
-            </span>
-            <span
-              dir="ltr"
-              className="footer-stack"
-            >
-              Cloud & DevOps · AWS · Linux ·
-              Networking · IaC
-            </span>
-          </div>
-        </div>
-      </footer>
-      {/* =====================================================
-          CERTIFICATE LIGHTBOX
-          \===================================================== */}
-      {selectedCertificate && (
-        <div
-          className="certificate-modal"
-          role="dialog"
-          aria-modal="true"
-          aria-label="Certificate preview"
-          onClick={() =>
-            setSelectedCertificate(
-              null
-            )
-          }
-        >
-          <button
-            type="button"
-            className="certificate-modal-close"
-            onClick={() =>
-              setSelectedCertificate(
-                null
-              )
-            }
-            aria-label="Close certificate preview"
-          >
-            ×
-          </button>
-          <div
-            className="certificate-modal-content"
-            onClick={(event) =>
-              event.stopPropagation()
-            }
-            style={{
-              width:
-                "min(94vw, 1500px)",
-              height:
-                "min(92vh, 1000px)",
-              display: "flex",
-              alignItems:
-                "center",
-              justifyContent:
-                "center",
-            }}
-          >
-            <img
-              className="certificate-modal-image"
-              src={
-                selectedCertificate
-              }
-              alt="Certificate enlarged preview"
-              style={{
-                maxWidth:
-                  "100%",
-                maxHeight:
-                  "100%",
-                width: "auto",
-                height: "auto",
-                objectFit:
-                  "contain",
-              }}
-            />
-          </div>
-        </div>
-      )}
-      {/* =====================================================
-          PROJECT IMAGE LIGHTBOX
-          \===================================================== */}
-      {selectedProjectImage && (
-        <div
-          className="certificate-modal project-image-modal"
-          role="dialog"
-          aria-modal="true"
-          aria-label="Project image preview"
-          onClick={() =>
-            setSelectedProjectImage(
-              null
-            )
-          }
-        >
-          <button
-            type="button"
-            className="certificate-modal-close"
-            onClick={() =>
-              setSelectedProjectImage(
-                null
-              )
-            }
-            aria-label="Close project image preview"
-          >
-            ×
-          </button>
-          <div
-            className="certificate-modal-content project-image-modal-content"
-            onClick={(event) =>
-              event.stopPropagation()
-            }
-          >
-            <img
-              src={
-                selectedProjectImage
-              }
-              alt={
-                isArabic
-                  ? cv.project.imageAltAr
-                  : cv.project.imageAlt
-              }
-              className="project-image-modal-image"
-            />
-          </div>
-        </div>
-      )}
-    </main>
-  );
-}
+          min-height: 
