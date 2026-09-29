@@ -20,10 +20,8 @@ const cv = {
       logo:
         "https://www.google.com/s2/favicons?domain=khamsat.com&sz=128",
       mark: "5",
-      description:
-        "Freelance profile on Khamsat.",
-      descriptionAr:
-        "الملف الشخصي على خمسات.",
+      description: "Freelance profile on Khamsat.",
+      descriptionAr: "الملف الشخصي على خمسات.",
     },
     {
       name: "Mostaql",
@@ -32,10 +30,8 @@ const cv = {
       logo:
         "https://www.google.com/s2/favicons?domain=mostaql.com&sz=128",
       mark: "M",
-      description:
-        "Mostaql freelance account.",
-      descriptionAr:
-        "حساب العمل الحر على مستقل.",
+      description: "Mostaql freelance account.",
+      descriptionAr: "حساب العمل الحر على مستقل.",
     },
     {
       name: "Nafezly",
@@ -44,10 +40,8 @@ const cv = {
       logo:
         "https://www.google.com/s2/favicons?domain=nafezly.com&sz=128",
       mark: "N",
-      description:
-        "Freelance profile on Nafezly.",
-      descriptionAr:
-        "الملف الشخصي على نفذلي.",
+      description: "Freelance profile on Nafezly.",
+      descriptionAr: "الملف الشخصي على نفذلي.",
     },
     {
       name: "Kafiil",
@@ -56,22 +50,17 @@ const cv = {
       logo:
         "https://www.google.com/s2/favicons?domain=kafiil.com&sz=128",
       mark: "K",
-      description:
-        "Freelance profile on Kafiil.",
-      descriptionAr:
-        "الملف الشخصي على كفيل.",
+      description: "Freelance profile on Kafiil.",
+      descriptionAr: "الملف الشخصي على كفيل.",
     },
     {
       name: "Freelanceyard",
       nameAr: "Freelanceyard",
       url: "https://freelanceyard.com/ar/freelancers/mohamed-gamal-87",
-      logo:
-        "https://freelanceyard.com/images/favicon.png",
+      logo: "https://freelanceyard.com/images/favicon.png",
       mark: "FY",
-      description:
-        "Freelance profile on Freelanceyard.",
-      descriptionAr:
-        "الملف الشخصي على Freelanceyard.",
+      description: "Freelance profile on Freelanceyard.",
+      descriptionAr: "الملف الشخصي على Freelanceyard.",
     },
     {
       name: "Upwork",
@@ -80,15 +69,12 @@ const cv = {
       logo:
         "https://www.google.com/s2/favicons?domain=upwork.com&sz=128",
       mark: "U",
-      description:
-        "Freelance profile on Upwork.",
-      descriptionAr:
-        "الملف الشخصي على Upwork.",
+      description: "Freelance profile on Upwork.",
+      descriptionAr: "الملف الشخصي على Upwork.",
     },
   ],
   title: "Cloud & DevOps Engineer",
-  secondaryTitle:
-    "Cloud Infrastructure / DevOps Intern",
+  secondaryTitle: "Cloud Infrastructure / DevOps Intern",
   objective:
     "IT-focused Computer Science student building skills in AWS Cloud and DevOps, with a focus on infrastructure, Linux, networking, and automation.",
   objectiveAr:
@@ -101,39 +87,29 @@ const cv = {
     school: "Menoufia University",
     degree: "Bachelor of Computer Science",
     specialization: "Information Technology",
-    period:
-      "Sep. 2023 – Expected July 2027",
-    graduation:
-      "Expected Graduation: July 2027",
+    period: "Sep. 2023 – Expected July 2027",
+    graduation: "Expected Graduation: July 2027",
     summary:
       "Academic background in Computer Science with an Information Technology specialization, alongside continuous practical development in Cloud and DevOps.",
     universityLogo:
       "https://melc.menofia.edu.eg/student_activities_survey/assets/logo.png",
-    universityLogoAlt:
-      "Menoufia University logo",
+    universityLogoAlt: "Menoufia University logo",
     facultyLogo:
       "https://www.alrichd.com/wp-content/uploads/2024/03/1650197644tQmi1XCP3R.png",
     facultyLogoAlt:
       "Faculty of Computers & Information, Menoufia University logo",
-    facultyUrl:
-      "https://mu.menofia.edu.eg/FCI/Home/en",
+    facultyUrl: "https://mu.menofia.edu.eg/FCI/Home/en",
   },
   educationAr: {
     school: "جامعة المنوفية",
     degree: "بكالوريوس علوم الحاسب",
-    specialization:
-      "تكنولوجيا المعلومات",
-    period:
-      "سبتمبر 2023 – متوقع التخرج يوليو 2027",
-    graduation:
-      "متوقع التخرج: يوليو 2027",
+    specialization: "تكنولوجيا المعلومات",
+    period: "سبتمبر 2023 – متوقع التخرج يوليو 2027",
+    graduation: "متوقع التخرج: يوليو 2027",
     summary:
       "دراسة أكاديمية في علوم الحاسب مع تخصص تكنولوجيا المعلومات، بالتوازي مع تطوير مهارات Cloud وDevOps بشكل عملي.",
   },
-  languages: [
-    "Arabic — Native",
-    "English — Very Good",
-  ],
+  languages: ["Arabic — Native", "English — Very Good"],
   achievements: [
     {
       number: "11",
@@ -157,12 +133,9 @@ const cv = {
   experience: [
     {
       role: "Cloud Computing Trainee (AWS)",
-      roleAr:
-        "متدرب Cloud Computing (AWS)",
-      company:
-        "National Telecommunication Institute (NTI)",
-      logo:
-        "https://commons.wikimedia.org/wiki/Special:FilePath/NTI%20Logo%20Tagline%20RGB.png",
+      roleAr: "متدرب Cloud Computing (AWS)",
+      company: "National Telecommunication Institute (NTI)",
+      logo: "https://commons.wikimedia.org/wiki/Special:FilePath/NTI%20Logo%20Tagline%20RGB.png",
       period: "Training",
       periodAr: "تدريب",
       focus: "AWS CLOUD ARCHITECTURE",
@@ -198,12 +171,9 @@ const cv = {
     },
     {
       role: "DevOps Track Trainee",
-      roleAr:
-        "متدرب في مسار DevOps",
-      company:
-        "Digital Egypt Pioneers Initiative (DEPI)",
-      logo:
-        "https://tse3.mm.bing.net/th/id/OIP.Hp_gIm0AmgMhb2Jx1C4f3QAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+      roleAr: "متدرب في مسار DevOps",
+      company: "Digital Egypt Pioneers Initiative (DEPI)",
+      logo: "https://tse3.mm.bing.net/th/id/OIP.Hp_gIm0AmgMhb2Jx1C4f3QAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
       period: "2026 – Present",
       periodAr: "2026 – حتى الآن",
       focus: "DEVOPS ENGINEERING",
@@ -231,12 +201,9 @@ const cv = {
     },
   ],
   project: {
-    name:
-      "AWS Enterprise Cloud Infrastructure",
-    projectLabel:
-      "Scalable & Secure Multi-AZ Architecture",
-    projectLabelAr:
-      "بنية Multi-AZ قابلة للتوسع وآمنة",
+    name: "AWS Enterprise Cloud Infrastructure",
+    projectLabel: "Scalable & Secure Multi-AZ Architecture",
+    projectLabelAr: "بنية Multi-AZ قابلة للتوسع وآمنة",
     description:
       "Architected and deployed a highly available, fault-tolerant AWS infrastructure built around a Multi-AZ 3-tier VPC design, scalable application delivery, secure network segmentation, global traffic management, protected data services, and layered security controls.",
     descriptionAr:
@@ -253,12 +220,9 @@ const cv = {
       "Created an enterprise-oriented cloud architecture focused on availability, scalability, fault tolerance, secure access, global content delivery, database resilience, shared storage, automated backup, and layered security.",
     resultAr:
       "تم بناء Cloud Architecture بمستوى Enterprise تركز على Availability وScalability وFault Tolerance وSecure Access وGlobal Content Delivery وDatabase Resilience وShared Storage وAutomated Backup وLayered Security.",
-    image:
-      "/2.jpeg",
-    imageAlt:
-      "AWS Enterprise Cloud Infrastructure architecture overview",
-    imageAltAr:
-      "صورة توضح بنية مشروع AWS Enterprise Cloud Infrastructure",
+    image: "/2.jpeg",
+    imageAlt: "AWS Enterprise Cloud Infrastructure architecture overview",
+    imageAltAr: "صورة توضح بنية مشروع AWS Enterprise Cloud Infrastructure",
     points: [
       "Multi-AZ 3-tier VPC architecture across Public, Private, and Isolated Subnets",
       "Application Load Balancers with Auto Scaling Groups for traffic management and high availability",
@@ -278,24 +242,10 @@ const cv = {
       "تطبيق Security Groups صارمة وNAT Gateways للتحكم في الوصول وتأمين الـOutbound Connectivity",
     ],
     stack: [
-      "AWS",
-      "VPC",
-      "Multi-AZ",
-      "EC2",
-      "ALB",
-      "Auto Scaling",
-      "Route 53",
-      "CloudFront",
-      "AWS WAF",
-      "AWS Shield",
-      "RDS",
-      "EFS",
-      "AWS Backup",
-      "ACM",
-      "Secrets Manager",
-      "NAT Gateway",
-      "Security Groups",
-      "Linux",
+      "AWS", "VPC", "Multi-AZ", "EC2", "ALB", "Auto Scaling",
+      "Route 53", "CloudFront", "AWS WAF", "AWS Shield", "RDS",
+      "EFS", "AWS Backup", "ACM", "Secrets Manager", "NAT Gateway",
+      "Security Groups", "Linux",
     ],
   },
   services: [
@@ -328,8 +278,7 @@ const cv = {
     },
     {
       title: "Networking & Security",
-      titleAr:
-        "Networking & Security",
+      titleAr: "Networking & Security",
       description:
         "Configuring VPCs, subnets, route tables, security groups, and controlled cloud network access.",
       descriptionAr:
@@ -350,17 +299,14 @@ const cv = {
         "I had the pleasure of teaching Mohamed during the HCIA Cloud Computing V5 course at NTI. He was dedicated, attentive, and showed a strong interest in Cloud Computing throughout the training. I appreciated his commitment to learning and his active engagement during the course.\n\nI’m happy to recommend Mohamed and wish him all the best in his Cloud Computing career.",
       quoteAr:
         "I had the pleasure of teaching Mohamed during the HCIA Cloud Computing V5 course at NTI. He was dedicated, attentive, and showed a strong interest in Cloud Computing throughout the training. I appreciated his commitment to learning and his active engagement during the course.\n\nI’m happy to recommend Mohamed and wish him all the best in his Cloud Computing career.",
-      profileUrl:
-        "https://www.linkedin.com/in/fatma-mohamed-049405208/",
+      profileUrl: "https://www.linkedin.com/in/fatma-mohamed-049405208/",
       source: "LinkedIn",
       sourceAr: "LinkedIn",
     },
     {
       name: "Ahmed Abd Elhamid",
-      role:
-        "Cloud DevOps Accelerator | 2x AWS | 1x KCNA | 1x GHAS | NTI Cloud DevOps Accelerator Graduate |",
-      roleAr:
-        "Cloud DevOps Accelerator | 2x AWS | 1x KCNA | 1x GHAS | NTI Cloud DevOps Accelerator Graduate |",
+      role: "Cloud DevOps Accelerator | 2x AWS | 1x KCNA | 1x GHAS | NTI Cloud DevOps Accelerator Graduate |",
+      roleAr: "Cloud DevOps Accelerator | 2x AWS | 1x KCNA | 1x GHAS | NTI Cloud DevOps Accelerator Graduate |",
       connection: "2nd-degree connection",
       connectionAr: "اتصال من الدرجة الثانية",
       date: "September 28, 2026",
@@ -369,8 +315,7 @@ const cv = {
         "It is my pleasure to recommend Mohamed, whom I had the opportunity to teach during an AWS Cloud course. He demonstrated strong technical aptitude, a genuine passion for cloud technologies, and a great commitment to learning. His professionalism, positive attitude, and willingness to grow truly stood out. I highly recommend Mohamed and am confident he will excel in his cloud role. Wishing you all the best, Mohamed, and continued success in your journey!",
       quoteAr:
         "It is my pleasure to recommend Mohamed, whom I had the opportunity to teach during an AWS Cloud course. He demonstrated strong technical aptitude, a genuine passion for cloud technologies, and a great commitment to learning. His professionalism, positive attitude, and willingness to grow truly stood out. I highly recommend Mohamed and am confident he will excel in his cloud role. Wishing you all the best, Mohamed, and continued success in your journey!",
-      profileUrl:
-        "https://www.linkedin.com/in/a7md-3bdelhamid/",
+      profileUrl: "https://www.linkedin.com/in/a7md-3bdelhamid/",
       source: "LinkedIn",
       sourceAr: "LinkedIn",
     },
@@ -380,241 +325,105 @@ const cv = {
       name: "Red Hat System Administration",
       provider: "Red Hat",
       date: "",
-      topics: [
-        "Linux",
-        "System Administration",
-        "Red Hat",
-      ],
-      image:
-        "/certificates/Screenshot 2026-09-14 203632.png",
+      topics: ["Linux", "System Administration", "Red Hat"],
+      image: "/certificates/Screenshot 2026-09-14 203632.png",
     },
     {
-      name:
-        "Linux Red Hat Administration",
+      name: "Linux Red Hat Administration",
       provider: "Red Hat",
       date: "",
-      topics: [
-        "Linux",
-        "Red Hat",
-        "System Administration",
-      ],
-      image:
-        "/certificates/Screenshot 2026-09-14 203713.png",
+      topics: ["Linux", "Red Hat", "System Administration"],
+      image: "/certificates/Screenshot 2026-09-14 203713.png",
     },
     {
-      name:
-        "Cloud Services Management and Operation",
+      name: "Cloud Services Management and Operation",
       provider: "",
       date: "",
-      topics: [
-        "Cloud Services",
-        "Infrastructure Operations",
-        "Cloud Management",
-      ],
-      image:
-        "/certificates/Screenshot 2026-09-14 203745.png",
+      topics: ["Cloud Services", "Infrastructure Operations", "Cloud Management"],
+      image: "/certificates/Screenshot 2026-09-14 203745.png",
     },
     {
-      name:
-        "AWS Academy Graduate - Cloud Architecting",
+      name: "AWS Academy Graduate - Cloud Architecting",
       provider: "AWS Academy",
       date: "",
-      topics: [
-        "AWS",
-        "Cloud Architecture",
-        "Infrastructure Design",
-      ],
-      image:
-        "/certificates/Screenshot 2026-09-14 203815.png",
+      topics: ["AWS", "Cloud Architecture", "Infrastructure Design"],
+      image: "/certificates/Screenshot 2026-09-14 203815.png",
     },
     {
-      name:
-        "AWS Academy Graduate - Cloud Foundations",
+      name: "AWS Academy Graduate - Cloud Foundations",
       provider: "AWS Academy",
       date: "",
-      topics: [
-        "AWS",
-        "Cloud Fundamentals",
-        "Core Cloud Concepts",
-      ],
-      image:
-        "/certificates/Screenshot 2026-09-14 203847.png",
+      topics: ["AWS", "Cloud Fundamentals", "Core Cloud Concepts"],
+      image: "/certificates/Screenshot 2026-09-14 203847.png",
     },
     {
-      name:
-        "General Knowledge of Cloud Computing",
+      name: "General Knowledge of Cloud Computing",
       provider: "Huawei ICT Academy",
       date: "2026-08-28",
-      topics: [
-        "Cloud Computing",
-        "Cloud Fundamentals",
-        "Core Cloud Concepts",
-      ],
-      image:
-        "/certificates/Screenshot 2026-09-15 200419.png",
+      topics: ["Cloud Computing", "Cloud Fundamentals", "Core Cloud Concepts"],
+      image: "/certificates/Screenshot 2026-09-15 200419.png",
     },
     {
-      name:
-        "HCIA-Cloud Service V3.5 Course",
+      name: "HCIA-Cloud Service V3.5 Course",
       provider: "Huawei ICT Academy",
       date: "2026-08-27",
-      topics: [
-        "Huawei Cloud",
-        "Cloud Services",
-        "Cloud Computing",
-        "Cloud Architecture",
-      ],
-      image:
-        "/certificates/Screenshot 2026-09-15 200432.png",
+      topics: ["Huawei Cloud", "Cloud Services", "Cloud Computing", "Cloud Architecture"],
+      image: "/certificates/Screenshot 2026-09-15 200432.png",
     },
   ],
   skills: {
     "Cloud & Architecture": [
-      "AWS",
-      "Huawei Cloud",
-      "Cloud Architecture",
-      "Serverless Architecture",
-      "Event-Driven Architecture",
+      "AWS", "Huawei Cloud", "Cloud Architecture",
+      "Serverless Architecture", "Event-Driven Architecture",
     ],
     "AWS Services": [
-      "EC2",
-      "S3",
-      "RDS",
-      "IAM",
-      "Lambda",
-      "SQS",
-      "CloudFormation",
-      "Elastic Load Balancing",
-      "Auto Scaling",
+      "EC2", "S3", "RDS", "IAM", "Lambda", "SQS",
+      "CloudFormation", "Elastic Load Balancing", "Auto Scaling",
     ],
     "DevOps & Automation": [
-      "DevOps Fundamentals",
-      "CI/CD",
-      "Infrastructure as Code",
-      "Automation",
-      "Deployment Workflows",
+      "DevOps Fundamentals", "CI/CD", "Infrastructure as Code",
+      "Automation", "Deployment Workflows",
     ],
     "Networking & Security": [
-      "VPC",
-      "Public / Private / Isolated Subnets",
-      "Route Tables",
-      "Security Groups",
-      "Routing",
-      "Network Architecture",
+      "VPC", "Public / Private / Isolated Subnets", "Route Tables",
+      "Security Groups", "Routing", "Network Architecture",
     ],
     "Systems & Technical": [
-      "Linux",
-      "SQL",
-      "Amazon RDS",
-      "System Design",
-      "Troubleshooting",
-      "Cloud Infrastructure",
+      "Linux", "SQL", "Amazon RDS", "System Design",
+      "Troubleshooting", "Cloud Infrastructure",
     ],
   },
   softSkills: [
-    {
-      en: "Problem Solving",
-      ar: "حل المشكلات",
-    },
-    {
-      en: "Continuous Learning",
-      ar: "التعلم المستمر",
-    },
-    {
-      en: "Communication",
-      ar: "التواصل",
-    },
-    {
-      en: "Teamwork",
-      ar: "العمل الجماعي",
-    },
-    {
-      en: "Attention to Detail",
-      ar: "الاهتمام بالتفاصيل",
-    },
-    {
-      en: "Adaptability",
-      ar: "القدرة على التكيف",
-    },
-    {
-      en: "Responsibility",
-      ar: "تحمل المسؤولية",
-    },
-    {
-      en: "Time Management",
-      ar: "إدارة الوقت",
-    },
+    { en: "Problem Solving", ar: "حل المشكلات" },
+    { en: "Continuous Learning", ar: "التعلم المستمر" },
+    { en: "Communication", ar: "التواصل" },
+    { en: "Teamwork", ar: "العمل الجماعي" },
+    { en: "Attention to Detail", ar: "الاهتمام بالتفاصيل" },
+    { en: "Adaptability", ar: "القدرة على التكيف" },
+    { en: "Responsibility", ar: "تحمل المسؤولية" },
+    { en: "Time Management", ar: "إدارة الوقت" },
   ],
 };
 
-function Tech({
-  children,
-}: {
-  children: ReactNode;
-}) {
+function Icon({ children, size = 19 }: { children: ReactNode; size?: number }) {
   return (
-    <span
-      dir="ltr"
-      style={{
-        display: "inline-block",
-        unicodeBidi: "isolate",
-      }}
-    >
-      {children}
-    </span>
-  );
-}
-
-function Icon({
-  children,
-  size = 19,
-}: {
-  children: ReactNode;
-  size?: number;
-}) {
-  return (
-    <svg
-      width={size}
-      height={size}
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="1.7"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      aria-hidden="true"
-    >
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none"
+      stroke="currentColor" strokeWidth="1.7" strokeLinecap="round"
+      strokeLinejoin="round" aria-hidden="true">
       {children}
     </svg>
   );
 }
 
-function PlatformLogo({
-  src,
-  mark,
-  name,
-}: {
-  src: string;
-  mark: string;
-  name: string;
-}) {
+function PlatformLogo({ src, mark, name }: { src: string; mark: string; name: string }) {
   const [failed, setFailed] = useState(false);
   return (
     <span className="freelance-logo" aria-hidden="true">
       {!failed ? (
-        <img
-          src={src}
-          alt=""
-          width={22}
-          height={22}
-          loading="lazy"
-          decoding="async"
-          onError={() => setFailed(true)}
-        />
+        <img src={src} alt="" width={22} height={22} loading="lazy"
+          decoding="async" onError={() => setFailed(true)} />
       ) : (
-        <span className="freelance-logo-fallback">
-          {mark}
-        </span>
+        <span className="freelance-logo-fallback">{mark}</span>
       )}
       <span className="sr-only">{name}</span>
     </span>
@@ -622,37 +431,23 @@ function PlatformLogo({
 }
 
 const skillLogoSlugs: Record<string, string> = {
-  AWS: "aws",
-  "Huawei Cloud": "huaweicloud",
-  "Serverless Architecture": "serverless",
-  Linux: "linux",
-  "Amazon RDS": "amazonrds",
-  Terraform: "terraform",
-  Ansible: "ansible",
-  "GitHub Actions": "githubactions",
-  "GitLab": "gitlab",
-  Docker: "docker",
+  AWS: "aws", "Huawei Cloud": "huaweicloud",
+  "Serverless Architecture": "serverless", Linux: "linux",
+  "Amazon RDS": "amazonrds", Terraform: "terraform",
+  Ansible: "ansible", "GitHub Actions": "githubactions",
+  GitLab: "gitlab", Docker: "docker",
 };
 
-function SkillLogo({
-  label,
-  slug,
-}: {
-  label: string;
-  slug?: string;
-}) {
+function SkillLogo({ label, slug }: { label: string; slug?: string }) {
   const [failed, setFailed] = useState(false);
-  const mark = label.trim().replace(/[^A-Za-z0-9]/g, "").slice(0, 2).toUpperCase() || "•";
+  const mark =
+    label.trim().replace(/[^A-Za-z0-9]/g, "").slice(0, 2).toUpperCase() || "•";
   return (
     <span className="skill-logo-mini" aria-hidden="true">
       {slug && !failed ? (
-        <img
-          src={`https://cdn.simpleicons.org/${slug}`}
-          alt=""
-          loading="lazy"
-          decoding="async"
-          onError={() => setFailed(true)}
-        />
+        <img src={`https://cdn.simpleicons.org/${slug}`} alt=""
+          loading="lazy" decoding="async"
+          onError={() => setFailed(true)} />
       ) : (
         <span>{mark}</span>
       )}
@@ -660,50 +455,26 @@ function SkillLogo({
   );
 }
 
-function EducationLogo({
-  src,
-  alt,
-  mark,
-}: {
-  src: string;
-  alt: string;
-  mark: string;
-}) {
+function EducationLogo({ src, alt, mark }: { src: string; alt: string; mark: string }) {
   const [failed, setFailed] = useState(false);
   return (
     <span className="education-logo" aria-hidden={failed}>
       {!failed ? (
-        <img
-          src={src}
-          alt={alt}
-          width={56}
-          height={56}
-          loading="lazy"
-          decoding="async"
-          onError={() => setFailed(true)}
-        />
+        <img src={src} alt={alt} width={56} height={56} loading="lazy"
+          decoding="async" onError={() => setFailed(true)} />
       ) : (
-        <span className="education-logo-fallback">
-          {mark}
-        </span>
+        <span className="education-logo-fallback">{mark}</span>
       )}
     </span>
   );
 }
 
 const i = {
-  arrow: (
-    <Icon>
-      <path d="M5 12h13" />
-      <path d="M13 6l6 6-6 6" />
-    </Icon>
-  ),
+  arrow: (<Icon><path d="M5 12h13" /><path d="M13 6l6 6-6 6" /></Icon>),
   contact: (
     <Icon>
       <path d="M20 11.2c0 4.5-3.6 8.1-8 8.1-1.1 0-2.2-.2-3.1-.6L4 20l1.3-3.7A8 8 0 1 1 20 11.2Z" />
-      <path d="M8.2 11.2h.01" />
-      <path d="M12 11.2h.01" />
-      <path d="M15.8 11.2h.01" />
+      <path d="M8.2 11.2h.01" /><path d="M12 11.2h.01" /><path d="M15.8 11.2h.01" />
     </Icon>
   ),
   phone: (
@@ -718,20 +489,13 @@ const i = {
   ),
   external: (
     <Icon>
-      <path d="M14 5h5v5" />
-      <path d="M19 5l-8 8" />
+      <path d="M14 5h5v5" /><path d="M19 5l-8 8" />
       <path d="M18 13v5a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5" />
     </Icon>
   ),
   email: (
     <Icon>
-      <rect
-        x="3"
-        y="5"
-        width="18"
-        height="14"
-        rx="2.5"
-      />
+      <rect x="3" y="5" width="18" height="14" rx="2.5" />
       <path d="m4.5 7 7.5 6 7.5-6" />
     </Icon>
   ),
@@ -743,17 +507,9 @@ const i = {
   ),
   linkedin: (
     <Icon>
-      <rect
-        x="3.5"
-        y="3.5"
-        width="17"
-        height="17"
-        rx="3"
-      />
-      <path d="M8 10.5v6" />
-      <path d="M8 7.5v.01" />
-      <path d="M12 16.5v-6" />
-      <path d="M12 13.2a3 3 0 0 1 6 0v3.3" />
+      <rect x="3.5" y="3.5" width="17" height="17" rx="3" />
+      <path d="M8 10.5v6" /><path d="M8 7.5v.01" />
+      <path d="M12 16.5v-6" /><path d="M12 13.2a3 3 0 0 1 6 0v3.3" />
     </Icon>
   ),
   cloud: (
@@ -764,59 +520,35 @@ const i = {
   ),
   server: (
     <Icon>
-      <rect
-        x="3"
-        y="3.5"
-        width="18"
-        height="6.5"
-        rx="2"
-      />
-      <rect
-        x="3"
-        y="14"
-        width="18"
-        height="6.5"
-        rx="2"
-      />
-      <path d="M7 6.75h.01" />
-      <path d="M7 17.25h.01" />
-      <path d="M11 6.75h7" />
-      <path d="M11 17.25h7" />
+      <rect x="3" y="3.5" width="18" height="6.5" rx="2" />
+      <rect x="3" y="14" width="18" height="6.5" rx="2" />
+      <path d="M7 6.75h.01" /><path d="M7 17.25h.01" />
+      <path d="M11 6.75h7" /><path d="M11 17.25h7" />
     </Icon>
   ),
   network: (
     <Icon>
-      <circle cx="5" cy="5" r="2.2" />
-      <circle cx="19" cy="5" r="2.2" />
+      <circle cx="5" cy="5" r="2.2" /><circle cx="19" cy="5" r="2.2" />
       <circle cx="12" cy="19" r="2.2" />
-      <path d="M6.8 6.2 10.2 16.8" />
-      <path d="M17.2 6.2 13.8 16.8" />
+      <path d="M6.8 6.2 10.2 16.8" /><path d="M17.2 6.2 13.8 16.8" />
       <path d="M7.3 5h9.4" />
     </Icon>
   ),
   terminal: (
     <Icon>
-      <path d="m5 7.5 4.5 4.5L5 16.5" />
-      <path d="M12 16.5h7" />
+      <path d="m5 7.5 4.5 4.5L5 16.5" /><path d="M12 16.5h7" />
     </Icon>
   ),
   git: (
     <Icon>
-      <circle cx="6" cy="6" r="2.1" />
-      <circle cx="18" cy="12" r="2.1" />
+      <circle cx="6" cy="6" r="2.1" /><circle cx="18" cy="12" r="2.1" />
       <circle cx="6" cy="18" r="2.1" />
-      <path d="m7.8 7.2 8.4 3.6" />
-      <path d="m7.8 16.8 8.4-3.6" />
+      <path d="m7.8 7.2 8.4 3.6" /><path d="m7.8 16.8 8.4-3.6" />
     </Icon>
   ),
   database: (
     <Icon>
-      <ellipse
-        cx="12"
-        cy="5"
-        rx="7"
-        ry="2.8"
-      />
+      <ellipse cx="12" cy="5" rx="7" ry="2.8" />
       <path d="M5 5v7c0 1.7 3.1 3 7 3s7-1.3 7-3V5" />
       <path d="M5 12v7c0 1.7 3.1 3 7 3s7-1.3 7-3v-7" />
     </Icon>
@@ -835,8 +567,7 @@ const i = {
   layers: (
     <Icon>
       <path d="m12 3 8 4.5-8 4.5-8-4.5L12 3Z" />
-      <path d="m4 12 8 4.5 8-4.5" />
-      <path d="m4 16.5 8 4.5 8-4.5" />
+      <path d="m4 12 8 4.5 8-4.5" /><path d="m4 16.5 8 4.5 8-4.5" />
     </Icon>
   ),
   education: (
@@ -846,11 +577,7 @@ const i = {
       <path d="M21 9v6" />
     </Icon>
   ),
-  check: (
-    <Icon size={14}>
-      <path d="m5 12 4 4 10-10" />
-    </Icon>
-  ),
+  check: (<Icon size={14}><path d="m5 12 4 4 10-10" /></Icon>),
   quote: (
     <Icon>
       <path d="M9.8 10.8H5.7A2.7 2.7 0 0 0 3 13.5v1.8A2.7 2.7 0 0 0 5.7 18h1A3.1 3.1 0 0 0 9.8 15v-4.2Z" />
@@ -860,32 +587,23 @@ const i = {
   sun: (
     <Icon>
       <circle cx="12" cy="12" r="4" />
-      <path d="M12 2v2" />
-      <path d="M12 20v2" />
-      <path d="m4.93 4.93 1.41 1.41" />
-      <path d="m17.66 17.66 1.41 1.41" />
-      <path d="M2 12h2" />
-      <path d="M20 12h2" />
-      <path d="m4.93 19.07 1.41-1.41" />
-      <path d="m17.66 6.34 1.41-1.41" />
+      <path d="M12 2v2" /><path d="M12 20v2" />
+      <path d="m4.93 4.93 1.41 1.41" /><path d="m17.66 17.66 1.41 1.41" />
+      <path d="M2 12h2" /><path d="M20 12h2" />
+      <path d="m4.93 19.07 1.41-1.41" /><path d="m17.66 6.34 1.41-1.41" />
     </Icon>
   ),
   light: (
     <Icon>
-      <path d="M9 18h6" />
-      <path d="M10 22h4" />
+      <path d="M9 18h6" /><path d="M10 22h4" />
       <path d="M8.6 14.6A6 6 0 1 1 15.4 15c-.8.7-1.4 1.6-1.4 2.6h-4c0-.8-.6-1.9-1.4-3Z" />
-      <path d="M12 2v1" />
-      <path d="m4.9 4.9.7.7" />
-      <path d="M2 12h1" />
-      <path d="m19.1 4.9-.7.7" />
-      <path d="M21 12h1" />
+      <path d="M12 2v1" /><path d="m4.9 4.9.7.7" />
+      <path d="M2 12h1" /><path d="m19.1 4.9-.7.7" /><path d="M21 12h1" />
     </Icon>
   ),
   people: (
     <Icon>
-      <circle cx="9" cy="8" r="3" />
-      <circle cx="17" cy="9" r="2.4" />
+      <circle cx="9" cy="8" r="3" /><circle cx="17" cy="9" r="2.4" />
       <path d="M3.5 19c.6-3.1 2.4-5 5.5-5s4.9 1.9 5.5 5" />
       <path d="M14.2 14.5c2.7.1 4.5 1.6 5 4.1" />
     </Icon>
@@ -893,452 +611,189 @@ const i = {
 };
 
 export default function Page() {
-  const [active, setActive] =
-    useState("home");
-  const [menu, setMenu] =
-    useState(false);
-  const [profileError, setProfileError] =
-    useState(false);
-  const [copied, setCopied] =
-    useState(false);
-  const [lightMode, setLightMode] =
-    useState(false);
-  const [scrolled, setScrolled] =
-    useState(false);
-  const [language, setLanguage] =
-    useState<"en" | "ar">("en");
-  const [
-    selectedCertificate,
-    setSelectedCertificate,
-  ] = useState<string | null>(null);
-  const [
-    selectedProjectImage,
-    setSelectedProjectImage,
-  ] = useState<string | null>(null);
-  const [showOnboarding, setShowOnboarding] =
-    useState(false);
-  const [onboardingExit, setOnboardingExit] =
-    useState(false);
-  const [onboardingReady, setOnboardingReady] =
-    useState(false);
+  const [active, setActive] = useState("home");
+  const [menu, setMenu] = useState(false);
+  const [profileError, setProfileError] = useState(false);
+  const [copied, setCopied] = useState(false);
+  const [lightMode, setLightMode] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const [language, setLanguage] = useState<"en" | "ar">("en");
+  const [selectedCertificate, setSelectedCertificate] = useState<string | null>(null);
+  const [selectedProjectImage, setSelectedProjectImage] = useState<string | null>(null);
+  const [showOnboarding, setShowOnboarding] = useState(false);
+  const [onboardingExit, setOnboardingExit] = useState(false);
+  const [onboardingReady, setOnboardingReady] = useState(false);
 
   const isArabic = language === "ar";
 
   const t = {
     home: isArabic ? "الرئيسية" : "Home",
     about: isArabic ? "نبذة عني" : "About",
-    education: isArabic
-      ? "التعليم"
-      : "Education",
-    certification: isArabic
-      ? "الشهادات"
-      : "Certifications",
-    skills: isArabic
-      ? "المهارات"
-      : "Skills",
-    experience: isArabic
-      ? "الخبرة"
-      : "Experience",
-    project: isArabic
-      ? "المشروع"
-      : "Project",
-    services: isArabic
-      ? "الخدمات"
-      : "Services",
-    achievements: isArabic
-      ? "الإنجازات"
-      : "Achievements",
-    testimonials: isArabic
-      ? "الآراء"
-      : "Testimonials",
-    contact: isArabic
-      ? "تواصل"
-      : "Contact",
-    openToOpportunities:
-      isArabic
-        ? "متاح للفرص"
-        : "Open to opportunities",
-    letsConnect: isArabic
-      ? "لنتواصل"
-      : "Let's connect",
-    cloudInfrastructureDevops:
-      "Cloud Infrastructure / DevOps",
-    exploreArchitecture:
-      isArabic
-        ? "استكشف الـArchitecture"
-        : "Explore architecture",
-    contactMe: isArabic
-      ? "تواصل معي"
-      : "Contact me",
-    downloadCv: isArabic
-      ? "تحميل CV"
-      : "Download CV",
+    education: isArabic ? "التعليم" : "Education",
+    certification: isArabic ? "الشهادات" : "Certifications",
+    skills: isArabic ? "المهارات" : "Skills",
+    experience: isArabic ? "الخبرة" : "Experience",
+    project: isArabic ? "المشروع" : "Project",
+    services: isArabic ? "الخدمات" : "Services",
+    achievements: isArabic ? "الإنجازات" : "Achievements",
+    testimonials: isArabic ? "الآراء" : "Testimonials",
+    contact: isArabic ? "تواصل" : "Contact",
+    openToOpportunities: isArabic ? "متاح للفرص" : "Open to opportunities",
+    letsConnect: isArabic ? "لنتواصل" : "Let's connect",
+    cloudInfrastructureDevops: "Cloud Infrastructure / DevOps",
+    exploreArchitecture: isArabic ? "استكشف الـArchitecture" : "Explore architecture",
+    contactMe: isArabic ? "تواصل معي" : "Contact me",
+    downloadCv: isArabic ? "تحميل CV" : "Download CV",
     viewLinkedin: "LinkedIn",
     viewGithub: "GitHub",
-    cloudFirst: isArabic
-      ? "Cloud أولًا."
-      : "Cloud first.",
-    systemsMinded:
-      isArabic
-        ? "بعقلية هندسية للأنظمة."
-        : "Systems minded.",
-    engineeringProfile:
-      isArabic
-        ? "الملف الهندسي"
-        : "Engineering profile",
-    profileHeading:
-      isArabic
-        ? "أحب أفهم الأنظمة من الداخل وأبني Infrastructure يعتمد عليها."
-        : "I like understanding systems from the inside and building infrastructure people can rely on.",
-    aboutMeLabel: isArabic
-      ? "عن نفسي"
-      : "A little about me",
-    awsServicesApplied:
-      isArabic
-        ? "خدمات AWS مطبقة"
-        : "AWS services applied",
-    trainingTracks:
-      isArabic
-        ? "مسارات تدريبية"
-        : "Training tracks",
-    expectedGraduation:
-      isArabic
-        ? "التخرج المتوقع"
-        : "Expected graduation",
-    educationTitle:
-      isArabic
-        ? "بكالوريوس علوم الحاسب."
-        : "Bachelor of Computer Science.",
-    educationNote:
-      isArabic
-        ? "الخلفية الأكاديمية والتخصص الحالي مع توضيح موعد التخرج."
-        : "Academic background, specialization, and current graduation timeline.",
-    languages: isArabic
-      ? "اللغات"
-      : "Languages",
-    academicFocus:
-      isArabic
-        ? "التخصص الأكاديمي"
-        : "Academic specialization",
-    certificationTitle:
-      isArabic
-        ? "تدريب وشهادات Cloud."
-        : "Cloud certifications & training.",
-    certificationNote:
-      isArabic
-        ? "الشهادات والتدريبات المرتبطة بالـCloud والـInfrastructure."
-        : "Formal cloud and infrastructure training.",
-    skillsTitle:
-      isArabic
-        ? "التقنيات خلف الـInfrastructure."
-        : "The tools behind the infrastructure.",
-    skillsNote:
-      isArabic
-        ? "المهارات الأساسية مرتبة بشكل أوضح بين Technical Skills وSoft Skills."
-        : "Core capabilities organized across technical and soft skills.",
-    capabilityMap:
-      isArabic
-        ? "خريطة المهارات"
-        : "Capability map",
-    capabilityNote:
-      isArabic
-        ? "مجموعة المهارات العملية المستخدمة في مسار Cloud وDevOps."
-        : "A practical map of the capabilities behind my Cloud / DevOps path.",
-    primaryFocus:
-      isArabic
-        ? "التركيز الأساسي"
-        : "PRIMARY FOCUS",
-    awsCloudInfrastructure:
-      "AWS Cloud Infrastructure",
-    technicalSkills:
-      isArabic
-        ? "المهارات التقنية"
-        : "Technical skills",
-    technicalSkillsNote:
-      isArabic
-        ? "الأدوات والتقنيات التي أبني بها الـCloud Infrastructure والـDevOps workflows."
-        : "Tools and technologies used to build cloud infrastructure and DevOps workflows.",
-    softSkills:
-      isArabic
-        ? "المهارات الشخصية"
-        : "Soft skills",
-    softSkillsNote:
-      isArabic
-        ? "مهارات تساعدني على التعلم والتعاون والتعامل مع مشاكل الـInfrastructure بشكل عملي."
-        : "The working habits and interpersonal skills that support technical growth and teamwork.",
-    practicalMindset:
-      isArabic
-        ? "Practical mindset"
-        : "Practical mindset",
-    practicalMindsetNote:
-      isArabic
-        ? "بناء، تجربة، حل المشكلة، ثم تحسين الحل."
-        : "Build it, test it, solve the issue, then improve the solution.",
-    experienceTitle:
-      isArabic
-        ? "خبرة مبنية على التطبيق."
-        : "Experience built through practice.",
-    experienceNote:
-      isArabic
-        ? "كل تجربة موضحة من التحدي إلى التنفيذ والنتيجة."
-        : "Each experience is presented through challenge, action, and result.",
-    challenge: isArabic
-      ? "التحدي"
-      : "Challenge",
-    action: isArabic
-      ? "التنفيذ"
-      : "Action",
-    result: isArabic
-      ? "النتيجة"
-      : "Result",
-    record: isArabic
-      ? "السجل"
-      : "Record",
-    position: isArabic
-      ? "المنصب"
-      : "Position",
-    responsibilities:
-      isArabic
-        ? "المسؤوليات"
-        : "Responsibilities",
-    featuredProject:
-      isArabic
-        ? "المشروع المميز"
-        : "Featured project",
-    architectureStory:
-      isArabic
-        ? "Architecture واضحة."
-        : "A clear architecture story.",
-    projectNote:
-      isArabic
-        ? "مشروع Infrastructure معروض بشكل مختصر وواضح."
-        : "A focused infrastructure case study.",
-    scalableArchitecture:
-      isArabic
-        ? cv.project.projectLabelAr
-        : cv.project.projectLabel,
-    topology: isArabic
-      ? "Cloud Topology"
-      : "Cloud topology",
-    actualProjectElements:
-      isArabic
-        ? "العناصر الأساسية للمشروع"
-        : "Core architecture elements",
-    cloudEnvironment:
-      isArabic
-        ? "AWS Environment"
-        : "AWS environment",
-    cloudBoundary:
-      isArabic
-        ? "حدود الـCloud Infrastructure"
-        : "Cloud infrastructure boundary",
-    applicationCompute:
-      isArabic
-        ? "Application Compute"
-        : "Application compute",
-    subnetsRouteTables:
-      "Public + Private + Isolated Subnets",
-    controlledAccess:
-      isArabic
-        ? "Controlled Access"
-        : "Controlled access",
-    cloudStorage:
-      isArabic
-        ? "Shared Storage & Data Layer"
-        : "Shared storage & data layer",
-    compute: isArabic
-      ? "حوسبة"
-      : "COMPUTE",
-    network: isArabic
-      ? "شبكة"
-      : "NETWORK",
-    storage: isArabic
-      ? "تخزين"
-      : "STORAGE",
-    projectImage:
-      isArabic
-        ? "صورة المشروع"
-        : "Project preview",
-    projectImageNote:
-      isArabic
-        ? "لمحة بصرية سريعة عن الـCloud Architecture."
-        : "A quick visual overview of the architecture.",
-    viewProjectImage:
-      isArabic
-        ? "تكبير الصورة"
-        : "Click to enlarge",
-    servicesTitle:
-      isArabic
-        ? "مجالات الـInfrastructure التي أعمل عليها."
-        : "Infrastructure I work with.",
-    servicesNote:
-      isArabic
-        ? "AWS وDevOps وLinux والشبكات والأتمتة."
-        : "AWS, DevOps, Linux, networking, automation, and deployment.",
-    achievementsTitle:
-      isArabic
-        ? "محطات واضحة في المسار."
-        : "Clear milestones in the path.",
-    achievementsNote:
-      isArabic
-        ? "مؤشرات مبنية على الخبرة التدريبية والأكاديمية الحالية."
-        : "Current academic and training milestones.",
-    testimonialsTitle:
-      isArabic
-        ? "توصيات مهنية حقيقية."
-        : "Professional recommendations.",
-    testimonialsNote:
-      isArabic
-        ? "توصيات LinkedIn من أشخاص قاموا بتدريس Mohamed خلال تدريبات Cloud."
-        : "LinkedIn recommendations from instructors who taught Mohamed during Cloud training.",
-    viewRecommendation:
-      isArabic
-        ? "عرض الملف"
-        : "View profile",
-    recommendationLabel:
-      isArabic
-        ? "توصية /"
-        : "RECOMMENDATION /",
-    contactTitle:
-      isArabic
-        ? "جاهز للخطوة التالية."
-        : "Ready for the next step.",
-    contactNote:
-      isArabic
-        ? "متاح لفرص Cloud وDevOps المرتبطة بالـAWS والـInfrastructure."
-        : "Open to Cloud and DevOps opportunities around AWS and infrastructure.",
-    openToOpportunitiesAgain:
-      isArabic
-        ? "متاح للفرص"
-        : "Open to opportunities",
-    letsBuild:
-      isArabic
-        ? "لنبنِ Infrastructure موثوقة."
-        : "Let's build reliable infrastructure.",
-    contactDescription:
-      isArabic
-        ? "للتدريب أو النقاشات التقنية أو الفرص المتعلقة بالـCloud Infrastructure وDevOps."
-        : "For internships, technical conversations, or opportunities around cloud infrastructure and DevOps.",
-    sendEmail:
-      isArabic
-        ? "إرسال Email"
-        : "Send email",
-    copyEmail:
-      isArabic
-        ? "نسخ Email"
-        : "Copy email",
-    freelancePlatforms:
-      isArabic
-        ? "منصات العمل الحر"
-        : "Freelance platforms",
-    freelancePlatformsNote:
-      isArabic
-        ? "كل روابط العمل الحر في مكان واحد، مع الوصول المباشر لكل ملف."
-        : "All freelance profiles in one place, with direct access to each profile.",
-    visitProfile:
-      isArabic
-        ? "زيارة الملف"
-        : "Visit profile",
-    copied:
-      isArabic
-        ? "تم النسخ"
-        : "Copied",
-    targetRole:
-      isArabic
-        ? "الدور المستهدف"
-        : "Target role",
-    coreFocus:
-      isArabic
-        ? "التركيز الأساسي"
-        : "Core focus",
-    langSwitch:
-      isArabic ? "EN" : "AR",
-    skillsTopics:
-      isArabic
-        ? "Skills / Topics"
-        : "Skills / Topics",
-    provider:
-      isArabic ? "Provider" : "Provider",
-    training:
-      isArabic ? "Training" : "Training",
-    footerStatus:
-      isArabic
-        ? "متاح لفرص Cloud وDevOps"
-        : "Open to Cloud & DevOps opportunities",
-    footerConnect:
-      isArabic
-        ? "لنبنِ شيئًا موثوقًا."
-        : "Let's build something reliable.",
-    footerExplore:
-      isArabic
-        ? "استكشف"
-        : "Explore",
-    footerContact:
-      isArabic
-        ? "تواصل"
-        : "Contact",
-    footerSocial:
-      isArabic
-        ? "روابط"
-        : "Links",
-    footerCopyright:
-      isArabic
-        ? "جميع الحقوق محفوظة."
-        : "All rights reserved.",
+    cloudFirst: isArabic ? "Cloud أولًا." : "Cloud first.",
+    systemsMinded: isArabic ? "بعقلية هندسية للأنظمة." : "Systems minded.",
+    engineeringProfile: isArabic ? "الملف الهندسي" : "Engineering profile",
+    profileHeading: isArabic
+      ? "أحب أفهم الأنظمة من الداخل وأبني Infrastructure يعتمد عليها."
+      : "I like understanding systems from the inside and building infrastructure people can rely on.",
+    aboutMeLabel: isArabic ? "عن نفسي" : "A little about me",
+    awsServicesApplied: isArabic ? "خدمات AWS مطبقة" : "AWS services applied",
+    trainingTracks: isArabic ? "مسارات تدريبية" : "Training tracks",
+    expectedGraduation: isArabic ? "التخرج المتوقع" : "Expected graduation",
+    educationTitle: isArabic ? "بكالوريوس علوم الحاسب." : "Bachelor of Computer Science.",
+    educationNote: isArabic
+      ? "الخلفية الأكاديمية والتخصص الحالي مع توضيح موعد التخرج."
+      : "Academic background, specialization, and current graduation timeline.",
+    languages: isArabic ? "اللغات" : "Languages",
+    academicFocus: isArabic ? "التخصص الأكاديمي" : "Academic specialization",
+    certificationTitle: isArabic ? "تدريب وشهادات Cloud." : "Cloud certifications & training.",
+    certificationNote: isArabic
+      ? "الشهادات والتدريبات المرتبطة بالـCloud والـInfrastructure."
+      : "Formal cloud and infrastructure training.",
+    skillsTitle: isArabic ? "التقنيات خلف الـInfrastructure." : "The tools behind the infrastructure.",
+    skillsNote: isArabic
+      ? "المهارات الأساسية مرتبة بشكل أوضح بين Technical Skills وSoft Skills."
+      : "Core capabilities organized across technical and soft skills.",
+    capabilityMap: isArabic ? "خريطة المهارات" : "Capability map",
+    capabilityNote: isArabic
+      ? "مجموعة المهارات العملية المستخدمة في مسار Cloud وDevOps."
+      : "A practical map of the capabilities behind my Cloud / DevOps path.",
+    primaryFocus: isArabic ? "التركيز الأساسي" : "PRIMARY FOCUS",
+    awsCloudInfrastructure: "AWS Cloud Infrastructure",
+    technicalSkills: isArabic ? "المهارات التقنية" : "Technical skills",
+    technicalSkillsNote: isArabic
+      ? "الأدوات والتقنيات التي أبني بها الـCloud Infrastructure والـDevOps workflows."
+      : "Tools and technologies used to build cloud infrastructure and DevOps workflows.",
+    softSkills: isArabic ? "المهارات الشخصية" : "Soft skills",
+    softSkillsNote: isArabic
+      ? "مهارات تساعدني على التعلم والتعاون والتعامل مع مشاكل الـInfrastructure بشكل عملي."
+      : "The working habits and interpersonal skills that support technical growth and teamwork.",
+    practicalMindset: isArabic ? "Practical mindset" : "Practical mindset",
+    practicalMindsetNote: isArabic
+      ? "بناء، تجربة، حل المشكلة، ثم تحسين الحل."
+      : "Build it, test it, solve the issue, then improve the solution.",
+    experienceTitle: isArabic ? "خبرة مبنية على التطبيق." : "Experience built through practice.",
+    experienceNote: isArabic
+      ? "كل تجربة موضحة من التحدي إلى التنفيذ والنتيجة."
+      : "Each experience is presented through challenge, action, and result.",
+    challenge: isArabic ? "التحدي" : "Challenge",
+    action: isArabic ? "التنفيذ" : "Action",
+    result: isArabic ? "النتيجة" : "Result",
+    record: isArabic ? "السجل" : "Record",
+    position: isArabic ? "المنصب" : "Position",
+    responsibilities: isArabic ? "المسؤوليات" : "Responsibilities",
+    featuredProject: isArabic ? "المشروع المميز" : "Featured project",
+    architectureStory: isArabic ? "Architecture واضحة." : "A clear architecture story.",
+    projectNote: isArabic
+      ? "مشروع Infrastructure معروض بشكل مختصر وواضح."
+      : "A focused infrastructure case study.",
+    scalableArchitecture: isArabic ? cv.project.projectLabelAr : cv.project.projectLabel,
+    topology: isArabic ? "Cloud Topology" : "Cloud topology",
+    actualProjectElements: isArabic ? "العناصر الأساسية للمشروع" : "Core architecture elements",
+    cloudEnvironment: isArabic ? "AWS Environment" : "AWS environment",
+    cloudBoundary: isArabic ? "حدود الـCloud Infrastructure" : "Cloud infrastructure boundary",
+    applicationCompute: isArabic ? "Application Compute" : "Application compute",
+    subnetsRouteTables: "Public + Private + Isolated Subnets",
+    controlledAccess: isArabic ? "Controlled Access" : "Controlled access",
+    cloudStorage: isArabic ? "Shared Storage & Data Layer" : "Shared storage & data layer",
+    compute: isArabic ? "حوسبة" : "COMPUTE",
+    network: isArabic ? "شبكة" : "NETWORK",
+    storage: isArabic ? "تخزين" : "STORAGE",
+    projectImage: isArabic ? "صورة المشروع" : "Project preview",
+    projectImageNote: isArabic
+      ? "لمحة بصرية سريعة عن الـCloud Architecture."
+      : "A quick visual overview of the architecture.",
+    viewProjectImage: isArabic ? "تكبير الصورة" : "Click to enlarge",
+    servicesTitle: isArabic
+      ? "مجالات الـInfrastructure التي أعمل عليها."
+      : "Infrastructure I work with.",
+    servicesNote: isArabic
+      ? "AWS وDevOps وLinux والشبكات والأتمتة."
+      : "AWS, DevOps, Linux, networking, automation, and deployment.",
+    achievementsTitle: isArabic ? "محطات واضحة في المسار." : "Clear milestones in the path.",
+    achievementsNote: isArabic
+      ? "مؤشرات مبنية على الخبرة التدريبية والأكاديمية الحالية."
+      : "Current academic and training milestones.",
+    testimonialsTitle: isArabic ? "توصيات مهنية حقيقية." : "Professional recommendations.",
+    testimonialsNote: isArabic
+      ? "توصيات LinkedIn من أشخاص قاموا بتدريس Mohamed خلال تدريبات Cloud."
+      : "LinkedIn recommendations from instructors who taught Mohamed during Cloud training.",
+    viewRecommendation: isArabic ? "عرض الملف" : "View profile",
+    recommendationLabel: isArabic ? "توصية /" : "RECOMMENDATION /",
+    contactTitle: isArabic ? "جاهز للخطوة التالية." : "Ready for the next step.",
+    contactNote: isArabic
+      ? "متاح لفرص Cloud وDevOps المرتبطة بالـAWS والـInfrastructure."
+      : "Open to Cloud and DevOps opportunities around AWS and infrastructure.",
+    openToOpportunitiesAgain: isArabic ? "متاح للفرص" : "Open to opportunities",
+    letsBuild: isArabic ? "لنبنِ Infrastructure موثوقة." : "Let's build reliable infrastructure.",
+    contactDescription: isArabic
+      ? "للتدريب أو النقاشات التقنية أو الفرص المتعلقة بالـCloud Infrastructure وDevOps."
+      : "For internships, technical conversations, or opportunities around cloud infrastructure and DevOps.",
+    sendEmail: isArabic ? "إرسال Email" : "Send email",
+    copyEmail: isArabic ? "نسخ Email" : "Copy email",
+    freelancePlatforms: isArabic ? "منصات العمل الحر" : "Freelance platforms",
+    freelancePlatformsNote: isArabic
+      ? "كل روابط العمل الحر في مكان واحد، مع الوصول المباشر لكل ملف."
+      : "All freelance profiles in one place, with direct access to each profile.",
+    visitProfile: isArabic ? "زيارة الملف" : "Visit profile",
+    copied: isArabic ? "تم النسخ" : "Copied",
+    targetRole: isArabic ? "الدور المستهدف" : "Target role",
+    coreFocus: isArabic ? "التركيز الأساسي" : "Core focus",
+    langSwitch: isArabic ? "EN" : "AR",
+    skillsTopics: isArabic ? "Skills / Topics" : "Skills / Topics",
+    provider: isArabic ? "Provider" : "Provider",
+    training: isArabic ? "Training" : "Training",
+    footerStatus: isArabic ? "متاح لفرص Cloud وDevOps" : "Open to Cloud & DevOps opportunities",
+    footerConnect: isArabic ? "لنبنِ شيئًا موثوقًا." : "Let's build something reliable.",
+    footerExplore: isArabic ? "استكشف" : "Explore",
+    footerContact: isArabic ? "تواصل" : "Contact",
+    footerSocial: isArabic ? "روابط" : "Links",
+    footerCopyright: isArabic ? "جميع الحقوق محفوظة." : "All rights reserved.",
   };
 
   const nav = useMemo(
     () => [
-      ["home", t.home],
-      ["about", t.about],
-      ["education", t.education],
-      ["certification", t.certification],
-      ["skills", t.skills],
-      ["experience", t.experience],
-      ["project", t.project],
-      ["services", t.services],
-      ["achievements", t.achievements],
-      ["testimonials", t.testimonials],
-      ["contact", t.contact],
+      ["home", t.home], ["about", t.about], ["education", t.education],
+      ["certification", t.certification], ["skills", t.skills],
+      ["experience", t.experience], ["project", t.project],
+      ["services", t.services], ["achievements", t.achievements],
+      ["testimonials", t.testimonials], ["contact", t.contact],
     ],
     [language]
   );
 
   useEffect(() => {
-    const storageKey =
-      "mohamed-gamal-portfolio-onboarding-v1";
+    const storageKey = "mohamed-gamal-portfolio-onboarding-v1";
     let seen = false;
-
     try {
-      seen =
-        window.sessionStorage.getItem(storageKey) ===
-        "seen";
+      seen = window.sessionStorage.getItem(storageKey) === "seen";
     } catch {}
-
     if (seen) return;
-
     setShowOnboarding(true);
-
-    const startTimer = window.setTimeout(() => {
-      setOnboardingReady(true);
-    }, 80);
-
-    const exitTimer = window.setTimeout(() => {
-      setOnboardingExit(true);
-    }, 2900);
-
+    const startTimer = window.setTimeout(() => setOnboardingReady(true), 80);
+    const exitTimer = window.setTimeout(() => setOnboardingExit(true), 2900);
     const finishTimer = window.setTimeout(() => {
-      try {
-        window.sessionStorage.setItem(
-          storageKey,
-          "seen"
-        );
-      } catch {}
+      try { window.sessionStorage.setItem(storageKey, "seen"); } catch {}
       setShowOnboarding(false);
       setOnboardingExit(false);
       setOnboardingReady(false);
     }, 3650);
-
     return () => {
       window.clearTimeout(startTimer);
       window.clearTimeout(exitTimer);
@@ -1347,166 +802,75 @@ export default function Page() {
   }, []);
 
   useEffect(() => {
-    const onScroll = () => {
-      setScrolled(window.scrollY > 20);
-    };
+    const onScroll = () => setScrolled(window.scrollY > 20);
     onScroll();
-    window.addEventListener(
-      "scroll",
-      onScroll,
-      {
-        passive: true,
-      }
-    );
-    return () => {
-      window.removeEventListener(
-        "scroll",
-        onScroll
-      );
-    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
   useEffect(() => {
-    const sectionIds =
-      nav.map(([id]) => id);
+    const sectionIds = nav.map(([id]) => id);
     const sections = sectionIds
-      .map((id) =>
-        document.getElementById(id)
-      )
+      .map((id) => document.getElementById(id))
       .filter(Boolean) as HTMLElement[];
     if (!sections.length) return;
-
-    const observer =
-      new IntersectionObserver(
-        (entries) => {
-          const visible = entries
-            .filter(
-              (entry) =>
-                entry.isIntersecting
-            )
-            .sort(
-              (a, b) =>
-                b.intersectionRatio -
-                a.intersectionRatio
-            );
-          if (
-            visible[0]?.target?.id
-          ) {
-            setActive(
-              visible[0].target.id
-            );
-          }
-        },
-        {
-          rootMargin:
-            "-96px 0px -58% 0px",
-          threshold: [
-            0.05,
-            0.12,
-            0.2,
-            0.35,
-            0.5,
-          ],
-        }
-      );
-
-    sections.forEach((section) =>
-      observer.observe(section)
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visible = entries
+          .filter((entry) => entry.isIntersecting)
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
+        if (visible[0]?.target?.id) setActive(visible[0].target.id);
+      },
+      { rootMargin: "-96px 0px -58% 0px", threshold: [0.05, 0.12, 0.2, 0.35, 0.5] }
     );
-    return () =>
-      observer.disconnect();
+    sections.forEach((section) => observer.observe(section));
+    return () => observer.disconnect();
   }, [nav]);
 
   useEffect(() => {
-    const onKeyDown = (
-      event: KeyboardEvent
-    ) => {
+    const onKeyDown = (event: KeyboardEvent) => {
       if (event.key === "Escape") {
         setMenu(false);
-        if (selectedCertificate) {
-          setSelectedCertificate(null);
-        }
-        if (selectedProjectImage) {
-          setSelectedProjectImage(null);
-        }
+        if (selectedCertificate) setSelectedCertificate(null);
+        if (selectedProjectImage) setSelectedProjectImage(null);
       }
     };
-    window.addEventListener(
-      "keydown",
-      onKeyDown
-    );
-    return () => {
-      window.removeEventListener(
-        "keydown",
-        onKeyDown
-      );
-    };
-  }, [
-    selectedCertificate,
-    selectedProjectImage,
-  ]);
+    window.addEventListener("keydown", onKeyDown);
+    return () => window.removeEventListener("keydown", onKeyDown);
+  }, [selectedCertificate, selectedProjectImage]);
 
   useEffect(() => {
     document.body.style.overflow =
-      menu ||
-      selectedCertificate ||
-      selectedProjectImage ||
-      showOnboarding
-        ? "hidden"
-        : "";
-    return () => {
-      document.body.style.overflow =
-        "";
-    };
-  }, [
-    menu,
-    selectedCertificate,
-    selectedProjectImage,
-    showOnboarding,
-  ]);
+      menu || selectedCertificate || selectedProjectImage || showOnboarding ? "hidden" : "";
+    return () => { document.body.style.overflow = ""; };
+  }, [menu, selectedCertificate, selectedProjectImage, showOnboarding]);
 
   const go = (id: string) => {
-    const element =
-      document.getElementById(id);
+    const element = document.getElementById(id);
     if (!element) return;
     const navOffset = 88;
-    const top =
-      element.getBoundingClientRect()
-        .top +
-      window.scrollY -
-      navOffset;
-    window.scrollTo({
-      top,
-      behavior: "smooth",
-    });
+    const top = element.getBoundingClientRect().top + window.scrollY - navOffset;
+    window.scrollTo({ top, behavior: "smooth" });
     setActive(id);
     setMenu(false);
   };
 
   const copyEmail = async () => {
     try {
-      await navigator.clipboard.writeText(
-        cv.email
-      );
+      await navigator.clipboard.writeText(cv.email);
       setCopied(true);
-      window.setTimeout(() => {
-        setCopied(false);
-      }, 1600);
+      window.setTimeout(() => setCopied(false), 1600);
     } catch {}
   };
 
   return (
     <main
-      className={`site ${
-        lightMode ? "light" : "dark"
-      } ${isArabic ? "rtl" : ""}`}
+      className={`site ${lightMode ? "light" : "dark"} ${isArabic ? "rtl" : ""}`}
       dir={isArabic ? "rtl" : "ltr"}
     >
       {showOnboarding && (
         <div
-          className={`onboarding-overlay ${
-            onboardingReady ? "is-ready" : ""
-          } ${onboardingExit ? "is-exiting" : ""}`}
+          className={`onboarding-overlay ${onboardingReady ? "is-ready" : ""} ${onboardingExit ? "is-exiting" : ""}`}
           role="dialog"
           aria-modal="true"
           aria-label="Mohamed Gamal portfolio introduction"
@@ -1516,288 +880,109 @@ export default function Page() {
           <section className="onboarding-content">
             <div className="onboarding-logo-wrap">
               <div className="onboarding-logo-ring" />
-              <img
-                src={cv.logo}
-                alt=""
-                className="onboarding-logo"
-                width={360}
-                height={112}
-                decoding="async"
-              />
+              <img src={cv.logo} alt="" className="onboarding-logo"
+                width={360} height={112} decoding="async" />
             </div>
-
-            <div
-              className="onboarding-name"
-              aria-label={cv.name}
-            >
+            <div className="onboarding-name" aria-label={cv.name}>
               <span>MOHAMED</span>
               <span>GAMAL</span>
             </div>
-
-            <div className="onboarding-divider">
-              <span />
-            </div>
-
-            <p
-              className="onboarding-title"
-              dir="ltr"
-            >
-              CLOUD &amp; DEVOPS ENGINEER
-            </p>
-
-            <p
-              className="onboarding-focus"
-              dir="ltr"
-            >
+            <div className="onboarding-divider"><span /></div>
+            <p className="onboarding-title" dir="ltr">CLOUD &amp; DEVOPS ENGINEER</p>
+            <p className="onboarding-focus" dir="ltr">
               Cloud Infrastructure · Automation · Reliability
             </p>
-
-            <div
-              className="onboarding-progress"
-              aria-hidden="true"
-            >
-              <span />
-            </div>
-
+            <div className="onboarding-progress" aria-hidden="true"><span /></div>
           </section>
         </div>
       )}
 
-      {/* =====================================================
-          NAV
-          \===================================================== */}
-      <header
-        className={`topbar ${
-          scrolled ? "scrolled" : ""
-        }`}
-      >
+      {/* NAV */}
+      <header className={`topbar ${scrolled ? "scrolled" : ""}`}>
         <div className="topbar-inner">
-          <button
-            className="brand"
-            onClick={() =>
-              go("home")
-            }
-            aria-label="Go to home"
-          >
+          <button className="brand" onClick={() => go("home")} aria-label="Go to home">
             <span className="brand-logo-shell">
-              <img
-                src={cv.logo}
-                alt=""
-                className="brand-logo-image"
-                width={180}
-                height={56}
-                decoding="async"
-                fetchPriority="high"
-              />
+              <img src={cv.logo} alt="" className="brand-logo-image"
+                width={180} height={56} decoding="async" fetchPriority="high" />
             </span>
-            <span className="sr-only">
-              {cv.name} — {cv.title}
-            </span>
+            <span className="sr-only">{cv.name} — {cv.title}</span>
           </button>
           <div className="nav-center">
-            <nav
-              className="nav-links"
-              aria-label="Main navigation"
-            >
-              {nav.map(
-                ([id, label]) => {
-                  const isContact =
-                    id === "contact";
-                  return (
-                    <button
-                      key={id}
-                      className={[
-                        active === id
-                          ? "active"
-                          : "",
-                        isContact
-                          ? "nav-contact"
-                          : "",
-                      ]
-                        .filter(Boolean)
-                        .join(" ")}
-                      onClick={() =>
-                        go(id)
-                      }
-                      aria-current={
-                        active === id
-                          ? "page"
-                          : undefined
-                      }
-                    >
-                      <span>
-                        {label}
-                      </span>
-                      {isContact
-                        ? (
-                            <span className="nav-contact-icon">
-                              {i.contact}
-                            </span>
-                          )
-                        : null}
-                    </button>
-                  );
-                }
-              )}
+            <nav className="nav-links" aria-label="Main navigation">
+              {nav.map(([id, label]) => {
+                const isContact = id === "contact";
+                return (
+                  <button
+                    key={id}
+                    className={[active === id ? "active" : "", isContact ? "nav-contact" : ""]
+                      .filter(Boolean).join(" ")}
+                    onClick={() => go(id)}
+                    aria-current={active === id ? "page" : undefined}
+                  >
+                    <span>{label}</span>
+                    {isContact ? <span className="nav-contact-icon">{i.contact}</span> : null}
+                  </button>
+                );
+              })}
             </nav>
           </div>
           <div className="nav-tools">
             <span className="availability">
-              <span className="availability-dot" />
-              {
-                t.openToOpportunities
-              }
+              <span className="availability-dot" />{t.openToOpportunities}
             </span>
-            <button
-              className="language-button"
-              onClick={() =>
-                setLanguage(
-                  (current) =>
-                    current === "en"
-                      ? "ar"
-                      : "en"
-                )
-              }
-              aria-label="Change language"
-            >
+            <button className="language-button"
+              onClick={() => setLanguage((c) => (c === "en" ? "ar" : "en"))}
+              aria-label="Change language">
               {t.langSwitch}
             </button>
-            <button
-              className="theme-button"
-              onClick={() =>
-                setLightMode(
-                  (value) => !value
-                )
-              }
-              aria-label={
-                lightMode
-                  ? "Switch to dark mode"
-                  : "Switch to light mode"
-              }
-            >
+            <button className="theme-button"
+              onClick={() => setLightMode((v) => !v)}
+              aria-label={lightMode ? "Switch to dark mode" : "Switch to light mode"}>
               <span className="theme-glow" />
-              <span className="theme-icon">
-                {lightMode
-                  ? i.sun
-                  : i.light}
-              </span>
+              <span className="theme-icon">{lightMode ? i.sun : i.light}</span>
             </button>
-            <button
-              className="menu-btn"
-              onClick={() =>
-                setMenu(
-                  (value) => !value
-                )
-              }
-              aria-label="Toggle navigation"
-              aria-expanded={menu}
-            >
+            <button className="menu-btn" onClick={() => setMenu((v) => !v)}
+              aria-label="Toggle navigation" aria-expanded={menu}>
               {menu ? "×" : "☰"}
             </button>
           </div>
         </div>
       </header>
 
-      {/* =====================================================
-          MOBILE MENU
-          \===================================================== */}
+      {/* MOBILE MENU */}
       {menu && (
-        <div
-          className="mobile-menu"
-          onClick={(event) => {
-            if (
-              event.target ===
-              event.currentTarget
-            ) {
-              setMenu(false);
-            }
-          }}
-        >
+        <div className="mobile-menu" onClick={(e) => {
+          if (e.target === e.currentTarget) setMenu(false);
+        }}>
           <div className="mobile-menu-inner">
-            {nav.map(
-              ([id, label]) => {
-                const isContact =
-                  id === "contact";
-                return (
-                  <button
-                    key={id}
-                    className={[
-                      active === id
-                        ? "active"
-                        : "",
-                      isContact
-                        ? "nav-contact mobile-nav-contact"
-                        : "",
-                    ]
-                      .filter(Boolean)
-                      .join(" ")}
-                    onClick={() =>
-                      go(id)
-                    }
-                  >
-                    <span>
-                      {label}
-                    </span>
-                    {isContact
-                      ? (
-                          <span className="nav-contact-icon">
-                            {i.contact}
-                          </span>
-                        )
-                      : null}
-                  </button>
-                );
-              }
-            )}
+            {nav.map(([id, label]) => {
+              const isContact = id === "contact";
+              return (
+                <button key={id}
+                  className={[active === id ? "active" : "", isContact ? "nav-contact mobile-nav-contact" : ""]
+                    .filter(Boolean).join(" ")}
+                  onClick={() => go(id)}>
+                  <span>{label}</span>
+                  {isContact ? <span className="nav-contact-icon">{i.contact}</span> : null}
+                </button>
+              );
+            })}
           </div>
         </div>
       )}
 
-      {/* =====================================================
-          00 / HOME
-          \===================================================== */}
-      <section
-        id="home"
-        className="container hero hero-compact"
-      >
+      {/* HOME */}
+      <section id="home" className="container hero hero-compact">
         <div className="hero-content">
-          <div className="eyebrow">
-            <span className="eyebrow-dot" />
-            {
-              t.cloudInfrastructureDevops
-            }
-          </div>
-          <h1>
-            Mohamed
-            <br />
-            <span>Gamal.</span>
-          </h1>
+          <div className="eyebrow"><span className="eyebrow-dot" />{t.cloudInfrastructureDevops}</div>
+          <h1>Mohamed<br /><span>Gamal.</span></h1>
           <h3>{cv.title}</h3>
-          <p className="hero-description">
-            {isArabic
-              ? cv.objectiveAr
-              : cv.objective}
-          </p>
+          <p className="hero-description">{isArabic ? cv.objectiveAr : cv.objective}</p>
           <div className="hero-actions">
-            <button
-              className="btn primary"
-              onClick={() =>
-                go("project")
-              }
-            >
-              {
-                t.exploreArchitecture
-              }
-              {i.arrow}
+            <button className="btn primary" onClick={() => go("project")}>
+              {t.exploreArchitecture}{i.arrow}
             </button>
-            <a
-              className="btn"
-              href="/cv.pdf"
-              download
-            >
-              {t.downloadCv}
-              {i.external}
-            </a>
+            <a className="btn" href="/cv.pdf" download>{t.downloadCv}{i.external}</a>
           </div>
         </div>
         <div className="hero-art hero-art-compact">
@@ -1808,142 +993,59 @@ export default function Page() {
             <span className="corner b" />
             <div className="portrait">
               {!profileError ? (
-                <img
-                  src="/profile.jpg"
-                  alt={`${cv.name} portrait`}
-                  fetchPriority="high"
-                  loading="eager"
-                  decoding="async"
-                  onError={() =>
-                    setProfileError(
-                      true
-                    )
-                  }
-                />
+                <img src="/profile.jpg" alt={`${cv.name} portrait`}
+                  fetchPriority="high" loading="eager" decoding="async"
+                  onError={() => setProfileError(true)} />
               ) : (
                 <div className="portrait-placeholder">
                   <div>
-                    <strong>
-                      MOHAMED
-                      <br />
-                      GAMAL
-                    </strong>
-                    <span>
-                      Add your portrait at
-                      <br />
-                      /public/profile.jpg
-                    </span>
+                    <strong>MOHAMED<br />GAMAL</strong>
+                    <span>Add your portrait at<br />/public/profile.jpg</span>
                   </div>
                 </div>
               )}
             </div>
           </div>
           <div className="hero-card aws-card">
-            <img
-              className="aws-logo"
+            <img className="aws-logo"
               src="https://commons.wikimedia.org/wiki/Special:FilePath/Amazon_Web_Services_2025.svg"
-              alt="AWS"
-              loading="eager"
-              decoding="async"
-            />
-            <strong>
-              Cloud architecture
-            </strong>
-            <p dir="ltr">
-              EC2 · S3 · VPC · RDS ·
-              Lambda · SQS
-            </p>
+              alt="AWS" loading="eager" decoding="async" />
+            <strong>Cloud architecture</strong>
+            <p dir="ltr">EC2 · S3 · VPC · RDS · Lambda · SQS</p>
           </div>
           <div className="hero-card pipeline-card">
             <div className="card-row">
-              <span className="card-label">
-                DevOps workflow
-              </span>
-              <span className="status">
-                <span className="status-dot" />
-                Active track
-              </span>
+              <span className="card-label">DevOps workflow</span>
+              <span className="status"><span className="status-dot" />Active track</span>
             </div>
             <div className="pipeline">
-              <div className="pipe">
-                <span className="pipe-icon">
-                  {i.git}
-                </span>
-                <small>
-                  Source
-                </small>
-              </div>
-              <div className="pipe">
-                <span className="pipe-icon">
-                  {i.bolt}
-                </span>
-                <small>
-                  CI / CD
-                </small>
-              </div>
-              <div className="pipe">
-                <span className="pipe-icon">
-                  {i.cloud}
-                </span>
-                <small>
-                  Cloud
-                </small>
-              </div>
-              <div className="pipe">
-                <span className="pipe-icon">
-                  {i.server}
-                </span>
-                <small>
-                  Deploy
-                </small>
-              </div>
+              <div className="pipe"><span className="pipe-icon">{i.git}</span><small>Source</small></div>
+              <div className="pipe"><span className="pipe-icon">{i.bolt}</span><small>CI / CD</small></div>
+              <div className="pipe"><span className="pipe-icon">{i.cloud}</span><small>Cloud</small></div>
+              <div className="pipe"><span className="pipe-icon">{i.server}</span><small>Deploy</small></div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* =====================================================
-          01 / ABOUT
-          \===================================================== */}
-      <section
-        id="about"
-        className="section section-tight"
-      >
+      {/* ABOUT */}
+      <section id="about" className="section section-tight">
         <div className="container">
           <div className="section-head">
             <div>
-              <div className="section-code">
-                01 / {t.about}
-              </div>
-              <h2 className="section-title">
-                {t.cloudFirst}
-                <br />
-                {t.systemsMinded}
-              </h2>
+              <div className="section-code">01 / {t.about}</div>
+              <h2 className="section-title">{t.cloudFirst}<br />{t.systemsMinded}</h2>
             </div>
           </div>
           <div className="profile-grid">
             <div className="paper-card profile-main">
               <div>
-                <div className="eyebrow">
-                  {
-                    t.engineeringProfile
-                  }
-                </div>
-                <h3>
-                  {
-                    t.profileHeading
-                  }
-                </h3>
-                <p>
-                  {isArabic
-                    ? cv.aboutMeAr
-                    : cv.aboutMe}
-                </p>
+                <div className="eyebrow">{t.engineeringProfile}</div>
+                <h3>{t.profileHeading}</h3>
+                <p>{isArabic ? cv.aboutMeAr : cv.aboutMe}</p>
                 <div className="about-me">
                   <div className="about-me-label">
-                    <span className="eyebrow-dot" />
-                    {t.aboutMeLabel}
+                    <span className="eyebrow-dot" />{t.aboutMeLabel}
                   </div>
                   <p>
                     {isArabic
@@ -1953,69 +1055,36 @@ export default function Page() {
                 </div>
               </div>
               <div className="stats">
-                <div className="stat">
-                  <strong>11</strong>
-                  <span>
-                    {
-                      t.awsServicesApplied
-                    }
-                  </span>
-                </div>
-                <div className="stat">
-                  <strong>02</strong>
-                  <span>
-                    {
-                      t.trainingTracks
-                    }
-                  </span>
-                </div>
-                <div className="stat">
-                  <strong>2027</strong>
-                  <span>
-                    {
-                      t.expectedGraduation
-                    }
-                  </span>
-                </div>
+                <div className="stat"><strong>11</strong><span>{t.awsServicesApplied}</span></div>
+                <div className="stat"><strong>02</strong><span>{t.trainingTracks}</span></div>
+                <div className="stat"><strong>2027</strong><span>{t.expectedGraduation}</span></div>
               </div>
             </div>
-            <div className="paper-card profile-side">
-              <div>
+
+            {/* COMPACT SIDE CARD */}
+            <div className="paper-card profile-side compact-side">
+              <div className="side-block">
                 <div className="label-row">
-                  <span className="label-icon">
-                    {i.layers}
-                  </span>
+                  <span className="label-icon">{i.layers}</span>
                   How I think
                 </div>
-                <div className="university">
-                  Cloud first.
-                </div>
+                <div className="university">Cloud first.</div>
                 <div className="degree">
                   {isArabic
                     ? "أميل لفهم الـInfrastructure كجزء أساسي من جودة أي Software System."
                     : "I see infrastructure as an essential part of building reliable software systems, not just as a deployment step."}
                 </div>
               </div>
-              <div>
+              <div className="side-block">
                 <div className="label-row">
-                  <span className="label-icon">
-                    {i.check}
-                  </span>
+                  <span className="label-icon">{i.check}</span>
                   Current direction
                 </div>
                 <div className="languages">
-                  <span className="language">
-                    AWS
-                  </span>
-                  <span className="language">
-                    Linux
-                  </span>
-                  <span className="language">
-                    DevOps
-                  </span>
-                  <span className="language">
-                    Networking
-                  </span>
+                  <span className="language">AWS</span>
+                  <span className="language">Linux</span>
+                  <span className="language">DevOps</span>
+                  <span className="language">Networking</span>
                 </div>
               </div>
             </div>
@@ -2023,22 +1092,13 @@ export default function Page() {
         </div>
       </section>
 
-      {/* =====================================================
-          02 / EDUCATION
-          \===================================================== */}
-      <section
-        id="education"
-        className="section section-tight"
-      >
+      {/* EDUCATION */}
+      <section id="education" className="section section-tight">
         <div className="container">
           <div className="section-head">
             <div>
-              <div className="section-code">
-                02 / {t.education}
-              </div>
-              <h2 className="section-title">
-                {t.educationTitle}
-              </h2>
+              <div className="section-code">02 / {t.education}</div>
+              <h2 className="section-title">{t.educationTitle}</h2>
             </div>
           </div>
           <div className="education-grid">
@@ -2046,132 +1106,71 @@ export default function Page() {
               <div className="education-header-row">
                 <div className="education-main-info">
                   <div className="education-institution-logos">
-                    <a
-                      href="https://www.menofia.edu.eg/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="education-logo-link"
-                      aria-label="Menoufia University"
-                      title="Menoufia University"
-                    >
-                      <EducationLogo
-                        src={cv.education.universityLogo}
-                        alt={cv.education.universityLogoAlt}
-                        mark="MU"
-                      />
+                    <a href="https://www.menofia.edu.eg/" target="_blank"
+                      rel="noopener noreferrer" className="education-logo-link"
+                      aria-label="Menoufia University" title="Menoufia University">
+                      <EducationLogo src={cv.education.universityLogo}
+                        alt={cv.education.universityLogoAlt} mark="MU" />
                     </a>
-                    <span
-                      className="education-logo-divider"
-                      aria-hidden="true"
-                    />
-                    <a
-                      href={cv.education.facultyUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="education-logo-link"
+                    <span className="education-logo-divider" aria-hidden="true" />
+                    <a href={cv.education.facultyUrl} target="_blank"
+                      rel="noopener noreferrer" className="education-logo-link"
                       aria-label="Faculty of Computers & Information"
-                      title="Faculty of Computers & Information"
-                    >
-                      <EducationLogo
-                        src={cv.education.facultyLogo}
-                        alt={cv.education.facultyLogoAlt}
-                        mark="FCI"
-                      />
+                      title="Faculty of Computers & Information">
+                      <EducationLogo src={cv.education.facultyLogo}
+                        alt={cv.education.facultyLogoAlt} mark="FCI" />
                     </a>
                   </div>
                   <div className="label-row education-label-row">
-                    <span className="label-icon">
-                      {i.education}
-                    </span>
+                    <span className="label-icon">{i.education}</span>
                     {t.education}
                   </div>
-                  <h3>
-                    {isArabic
-                      ? cv.educationAr.degree
-                      : cv.education.degree}
-                  </h3>
-                  <div className="university">
-                    {isArabic
-                      ? cv.educationAr.school
-                      : cv.education.school}
-                  </div>
+                  <h3>{isArabic ? cv.educationAr.degree : cv.education.degree}</h3>
+                  <div className="university">{isArabic ? cv.educationAr.school : cv.education.school}</div>
                   <div className="degree">
-                    {isArabic
-                      ? cv.educationAr.specialization
-                      : cv.education.specialization}
+                    {isArabic ? cv.educationAr.specialization : cv.education.specialization}
                   </div>
                 </div>
                 <div className="education-date">
-                  <small>
-                    Graduation
-                  </small>
+                  <small>Graduation</small>
                   <strong dir="ltr">
-                    {isArabic
-                      ? cv.educationAr.graduation
-                      : cv.education.graduation}
+                    {isArabic ? cv.educationAr.graduation : cv.education.graduation}
                   </strong>
                 </div>
               </div>
-              <p>
-                {isArabic
-                  ? cv.educationAr.summary
-                  : cv.education.summary}
-              </p>
+              <p>{isArabic ? cv.educationAr.summary : cv.education.summary}</p>
               <div className="education-highlights">
                 <div className="education-highlight">
-                  <strong>
-                    Information Technology
-                  </strong>
-                  <span>
-                    {
-                      t.academicFocus
-                    }
-                  </span>
+                  <strong>Information Technology</strong>
+                  <span>{t.academicFocus}</span>
                 </div>
                 <div className="education-highlight">
-                  <strong dir="ltr">
-                    2023 – 2027
-                  </strong>
-                  <span>
-                    Academic timeline
-                  </span>
+                  <strong dir="ltr">2023 – 2027</strong>
+                  <span>Academic timeline</span>
                 </div>
                 <div className="education-highlight">
-                  <strong>
-                    Cloud + DevOps
-                  </strong>
-                  <span>
-                    Practical track
-                  </span>
+                  <strong>Cloud + DevOps</strong>
+                  <span>Practical track</span>
                 </div>
               </div>
             </article>
-            <div className="paper-card profile-side">
-              <div>
+
+            {/* COMPACT SIDE CARD */}
+            <div className="paper-card profile-side compact-side">
+              <div className="side-block">
                 <div className="label-row">
-                  <span className="label-icon">
-                    {i.terminal}
-                  </span>
+                  <span className="label-icon">{i.terminal}</span>
                   {t.languages}
                 </div>
                 <div className="languages">
-                  {cv.languages.map(
-                    (item) => (
-                      <span
-                        className="language"
-                        key={item}
-                      >
-                        {item}
-                      </span>
-                    )
-                  )}
+                  {cv.languages.map((item) => (
+                    <span className="language" key={item}>{item}</span>
+                  ))}
                 </div>
               </div>
-              <div>
+              <div className="side-block">
                 <div className="label-row">
-                  <span className="label-icon">
-                    {i.layers}
-                  </span>
+                  <span className="label-icon">{i.layers}</span>
                   Current direction
                 </div>
                 <div className="degree">
@@ -2185,377 +1184,155 @@ export default function Page() {
         </div>
       </section>
 
-      {/* =====================================================
-          03 / CERTIFICATION
-          \===================================================== */}
-      <section
-        id="certification"
-        className="section section-tight"
-      >
+      {/* CERTIFICATIONS */}
+      <section id="certification" className="section section-tight">
         <div className="container">
           <div className="section-head">
             <div>
-              <div className="section-code">
-                03 / {t.certification}
-              </div>
-              <h2 className="section-title">
-                {
-                  t.certificationTitle
-                }
-              </h2>
+              <div className="section-code">03 / {t.certification}</div>
+              <h2 className="section-title">{t.certificationTitle}</h2>
             </div>
           </div>
           <div className="credentials">
-            {cv.certifications.map(
-              (
-                certificate,
-                index
-              ) => (
-                <article
-                  className="credential"
-                  key={
-                    certificate.name
-                  }
-                >
-                  <button
-                    type="button"
-                    className="credential-image-button"
-                    onClick={() =>
-                      setSelectedCertificate(
-                        certificate.image
-                      )
-                    }
-                    aria-label={`Open ${certificate.name}`}
-                  >
-                    <div className="credential-image-wrap">
-                      <img
-                        className="credential-image"
-                        src={
-                          certificate.image
-                        }
-                        alt={
-                          certificate.name
-                        }
-                        loading="lazy"
-                        decoding="async"
-                      />
-                      <span className="credential-zoom">
-                        Click to enlarge
-                      </span>
-                    </div>
-                  </button>
-                  <div
-                    className="credential-text"
-                    dir="ltr"
-                  >
-                    <strong>
-                      {
-                        certificate.name
-                      }
-                    </strong>
-                    <div className="credential-meta">
-                      {certificate.provider ? (
-                        <span>
-                          <small>
-                            {
-                              t.provider
-                            }
-                          </small>
-                          {
-                            certificate.provider
-                          }
-                        </span>
-                      ) : null}
-                      {certificate.date ? (
-                        <span>
-                          <small>
-                            Date
-                          </small>
-                          {
-                            certificate.date
-                          }
-                        </span>
-                      ) : null}
-                      <span>
-                        <small>
-                          {t.training}
-                        </small>
-                        Cloud / Infrastructure
-                      </span>
-                    </div>
-                    <div className="credential-skills">
-                      <small>
-                        {
-                          t.skillsTopics
-                        }
-                      </small>
-                      <div className="chips">
-                        {certificate.topics.map(
-                          (topic) => (
-                            <span
-                              className="chip"
-                              key={topic}
-                            >
-                              {topic}
-                            </span>
-                          )
-                        )}
-                      </div>
-                    </div>
-                    <span className="credential-index">
-                      CREDENTIAL /{" "}
-                      {String(
-                        index + 1
-                      ).padStart(
-                        2,
-                        "0"
-                      )}
-                    </span>
+            {cv.certifications.map((certificate, index) => (
+              <article className="credential" key={certificate.name}>
+                <button type="button" className="credential-image-button"
+                  onClick={() => setSelectedCertificate(certificate.image)}
+                  aria-label={`Open ${certificate.name}`}>
+                  <div className="credential-image-wrap">
+                    <img className="credential-image" src={certificate.image}
+                      alt={certificate.name} loading="lazy" decoding="async" />
+                    <span className="credential-zoom">Click to enlarge</span>
                   </div>
-                </article>
-              )
-            )}
+                </button>
+                <div className="credential-text" dir="ltr">
+                  <strong>{certificate.name}</strong>
+                  <div className="credential-meta">
+                    {certificate.provider ? (
+                      <span><small>{t.provider}</small>{certificate.provider}</span>
+                    ) : null}
+                    {certificate.date ? (
+                      <span><small>Date</small>{certificate.date}</span>
+                    ) : null}
+                    <span><small>{t.training}</small>Cloud / Infrastructure</span>
+                  </div>
+                  <div className="credential-skills">
+                    <small>{t.skillsTopics}</small>
+                    <div className="chips">
+                      {certificate.topics.map((topic) => (
+                        <span className="chip" key={topic}>{topic}</span>
+                      ))}
+                    </div>
+                  </div>
+                  <span className="credential-index">
+                    CREDENTIAL / {String(index + 1).padStart(2, "0")}
+                  </span>
+                </div>
+              </article>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* =====================================================
-          04 / SKILLS
-          \===================================================== */}
-      <section
-        id="skills"
-        className="section section-tight skills-section-improved"
-      >
+      {/* SKILLS */}
+      <section id="skills" className="section section-tight skills-section-improved">
         <div className="container">
           <div className="section-head">
             <div>
-              <div className="section-code">
-                04 / {t.skills}
-              </div>
-              <h2 className="section-title">
-                {t.skillsTitle}
-              </h2>
+              <div className="section-code">04 / {t.skills}</div>
+              <h2 className="section-title">{t.skillsTitle}</h2>
             </div>
           </div>
           <div className="skills-dashboard">
             <div className="technical-skills-panel">
               <div className="skills-panel-header">
                 <div>
-                  <div className="panel-kicker">
-                    TECH / 01
-                  </div>
-                  <h3>
-                    {t.technicalSkills}
-                  </h3>
-                  <p>
-                    {
-                      t.technicalSkillsNote
-                    }
-                  </p>
+                  <div className="panel-kicker">TECH / 01</div>
+                  <h3>{t.technicalSkills}</h3>
+                  <p>{t.technicalSkillsNote}</p>
                 </div>
-                <div className="skills-panel-icon">
-                  {i.layers}
-                </div>
+                <div className="skills-panel-icon">{i.layers}</div>
               </div>
               <div className="technical-skills-grid">
-                {Object.entries(
-                  cv.skills
-                ).map(
-                  (
-                    [category, items],
-                    index
-                  ) => {
-                    const icon =
-                      category.includes(
-                        "Cloud"
-                      )
-                        ? i.cloud
-                        : category.includes(
-                            "AWS"
-                          )
-                          ? i.server
-                          : category.includes(
-                              "DevOps"
-                            )
-                            ? i.bolt
-                            : category.includes(
-                                "Networking"
-                              )
-                              ? i.network
-                              : i.terminal;
-                    const categoryDescription =
-                      category.includes(
-                        "Cloud"
-                      )
-                        ? isArabic
-                          ? "Cloud platforms والـarchitecture الأساسية."
-                          : "Cloud platforms and architecture fundamentals."
-                        : category.includes(
-                            "AWS"
-                          )
-                          ? isArabic
-                            ? "خدمات AWS المستخدمة في الـcompute والـstorage والـmanagement."
-                            : "AWS services across compute, storage, and cloud management."
-                          : category.includes(
-                              "DevOps"
-                            )
-                            ? isArabic
-                              ? "Automation وCI/CD وInfrastructure delivery."
-                              : "Automation, CI/CD, and infrastructure delivery."
-                            : category.includes(
-                                "Networking"
-                              )
-                              ? isArabic
-                                ? "تصميم الشبكات وتأمين الـCloud connectivity."
-                                : "Network design and controlled cloud connectivity."
-                              : isArabic
-                                ? "Linux والأنظمة وحل المشكلات التقنية."
-                                : "Linux, systems thinking, and technical troubleshooting.";
-                    return (
-                      <article
-                        className="skill-card-modern"
-                        key={category}
-                      >
-                        <div className="skill-card-top">
-                          <span className="skill-card-index">
-                            {String(
-                              index + 1
-                            ).padStart(
-                              2,
-                              "0"
-                            )}
+                {Object.entries(cv.skills).map(([category, items], index) => {
+                  const icon =
+                    category.includes("Cloud") ? i.cloud :
+                    category.includes("AWS") ? i.server :
+                    category.includes("DevOps") ? i.bolt :
+                    category.includes("Networking") ? i.network : i.terminal;
+                  const categoryDescription =
+                    category.includes("Cloud")
+                      ? (isArabic ? "Cloud platforms والـarchitecture الأساسية." : "Cloud platforms and architecture fundamentals.")
+                      : category.includes("AWS")
+                        ? (isArabic ? "خدمات AWS المستخدمة في الـcompute والـstorage والـmanagement." : "AWS services across compute, storage, and cloud management.")
+                        : category.includes("DevOps")
+                          ? (isArabic ? "Automation وCI/CD وInfrastructure delivery." : "Automation, CI/CD, and infrastructure delivery.")
+                          : category.includes("Networking")
+                            ? (isArabic ? "تصميم الشبكات وتأمين الـCloud connectivity." : "Network design and controlled cloud connectivity.")
+                            : (isArabic ? "Linux والأنظمة وحل المشكلات التقنية." : "Linux, systems thinking, and technical troubleshooting.");
+                  return (
+                    <article className="skill-card-modern" key={category}>
+                      <div className="skill-card-top">
+                        <span className="skill-card-index">{String(index + 1).padStart(2, "0")}</span>
+                        <span className="skill-card-icon">{icon}</span>
+                      </div>
+                      <div className="skill-card-title-row"><h4>{category}</h4></div>
+                      <p className="skill-card-description">{categoryDescription}</p>
+                      <div className="skill-card-divider" />
+                      <div className="chips skill-chips-modern">
+                        {items.map((item, itemIndex) => (
+                          <span key={item}
+                            className={`chip skill-chip ${itemIndex === 0 ? "main" : ""}`}
+                            dir="ltr">
+                            <SkillLogo label={item} slug={skillLogoSlugs[item]} />
+                            <span className="skill-chip-label">{item}</span>
                           </span>
-                          <span className="skill-card-icon">
-                            {icon}
-                          </span>
-                        </div>
-                        <div className="skill-card-title-row">
-                          <h4>
-                            {category}
-                          </h4>
-                        </div>
-                        <p className="skill-card-description">
-                          {
-                            categoryDescription
-                          }
-                        </p>
-                        <div className="skill-card-divider" />
-                        <div className="chips skill-chips-modern">
-                          {items.map(
-                            (
-                              item,
-                              itemIndex
-                            ) => (
-                              <span
-                                key={item}
-                                className={`chip skill-chip ${
-                                  itemIndex ===
-                                  0
-                                    ? "main"
-                                    : ""
-                                }`}
-                                dir="ltr"
-                              >
-                                <SkillLogo
-                                  label={item}
-                                  slug={skillLogoSlugs[item]}
-                                />
-                                <span className="skill-chip-label">
-                                  {item}
-                                </span>
-                              </span>
-                            )
-                          )}
-                        </div>
-                      </article>
-                    );
-                  }
-                )}
+                        ))}
+                      </div>
+                    </article>
+                  );
+                })}
               </div>
             </div>
             <aside className="skills-side-column">
               <div className="soft-skills-card">
                 <div className="soft-skills-header">
                   <div>
-                    <div className="panel-kicker">
-                      PEOPLE / 02
-                    </div>
-                    <h3>
-                      {t.softSkills}
-                    </h3>
+                    <div className="panel-kicker">PEOPLE / 02</div>
+                    <h3>{t.softSkills}</h3>
                   </div>
-                  <span className="soft-skills-icon">
-                    {i.people}
-                  </span>
+                  <span className="soft-skills-icon">{i.people}</span>
                 </div>
-                <p className="soft-skills-description">
-                  {t.softSkillsNote}
-                </p>
+                <p className="soft-skills-description">{t.softSkillsNote}</p>
                 <div className="soft-skills-list">
-                  {cv.softSkills.map(
-                    (
-                      skill,
-                      index
-                    ) => (
-                      <div
-                        className="soft-skill-item"
-                        key={skill.en}
-                      >
-                        <span className="soft-skill-number">
-                          {String(
-                            index + 1
-                          ).padStart(
-                            2,
-                            "0"
-                          )}
-                        </span>
-                        <span className="soft-skill-name">
-                          <SkillLogo label={skill.en} />
-                          <span>
-                            {isArabic
-                              ? skill.ar
-                              : skill.en}
-                          </span>
-                        </span>
-                        <span className="soft-skill-check">
-                          {i.check}
-                        </span>
-                      </div>
-                    )
-                  )}
+                  {cv.softSkills.map((skill, index) => (
+                    <div className="soft-skill-item" key={skill.en}>
+                      <span className="soft-skill-number">
+                        {String(index + 1).padStart(2, "0")}
+                      </span>
+                      <span className="soft-skill-name">
+                        <SkillLogo label={skill.en} />
+                        <span>{isArabic ? skill.ar : skill.en}</span>
+                      </span>
+                      <span className="soft-skill-check">{i.check}</span>
+                    </div>
+                  ))}
                 </div>
               </div>
               <div className="skills-mindset-card">
-                <div className="mindset-icon">
-                  {i.bolt}
-                </div>
+                <div className="mindset-icon">{i.bolt}</div>
                 <div>
-                  <span className="panel-kicker">
-                    MINDSET / 03
-                  </span>
-                  <h4>
-                    {t.practicalMindset}
-                  </h4>
-                  <p>
-                    {
-                      t.practicalMindsetNote
-                    }
-                  </p>
+                  <span className="panel-kicker">MINDSET / 03</span>
+                  <h4>{t.practicalMindset}</h4>
+                  <p>{t.practicalMindsetNote}</p>
                 </div>
               </div>
               <div className="skills-focus-card">
-                <span className="panel-kicker">
-                  PRIMARY FOCUS
-                </span>
-                <strong>
-                  AWS Cloud Infrastructure
-                </strong>
+                <span className="panel-kicker">PRIMARY FOCUS</span>
+                <strong>AWS Cloud Infrastructure</strong>
                 <div className="focus-mini-tags">
-                  <span>AWS</span>
-                  <span>Linux</span>
-                  <span>Networking</span>
-                  <span>IaC</span>
-                  <span>CI/CD</span>
+                  <span>AWS</span><span>Linux</span><span>Networking</span>
+                  <span>IaC</span><span>CI/CD</span>
                 </div>
               </div>
             </aside>
@@ -2563,255 +1340,102 @@ export default function Page() {
         </div>
       </section>
 
-      {/* =====================================================
-          05 / EXPERIENCE
-          \===================================================== */}
-      <section
-        id="experience"
-        className="section section-tight"
-      >
+      {/* EXPERIENCE */}
+      <section id="experience" className="section section-tight">
         <div className="container">
           <div className="section-head">
             <div>
-              <div className="section-code">
-                05 / {t.experience}
-              </div>
-              <h2 className="section-title">
-                {
-                  t.experienceTitle
-                }
-              </h2>
+              <div className="section-code">05 / {t.experience}</div>
+              <h2 className="section-title">{t.experienceTitle}</h2>
             </div>
           </div>
           <div className="experience">
             <div className="exp-head">
-              <span>
-                {t.record}
-              </span>
-              <span>
-                {t.position}
-              </span>
-              <span>
-                {
-                  t.responsibilities
-                }
-              </span>
+              <span>{t.record}</span>
+              <span>{t.position}</span>
+              <span>{t.responsibilities}</span>
             </div>
-            {cv.experience.map(
-              (
-                exp,
-                index
-              ) => (
-                <article
-                  className="exp-row"
-                  key={
-                    exp.role
-                  }
-                >
-                  <div className="exp-id">
-                    LOG /{" "}
-                    {String(
-                      index + 1
-                    ).padStart(
-                      2,
-                      "0"
-                    )}
-                  </div>
+            {cv.experience.map((exp, index) => (
+              <article className="exp-row" key={exp.role}>
+                <div className="exp-id">LOG / {String(index + 1).padStart(2, "0")}</div>
+                <div>
+                  <div className="exp-role">{isArabic ? exp.roleAr : exp.role}</div>
+                  <div className="exp-company">{exp.company}</div>
+                  <img className="exp-logo" src={exp.logo}
+                    alt={`${exp.company} logo`} loading="lazy" decoding="async" />
                   <div>
-                    <div className="exp-role">
-                      {isArabic
-                        ? exp.roleAr
-                        : exp.role}
-                    </div>
-                    <div className="exp-company">
-                      {exp.company}
-                    </div>
-                    <img
-                      className="exp-logo"
-                      src={
-                        exp.logo
-                      }
-                      alt={`${exp.company} logo`}
-                      loading="lazy"
-                      decoding="async"
-                    />
-                    <div>
-                      <span className="exp-date">
-                        {isArabic
-                          ? exp.periodAr
-                          : exp.period}
-                      </span>
-                    </div>
-                    <span className="focus-tag">
-                      {isArabic
-                        ? exp.focusAr
-                        : exp.focus}
-                    </span>
+                    <span className="exp-date">{isArabic ? exp.periodAr : exp.period}</span>
                   </div>
-                  <div className="experience-story">
-                    <div className="story-block">
-                      <small>
-                        {t.challenge}
-                      </small>
-                      <p>
-                        {isArabic
-                          ? exp.challengeAr
-                          : exp.challenge}
-                      </p>
-                    </div>
-                    <div className="story-block">
-                      <small>
-                        {t.action}
-                      </small>
-                      <p>
-                        {isArabic
-                          ? exp.actionAr
-                          : exp.action}
-                      </p>
-                    </div>
-                    <div className="story-block">
-                      <small>
-                        {t.result}
-                      </small>
-                      <p>
-                        {isArabic
-                          ? exp.resultAr
-                          : exp.result}
-                      </p>
-                    </div>
-                    <ul className="exp-list">
-                      {(isArabic
-                        ? exp.bulletsAr
-                        : exp.bullets
-                      ).map(
-                        (
-                          bullet
-                        ) => (
-                          <li
-                            key={
-                              bullet
-                            }
-                          >
-                            {
-                              bullet
-                            }
-                          </li>
-                        )
-                      )}
-                    </ul>
+                  <span className="focus-tag">{isArabic ? exp.focusAr : exp.focus}</span>
+                </div>
+                <div className="experience-story">
+                  <div className="story-block">
+                    <small>{t.challenge}</small>
+                    <p>{isArabic ? exp.challengeAr : exp.challenge}</p>
                   </div>
-                </article>
-              )
-            )}
+                  <div className="story-block">
+                    <small>{t.action}</small>
+                    <p>{isArabic ? exp.actionAr : exp.action}</p>
+                  </div>
+                  <div className="story-block">
+                    <small>{t.result}</small>
+                    <p>{isArabic ? exp.resultAr : exp.result}</p>
+                  </div>
+                  <ul className="exp-list">
+                    {(isArabic ? exp.bulletsAr : exp.bullets).map((bullet) => (
+                      <li key={bullet}>{bullet}</li>
+                    ))}
+                  </ul>
+                </div>
+              </article>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* =====================================================
-          06 / PROJECT
-          \===================================================== */}
-      <section
-        id="project"
-        className="section section-tight"
-      >
+      {/* PROJECT */}
+      <section id="project" className="section section-tight">
         <div className="container">
           <div className="section-head">
             <div>
-              <div className="section-code">
-                06 /{" "}
-                {t.featuredProject}
-              </div>
+              <div className="section-code">06 / {t.featuredProject}</div>
               <h2 className="section-title">
-                {isArabic
-                  ? "مشروع واحد."
-                  : "One project."}
-                <br />
-                {
-                  t.architectureStory
-                }
+                {isArabic ? "مشروع واحد." : "One project."}<br />{t.architectureStory}
               </h2>
             </div>
           </div>
           <article className="project">
             <div className="project-main">
               <div className="project-label">
-                <span className="eyebrow-dot" />
-                {
-                  t.scalableArchitecture
-                }
+                <span className="eyebrow-dot" />{t.scalableArchitecture}
               </div>
-              <h3 className="project-title-compact">
-                {cv.project.name}
-              </h3>
-              <p>
-                {isArabic
-                  ? cv.project.descriptionAr
-                  : cv.project.description}
-              </p>
+              <h3 className="project-title-compact">{cv.project.name}</h3>
+              <p>{isArabic ? cv.project.descriptionAr : cv.project.description}</p>
               <div className="project-story">
                 <div className="story-block">
-                  <small>
-                    {t.challenge}
-                  </small>
-                  <p>
-                    {isArabic
-                      ? cv.project.challengeAr
-                      : cv.project.challenge}
-                  </p>
+                  <small>{t.challenge}</small>
+                  <p>{isArabic ? cv.project.challengeAr : cv.project.challenge}</p>
                 </div>
                 <div className="story-block">
-                  <small>
-                    {t.action}
-                  </small>
-                  <p>
-                    {isArabic
-                      ? cv.project.actionAr
-                      : cv.project.action}
-                  </p>
+                  <small>{t.action}</small>
+                  <p>{isArabic ? cv.project.actionAr : cv.project.action}</p>
                 </div>
                 <div className="story-block">
-                  <small>
-                    {t.result}
-                  </small>
-                  <p>
-                    {isArabic
-                      ? cv.project.resultAr
-                      : cv.project.result}
-                  </p>
+                  <small>{t.result}</small>
+                  <p>{isArabic ? cv.project.resultAr : cv.project.result}</p>
                 </div>
               </div>
               <div className="project-points">
-                {(isArabic
-                  ? cv.project.pointsAr
-                  : cv.project.points
-                ).map(
-                  (point) => (
-                    <div
-                      className="point"
-                      key={point}
-                    >
-                      <span className="check">
-                        {i.check}
-                      </span>
-                      <span>
-                        {point}
-                      </span>
-                    </div>
-                  )
-                )}
+                {(isArabic ? cv.project.pointsAr : cv.project.points).map((point) => (
+                  <div className="point" key={point}>
+                    <span className="check">{i.check}</span><span>{point}</span>
+                  </div>
+                ))}
               </div>
               <div className="project-stack">
-                {cv.project.stack.map(
-                  (item) => (
-                    <span
-                      className="chip main"
-                      key={item}
-                      dir="ltr"
-                    >
-                      {item}
-                    </span>
-                  )
-                )}
+                {cv.project.stack.map((item) => (
+                  <span className="chip main" key={item} dir="ltr">{item}</span>
+                ))}
               </div>
             </div>
             <div className="topology">
@@ -2819,176 +1443,79 @@ export default function Page() {
                 <div className="project-image-card project-image-card-compact">
                   <div className="project-image-header">
                     <div>
-                      <strong>
-                        {
-                          t.projectImage
-                        }
-                      </strong>
-                      <span>
-                        {
-                          t.projectImageNote
-                        }
-                      </span>
+                      <strong>{t.projectImage}</strong>
+                      <span>{t.projectImageNote}</span>
                     </div>
-                    <span className="project-image-id">
-                      PROJECT / 001
-                    </span>
+                    <span className="project-image-id">PROJECT / 001</span>
                   </div>
-                  <button
-                    type="button"
-                    className="project-image-button"
-                    onClick={() =>
-                      setSelectedProjectImage(
-                        cv.project.image
-                      )
-                    }
-                    aria-label={
-                      t.viewProjectImage
-                    }
-                  >
+                  <button type="button" className="project-image-button"
+                    onClick={() => setSelectedProjectImage(cv.project.image)}
+                    aria-label={t.viewProjectImage}>
                     <div className="project-image-frame">
-                      <img
-                        src={
-                          cv.project.image
-                        }
-                        alt={
-                          isArabic
-                            ? cv.project.imageAltAr
-                            : cv.project.imageAlt
-                        }
-                        loading="lazy"
-                        decoding="async"
-                      />
-                      <span className="project-image-zoom">
-                        {
-                          t.viewProjectImage
-                        }
-                      </span>
+                      <img src={cv.project.image}
+                        alt={isArabic ? cv.project.imageAltAr : cv.project.imageAlt}
+                        loading="lazy" decoding="async" />
+                      <span className="project-image-zoom">{t.viewProjectImage}</span>
                     </div>
                   </button>
                 </div>
                 <div className="topology-head">
                   <div>
-                    <h4>
-                      {t.topology}
-                    </h4>
-                    <p>
-                      {
-                        t.actualProjectElements
-                      }
-                    </p>
+                    <h4>{t.topology}</h4>
+                    <p>{t.actualProjectElements}</p>
                   </div>
-                  <span className="topology-id">
-                    AWS / 001
-                  </span>
+                  <span className="topology-id">AWS / 001</span>
                 </div>
                 <div className="flow">
                   <div className="flow-row">
-                    <span className="flow-icon">
-                      {i.cloud}
-                    </span>
+                    <span className="flow-icon">{i.cloud}</span>
                     <div className="flow-copy">
-                      <strong>
-                        {
-                          t.cloudEnvironment
-                        }
-                      </strong>
-                      <span>
-                        {
-                          t.cloudBoundary
-                        }
-                      </span>
+                      <strong>{t.cloudEnvironment}</strong>
+                      <span>{t.cloudBoundary}</span>
                     </div>
                   </div>
                   <div className="flow-line" />
                   <div className="flow-row">
-                    <span className="flow-icon">
-                      {i.server}
-                    </span>
+                    <span className="flow-icon">{i.server}</span>
                     <div className="flow-copy">
-                      <strong dir="ltr">
-                        ALB + EC2 + Auto Scaling
-                      </strong>
-                      <span>
-                        {
-                          t.applicationCompute
-                        }
-                      </span>
+                      <strong dir="ltr">ALB + EC2 + Auto Scaling</strong>
+                      <span>{t.applicationCompute}</span>
                     </div>
                   </div>
                   <div className="flow-line" />
                   <div className="flow-row">
-                    <span className="flow-icon">
-                      {i.network}
-                    </span>
+                    <span className="flow-icon">{i.network}</span>
                     <div className="flow-copy">
-                      <strong dir="ltr">
-                        Multi-AZ VPC
-                      </strong>
-                      <span dir="ltr">
-                        {
-                          t.subnetsRouteTables
-                        }
-                      </span>
+                      <strong dir="ltr">Multi-AZ VPC</strong>
+                      <span dir="ltr">{t.subnetsRouteTables}</span>
                     </div>
                   </div>
                   <div className="flow-line" />
                   <div className="flow-row">
-                    <span className="flow-icon">
-                      {i.shield}
-                    </span>
+                    <span className="flow-icon">{i.shield}</span>
                     <div className="flow-copy">
-                      <strong dir="ltr">
-                        WAF + Shield + Security Groups
-                      </strong>
-                      <span>
-                        {
-                          t.controlledAccess
-                        }
-                      </span>
+                      <strong dir="ltr">WAF + Shield + Security Groups</strong>
+                      <span>{t.controlledAccess}</span>
                     </div>
                   </div>
                   <div className="flow-line" />
                   <div className="flow-row">
-                    <span className="flow-icon">
-                      {i.database}
-                    </span>
+                    <span className="flow-icon">{i.database}</span>
                     <div className="flow-copy">
-                      <strong dir="ltr">
-                        Multi-AZ Database + EFS
-                      </strong>
-                      <span>
-                        {
-                          t.cloudStorage
-                        }
-                      </span>
+                      <strong dir="ltr">Multi-AZ Database + EFS</strong>
+                      <span>{t.cloudStorage}</span>
                     </div>
                   </div>
                 </div>
                 <div className="topology-footer">
                   <div className="topology-stat">
-                    <strong dir="ltr">
-                      EC2
-                    </strong>
-                    <span>
-                      {t.compute}
-                    </span>
+                    <strong dir="ltr">EC2</strong><span>{t.compute}</span>
                   </div>
                   <div className="topology-stat">
-                    <strong dir="ltr">
-                      VPC
-                    </strong>
-                    <span>
-                      {t.network}
-                    </span>
+                    <strong dir="ltr">VPC</strong><span>{t.network}</span>
                   </div>
                   <div className="topology-stat">
-                    <strong dir="ltr">
-                      EFS / RDS
-                    </strong>
-                    <span>
-                      {t.storage}
-                    </span>
+                    <strong dir="ltr">EFS / RDS</strong><span>{t.storage}</span>
                   </div>
                 </div>
               </div>
@@ -2997,287 +1524,132 @@ export default function Page() {
         </div>
       </section>
 
-      {/* =====================================================
-          07 / SERVICES
-          \===================================================== */}
-      <section
-        id="services"
-        className="section section-tight"
-      >
+      {/* SERVICES */}
+      <section id="services" className="section section-tight">
         <div className="container">
           <div className="section-head">
             <div>
-              <div className="section-code">
-                07 / {t.services}
-              </div>
-              <h2 className="section-title">
-                {t.servicesTitle}
-              </h2>
+              <div className="section-code">07 / {t.services}</div>
+              <h2 className="section-title">{t.servicesTitle}</h2>
             </div>
           </div>
           <div className="services-grid">
-            {cv.services.map(
-              (
-                service,
-                index
-              ) => (
-                <article
-                  className="service-card"
-                  key={
-                    service.title
-                  }
-                >
-                  <div className="service-icon">
-                    {service.icon ===
-                    "cloud"
-                      ? i.cloud
-                      : service.icon ===
-                          "bolt"
-                        ? i.bolt
-                        : service.icon ===
-                            "server"
-                          ? i.server
-                          : i.network}
-                  </div>
-                  <div className="service-number">
-                    SERVICE /{" "}
-                    {String(
-                      index + 1
-                    ).padStart(
-                      2,
-                      "0"
-                    )}
-                  </div>
-                  <h3>
-                    {isArabic
-                      ? service.titleAr
-                      : service.title}
-                  </h3>
-                  <p>
-                    {isArabic
-                      ? service.descriptionAr
-                      : service.description}
-                  </p>
-                </article>
-              )
-            )}
+            {cv.services.map((service, index) => (
+              <article className="service-card" key={service.title}>
+                <div className="service-icon">
+                  {service.icon === "cloud" ? i.cloud :
+                    service.icon === "bolt" ? i.bolt :
+                    service.icon === "server" ? i.server : i.network}
+                </div>
+                <div className="service-number">
+                  SERVICE / {String(index + 1).padStart(2, "0")}
+                </div>
+                <h3>{isArabic ? service.titleAr : service.title}</h3>
+                <p>{isArabic ? service.descriptionAr : service.description}</p>
+              </article>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* =====================================================
-          08 / ACHIEVEMENTS
-          \===================================================== */}
-      <section
-        id="achievements"
-        className="section section-tight"
-      >
+      {/* ACHIEVEMENTS */}
+      <section id="achievements" className="section section-tight">
         <div className="container">
           <div className="section-head">
             <div>
-              <div className="section-code">
-                08 /{" "}
-                {t.achievements}
-              </div>
-              <h2 className="section-title">
-                {
-                  t.achievementsTitle
-                }
-              </h2>
+              <div className="section-code">08 / {t.achievements}</div>
+              <h2 className="section-title">{t.achievementsTitle}</h2>
             </div>
           </div>
           <div className="achievements-grid">
-            {cv.achievements.map(
-              (
-                achievement,
-                index
-              ) => (
-                <article
-                  className="achievement"
-                  key={
-                    achievement.title
-                  }
-                >
-                  <div className="achievement-number">
-                    {
-                      achievement.number
-                    }
-                  </div>
-                  <h3>
-                    {isArabic
-                      ? achievement.titleAr
-                      : achievement.title}
-                  </h3>
-                  <p>
-                    {isArabic
-                      ? achievement.descriptionAr
-                      : achievement.description}
-                  </p>
-                  <span className="credential-index">
-                    MILESTONE /{" "}
-                    {String(
-                      index + 1
-                    ).padStart(
-                      2,
-                      "0"
-                    )}
-                  </span>
-                </article>
-              )
-            )}
+            {cv.achievements.map((achievement, index) => (
+              <article className="achievement" key={achievement.title}>
+                <div className="achievement-number">{achievement.number}</div>
+                <h3>{isArabic ? achievement.titleAr : achievement.title}</h3>
+                <p>{isArabic ? achievement.descriptionAr : achievement.description}</p>
+                <span className="credential-index">
+                  MILESTONE / {String(index + 1).padStart(2, "0")}
+                </span>
+              </article>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* =====================================================
-          09 / TESTIMONIALS
-          \===================================================== */}
-      <section
-        id="testimonials"
-        className="section section-tight"
-      >
+      {/* TESTIMONIALS */}
+      <section id="testimonials" className="section section-tight">
         <div className="container">
           <div className="section-head testimonial-section-head">
             <div>
-              <div className="section-code">
-                09 /{" "}
-                {t.testimonials}
-              </div>
-              <h2 className="section-title">
-                {
-                  t.testimonialsTitle
-                }
-              </h2>
+              <div className="section-code">09 / {t.testimonials}</div>
+              <h2 className="section-title">{t.testimonialsTitle}</h2>
             </div>
           </div>
           <div className="testimonials-grid testimonials-grid-compact recommendation-grid">
-            {cv.testimonials.map(
-              (testimonial, index) => (
-                <article
-                  className="testimonial testimonial-compact recommendation-card"
-                  key={`${testimonial.name}-${index}`}
-                >
-                  <div className="testimonial-top recommendation-top">
-                    <span className="testimonial-quote-icon">
-                      {i.quote}
-                    </span>
-                    <span className="testimonial-index">
-                      {t.recommendationLabel}{" "}
-                      {String(index + 1).padStart(2, "0")}
-                    </span>
-                  </div>
-                  <div className="recommendation-author-block">
-                    <strong dir="ltr">
-                      {testimonial.name}
-                    </strong>
-                    <span
-                      className="recommendation-role"
-                      dir="ltr"
-                    >
-                      {isArabic
-                        ? testimonial.roleAr
-                        : testimonial.role}
-                    </span>
-                    <span
-                      className="recommendation-meta"
-                      dir="ltr"
-                    >
-                      {isArabic
-                        ? testimonial.connectionAr
-                        : testimonial.connection}
-                      <span>•</span>
-                      {isArabic
-                        ? testimonial.dateAr
-                        : testimonial.date}
-                    </span>
-                  </div>
-                  <div className="testimonial-quote recommendation-quote">
-                    {(isArabic
-                      ? testimonial.quoteAr
-                      : testimonial.quote
-                    ).split("\n\n").map((paragraph, paragraphIndex) => (
-                      <p key={paragraphIndex}>
-                        {paragraph}
-                      </p>
+            {cv.testimonials.map((testimonial, index) => (
+              <article className="testimonial testimonial-compact recommendation-card"
+                key={`${testimonial.name}-${index}`}>
+                <div className="testimonial-top recommendation-top">
+                  <span className="testimonial-quote-icon">{i.quote}</span>
+                  <span className="testimonial-index">
+                    {t.recommendationLabel} {String(index + 1).padStart(2, "0")}
+                  </span>
+                </div>
+                <div className="recommendation-author-block">
+                  <strong dir="ltr">{testimonial.name}</strong>
+                  <span className="recommendation-role" dir="ltr">
+                    {isArabic ? testimonial.roleAr : testimonial.role}
+                  </span>
+                  <span className="recommendation-meta" dir="ltr">
+                    {isArabic ? testimonial.connectionAr : testimonial.connection}
+                    <span>•</span>
+                    {isArabic ? testimonial.dateAr : testimonial.date}
+                  </span>
+                </div>
+                <div className="testimonial-quote recommendation-quote">
+                  {(isArabic ? testimonial.quoteAr : testimonial.quote)
+                    .split("\n\n").map((paragraph, paragraphIndex) => (
+                      <p key={paragraphIndex}>{paragraph}</p>
                     ))}
-                  </div>
-                  <div className="testimonial-source recommendation-source">
-                    <span className="testimonial-source-label">
-                      {testimonial.source}
-                    </span>
-                    <a
-                      href={testimonial.profileUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="testimonial-post-link"
-                      dir="ltr"
-                    >
-                      {t.viewRecommendation}
-                      {i.external}
-                    </a>
-                  </div>
-                </article>
-              )
-            )}
+                </div>
+                <div className="testimonial-source recommendation-source">
+                  <span className="testimonial-source-label">{testimonial.source}</span>
+                  <a href={testimonial.profileUrl} target="_blank"
+                    rel="noopener noreferrer" className="testimonial-post-link" dir="ltr">
+                    {t.viewRecommendation}{i.external}
+                  </a>
+                </div>
+              </article>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* =====================================================
-          10 / CONTACT
-          \===================================================== */}
-      <section
-        id="contact"
-        className="section section-tight contact-section"
-      >
+      {/* CONTACT */}
+      <section id="contact" className="section section-tight contact-section">
         <div className="container">
           <div className="section-head">
             <div>
-              <div className="section-code">
-                10 / {t.contact}
-              </div>
-              <h2 className="section-title">
-                {t.contactTitle}
-              </h2>
+              <div className="section-code">10 / {t.contact}</div>
+              <h2 className="section-title">{t.contactTitle}</h2>
             </div>
           </div>
           <div className="contact contact-compact">
             <div className="contact-main contact-main-enhanced">
               <div className="eyebrow">
-                <span className="eyebrow-dot" />
-                {
-                  t.openToOpportunitiesAgain
-                }
+                <span className="eyebrow-dot" />{t.openToOpportunitiesAgain}
               </div>
-              <h3>
-                {t.letsBuild}
-              </h3>
-              <p>
-                {t.contactDescription}
-              </p>
+              <h3>{t.letsBuild}</h3>
+              <p>{t.contactDescription}</p>
               <div className="contact-actions">
-                <a
-                  className="btn primary"
-                  href={`mailto:${cv.email}`}
-                >
-                  {t.sendEmail}
-                  {i.external}
+                <a className="btn primary" href={`mailto:${cv.email}`}>
+                  {t.sendEmail}{i.external}
                 </a>
-                <button
-                  className="btn"
-                  onClick={copyEmail}
-                >
-                  {copied
-                    ? t.copied
-                    : t.copyEmail}
+                <button className="btn" onClick={copyEmail}>
+                  {copied ? t.copied : t.copyEmail}
                 </button>
-                <a
-                  className="btn"
-                  href="/cv.pdf"
-                  download
-                >
-                  {t.downloadCv}
-                  {i.external}
+                <a className="btn" href="/cv.pdf" download>
+                  {t.downloadCv}{i.external}
                 </a>
               </div>
             </div>
@@ -3289,7 +1661,8 @@ export default function Page() {
                   <span className="contact-value">{cv.email}</span>
                 </div>
               </a>
-              <a className="contact-item-card" href={cv.linkedin} target="_blank" rel="noreferrer" dir="ltr">
+              <a className="contact-item-card" href={cv.linkedin}
+                target="_blank" rel="noreferrer" dir="ltr">
                 <div className="contact-icon-box">{i.linkedin}</div>
                 <div className="contact-text-stack">
                   <span className="contact-label">LinkedIn</span>
@@ -3297,11 +1670,14 @@ export default function Page() {
                 </div>
               </a>
               {cv.github && (
-                <a className="contact-item-card" href={cv.github} target="_blank" rel="noreferrer" dir="ltr">
+                <a className="contact-item-card" href={cv.github}
+                  target="_blank" rel="noreferrer" dir="ltr">
                   <div className="contact-icon-box">{i.github}</div>
                   <div className="contact-text-stack">
                     <span className="contact-label">GitHub</span>
-                    <span className="contact-value">{cv.github.replace(/^https?:\/\//, "")}</span>
+                    <span className="contact-value">
+                      {cv.github.replace(/^https?:\/\//, "")}
+                    </span>
                   </div>
                 </a>
               )}
@@ -3312,20 +1688,15 @@ export default function Page() {
                   <span className="contact-value">{cv.phone}</span>
                 </div>
               </a>
-              <a className="contact-item-card" href={`https://wa.me/${cv.phone.replace(/[^0-9]/g, "")}`} target="_blank" rel="noreferrer" dir="ltr">
+              <a className="contact-item-card"
+                href={`https://wa.me/${cv.phone.replace(/[^0-9]/g, "")}`}
+                target="_blank" rel="noreferrer" dir="ltr">
                 <div className="contact-icon-box">{i.whatsapp}</div>
                 <div className="contact-text-stack">
                   <span className="contact-label">Phone / WhatsApp</span>
                   <span className="contact-value">{cv.phone}</span>
                 </div>
               </a>
-              <div className="contact-item-card" dir="ltr">
-                <div className="contact-icon-box">{i.terminal}</div>
-                <div className="contact-text-stack">
-                  <span className="contact-label">{t.targetRole}</span>
-                  <span className="contact-value">{cv.secondaryTitle}</span>
-                </div>
-              </div>
               <div className="contact-item-card" dir="ltr">
                 <div className="contact-icon-box">{i.cloud}</div>
                 <div className="contact-text-stack">
@@ -3340,222 +1711,121 @@ export default function Page() {
 
       <style jsx>{`
         .onboarding-overlay {
-          position: fixed;
-          inset: 0;
-          z-index: 1000;
-          display: grid;
-          place-items: center;
-          overflow: hidden;
-          isolation: isolate;
-          opacity: 0;
-          visibility: hidden;
+          position: fixed; inset: 0; z-index: 1000;
+          display: grid; place-items: center; overflow: hidden;
+          isolation: isolate; opacity: 0; visibility: hidden;
           pointer-events: none;
           transition: opacity 520ms cubic-bezier(.22,1,.36,1), visibility 520ms ease;
         }
-        .onboarding-overlay.is-ready {
-          opacity: 1;
-          visibility: visible;
-          pointer-events: auto;
-        }
-        .onboarding-overlay.is-exiting {
-          opacity: 0;
-          pointer-events: none;
-        }
+        .onboarding-overlay.is-ready { opacity: 1; visibility: visible; pointer-events: auto; }
+        .onboarding-overlay.is-exiting { opacity: 0; pointer-events: none; }
         .onboarding-backdrop {
-          position: absolute;
-          inset: 0;
+          position: absolute; inset: 0;
           background: ${lightMode ? "rgba(248,250,252,.965)" : "rgba(7,8,16,.985)"};
-          backdrop-filter: blur(18px);
-          -webkit-backdrop-filter: blur(18px);
+          backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px);
         }
         .onboarding-grid-glow {
-          position: absolute;
-          width: min(62vw, 760px);
-          aspect-ratio: 1;
+          position: absolute; width: min(62vw, 760px); aspect-ratio: 1;
           border-radius: 50%;
           background: radial-gradient(circle, rgba(167,131,255,.16) 0%, rgba(167,131,255,.05) 34%, transparent 70%);
-          filter: blur(7px);
-          transform: scale(.72);
-          opacity: 0;
+          filter: blur(7px); transform: scale(.72); opacity: 0;
           transition: transform 1200ms cubic-bezier(.16,1,.3,1), opacity 900ms ease;
         }
-        .onboarding-overlay.is-ready .onboarding-grid-glow {
-          transform: scale(1);
-          opacity: 1;
-        }
+        .onboarding-overlay.is-ready .onboarding-grid-glow { transform: scale(1); opacity: 1; }
         .onboarding-content {
-          position: relative;
-          z-index: 2;
-          width: min(92vw, 760px);
-          padding: 44px 28px 26px;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          text-align: center;
-          transform: translateY(24px) scale(.94);
-          opacity: 0;
-          filter: blur(7px);
+          position: relative; z-index: 2; width: min(92vw, 760px);
+          padding: 44px 28px 26px; display: flex; flex-direction: column;
+          align-items: center; text-align: center;
+          transform: translateY(24px) scale(.94); opacity: 0; filter: blur(7px);
           transition: transform 900ms cubic-bezier(.16,1,.3,1), opacity 720ms ease, filter 720ms ease;
         }
-        .onboarding-overlay.is-ready .onboarding-content {
-          transform: none;
-          opacity: 1;
-          filter: none;
-        }
+        .onboarding-overlay.is-ready .onboarding-content { transform: none; opacity: 1; filter: none; }
         .onboarding-overlay.is-exiting .onboarding-content {
-          transform: translateY(-16px) scale(1.045);
-          opacity: 0;
-          filter: blur(6px);
-          transition-duration: 470ms;
+          transform: translateY(-16px) scale(1.045); opacity: 0;
+          filter: blur(6px); transition-duration: 470ms;
         }
         .onboarding-logo-wrap {
-          position: relative;
-          display: grid;
-          place-items: center;
-          min-height: 88px;
-          margin-bottom: 24px;
-          transform: translateY(12px) scale(.8);
-          opacity: 0;
+          position: relative; display: grid; place-items: center;
+          min-height: 88px; margin-bottom: 24px;
+          transform: translateY(12px) scale(.8); opacity: 0;
           transition: transform 900ms 70ms cubic-bezier(.16,1,.3,1), opacity 600ms 70ms ease;
         }
-        .onboarding-overlay.is-ready .onboarding-logo-wrap {
-          transform: none;
-          opacity: 1;
-        }
+        .onboarding-overlay.is-ready .onboarding-logo-wrap { transform: none; opacity: 1; }
         .onboarding-logo-ring {
-          position: absolute;
-          width: 116px;
-          height: 116px;
+          position: absolute; width: 116px; height: 116px;
           border: 1px solid ${lightMode ? "rgba(167,131,255,.18)" : "rgba(167,131,255,.21)"};
           border-radius: 50%;
           box-shadow: 0 0 0 10px rgba(167,131,255,.025), 0 0 54px rgba(167,131,255,.17);
           animation: onboarding-pulse 2.2s ease-in-out infinite;
         }
         .onboarding-logo {
-          position: relative;
-          z-index: 1;
-          display: block;
-          width: min(350px, 72vw);
-          max-height: 108px;
-          height: auto;
+          position: relative; z-index: 1; display: block;
+          width: min(350px, 72vw); max-height: 108px; height: auto;
           object-fit: contain;
           filter: drop-shadow(0 14px 38px rgba(167,131,255,.17));
         }
         .onboarding-name {
-          display: flex;
-          flex-direction: column;
-          font-size: clamp(36px, 6.1vw, 74px);
-          line-height: .96;
-          font-weight: 900;
-          letter-spacing: .16em;
-          text-indent: .16em;
-          color: ${lightMode ? "#11131b" : "#f7f4ff"};
-          overflow: hidden;
+          display: flex; flex-direction: column;
+          font-size: clamp(36px, 6.1vw, 74px); line-height: .96;
+          font-weight: 900; letter-spacing: .16em; text-indent: .16em;
+          color: ${lightMode ? "#11131b" : "#f7f4ff"}; overflow: hidden;
         }
         .onboarding-name span {
-          display: block;
-          transform: translateY(100%);
-          opacity: 0;
+          display: block; transform: translateY(100%); opacity: 0;
           transition: transform 820ms cubic-bezier(.16,1,.3,1), opacity 560ms ease;
         }
         .onboarding-name span:first-child { transition-delay: 220ms; }
         .onboarding-name span:last-child { transition-delay: 310ms; }
-        .onboarding-overlay.is-ready .onboarding-name span {
-          transform: none;
-          opacity: 1;
-        }
+        .onboarding-overlay.is-ready .onboarding-name span { transform: none; opacity: 1; }
         .onboarding-divider {
-          width: min(280px, 52vw);
-          height: 1px;
-          margin: 22px 0 17px;
+          width: min(280px, 52vw); height: 1px; margin: 22px 0 17px;
           overflow: hidden;
           background: ${lightMode ? "rgba(17,19,27,.10)" : "rgba(255,255,255,.10)"};
         }
         .onboarding-divider span {
-          display: block;
-          width: 100%;
-          height: 100%;
+          display: block; width: 100%; height: 100%;
           transform: translateX(-105%);
           background: linear-gradient(90deg, transparent, #A783FF, transparent);
           transition: transform 900ms 410ms cubic-bezier(.16,1,.3,1);
         }
         .onboarding-overlay.is-ready .onboarding-divider span { transform: translateX(105%); }
         .onboarding-title {
-          margin: 0;
-          font-size: clamp(12px, 1.8vw, 16px);
-          line-height: 1.35;
-          font-weight: 800;
-          letter-spacing: .24em;
-          text-indent: .24em;
-          color: #A783FF;
-          transform: translateY(10px);
-          opacity: 0;
+          margin: 0; font-size: clamp(12px, 1.8vw, 16px); line-height: 1.35;
+          font-weight: 800; letter-spacing: .24em; text-indent: .24em;
+          color: #A783FF; transform: translateY(10px); opacity: 0;
           transition: transform 650ms 470ms cubic-bezier(.16,1,.3,1), opacity 520ms 470ms ease;
         }
-        .onboarding-overlay.is-ready .onboarding-title {
-          transform: none;
-          opacity: 1;
-        }
+        .onboarding-overlay.is-ready .onboarding-title { transform: none; opacity: 1; }
         .onboarding-focus {
-          margin: 11px 0 0;
-          max-width: 520px;
-          font-size: 10px;
-          line-height: 1.45;
-          letter-spacing: .13em;
-          text-transform: uppercase;
+          margin: 11px 0 0; max-width: 520px; font-size: 10px;
+          line-height: 1.45; letter-spacing: .13em; text-transform: uppercase;
           color: ${lightMode ? "rgba(17,19,27,.48)" : "rgba(255,255,255,.46)"};
-          transform: translateY(8px);
-          opacity: 0;
+          transform: translateY(8px); opacity: 0;
           transition: transform 650ms 560ms cubic-bezier(.16,1,.3,1), opacity 520ms 560ms ease;
         }
-        .onboarding-overlay.is-ready .onboarding-focus {
-          transform: none;
-          opacity: 1;
-        }
+        .onboarding-overlay.is-ready .onboarding-focus { transform: none; opacity: 1; }
         .onboarding-progress {
-          position: relative;
-          width: min(320px, 60vw);
-          height: 2px;
-          margin-top: 28px;
-          border-radius: 999px;
-          overflow: hidden;
+          position: relative; width: min(320px, 60vw); height: 2px;
+          margin-top: 28px; border-radius: 999px; overflow: hidden;
           background: ${lightMode ? "rgba(17,19,27,.08)" : "rgba(255,255,255,.08)"};
-          transform: scaleX(.35);
-          opacity: 0;
+          transform: scaleX(.35); opacity: 0;
           transition: transform 900ms 680ms cubic-bezier(.16,1,.3,1), opacity 520ms 680ms ease;
         }
-        .onboarding-overlay.is-ready .onboarding-progress {
-          transform: scaleX(1);
-          opacity: 1;
-        }
+        .onboarding-overlay.is-ready .onboarding-progress { transform: scaleX(1); opacity: 1; }
         .onboarding-progress span {
-          display: block;
-          width: 32%;
-          height: 100%;
-          border-radius: inherit;
+          display: block; width: 32%; height: 100%; border-radius: inherit;
           background: linear-gradient(90deg, transparent, #A783FF, #C1AAFF, transparent);
           animation: onboarding-scan 1.5s ease-in-out infinite;
         }
 
-
         .topbar {
-          position: fixed;
-          top: 0;
-          left: 0;
-          right: 0;
-          z-index: 120;
-          padding: 14px 18px;
-          transition: padding 220ms ease;
+          position: fixed; top: 0; left: 0; right: 0; z-index: 120;
+          padding: 14px 18px; transition: padding 220ms ease;
         }
         .topbar-inner {
-          position: relative;
-          width: min(1440px,100%);
-          min-height: 58px;
-          margin: 0 auto;
-          padding: 0 12px 0 18px;
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
+          position: relative; width: min(1440px,100%); min-height: 58px;
+          margin: 0 auto; padding: 0 12px 0 18px;
+          display: flex; align-items: center; justify-content: space-between;
           gap: 18px;
           border: 1px solid ${lightMode ? "rgba(15,23,42,.08)" : "rgba(255,255,255,.08)"};
           border-radius: 18px;
@@ -3564,42 +1834,25 @@ export default function Page() {
           backdrop-filter: blur(20px) saturate(150%);
           -webkit-backdrop-filter: blur(20px) saturate(150%);
         }
-        .topbar.scrolled {
-          padding-top: 9px;
-        }
+        .topbar.scrolled { padding-top: 9px; }
         .topbar.scrolled .topbar-inner {
           min-height: 54px;
           border-color: ${lightMode ? "rgba(15,23,42,.11)" : "rgba(255,255,255,.11)"};
           background: ${lightMode ? "rgba(255,255,255,.92)" : "rgba(9,10,20,.88)"};
         }
         .brand {
-          position: relative;
-          min-width: 0;
-          flex: 0 0 auto;
-          display: inline-flex;
-          align-items: center;
-          padding: 0;
-          border: 0;
-          background: transparent;
-          color: inherit;
-          cursor: pointer;
+          position: relative; min-width: 0; flex: 0 0 auto;
+          display: inline-flex; align-items: center; padding: 0;
+          border: 0; background: transparent; color: inherit; cursor: pointer;
         }
         .brand-logo-shell {
-          position: relative;
-          display: inline-flex;
-          align-items: center;
-          width: clamp(132px,13vw,182px);
-          height: 42px;
-          overflow: hidden;
-          border-radius: 10px;
-          flex: 0 0 auto;
+          position: relative; display: inline-flex; align-items: center;
+          width: clamp(132px,13vw,182px); height: 42px;
+          overflow: hidden; border-radius: 10px; flex: 0 0 auto;
         }
         .brand-logo-image {
-          display: block;
-          width: 100%;
-          height: 100%;
-          object-fit: contain;
-          object-position: left center;
+          display: block; width: 100%; height: 100%;
+          object-fit: contain; object-position: left center;
           transition: transform 220ms ease, filter 220ms ease;
         }
         .brand:hover .brand-logo-image {
@@ -3608,164 +1861,88 @@ export default function Page() {
         }
         .brand:focus-visible {
           outline: 2px solid ${lightMode ? "rgba(167,131,255,.40)" : "rgba(167,131,255,.55)"};
-          outline-offset: 5px;
-          border-radius: 10px;
+          outline-offset: 5px; border-radius: 10px;
         }
-        .nav-center {
-          flex: 1 1 auto;
-          min-width: 0;
-          display: flex;
-          justify-content: center;
-        }
+        .nav-center { flex: 1 1 auto; min-width: 0; display: flex; justify-content: center; }
         .nav-links {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          gap: 3px;
-          min-width: 0;
-          overflow-x: auto;
-          scrollbar-width: none;
+          display: flex; align-items: center; justify-content: center;
+          gap: 3px; min-width: 0; overflow-x: auto; scrollbar-width: none;
         }
         .nav-links::-webkit-scrollbar { display: none; }
         .nav-links button {
-          position: relative;
-          display: inline-flex;
-          align-items: center;
-          justify-content: center;
-          gap: 7px;
-          min-height: 38px;
-          padding: 8px 10px;
-          border: 0;
-          border-radius: 11px;
+          position: relative; display: inline-flex; align-items: center;
+          justify-content: center; gap: 7px; min-height: 38px;
+          padding: 8px 10px; border: 0; border-radius: 11px;
           background: transparent;
           color: ${lightMode ? "rgba(15,23,42,.62)" : "rgba(255,255,255,.64)"};
-          font: inherit;
-          font-size: 11px;
-          font-weight: 650;
-          white-space: nowrap;
-          cursor: pointer;
+          font: inherit; font-size: 11px; font-weight: 650;
+          white-space: nowrap; cursor: pointer;
           transition: color 180ms ease, background 180ms ease, transform 180ms ease;
         }
         .nav-links button::after {
-          content: "";
-          position: absolute;
-          left: 12px;
-          right: 12px;
-          bottom: 4px;
-          height: 1px;
-          border-radius: 999px;
-          background: #A783FF;
-          transform: scaleX(0);
+          content: ""; position: absolute; left: 12px; right: 12px;
+          bottom: 4px; height: 1px; border-radius: 999px;
+          background: #A783FF; transform: scaleX(0);
           transition: transform 180ms ease;
         }
         .nav-links button:hover {
           color: ${lightMode ? "#11131b" : "#f6f3ff"};
-          background: rgba(167,131,255,.08);
-          transform: translateY(-1px);
+          background: rgba(167,131,255,.08); transform: translateY(-1px);
         }
-        .nav-links button.active {
-          color: #A783FF;
-          background: rgba(167,131,255,.10);
-        }
+        .nav-links button.active { color: #A783FF; background: rgba(167,131,255,.10); }
         .nav-links button.active::after { transform: scaleX(1); }
         .nav-contact { color: #A783FF !important; }
         .nav-contact-icon { display: inline-flex; opacity: .86; }
-        .nav-tools {
-          flex: 0 0 auto;
-          display: flex;
-          align-items: center;
-          gap: 8px;
-        }
+        .nav-tools { flex: 0 0 auto; display: flex; align-items: center; gap: 8px; }
         .availability {
-          display: inline-flex;
-          align-items: center;
-          gap: 7px;
-          min-height: 32px;
-          padding: 7px 10px;
-          border-radius: 999px;
+          display: inline-flex; align-items: center; gap: 7px;
+          min-height: 32px; padding: 7px 10px; border-radius: 999px;
           color: ${lightMode ? "rgba(15,23,42,.60)" : "rgba(255,255,255,.58)"};
           background: ${lightMode ? "rgba(15,23,42,.035)" : "rgba(255,255,255,.045)"};
           border: 1px solid ${lightMode ? "rgba(15,23,42,.07)" : "rgba(255,255,255,.08)"};
-          font-size: 9px;
-          font-weight: 700;
-          letter-spacing: .08em;
-          text-transform: uppercase;
-          white-space: nowrap;
+          font-size: 9px; font-weight: 700; letter-spacing: .08em;
+          text-transform: uppercase; white-space: nowrap;
         }
         .availability-dot {
-          width: 6px;
-          height: 6px;
-          flex: 0 0 6px;
-          border-radius: 50%;
+          width: 6px; height: 6px; flex: 0 0 6px; border-radius: 50%;
           background: #A783FF;
           box-shadow: 0 0 0 4px rgba(167,131,255,.09), 0 0 16px rgba(167,131,255,.28);
           animation: availability-pulse 2.2s ease-in-out infinite;
         }
-        .language-button,
-        .theme-button,
-        .menu-btn {
-          display: inline-flex;
-          align-items: center;
-          justify-content: center;
-          min-width: 34px;
-          height: 34px;
-          padding: 0 9px;
+        .language-button, .theme-button, .menu-btn {
+          display: inline-flex; align-items: center; justify-content: center;
+          min-width: 34px; height: 34px; padding: 0 9px;
           border: 1px solid ${lightMode ? "rgba(15,23,42,.09)" : "rgba(255,255,255,.10)"};
           border-radius: 10px;
           background: ${lightMode ? "rgba(255,255,255,.50)" : "rgba(255,255,255,.035)"};
           color: ${lightMode ? "rgba(15,23,42,.66)" : "rgba(255,255,255,.70)"};
-          font: inherit;
-          font-size: 10px;
-          font-weight: 750;
-          cursor: pointer;
+          font: inherit; font-size: 10px; font-weight: 750; cursor: pointer;
           transition: transform 180ms ease, border-color 180ms ease, background 180ms ease, color 180ms ease;
         }
-        .language-button:hover,
-        .theme-button:hover,
-        .menu-btn:hover {
-          transform: translateY(-1px);
-          border-color: rgba(167,131,255,.34);
-          background: rgba(167,131,255,.08);
-          color: #A783FF;
+        .language-button:hover, .theme-button:hover, .menu-btn:hover {
+          transform: translateY(-1px); border-color: rgba(167,131,255,.34);
+          background: rgba(167,131,255,.08); color: #A783FF;
         }
         .theme-button { position: relative; overflow: hidden; }
         .theme-glow {
-          position: absolute;
-          inset: 4px;
-          border-radius: 8px;
+          position: absolute; inset: 4px; border-radius: 8px;
           background: radial-gradient(circle at center, rgba(167,131,255,.12), transparent 68%);
           pointer-events: none;
         }
         .theme-icon { position: relative; z-index: 1; display: inline-flex; }
-        .menu-btn {
-          display: none;
-          font-size: 17px;
-          line-height: 1;
-        }
+        .menu-btn { display: none; font-size: 17px; line-height: 1; }
         .mobile-menu {
-          position: fixed;
-          inset: 76px 18px auto;
-          z-index: 119;
-          max-height: calc(100vh - 92px);
-          overflow: auto;
-          padding: 12px;
+          position: fixed; inset: 76px 18px auto; z-index: 119;
+          max-height: calc(100vh - 92px); overflow: auto; padding: 12px;
           border: 1px solid ${lightMode ? "rgba(15,23,42,.09)" : "rgba(255,255,255,.09)"};
           border-radius: 18px;
           background: ${lightMode ? "rgba(255,255,255,.95)" : "rgba(9,10,20,.96)"};
           box-shadow: 0 24px 70px ${lightMode ? "rgba(15,23,42,.15)" : "rgba(0,0,0,.34)"};
-          backdrop-filter: blur(18px);
-          -webkit-backdrop-filter: blur(18px);
+          backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px);
         }
-        .mobile-menu .nav-links {
-          display: flex;
-          flex-direction: column;
-          align-items: stretch;
-        }
+        .mobile-menu .nav-links { display: flex; flex-direction: column; align-items: stretch; }
         .mobile-menu .nav-links button {
-          justify-content: flex-start;
-          width: 100%;
-          min-height: 46px;
-          padding: 11px 12px;
+          justify-content: flex-start; width: 100%; min-height: 46px; padding: 11px 12px;
         }
         @keyframes onboarding-pulse {
           0%, 100% { transform: scale(.96); opacity: .7; }
@@ -3800,21 +1977,11 @@ export default function Page() {
           .onboarding-logo { width: min(290px, 76vw); }
         }
         @media (prefers-reduced-motion: reduce) {
-          .onboarding-overlay,
-          .onboarding-content,
-          .onboarding-logo-wrap,
-          .onboarding-name span,
-          .onboarding-divider span,
-          .onboarding-title,
-          .onboarding-focus,
-          .onboarding-progress,
-          .brand-logo-image,
-          .nav-links button,
-          .language-button,
-          .theme-button,
-          .menu-btn {
-            animation: none !important;
-            transition-duration: 1ms !important;
+          .onboarding-overlay, .onboarding-content, .onboarding-logo-wrap,
+          .onboarding-name span, .onboarding-divider span, .onboarding-title,
+          .onboarding-focus, .onboarding-progress, .brand-logo-image,
+          .nav-links button, .language-button, .theme-button, .menu-btn {
+            animation: none !important; transition-duration: 1ms !important;
           }
           .onboarding-overlay.is-ready .onboarding-content,
           .onboarding-overlay.is-ready .onboarding-logo-wrap,
@@ -3822,394 +1989,276 @@ export default function Page() {
           .onboarding-overlay.is-ready .onboarding-title,
           .onboarding-overlay.is-ready .onboarding-focus,
           .onboarding-overlay.is-ready .onboarding-progress {
-            transform: none !important;
-            opacity: 1 !important;
-            filter: none !important;
+            transform: none !important; opacity: 1 !important; filter: none !important;
           }
         }
 
-
         :global(.sr-only) {
-          position: absolute;
-          width: 1px;
-          height: 1px;
-          padding: 0;
-          margin: -1px;
-          overflow: hidden;
-          clip: rect(0, 0, 0, 0);
-          white-space: nowrap;
-          border: 0;
+          position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+          overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
         }
-        .education-main-info {
-          min-width: 0;
+
+        /* =====================================================
+           COMPACT SIDE CARDS (About & Education)
+           ===================================================== */
+        :global(.profile-grid),
+        :global(.education-grid) {
+          align-items: start;
         }
-        .education-institution-logos {
-          display: inline-flex;
-          align-items: center;
+        :global(.compact-side) {
+          display: flex;
+          flex-direction: column;
           gap: 14px;
-          margin-bottom: 18px;
-          padding: 8px 10px;
+          padding: 22px 24px;
+          align-self: start;
+        }
+        :global(.compact-side .side-block) {
+          display: flex;
+          flex-direction: column;
+          gap: 6px;
+        }
+        :global(.compact-side .label-row) {
+          margin: 0 0 2px;
+        }
+        :global(.compact-side .university) {
+          font-size: 17px;
+          line-height: 1.25;
+          margin: 0;
+        }
+        :global(.compact-side .degree) {
+          font-size: 12.5px;
+          line-height: 1.5;
+          margin: 0;
+        }
+        :global(.compact-side .languages) {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 6px;
+          margin-top: 2px;
+        }
+        :global(.compact-side .language) {
+          padding: 5px 10px;
+          font-size: 11px;
+          border-radius: 8px;
+        }
+
+        /* =====================================================
+           CIRCULAR SMALLER PORTRAIT
+           ===================================================== */
+        :global(.hero-art .portrait) {
+          width: 220px;
+          height: 220px;
+          max-width: 55vw;
+          max-height: 55vw;
+          aspect-ratio: 1 / 1;
+          border-radius: 50%;
+          overflow: hidden;
+          position: relative;
+          margin: 0 auto;
+          display: block;
+        }
+        :global(.hero-art .portrait img) {
+          width: 100%;
+          height: 100%;
+          display: block;
+          object-fit: cover;
+          object-position: center 15%;
+          border-radius: 50%;
+        }
+        :global(.hero-art .portrait-placeholder) {
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+          display: grid;
+          place-items: center;
+          text-align: center;
+          padding: 18px;
+          font-size: 11px;
+          line-height: 1.4;
+        }
+        @media (max-width: 700px) {
+          :global(.hero-art .portrait) {
+            width: 170px;
+            height: 170px;
+            max-width: 60vw;
+            max-height: 60vw;
+          }
+        }
+
+        .education-main-info { min-width: 0; }
+        .education-institution-logos {
+          display: inline-flex; align-items: center; gap: 14px;
+          margin-bottom: 18px; padding: 8px 10px;
           border: 1px solid
-            ${lightMode
-              ? "rgba(15, 23, 42, 0.08)"
-              : "rgba(255, 255, 255, 0.09)"};
+            ${lightMode ? "rgba(15, 23, 42, 0.08)" : "rgba(255, 255, 255, 0.09)"};
           border-radius: 14px;
-          background:
-            ${lightMode
-              ? "rgba(255,255,255,0.72)"
-              : "rgba(255,255,255,0.025)"};
+          background: ${lightMode ? "rgba(255,255,255,0.72)" : "rgba(255,255,255,0.025)"};
           width: fit-content;
         }
         .education-logo-link {
-          display: inline-flex;
-          align-items: center;
-          justify-content: center;
-          text-decoration: none;
-          border-radius: 11px;
+          display: inline-flex; align-items: center; justify-content: center;
+          text-decoration: none; border-radius: 11px;
         }
         .education-logo {
-          width: 56px;
-          height: 56px;
-          display: grid;
-          place-items: center;
-          flex: 0 0 56px;
-          overflow: hidden;
-          border-radius: 11px;
-          background:
-            ${lightMode
-              ? "rgba(255,255,255,0.95)"
-              : "rgba(255,255,255,0.06)"};
+          width: 56px; height: 56px; display: grid; place-items: center;
+          flex: 0 0 56px; overflow: hidden; border-radius: 11px;
+          background: ${lightMode ? "rgba(255,255,255,0.95)" : "rgba(255,255,255,0.06)"};
           border: 1px solid
-            ${lightMode
-              ? "rgba(15, 23, 42, 0.08)"
-              : "rgba(255,255,255,0.08)"};
+            ${lightMode ? "rgba(15, 23, 42, 0.08)" : "rgba(255,255,255,0.08)"};
         }
         .education-logo img {
-          width: 46px;
-          height: 46px;
-          display: block;
-          object-fit: contain;
+          width: 46px; height: 46px; display: block; object-fit: contain;
         }
         .education-logo-fallback {
-          font-size: 11px;
-          font-weight: 800;
-          letter-spacing: 0.02em;
-          opacity: 0.72;
+          font-size: 11px; font-weight: 800; letter-spacing: 0.02em; opacity: 0.72;
         }
         .education-logo-divider {
-          width: 1px;
-          height: 34px;
-          background:
-            ${lightMode
-              ? "rgba(15, 23, 42, 0.12)"
-              : "rgba(255,255,255,0.12)"};
+          width: 1px; height: 34px;
+          background: ${lightMode ? "rgba(15, 23, 42, 0.12)" : "rgba(255,255,255,0.12)"};
         }
-        .education-label-row {
-          margin-top: 2px;
-        }
+        .education-label-row { margin-top: 2px; }
         .education-logo-link:hover .education-logo,
         .education-logo-link:focus-visible .education-logo {
           transform: translateY(-1px);
-          border-color:
-            ${lightMode
-              ? "rgba(15, 23, 42, 0.18)"
-              : "rgba(255,255,255,0.18)"};
+          border-color: ${lightMode ? "rgba(15, 23, 42, 0.18)" : "rgba(255,255,255,0.18)"};
         }
         @media (max-width: 700px) {
           .education-institution-logos {
-            gap: 10px;
-            margin-bottom: 15px;
-            padding: 7px 8px;
+            gap: 10px; margin-bottom: 15px; padding: 7px 8px;
           }
-          .education-logo {
-            width: 50px;
-            height: 50px;
-            flex-basis: 50px;
-          }
-          .education-logo img {
-            width: 40px;
-            height: 40px;
-          }
-          .education-logo-divider {
-            height: 30px;
-          }
+          .education-logo { width: 50px; height: 50px; flex-basis: 50px; }
+          .education-logo img { width: 40px; height: 40px; }
+          .education-logo-divider { height: 30px; }
         }
-        .skill-chip {
-          display: inline-flex;
-          align-items: center;
-          gap: 7px;
-        }
-        .skill-chip-label {
-          min-width: 0;
-        }
+
+        .skill-chip { display: inline-flex; align-items: center; gap: 7px; }
+        .skill-chip-label { min-width: 0; }
         .skill-logo-mini {
-          width: 16px;
-          height: 16px;
-          display: inline-grid;
-          place-items: center;
-          flex: 0 0 16px;
-          border-radius: 5px;
+          width: 16px; height: 16px; display: inline-grid; place-items: center;
+          flex: 0 0 16px; border-radius: 5px;
           border: 1px solid
-            ${lightMode
-              ? "rgba(15, 23, 42, 0.10)"
-              : "rgba(255, 255, 255, 0.11)"};
-          background:
-            ${lightMode
-              ? "rgba(15, 23, 42, 0.035)"
-              : "rgba(255,255,255,0.04)"};
+            ${lightMode ? "rgba(15, 23, 42, 0.10)" : "rgba(255, 255, 255, 0.11)"};
+          background: ${lightMode ? "rgba(15, 23, 42, 0.035)" : "rgba(255,255,255,0.04)"};
           overflow: hidden;
         }
         .skill-logo-mini img {
-          width: 11px;
-          height: 11px;
-          display: block;
-          object-fit: contain;
+          width: 11px; height: 11px; display: block; object-fit: contain;
         }
         .skill-logo-mini span {
-          font-size: 7px;
-          line-height: 1;
-          font-weight: 800;
-          letter-spacing: -0.02em;
-          opacity: 0.72;
+          font-size: 7px; line-height: 1; font-weight: 800;
+          letter-spacing: -0.02em; opacity: 0.72;
         }
-        .soft-skill-name {
-          display: inline-flex;
-          align-items: center;
-          gap: 8px;
-          min-width: 0;
-        }
-        .recommendation-grid {
-          grid-template-columns: repeat(2, minmax(0, 1fr));
-        }
-        .recommendation-top {
-          margin-bottom: 18px;
-        }
+        .soft-skill-name { display: inline-flex; align-items: center; gap: 8px; min-width: 0; }
+
+        .recommendation-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+        .recommendation-top { margin-bottom: 18px; }
         .recommendation-author-block {
-          display: flex;
-          flex-direction: column;
-          gap: 5px;
-          margin-bottom: 16px;
+          display: flex; flex-direction: column; gap: 5px; margin-bottom: 16px;
         }
-        .recommendation-author-block strong {
-          font-size: 17px;
-          line-height: 1.15;
-        }
-        .recommendation-role {
-          font-size: 12px;
-          line-height: 1.45;
-          opacity: 0.68;
-        }
+        .recommendation-author-block strong { font-size: 17px; line-height: 1.15; }
+        .recommendation-role { font-size: 12px; line-height: 1.45; opacity: 0.68; }
         .recommendation-meta {
-          display: inline-flex;
-          align-items: center;
-          gap: 7px;
-          flex-wrap: wrap;
-          font-size: 11px;
-          opacity: 0.52;
+          display: inline-flex; align-items: center; gap: 7px;
+          flex-wrap: wrap; font-size: 11px; opacity: 0.52;
         }
-        .recommendation-quote {
-          display: flex;
-          flex-direction: column;
-          gap: 11px;
-        }
-        .recommendation-quote p {
-          margin: 0;
-        }
-        .recommendation-source {
-          margin-top: 20px;
-        }
+        .recommendation-quote { display: flex; flex-direction: column; gap: 11px; }
+        .recommendation-quote p { margin: 0; }
+        .recommendation-source { margin-top: 20px; }
         @media (max-width: 900px) {
-          .recommendation-grid {
-            grid-template-columns: 1fr;
-          }
+          .recommendation-grid { grid-template-columns: 1fr; }
         }
+
         .footer-freelance-links {
-          margin-top: 30px;
-          padding-top: 22px;
+          margin-top: 30px; padding-top: 22px;
           border-top: 1px solid
-            ${lightMode
-              ? "rgba(15, 23, 42, 0.07)"
-              : "rgba(255, 255, 255, 0.075)"};
+            ${lightMode ? "rgba(15, 23, 42, 0.07)" : "rgba(255, 255, 255, 0.075)"};
         }
         .footer-freelance-head {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          gap: 16px;
-          margin-bottom: 12px;
+          display: flex; align-items: center; justify-content: space-between;
+          gap: 16px; margin-bottom: 12px;
         }
-        .footer-freelance-note {
-          margin: 4px 0 0;
-          font-size: 11px;
-          line-height: 1.45;
-          opacity: 0.5;
-        }
+        .footer-freelance-note { margin: 4px 0 0; font-size: 11px; line-height: 1.45; opacity: 0.5; }
         .footer-freelance-count {
-          flex: 0 0 auto;
-          font-size: 9px;
-          letter-spacing: 0.1em;
-          text-transform: uppercase;
-          opacity: 0.38;
-          white-space: nowrap;
+          flex: 0 0 auto; font-size: 9px; letter-spacing: 0.1em;
+          text-transform: uppercase; opacity: 0.38; white-space: nowrap;
         }
         .footer-freelance-grid {
-          display: flex;
-          flex-wrap: wrap;
-          align-items: center;
-          gap: 11px;
-          padding: 2px 0 4px;
-          margin: 0;
+          display: flex; flex-wrap: wrap; align-items: center; gap: 11px;
+          padding: 2px 0 4px; margin: 0;
         }
         .footer-freelance-link {
-          position: relative;
-          display: inline-flex;
-          align-items: center;
-          justify-content: center;
-          width: 44px;
-          height: 44px;
-          padding: 0;
+          position: relative; display: inline-flex; align-items: center;
+          justify-content: center; width: 44px; height: 44px; padding: 0;
           border: 1px solid
-            ${lightMode
-              ? "rgba(15, 23, 42, 0.11)"
-              : "rgba(255, 255, 255, 0.10)"};
-          border-radius: 12px;
-          text-decoration: none;
-          color: inherit;
-          background:
-            ${lightMode
-              ? "rgba(255,255,255,0.55)"
-              : "rgba(255,255,255,0.025)"};
-          box-shadow:
-            0 2px 8px
-              ${lightMode
-                ? "rgba(15, 23, 42, 0.045)"
-                : "rgba(0, 0, 0, 0.10)"};
-          transition:
-            transform 160ms ease,
-            border-color 160ms ease,
-            background 160ms ease,
-            box-shadow 160ms ease;
+            ${lightMode ? "rgba(15, 23, 42, 0.11)" : "rgba(255, 255, 255, 0.10)"};
+          border-radius: 12px; text-decoration: none; color: inherit;
+          background: ${lightMode ? "rgba(255,255,255,0.55)" : "rgba(255,255,255,0.025)"};
+          box-shadow: 0 2px 8px
+            ${lightMode ? "rgba(15, 23, 42, 0.045)" : "rgba(0, 0, 0, 0.10)"};
+          transition: transform 160ms ease, border-color 160ms ease,
+            background 160ms ease, box-shadow 160ms ease;
         }
         .footer-freelance-link:hover {
           transform: translateY(-2px);
-          border-color:
-            ${lightMode
-              ? "rgba(15, 23, 42, 0.22)"
-              : "rgba(255, 255, 255, 0.22)"};
-          background:
-            ${lightMode
-              ? "rgba(255,255,255,0.88)"
-              : "rgba(255,255,255,0.055)"};
-          box-shadow:
-            0 7px 16px
-              ${lightMode
-                ? "rgba(15, 23, 42, 0.09)"
-                : "rgba(0, 0, 0, 0.16)"};
+          border-color: ${lightMode ? "rgba(15, 23, 42, 0.22)" : "rgba(255, 255, 255, 0.22)"};
+          background: ${lightMode ? "rgba(255,255,255,0.88)" : "rgba(255,255,255,0.055)"};
+          box-shadow: 0 7px 16px
+            ${lightMode ? "rgba(15, 23, 42, 0.09)" : "rgba(0, 0, 0, 0.16)"};
         }
         .footer-freelance-link:focus-visible {
           outline: 2px solid
-            ${lightMode
-              ? "rgba(46, 103, 224, 0.48)"
-              : "rgba(105, 224, 255, 0.52)"};
+            ${lightMode ? "rgba(46, 103, 224, 0.48)" : "rgba(105, 224, 255, 0.52)"};
           outline-offset: 3px;
         }
         .footer-freelance-link .freelance-logo {
-          position: relative;
-          z-index: 1;
-          display: inline-flex;
-          align-items: center;
-          justify-content: center;
-          width: 27px;
-          height: 27px;
-          border: 0;
-          border-radius: 7px;
-          background: transparent;
-          box-shadow: none;
+          position: relative; z-index: 1; display: inline-flex;
+          align-items: center; justify-content: center;
+          width: 27px; height: 27px; border: 0; border-radius: 7px;
+          background: transparent; box-shadow: none;
         }
         .footer-freelance-link .freelance-logo img {
-          display: block;
-          width: 25px;
-          height: 25px;
-          object-fit: contain;
+          display: block; width: 25px; height: 25px; object-fit: contain;
         }
         .footer-freelance-link .freelance-logo-fallback {
-          display: inline-flex;
-          align-items: center;
-          justify-content: center;
-          width: 25px;
-          height: 25px;
-          border-radius: 7px;
-          font-size: 9px;
-          font-weight: 800;
-          letter-spacing: -0.02em;
+          display: inline-flex; align-items: center; justify-content: center;
+          width: 25px; height: 25px; border-radius: 7px;
+          font-size: 9px; font-weight: 800; letter-spacing: -0.02em;
         }
-        .footer-freelance-name,
-        .footer-freelance-arrow {
-          position: absolute;
-          width: 1px;
-          height: 1px;
-          padding: 0;
-          margin: -1px;
-          overflow: hidden;
-          clip: rect(0, 0, 0, 0);
-          white-space: nowrap;
-          border: 0;
+        .footer-freelance-name, .footer-freelance-arrow {
+          position: absolute; width: 1px; height: 1px; padding: 0;
+          margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0);
+          white-space: nowrap; border: 0;
         }
-        .rtl .footer-freelance-head {
-          flex-direction: row-reverse;
-        }
-        .rtl .footer-freelance-grid {
-          justify-content: flex-start;
-        }
+        .rtl .footer-freelance-head { flex-direction: row-reverse; }
+        .rtl .footer-freelance-grid { justify-content: flex-start; }
         @media (max-width: 700px) {
-          .footer-freelance-links {
-            margin-top: 26px;
-            padding-top: 18px;
-          }
+          .footer-freelance-links { margin-top: 26px; padding-top: 18px; }
           .footer-freelance-head {
-            align-items: flex-start;
-            flex-direction: column;
-            gap: 5px;
-            margin-bottom: 11px;
+            align-items: flex-start; flex-direction: column;
+            gap: 5px; margin-bottom: 11px;
           }
-          .footer-freelance-count {
-            display: none;
-          }
-          .footer-freelance-grid {
-            gap: 9px;
-          }
-          .footer-freelance-link {
-            width: 42px;
-            height: 42px;
-            border-radius: 11px;
-          }
+          .footer-freelance-count { display: none; }
+          .footer-freelance-grid { gap: 9px; }
+          .footer-freelance-link { width: 42px; height: 42px; border-radius: 11px; }
           .footer-freelance-link .freelance-logo,
           .footer-freelance-link .freelance-logo img,
           .footer-freelance-link .freelance-logo-fallback {
-            width: 24px;
-            height: 24px;
+            width: 24px; height: 24px;
           }
         }
 
         /* =====================================================
-           CONTACT CARD STYLES (NEW)
+           CONTACT CARD STYLES
            ===================================================== */
-        .contact-side-enhanced {
-          display: flex;
-          flex-direction: column;
-          gap: 12px;
-        }
+        .contact-side-enhanced { display: flex; flex-direction: column; gap: 12px; }
         .contact-item-card {
-          display: flex;
-          align-items: center;
-          gap: 16px;
-          padding: 16px;
+          display: flex; align-items: center; gap: 16px; padding: 16px;
           border-radius: 14px;
           border: 1px solid ${lightMode ? "rgba(15,23,42,.08)" : "rgba(255,255,255,.08)"};
           background: ${lightMode ? "rgba(255,255,255,.72)" : "rgba(255,255,255,.03)"};
-          text-decoration: none;
-          color: inherit;
-          transition: transform 180ms ease, border-color 180ms ease, background 180ms ease, box-shadow 180ms ease;
+          text-decoration: none; color: inherit;
+          transition: transform 180ms ease, border-color 180ms ease,
+            background 180ms ease, box-shadow 180ms ease;
         }
         .contact-item-card:hover {
           transform: translateY(-2px);
@@ -4218,204 +2267,87 @@ export default function Page() {
           box-shadow: 0 8px 24px ${lightMode ? "rgba(15,23,42,.06)" : "rgba(0,0,0,.2)"};
         }
         .contact-icon-box {
-          width: 44px;
-          height: 44px;
-          flex: 0 0 44px;
-          display: grid;
-          place-items: center;
-          border-radius: 12px;
+          width: 44px; height: 44px; flex: 0 0 44px;
+          display: grid; place-items: center; border-radius: 12px;
           background: ${lightMode ? "rgba(167,131,255,.1)" : "rgba(167,131,255,.15)"};
           color: #A783FF;
-          border: 1px solid ${lightMode ? "rgba(167,131,255,.2)" : "rgba(167,131,255,.25)"};
+          border: 1px solid
+            ${lightMode ? "rgba(167,131,255,.2)" : "rgba(167,131,255,.25)"};
         }
         .contact-text-stack {
-          display: flex;
-          flex-direction: column;
-          gap: 3px;
-          min-width: 0;
+          display: flex; flex-direction: column; gap: 3px; min-width: 0;
         }
         .contact-text-stack .contact-label {
-          font-size: 11px;
-          font-weight: 600;
-          text-transform: uppercase;
+          font-size: 11px; font-weight: 600; text-transform: uppercase;
           letter-spacing: .05em;
           color: ${lightMode ? "rgba(15,23,42,.5)" : "rgba(255,255,255,.45)"};
         }
         .contact-text-stack .contact-value {
-          font-size: 13px;
-          font-weight: 500;
+          font-size: 13px; font-weight: 500;
           color: ${lightMode ? "#11131b" : "#f7f4ff"};
-          overflow: hidden;
-          text-overflow: ellipsis;
-          white-space: nowrap;
+          overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
         }
         @media (max-width: 600px) {
-          .contact-text-stack .contact-value {
-            font-size: 12px;
-          }
-          .contact-icon-box {
-            width: 38px;
-            height: 38px;
-            flex-basis: 38px;
-          }
+          .contact-text-stack .contact-value { font-size: 12px; }
+          .contact-icon-box { width: 38px; height: 38px; flex-basis: 38px; }
         }
       `}</style>
 
-      {/* =====================================================
-          FOOTER
-          \===================================================== */}
+      {/* FOOTER */}
       <footer className="site-footer">
         <div className="container">
           <div className="footer-main">
             <div className="footer-brand">
-              <button
-                className="footer-brand-button"
-                onClick={() =>
-                  go("home")
-                }
-              >
-                <span className="footer-brand-mark">
-                  {i.cloud}
-                </span>
+              <button className="footer-brand-button" onClick={() => go("home")}>
+                <span className="footer-brand-mark">{i.cloud}</span>
                 <span>
-                  <strong>
-                    {cv.name}
-                  </strong>
-                  <small>
-                    {cv.title}
-                  </small>
+                  <strong>{cv.name}</strong>
+                  <small>{cv.title}</small>
                 </span>
               </button>
-              <p>
-                {t.footerConnect}
-              </p>
+              <p>{t.footerConnect}</p>
               <div className="footer-status">
                 <span className="availability-dot" />
-                <span>
-                  {t.footerStatus}
-                </span>
+                <span>{t.footerStatus}</span>
               </div>
             </div>
             <div className="footer-column">
-              <span className="footer-heading">
-                {t.footerExplore}
-              </span>
-              <button
-                onClick={() =>
-                  go("about")
-                }
-              >
-                {t.about}
-              </button>
-              <button
-                onClick={() =>
-                  go("skills")
-                }
-              >
-                {t.skills}
-              </button>
-              <button
-                onClick={() =>
-                  go("experience")
-                }
-              >
-                {t.experience}
-              </button>
-              <button
-                onClick={() =>
-                  go("project")
-                }
-              >
-                {t.project}
-              </button>
+              <span className="footer-heading">{t.footerExplore}</span>
+              <button onClick={() => go("about")}>{t.about}</button>
+              <button onClick={() => go("skills")}>{t.skills}</button>
+              <button onClick={() => go("experience")}>{t.experience}</button>
+              <button onClick={() => go("project")}>{t.project}</button>
             </div>
             <div className="footer-column">
-              <span className="footer-heading">
-                {t.footerContact}
-              </span>
-              <a
-                href={`mailto:${cv.email}`}
-                dir="ltr"
-              >
-                {cv.email}
-              </a>
-              <a
-                href={`tel:${cv.phone.replace(
-                  /\s/g,
-                  ""
-                )}`}
-                dir="ltr"
-              >
-                {cv.phone}
-              </a>
-              <button
-                onClick={() =>
-                  go("contact")
-                }
-              >
-                {t.contact}
-              </button>
+              <span className="footer-heading">{t.footerContact}</span>
+              <a href={`mailto:${cv.email}`} dir="ltr">{cv.email}</a>
+              <a href={`tel:${cv.phone.replace(/\s/g, "")}`} dir="ltr">{cv.phone}</a>
+              <button onClick={() => go("contact")}>{t.contact}</button>
             </div>
             <div className="footer-column">
-              <span className="footer-heading">
-                {t.footerSocial}
-              </span>
-              <a
-                href={cv.linkedin}
-                target="_blank"
-                rel="noreferrer"
-                className="footer-social-link"
-              >
-                <span>
-                  {i.linkedin}
-                </span>
-                <span>
-                  LinkedIn
-                </span>
+              <span className="footer-heading">{t.footerSocial}</span>
+              <a href={cv.linkedin} target="_blank" rel="noreferrer" className="footer-social-link">
+                <span>{i.linkedin}</span><span>LinkedIn</span>
               </a>
-              <a
-                href={cv.github}
-                target="_blank"
-                rel="noreferrer"
-                className="footer-social-link"
-              >
-                <span>
-                  {i.github}
-                </span>
-                <span>
-                  GitHub
-                </span>
+              <a href={cv.github} target="_blank" rel="noreferrer" className="footer-social-link">
+                <span>{i.github}</span><span>GitHub</span>
               </a>
             </div>
           </div>
           <div className="footer-freelance-links">
             <div className="footer-freelance-head">
               <div>
-                <span className="footer-heading">
-                  {t.freelancePlatforms}
-                </span>
-                <p className="footer-freelance-note">
-                  {t.freelancePlatformsNote}
-                </p>
+                <span className="footer-heading">{t.freelancePlatforms}</span>
+                <p className="footer-freelance-note">{t.freelancePlatformsNote}</p>
               </div>
             </div>
             <div className="footer-freelance-grid">
               {cv.freelanceLinks.map((platform) => (
-                <a
-                  key={platform.name}
-                  href={platform.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="footer-freelance-link"
-                  dir="ltr"
-                  aria-label={`${platform.name} profile`}
-                  title={isArabic ? platform.nameAr : platform.name}
-                >
-                  <PlatformLogo
-                    src={platform.logo}
-                    mark={platform.mark}
-                    name={platform.name}
-                  />
+                <a key={platform.name} href={platform.url} target="_blank"
+                  rel="noopener noreferrer" className="footer-freelance-link"
+                  dir="ltr" aria-label={`${platform.name} profile`}
+                  title={isArabic ? platform.nameAr : platform.name}>
+                  <PlatformLogo src={platform.logo} mark={platform.mark} name={platform.name} />
                   <span className="footer-freelance-name">
                     {isArabic ? platform.nameAr : platform.name}
                   </span>
@@ -4427,132 +2359,51 @@ export default function Page() {
             </div>
           </div>
           <div className="footer-bottom">
-            <span>
-              ©{" "}
-              {new Date().getFullYear()}{" "}
-              {cv.name}.{" "}
-              {t.footerCopyright}
-            </span>
-            <span
-              dir="ltr"
-              className="footer-stack"
-            >
-              Cloud & DevOps · AWS · Linux ·
-              Networking · IaC
+            <span>© {new Date().getFullYear()} {cv.name}. {t.footerCopyright}</span>
+            <span dir="ltr" className="footer-stack">
+              Cloud & DevOps · AWS · Linux · Networking · IaC
             </span>
           </div>
         </div>
       </footer>
 
-      {/* =====================================================
-          CERTIFICATE LIGHTBOX
-          \===================================================== */}
+      {/* CERTIFICATE LIGHTBOX */}
       {selectedCertificate && (
-        <div
-          className="certificate-modal"
-          role="dialog"
-          aria-modal="true"
+        <div className="certificate-modal" role="dialog" aria-modal="true"
           aria-label="Certificate preview"
-          onClick={() =>
-            setSelectedCertificate(
-              null
-            )
-          }
-        >
-          <button
-            type="button"
-            className="certificate-modal-close"
-            onClick={() =>
-              setSelectedCertificate(
-                null
-              )
-            }
-            aria-label="Close certificate preview"
-          >
-            ×
-          </button>
-          <div
-            className="certificate-modal-content"
-            onClick={(event) =>
-              event.stopPropagation()
-            }
+          onClick={() => setSelectedCertificate(null)}>
+          <button type="button" className="certificate-modal-close"
+            onClick={() => setSelectedCertificate(null)}
+            aria-label="Close certificate preview">×</button>
+          <div className="certificate-modal-content"
+            onClick={(event) => event.stopPropagation()}
             style={{
-              width:
-                "min(94vw, 1500px)",
-              height:
-                "min(92vh, 1000px)",
-              display: "flex",
-              alignItems:
-                "center",
-              justifyContent:
-                "center",
-            }}
-          >
-            <img
-              className="certificate-modal-image"
-              src={
-                selectedCertificate
-              }
+              width: "min(94vw, 1500px)", height: "min(92vh, 1000px)",
+              display: "flex", alignItems: "center", justifyContent: "center",
+            }}>
+            <img className="certificate-modal-image" src={selectedCertificate}
               alt="Certificate enlarged preview"
               style={{
-                maxWidth:
-                  "100%",
-                maxHeight:
-                  "100%",
-                width: "auto",
-                height: "auto",
-                objectFit:
-                  "contain",
-              }}
-            />
+                maxWidth: "100%", maxHeight: "100%", width: "auto",
+                height: "auto", objectFit: "contain",
+              }} />
           </div>
         </div>
       )}
 
-      {/* =====================================================
-          PROJECT IMAGE LIGHTBOX
-          \===================================================== */}
+      {/* PROJECT IMAGE LIGHTBOX */}
       {selectedProjectImage && (
-        <div
-          className="certificate-modal project-image-modal"
-          role="dialog"
-          aria-modal="true"
-          aria-label="Project image preview"
-          onClick={() =>
-            setSelectedProjectImage(
-              null
-            )
-          }
-        >
-          <button
-            type="button"
-            className="certificate-modal-close"
-            onClick={() =>
-              setSelectedProjectImage(
-                null
-              )
-            }
-            aria-label="Close project image preview"
-          >
-            ×
-          </button>
-          <div
-            className="certificate-modal-content project-image-modal-content"
-            onClick={(event) =>
-              event.stopPropagation()
-            }
-          >
-            <img
-              src={
-                selectedProjectImage
-              }
-              alt={
-                isArabic
-                  ? cv.project.imageAltAr
-                  : cv.project.imageAlt
-              }
-              className="project-image-modal-image"
-            />
+        <div className="certificate-modal project-image-modal" role="dialog"
+          aria-modal="true" aria-label="Project image preview"
+          onClick={() => setSelectedProjectImage(null)}>
+          <button type="button" className="certificate-modal-close"
+            onClick={() => setSelectedProjectImage(null)}
+            aria-label="Close project image preview">×</button>
+          <div className="certificate-modal-content project-image-modal-content"
+            onClick={(event) => event.stopPropagation()}>
+            <img src={selectedProjectImage}
+              alt={isArabic ? cv.project.imageAltAr : cv.project.imageAlt}
+              className="project-image-modal-image" />
           </div>
         </div>
       )}
