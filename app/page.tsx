@@ -64,16 +64,16 @@ const cv = {
         "الملف الشخصي على كفيل.",
     },
     {
-      name: "Freelance Yard",
-      nameAr: "Freelance Yard",
-      url: "https://freelanceyard.com/en/freelancers/mohamed-mekawei",
+      name: "Freelanceyard",
+      nameAr: "Freelanceyard",
+      url: "https://freelanceyard.com/en/account/profile",
       logo:
         "https://freelanceyard.com/images/favicon.png",
       mark: "FY",
       description:
-        "Freelance profile on Freelance Yard.",
+        "Freelance profile on Freelanceyard.",
       descriptionAr:
-        "الملف الشخصي على Freelance Yard.",
+        "الملف الشخصي على Freelanceyard.",
     },
   ],
 
@@ -652,44 +652,6 @@ function PlatformLogo({
   name: string;
 }) {
   const [failed, setFailed] = useState(false);
-
-  if (name === "Freelance Yard") {
-    return (
-      <span className="freelance-logo freelance-yard-logo" aria-hidden="true">
-        <svg
-          viewBox="0 0 64 64"
-          role="img"
-          focusable="false"
-        >
-          <rect
-            x="1.5"
-            y="1.5"
-            width="61"
-            height="61"
-            rx="14"
-            fill="#10182b"
-          />
-          <text
-            x="32"
-            y="39"
-            textAnchor="middle"
-            fill="#ffffff"
-            fontFamily="Arial, sans-serif"
-            fontSize="23"
-            fontWeight="900"
-          >
-            FY
-          </text>
-          <path
-            d="M15 47h34"
-            stroke="#5ee7ff"
-            strokeWidth="3"
-            strokeLinecap="round"
-          />
-        </svg>
-      </span>
-    );
-  }
 
   return (
     <span className="freelance-logo" aria-hidden="true">
@@ -3903,12 +3865,6 @@ export default function Page() {
           object-fit: contain;
         }
 
-        .footer-freelance-link .freelance-yard-logo svg {
-          display: block;
-          width: 25px;
-          height: 25px;
-        }
-
         .footer-freelance-link .freelance-logo-fallback {
           display: inline-flex;
           align-items: center;
@@ -3971,8 +3927,7 @@ export default function Page() {
 
           .footer-freelance-link .freelance-logo,
           .footer-freelance-link .freelance-logo img,
-          .footer-freelance-link .freelance-logo-fallback,
-          .footer-freelance-link .freelance-yard-logo svg {
+          .footer-freelance-link .freelance-logo-fallback {
             width: 24px;
             height: 24px;
           }
