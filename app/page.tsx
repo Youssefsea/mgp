@@ -68,7 +68,7 @@ const cv = {
       nameAr: "Freelance Yard",
       url: "https://freelanceyard.com/en/freelancers/mohamed-mekawei",
       logo:
-        "https://www.google.com/s2/favicons?domain=freelanceyard.com&sz=128",
+        "https://freelanceyard.com/images/favicon.png",
       mark: "FY",
       description:
         "Freelance profile on Freelance Yard.",
