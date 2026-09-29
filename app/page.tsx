@@ -897,11 +897,11 @@ export default function Page() {
     setSelectedProjectImage,
   ] = useState<string | null>(null);
   const [showOnboarding, setShowOnboarding] =
-    useState(true);
+    useState(false);
   const [onboardingExit, setOnboardingExit] =
     useState(false);
   const [onboardingReady, setOnboardingReady] =
-    useState(true);
+    useState(false);
   const isArabic = language === "ar";
   const t = {
     home: isArabic ? "الرئيسية" : "Home",
@@ -1294,6 +1294,12 @@ export default function Page() {
 
     if (seen) return;
 
+    setShowOnboarding(true);
+
+    const startTimer = window.setTimeout(() => {
+      setOnboardingReady(true);
+    }, 80);
+
     const exitTimer = window.setTimeout(() => {
       setOnboardingExit(true);
     }, 2900);
@@ -1311,6 +1317,7 @@ export default function Page() {
     }, 3650);
 
     return () => {
+      window.clearTimeout(startTimer);
       window.clearTimeout(exitTimer);
       window.clearTimeout(finishTimer);
     };
@@ -4475,4 +4482,3 @@ export default function Page() {
     </main>
   );
 }
-
