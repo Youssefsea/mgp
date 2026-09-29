@@ -1,4 +1,3 @@
-"use client";
 import { useEffect, useMemo, useState } from "react";
 import type { ReactNode } from "react";
 const cv = {
@@ -897,11 +896,11 @@ export default function Page() {
     setSelectedProjectImage,
   ] = useState<string | null>(null);
   const [showOnboarding, setShowOnboarding] =
-    useState(false);
+    useState(true);
   const [onboardingExit, setOnboardingExit] =
     useState(false);
   const [onboardingReady, setOnboardingReady] =
-    useState(false);
+    useState(true);
   const isArabic = language === "ar";
   const t = {
     home: isArabic ? "الرئيسية" : "Home",
@@ -1294,12 +1293,6 @@ export default function Page() {
 
     if (seen) return;
 
-    setShowOnboarding(true);
-
-    const startTimer = window.setTimeout(() => {
-      setOnboardingReady(true);
-    }, 80);
-
     const exitTimer = window.setTimeout(() => {
       setOnboardingExit(true);
     }, 2900);
@@ -1317,7 +1310,6 @@ export default function Page() {
     }, 3650);
 
     return () => {
-      window.clearTimeout(startTimer);
       window.clearTimeout(exitTimer);
       window.clearTimeout(finishTimer);
     };
