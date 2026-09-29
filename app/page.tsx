@@ -1,3 +1,4 @@
+"use client";
 import { useEffect, useMemo, useState } from "react";
 import type { ReactNode } from "react";
 const cv = {
@@ -4474,3 +4475,4 @@ export default function Page() {
     </main>
   );
 }
+
