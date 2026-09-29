@@ -738,17 +738,6 @@ const i = {
       <path d="M12 13.2a3 3 0 0 1 6 0v3.3" />
     </Icon>
   ),
-    phone: (
-    <Icon>
-      <path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z" />
-    </Icon>
-  ),
-  whatsapp: (
-    <Icon>
-      <path d="M3 21l1.6-4.7A8.5 8.5 0 1 1 8 19.5L3 21Z" />
-      <path d="M9 9.2c.2 2.6 2.4 4.9 5.8 5.8l1.2-1.4-2-1-.9.7c-.9-.4-1.6-1.1-2-2l.7-.9-1-2L9 9.2Z" />
-    </Icon>
-  ),
   cloud: (
     <Icon>
       <path d="M7.2 18.5h9.6a4.2 4.2 0 0 0 .7-8.3 5.7 5.7 0 0 0-10.8 1.5A3.4 3.4 0 0 0 7.2 18.5Z" />
@@ -3249,97 +3238,99 @@ export default function Page() {
                 </a>
               </div>
             </div>
-                      <div className="contact-cards">
-              <a
-                className="c-card"
-                href={`mailto:${cv.email}`}
-              >
-                <span className="c-card-icon c-email">
-                  {i.email}
+            <div className="contact-side contact-side-enhanced">
+              <div className="contact-item">
+                <span className="contact-label">
+                  Email
                 </span>
-                <span className="c-card-text">
-                  <small>Email</small>
-                  <strong dir="ltr">{cv.email}</strong>
-                </span>
-                <span className="c-card-arrow">
-                  {i.arrow}
-                </span>
-              </a>
-
-              <a
-                className="c-card"
-                href={`tel:${cv.phone.replace(/\s/g, "")}`}
-              >
-                <span className="c-card-icon c-phone">
-                  {i.phone}
-                </span>
-                <span className="c-card-text">
-                  <small>Phone</small>
-                  <strong dir="ltr">{cv.phone}</strong>
-                </span>
-                <span className="c-card-arrow">
-                  {i.arrow}
-                </span>
-              </a>
-
-              <a
-                className="c-card"
-                href={`https://wa.me/${cv.phone.replace(/\D/g, "")}`}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span className="c-card-icon c-whatsapp">
-                  {i.whatsapp}
-                </span>
-                <span className="c-card-text">
-                  <small>Phone / WhatsApp</small>
-                  <strong dir="ltr">{cv.phone}</strong>
-                </span>
-                <span className="c-card-arrow">
-                  {i.arrow}
-                </span>
-              </a>
-
-              <div className="c-socials">
                 <a
-                  className="c-social"
-                  href={cv.linkedin}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="LinkedIn"
-                  title="LinkedIn"
+                  className="contact-value"
+                  href={`mailto:${cv.email}`}
+                  dir="ltr"
                 >
-                  {i.linkedin}
+                  {cv.email}
                 </a>
-                {cv.github ? (
-                  <a
-                    className="c-social"
-                    href={cv.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="GitHub"
-                    title="GitHub"
-                  >
-                    {i.github}
-                  </a>
-                ) : null}
               </div>
-
-              <div className="c-meta">
-                <div className="c-meta-item">
-                  <small>{t.targetRole}</small>
-                  <strong dir="ltr">
-                    {cv.secondaryTitle}
-                  </strong>
+              <div className="contact-item">
+                <span className="contact-label">
+                  LinkedIn
+                </span>
+                <a
+                  className="contact-value"
+                  href={
+                    cv.linkedin
+                  }
+                  target="_blank"
+                  rel="noreferrer"
+                  dir="ltr"
+                >
+                  linkedin.com/in/mohamed-gamal-devops
+                </a>
+              </div>
+              {cv.github ? (
+                <div className="contact-item">
+                  <span className="contact-label">
+                    GitHub
+                  </span>
+                  <a
+                    className="contact-value"
+                    href={
+                      cv.github
+                    }
+                    target="_blank"
+                    rel="noreferrer"
+                    dir="ltr"
+                  >
+                    {
+                      cv.github.replace(
+                        /^https?:\/\//,
+                        ""
+                      )
+                    }
+                  </a>
                 </div>
-                <div className="c-meta-item">
-                  <small>{t.coreFocus}</small>
-                  <strong dir="ltr">
-                    AWS · Linux · IaC · CI/CD
-                  </strong>
-                </div>
+              ) : null}
+              <div className="contact-item">
+                <span className="contact-label">
+                  Phone
+                </span>
+                <a
+                  className="contact-value"
+                  href={`tel:${cv.phone.replace(
+                    /\s/g,
+                    ""
+                  )}`}
+                  dir="ltr"
+                >
+                  {cv.phone}
+                </a>
+              </div>
+              <div className="contact-item">
+                <span className="contact-label">
+                  {t.targetRole}
+                </span>
+                <span
+                  className="contact-value"
+                  dir="ltr"
+                >
+                  {
+                    cv.secondaryTitle
+                  }
+                </span>
+              </div>
+              <div className="contact-item">
+                <span className="contact-label">
+                  {t.coreFocus}
+                </span>
+                <span
+                  className="contact-value"
+                  dir="ltr"
+                >
+                  AWS · Linux · IaC · CI/CD
+                </span>
               </div>
             </div>
+          </div>
         </div>
       </section>
       <style jsx>{`
@@ -4193,174 +4184,6 @@ export default function Page() {
             width: 24px;
             height: 24px;
           }
-                  .contact-cards {
-          display: flex;
-          flex-direction: column;
-          gap: 14px;
-          min-width: 0;
-        }
-        .c-card {
-          position: relative;
-          display: flex;
-          align-items: center;
-          gap: 16px;
-          padding: 16px 18px;
-          border-radius: 18px;
-          text-decoration: none;
-          color: inherit;
-          border: 1px solid ${lightMode ? "rgba(15,23,42,.09)" : "rgba(120,150,255,.16)"};
-          background: ${lightMode
-            ? "linear-gradient(135deg, rgba(255,255,255,.95), rgba(244,241,255,.85))"
-            : "linear-gradient(135deg, rgba(20,28,66,.72), rgba(12,16,40,.78))"};
-          box-shadow: 0 10px 30px ${lightMode ? "rgba(15,23,42,.06)" : "rgba(0,0,0,.28)"};
-          backdrop-filter: blur(14px);
-          -webkit-backdrop-filter: blur(14px);
-          overflow: hidden;
-          transition: transform 200ms ease, border-color 200ms ease, box-shadow 200ms ease;
-        }
-        .c-card::before {
-          content: "";
-          position: absolute;
-          inset: 0;
-          background: radial-gradient(circle at 0% 50%, rgba(167,131,255,.14), transparent 55%);
-          opacity: 0;
-          transition: opacity 240ms ease;
-          pointer-events: none;
-        }
-        .c-card:hover {
-          transform: translateY(-3px);
-          border-color: rgba(167,131,255,.5);
-          box-shadow: 0 18px 44px rgba(167,131,255,.16);
-        }
-        .c-card:hover::before { opacity: 1; }
-        .c-card:focus-visible {
-          outline: 2px solid rgba(167,131,255,.7);
-          outline-offset: 3px;
-        }
-        .c-card-icon {
-          position: relative;
-          flex: 0 0 52px;
-          width: 52px;
-          height: 52px;
-          display: grid;
-          place-items: center;
-          border-radius: 14px;
-          border: 1px solid rgba(255,255,255,.06);
-        }
-        .c-card-icon :global(svg) { width: 24px; height: 24px; }
-        .c-email {
-          color: #8b9bff;
-          background: rgba(99,102,241,.18);
-        }
-        .c-phone {
-          color: #38d5f2;
-          background: rgba(34,211,238,.14);
-        }
-        .c-whatsapp {
-          color: #25d366;
-          background: rgba(37,211,102,.14);
-        }
-        .c-card-text {
-          flex: 1 1 auto;
-          min-width: 0;
-          display: flex;
-          flex-direction: column;
-          gap: 4px;
-        }
-        .c-card-text small {
-          font-size: 12px;
-          font-weight: 700;
-          letter-spacing: .02em;
-          color: ${lightMode ? "rgba(15,23,42,.55)" : "rgba(170,182,255,.78)"};
-        }
-        .c-card-text strong {
-          font-size: clamp(14px, 3.6vw, 18px);
-          line-height: 1.3;
-          font-weight: 800;
-          overflow-wrap: anywhere;
-          color: ${lightMode ? "#11131b" : "#ffffff"};
-        }
-        .c-card-arrow {
-          flex: 0 0 auto;
-          display: inline-flex;
-          opacity: .35;
-          transform: translateX(0);
-          transition: transform 200ms ease, opacity 200ms ease, color 200ms ease;
-        }
-        .c-card:hover .c-card-arrow {
-          opacity: 1;
-          color: #A783FF;
-          transform: translateX(4px);
-        }
-        .rtl .c-card-arrow { transform: scaleX(-1); }
-        .rtl .c-card:hover .c-card-arrow { transform: scaleX(-1) translateX(4px); }
-
-        .c-socials {
-          display: flex;
-          align-items: center;
-          gap: 12px;
-          margin: 4px 0 2px;
-        }
-        .c-social {
-          width: 52px;
-          height: 52px;
-          display: grid;
-          place-items: center;
-          border-radius: 15px;
-          color: ${lightMode ? "rgba(15,23,42,.75)" : "rgba(220,228,255,.85)"};
-          border: 1px solid ${lightMode ? "rgba(15,23,42,.10)" : "rgba(120,150,255,.18)"};
-          background: ${lightMode ? "rgba(255,255,255,.8)" : "rgba(20,28,66,.6)"};
-          transition: transform 200ms ease, color 200ms ease, border-color 200ms ease, background 200ms ease, box-shadow 200ms ease;
-        }
-        .c-social :global(svg) { width: 24px; height: 24px; }
-        .c-social:hover {
-          transform: translateY(-3px);
-          color: #A783FF;
-          border-color: rgba(167,131,255,.55);
-          background: rgba(167,131,255,.10);
-          box-shadow: 0 12px 28px rgba(167,131,255,.18);
-        }
-        .c-social:focus-visible {
-          outline: 2px solid rgba(167,131,255,.7);
-          outline-offset: 3px;
-        }
-
-        .c-meta {
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          gap: 12px;
-        }
-        .c-meta-item {
-          display: flex;
-          flex-direction: column;
-          gap: 6px;
-          padding: 14px 16px;
-          border-radius: 16px;
-          border: 1px dashed ${lightMode ? "rgba(15,23,42,.14)" : "rgba(255,255,255,.14)"};
-          background: ${lightMode ? "rgba(15,23,42,.02)" : "rgba(255,255,255,.025)"};
-        }
-        .c-meta-item small {
-          font-size: 10px;
-          font-weight: 700;
-          letter-spacing: .12em;
-          text-transform: uppercase;
-          color: #A783FF;
-        }
-        .c-meta-item strong {
-          font-size: 13px;
-          line-height: 1.4;
-          font-weight: 700;
-          overflow-wrap: anywhere;
-        }
-        @media (max-width: 620px) {
-          .c-card { padding: 14px; gap: 13px; border-radius: 16px; }
-          .c-card-icon { flex-basis: 46px; width: 46px; height: 46px; }
-          .c-card-arrow { display: none; }
-          .c-meta { grid-template-columns: 1fr; }
-        }
-        @media (prefers-reduced-motion: reduce) {
-          .c-card, .c-social, .c-card-arrow { transition-duration: 1ms !important; }
-        }
         }
       `}</style>
       {/* =====================================================
