@@ -1652,7 +1652,9 @@ export default function Page() {
                 </a>
               </div>
             </div>
+          
             <div className="contact-side contact-side-enhanced">
+              <div className="h-4" />
               <a className="contact-item-card" href={`mailto:${cv.email}`} dir="ltr">
                 <div className="contact-icon-box">{i.email}</div>
                 <div className="contact-text-stack">
@@ -1702,6 +1704,7 @@ export default function Page() {
                   <span className="contact-label">{t.coreFocus}</span>
                   <span className="contact-value">AWS · Linux · IaC · CI/CD</span>
                 </div>
+                <div className="h-4" />
               </div>
             </div>
           </div>
