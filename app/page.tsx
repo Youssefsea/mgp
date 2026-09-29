@@ -1,19 +1,16 @@
 "use client";
-
 import { useEffect, useMemo, useState } from "react";
 import type { ReactNode } from "react";
-
 const cv = {
   name: "Mohamed Gamal",
+  logo:
+    "https://res.cloudinary.com/dcxgjpps8/image/upload/v1790708378/bc66457f-fb06-49fc-979f-a95aa250eb5a_n34bcg.png",
   phone: "+20 1553194093",
   email: "mohamed987gamal2005@gmail.com",
-
   linkedin:
     "https://linkedin.com/in/mohamed-gamal-devops",
-
   github:
     "https://github.com/mohamedgamal-35",
-
   freelanceLinks: [
     {
       name: "Khamsat",
@@ -76,24 +73,17 @@ const cv = {
         "الملف الشخصي على Freelanceyard.",
     },
   ],
-
   title: "Cloud & DevOps Engineer",
-
   secondaryTitle:
     "Cloud Infrastructure / DevOps Intern",
-
   objective:
     "IT-focused Computer Science student building skills in AWS Cloud and DevOps, with a focus on infrastructure, Linux, networking, and automation.",
-
   objectiveAr:
     "طالب علوم حاسب متخصص في IT، أطور مهاراتي في AWS وDevOps مع التركيز على الـInfrastructure وLinux والشبكات والأتمتة.",
-
   aboutMe:
     "I enjoy understanding how systems work behind the scenes and turning that understanding into reliable infrastructure. I am still growing professionally, but I take every project and training experience seriously and learn by building.",
-
   aboutMeAr:
     "بحب أفهم الأنظمة من جوه وأعرف إزاي الـInfrastructure بتخلي البرامج أكثر استقرارًا واعتمادية. لسه في بداية طريقي المهني، لكن بهتم جدًا بالتعلم من خلال التطبيق والمشروعات والتدريب العملي.",
-
   education: {
     school: "Menoufia University",
     degree: "Bachelor of Computer Science",
@@ -115,7 +105,6 @@ const cv = {
     facultyUrl:
       "https://mu.menofia.edu.eg/FCI/Home/en",
   },
-
   educationAr: {
     school: "جامعة المنوفية",
     degree: "بكالوريوس علوم الحاسب",
@@ -128,12 +117,10 @@ const cv = {
     summary:
       "دراسة أكاديمية في علوم الحاسب مع تخصص تكنولوجيا المعلومات، بالتوازي مع تطوير مهارات Cloud وDevOps بشكل عملي.",
   },
-
   languages: [
     "Arabic — Native",
     "English — Very Good",
   ],
-
   achievements: [
     {
       number: "11",
@@ -144,7 +131,6 @@ const cv = {
       descriptionAr:
         "خبرة عملية في 11 خدمة من AWS تم استخدامها ضمن تدريبات Cloud Architecture والـInfrastructure.",
     },
-
     {
       number: "02",
       title: "Training Tracks",
@@ -155,43 +141,31 @@ const cv = {
         "تدريب عملي في Cloud Computing من خلال NTI، مع تطوير مستمر لمهارات DevOps من خلال DEPI.",
     },
   ],
-
   experience: [
     {
       role: "Cloud Computing Trainee (AWS)",
       roleAr:
         "متدرب Cloud Computing (AWS)",
-
       company:
         "National Telecommunication Institute (NTI)",
-
       logo:
         "https://commons.wikimedia.org/wiki/Special:FilePath/NTI%20Logo%20Tagline%20RGB.png",
-
       period: "Training",
       periodAr: "تدريب",
-
       focus: "AWS CLOUD ARCHITECTURE",
       focusAr: "AWS CLOUD ARCHITECTURE",
-
       challenge:
         "Needed to work with core AWS infrastructure components and understand how they fit together in scalable cloud environments.",
-
       challengeAr:
         "كان التحدي هو التعامل مع مكونات AWS الأساسية وفهم كيفية ربطها معًا لبناء بيئات Cloud قابلة للتوسع.",
-
       action:
         "Worked with EC2, S3, RDS, VPC, IAM, Lambda, SQS, CloudFormation, Elastic Beanstalk, Elastic Load Balancing, and Auto Scaling. Configured subnets, route tables, security groups, load balancing, serverless components, and infrastructure provisioning.",
-
       actionAr:
         "تعاملت مع EC2 وS3 وRDS وVPC وIAM وLambda وSQS وCloudFormation وElastic Beanstalk وElastic Load Balancing وAuto Scaling، مع إعداد Subnets وRoute Tables وSecurity Groups وLoad Balancing وServerless Components وInfrastructure Provisioning.",
-
       result:
         "Built a stronger understanding of cloud architecture, availability, scalability, networking, and Infrastructure as Code through hands-on AWS work.",
-
       resultAr:
         "كوّنت فهمًا عمليًا أقوى لـCloud Architecture وAvailability وScalability وNetworking وInfrastructure as Code من خلال التطبيق العملي على AWS.",
-
       bullets: [
         "Worked with 11 AWS services across compute, storage, databases, networking, serverless, and infrastructure management.",
         "Configured Elastic Load Balancing and Auto Scaling to support resilient cloud environments.",
@@ -200,7 +174,6 @@ const cv = {
         "Automated infrastructure provisioning using AWS CloudFormation.",
         "Deployed and managed relational databases using Amazon RDS.",
       ],
-
       bulletsAr: [
         "تعاملت مع 11 خدمة من AWS تشمل Compute وStorage وDatabases وNetworking وServerless وInfrastructure Management.",
         "قمت بإعداد Elastic Load Balancing وAuto Scaling لدعم بيئات Cloud أكثر استقرارًا.",
@@ -210,97 +183,69 @@ const cv = {
         "نفذت وأدرت قواعد بيانات Relational باستخدام Amazon RDS.",
       ],
     },
-
     {
       role: "DevOps Track Trainee",
       roleAr:
         "متدرب في مسار DevOps",
-
       company:
         "Digital Egypt Pioneers Initiative (DEPI)",
-
       logo:
         "https://tse3.mm.bing.net/th/id/OIP.Hp_gIm0AmgMhb2Jx1C4f3QAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
-
       period: "2026 – Present",
       periodAr: "2026 – حتى الآن",
-
       focus: "DEVOPS ENGINEERING",
       focusAr: "DEVOPS ENGINEERING",
-
       challenge:
         "The next step was to connect existing cloud knowledge with real DevOps practices, automation, deployment, and delivery workflows.",
-
       challengeAr:
         "المرحلة التالية كانت ربط معرفة الـCloud الموجودة مع ممارسات DevOps الحقيقية مثل Automation وDeployment وDelivery Workflows.",
-
       action:
         "Developed practical skills across DevOps principles, Linux administration, CI/CD, infrastructure automation, deployment workflows, and cloud-based environments.",
-
       actionAr:
         "طورت مهارات عملية في مبادئ DevOps وLinux Administration وCI/CD وInfrastructure Automation وDeployment Workflows والبيئات السحابية.",
-
       result:
         "Expanded the technical track from cloud architecture toward practical DevOps workflows and infrastructure operations.",
-
       resultAr:
         "وسعت المسار التقني من Cloud Architecture إلى DevOps Workflows وInfrastructure Operations بشكل عملي.",
-
       bullets: [
         "Developed practical competencies across DevOps principles, cloud infrastructure, automation, CI/CD, Linux administration, and deployment workflows.",
         "Worked on connecting software delivery practices with infrastructure management and automation.",
       ],
-
       bulletsAr: [
         "طورت مهارات عملية في مبادئ DevOps وCloud Infrastructure والأتمتة وCI/CD وLinux Administration وعمليات الـDeployment.",
         "عملت على الربط بين Software Delivery وInfrastructure Management والأتمتة.",
       ],
     },
   ],
-
   project: {
     name:
       "AWS Enterprise Cloud Infrastructure",
-
     projectLabel:
       "Scalable & Secure Multi-AZ Architecture",
-
     projectLabelAr:
       "بنية Multi-AZ قابلة للتوسع وآمنة",
-
     description:
       "Architected and deployed a highly available, fault-tolerant AWS infrastructure built around a Multi-AZ 3-tier VPC design, scalable application delivery, secure network segmentation, global traffic management, protected data services, and layered security controls.",
-
     descriptionAr:
       "صممت ونشرت بنية AWS عالية التوافر ومقاومة للأعطال تعتمد على Multi-AZ 3-Tier VPC Architecture، مع قابلية عالية للتوسع وإدارة الـTraffic عالميًا وحماية البيانات وتطبيق طبقات متقدمة من الـSecurity.",
-
     challenge:
       "The infrastructure needed to support high availability, fault tolerance, dynamic traffic handling, secure network segmentation, protected data layers, and reliable access across multiple Availability Zones.",
-
     challengeAr:
       "كان المشروع يحتاج إلى تحقيق High Availability وFault Tolerance مع التعامل الديناميكي مع ضغط الـTraffic، وتقسيم الشبكة بشكل آمن، وحماية طبقات البيانات، وضمان استمرارية الوصول عبر أكثر من Availability Zone.",
-
     action:
       "Designed a Multi-AZ 3-tier VPC architecture using Public, Private, and Isolated Subnets. Implemented Application Load Balancers with Auto Scaling Groups for EC2 application and administrative workloads, integrated Route 53, CloudFront, WAF, and Shield for DNS, edge delivery, and protection, and configured Multi-AZ database clusters, EFS, AWS Backup, ACM, Secrets Manager, Security Groups, and NAT Gateways.",
-
     actionAr:
       "صممت Multi-AZ 3-Tier VPC Architecture باستخدام Public وPrivate وIsolated Subnets. طبقت Application Load Balancers مع Auto Scaling Groups لخوادم EC2 الخاصة بالتطبيق والإدارة، وربطت Route 53 وCloudFront وWAF وShield لإدارة الـDNS وتسريع الـContent Delivery والحماية، مع إعداد Multi-AZ Database Clusters وEFS وAWS Backup وACM وSecrets Manager وSecurity Groups وNAT Gateways.",
-
     result:
       "Created an enterprise-oriented cloud architecture focused on availability, scalability, fault tolerance, secure access, global content delivery, database resilience, shared storage, automated backup, and layered security.",
-
     resultAr:
       "تم بناء Cloud Architecture بمستوى Enterprise تركز على Availability وScalability وFault Tolerance وSecure Access وGlobal Content Delivery وDatabase Resilience وShared Storage وAutomated Backup وLayered Security.",
-
     image:
       "/2.jpeg",
-
     imageAlt:
       "AWS Enterprise Cloud Infrastructure architecture overview",
-
     imageAltAr:
       "صورة توضح بنية مشروع AWS Enterprise Cloud Infrastructure",
-
     points: [
       "Multi-AZ 3-tier VPC architecture across Public, Private, and Isolated Subnets",
       "Application Load Balancers with Auto Scaling Groups for traffic management and high availability",
@@ -310,7 +255,6 @@ const cv = {
       "HTTPS through AWS Certificate Manager with Secrets Manager for sensitive credentials",
       "Strict Security Groups and NAT Gateways for controlled access and secure outbound connectivity",
     ],
-
     pointsAr: [
       "تصميم Multi-AZ 3-Tier VPC Architecture باستخدام Public وPrivate وIsolated Subnets",
       "استخدام Application Load Balancers مع Auto Scaling Groups لإدارة الـTraffic وتحقيق High Availability",
@@ -320,7 +264,6 @@ const cv = {
       "تطبيق HTTPS باستخدام AWS Certificate Manager مع Secrets Manager لإدارة الـCredentials الحساسة",
       "تطبيق Security Groups صارمة وNAT Gateways للتحكم في الوصول وتأمين الـOutbound Connectivity",
     ],
-
     stack: [
       "AWS",
       "VPC",
@@ -342,7 +285,6 @@ const cv = {
       "Linux",
     ],
   },
-
   services: [
     {
       title: "Cloud Infrastructure",
@@ -353,7 +295,6 @@ const cv = {
         "تصميم وإعداد Cloud Infrastructure باستخدام AWS مع التركيز على Compute وStorage وNetworking والخدمات المُدارة.",
       icon: "cloud",
     },
-
     {
       title: "DevOps & CI/CD",
       titleAr: "DevOps & CI/CD",
@@ -363,7 +304,6 @@ const cv = {
         "العمل على مفاهيم CI/CD والأتمتة وعمليات الـDeployment وممارسات DevOps بشكل عملي.",
       icon: "bolt",
     },
-
     {
       title: "Linux & Systems",
       titleAr: "Linux & Systems",
@@ -373,7 +313,6 @@ const cv = {
         "العمل مع بيئات Linux وإدارة الخوادم وحل مشاكل الأنظمة وتشغيل الـInfrastructure.",
       icon: "server",
     },
-
     {
       title: "Networking & Security",
       titleAr:
@@ -385,7 +324,6 @@ const cv = {
       icon: "network",
     },
   ],
-
   testimonials: [
     {
       name: "Fatma Mohamed",
@@ -424,8 +362,6 @@ const cv = {
       sourceAr: "LinkedIn",
     },
   ],
-
-
   certifications: [
     {
       name: "Red Hat System Administration",
@@ -439,7 +375,6 @@ const cv = {
       image:
         "/certificates/Screenshot 2026-09-14 203632.png",
     },
-
     {
       name:
         "Linux Red Hat Administration",
@@ -453,7 +388,6 @@ const cv = {
       image:
         "/certificates/Screenshot 2026-09-14 203713.png",
     },
-
     {
       name:
         "Cloud Services Management and Operation",
@@ -467,7 +401,6 @@ const cv = {
       image:
         "/certificates/Screenshot 2026-09-14 203745.png",
     },
-
     {
       name:
         "AWS Academy Graduate - Cloud Architecting",
@@ -481,7 +414,6 @@ const cv = {
       image:
         "/certificates/Screenshot 2026-09-14 203815.png",
     },
-
     {
       name:
         "AWS Academy Graduate - Cloud Foundations",
@@ -495,7 +427,6 @@ const cv = {
       image:
         "/certificates/Screenshot 2026-09-14 203847.png",
     },
-
     {
       name:
         "General Knowledge of Cloud Computing",
@@ -509,7 +440,6 @@ const cv = {
       image:
         "/certificates/Screenshot 2026-09-15 200419.png",
     },
-
     {
       name:
         "HCIA-Cloud Service V3.5 Course",
@@ -525,7 +455,6 @@ const cv = {
         "/certificates/Screenshot 2026-09-15 200432.png",
     },
   ],
-
   skills: {
     "Cloud & Architecture": [
       "AWS",
@@ -534,7 +463,6 @@ const cv = {
       "Serverless Architecture",
       "Event-Driven Architecture",
     ],
-
     "AWS Services": [
       "EC2",
       "S3",
@@ -546,7 +474,6 @@ const cv = {
       "Elastic Load Balancing",
       "Auto Scaling",
     ],
-
     "DevOps & Automation": [
       "DevOps Fundamentals",
       "CI/CD",
@@ -554,7 +481,6 @@ const cv = {
       "Automation",
       "Deployment Workflows",
     ],
-
     "Networking & Security": [
       "VPC",
       "Public / Private / Isolated Subnets",
@@ -563,7 +489,6 @@ const cv = {
       "Routing",
       "Network Architecture",
     ],
-
     "Systems & Technical": [
       "Linux",
       "SQL",
@@ -573,7 +498,6 @@ const cv = {
       "Cloud Infrastructure",
     ],
   },
-
   softSkills: [
     {
       en: "Problem Solving",
@@ -609,7 +533,6 @@ const cv = {
     },
   ],
 };
-
 function Tech({
   children,
 }: {
@@ -627,7 +550,6 @@ function Tech({
     </span>
   );
 }
-
 function Icon({
   children,
   size = 19,
@@ -651,7 +573,6 @@ function Icon({
     </svg>
   );
 }
-
 function PlatformLogo({
   src,
   mark,
@@ -662,7 +583,6 @@ function PlatformLogo({
   name: string;
 }) {
   const [failed, setFailed] = useState(false);
-
   return (
     <span className="freelance-logo" aria-hidden="true">
       {!failed ? (
@@ -684,7 +604,6 @@ function PlatformLogo({
     </span>
   );
 }
-
 const skillLogoSlugs: Record<string, string> = {
   AWS: "aws",
   "Huawei Cloud": "huaweicloud",
@@ -697,7 +616,6 @@ const skillLogoSlugs: Record<string, string> = {
   "GitLab": "gitlab",
   Docker: "docker",
 };
-
 function SkillLogo({
   label,
   slug,
@@ -707,7 +625,6 @@ function SkillLogo({
 }) {
   const [failed, setFailed] = useState(false);
   const mark = label.trim().replace(/[^A-Za-z0-9]/g, "").slice(0, 2).toUpperCase() || "•";
-
   return (
     <span className="skill-logo-mini" aria-hidden="true">
       {slug && !failed ? (
@@ -724,7 +641,6 @@ function SkillLogo({
     </span>
   );
 }
-
 function EducationLogo({
   src,
   alt,
@@ -735,7 +651,6 @@ function EducationLogo({
   mark: string;
 }) {
   const [failed, setFailed] = useState(false);
-
   return (
     <span className="education-logo" aria-hidden={failed}>
       {!failed ? (
@@ -756,7 +671,6 @@ function EducationLogo({
     </span>
   );
 }
-
 const i = {
   arrow: (
     <Icon>
@@ -764,7 +678,6 @@ const i = {
       <path d="M13 6l6 6-6 6" />
     </Icon>
   ),
-
   contact: (
     <Icon>
       <path d="M20 11.2c0 4.5-3.6 8.1-8 8.1-1.1 0-2.2-.2-3.1-.6L4 20l1.3-3.7A8 8 0 1 1 20 11.2Z" />
@@ -773,7 +686,6 @@ const i = {
       <path d="M15.8 11.2h.01" />
     </Icon>
   ),
-
   external: (
     <Icon>
       <path d="M14 5h5v5" />
@@ -781,7 +693,6 @@ const i = {
       <path d="M18 13v5a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5" />
     </Icon>
   ),
-
   email: (
     <Icon>
       <rect
@@ -794,14 +705,12 @@ const i = {
       <path d="m4.5 7 7.5 6 7.5-6" />
     </Icon>
   ),
-
   github: (
     <Icon>
       <path d="M15.5 22v-4.2c2.5.4 4-1 4.5-2.7.5-1.3.2-2.6-.8-3.5.3-.8.4-1.7.2-2.6-.2-1-1-2-2.2-2.4.2-.8.1-1.7-.3-2.5-1 .1-2.2.6-3.2 1.3a11.7 11.7 0 0 0-3.4 0c-1-.7-2.2-1.2-3.2-1.3-.4.8-.5 1.7-.3 2.5-1.2.4-2 1.4-2.2 2.4-.2.9-.1 1.8.2 2.6-1 .9-1.3 2.2-.8 3.5.5 1.7 2 3.1 4.5 2.7V22" />
       <path d="M9 18c-3.5 1.2-4-1.5-5.5-1.5" />
     </Icon>
   ),
-
   linkedin: (
     <Icon>
       <rect
@@ -817,14 +726,12 @@ const i = {
       <path d="M12 13.2a3 3 0 0 1 6 0v3.3" />
     </Icon>
   ),
-
   cloud: (
     <Icon>
       <path d="M7.2 18.5h9.6a4.2 4.2 0 0 0 .7-8.3 5.7 5.7 0 0 0-10.8 1.5A3.4 3.4 0 0 0 7.2 18.5Z" />
       <path d="M12 18.5v2.5" />
     </Icon>
   ),
-
   server: (
     <Icon>
       <rect
@@ -847,7 +754,6 @@ const i = {
       <path d="M11 17.25h7" />
     </Icon>
   ),
-
   network: (
     <Icon>
       <circle cx="5" cy="5" r="2.2" />
@@ -858,14 +764,12 @@ const i = {
       <path d="M7.3 5h9.4" />
     </Icon>
   ),
-
   terminal: (
     <Icon>
       <path d="m5 7.5 4.5 4.5L5 16.5" />
       <path d="M12 16.5h7" />
     </Icon>
   ),
-
   git: (
     <Icon>
       <circle cx="6" cy="6" r="2.1" />
@@ -875,7 +779,6 @@ const i = {
       <path d="m7.8 16.8 8.4-3.6" />
     </Icon>
   ),
-
   database: (
     <Icon>
       <ellipse
@@ -888,20 +791,17 @@ const i = {
       <path d="M5 12v7c0 1.7 3.1 3 7 3s7-1.3 7-3v-7" />
     </Icon>
   ),
-
   shield: (
     <Icon>
       <path d="M12 3.2 19 6v4.8c0 4.2-2.5 8-7 10-4.5-2-7-5.8-7-10V6l7-2.8Z" />
       <path d="m9 12 2 2.2 4.2-4.4" />
     </Icon>
   ),
-
   bolt: (
     <Icon>
       <path d="M13.2 2.5 5.5 13.3h6.8l-1 8.2 7.7-10.8h-6.8l1-8.2Z" />
     </Icon>
   ),
-
   layers: (
     <Icon>
       <path d="m12 3 8 4.5-8 4.5-8-4.5L12 3Z" />
@@ -909,7 +809,6 @@ const i = {
       <path d="m4 16.5 8 4.5 8-4.5" />
     </Icon>
   ),
-
   education: (
     <Icon>
       <path d="m3 9 9-5 9 5-9 5-9-5Z" />
@@ -917,20 +816,17 @@ const i = {
       <path d="M21 9v6" />
     </Icon>
   ),
-
   check: (
     <Icon size={14}>
       <path d="m5 12 4 4 10-10" />
     </Icon>
   ),
-
   quote: (
     <Icon>
       <path d="M9.8 10.8H5.7A2.7 2.7 0 0 0 3 13.5v1.8A2.7 2.7 0 0 0 5.7 18h1A3.1 3.1 0 0 0 9.8 15v-4.2Z" />
       <path d="M21 10.8h-4.1a2.7 2.7 0 0 0-2.7 2.7v1.8a2.7 2.7 0 0 0 2.7 2.7h1a3.1 3.1 0 0 0 3.1-3.1v-4.1Z" />
     </Icon>
   ),
-
   sun: (
     <Icon>
       <circle cx="12" cy="12" r="4" />
@@ -944,7 +840,6 @@ const i = {
       <path d="m17.66 6.34 1.41-1.41" />
     </Icon>
   ),
-
   light: (
     <Icon>
       <path d="M9 18h6" />
@@ -957,7 +852,6 @@ const i = {
       <path d="M21 12h1" />
     </Icon>
   ),
-
   people: (
     <Icon>
       <circle cx="9" cy="8" r="3" />
@@ -967,505 +861,398 @@ const i = {
     </Icon>
   ),
 };
-
 export default function Page() {
   const [active, setActive] =
     useState("home");
-
   const [menu, setMenu] =
     useState(false);
-
   const [profileError, setProfileError] =
     useState(false);
-
   const [copied, setCopied] =
     useState(false);
-
   const [lightMode, setLightMode] =
     useState(false);
-
   const [scrolled, setScrolled] =
     useState(false);
-
   const [language, setLanguage] =
     useState<"en" | "ar">("en");
-
   const [
     selectedCertificate,
     setSelectedCertificate,
   ] = useState<string | null>(null);
-
   const [
     selectedProjectImage,
     setSelectedProjectImage,
   ] = useState<string | null>(null);
-
+  const [showOnboarding, setShowOnboarding] =
+    useState(false);
+  const [onboardingExit, setOnboardingExit] =
+    useState(false);
+  const [onboardingReady, setOnboardingReady] =
+    useState(false);
   const isArabic = language === "ar";
-
   const t = {
     home: isArabic ? "الرئيسية" : "Home",
-
     about: isArabic ? "نبذة عني" : "About",
-
     education: isArabic
       ? "التعليم"
       : "Education",
-
     certification: isArabic
       ? "الشهادات"
       : "Certifications",
-
     skills: isArabic
       ? "المهارات"
       : "Skills",
-
     experience: isArabic
       ? "الخبرة"
       : "Experience",
-
     project: isArabic
       ? "المشروع"
       : "Project",
-
     services: isArabic
       ? "الخدمات"
       : "Services",
-
     achievements: isArabic
       ? "الإنجازات"
       : "Achievements",
-
     testimonials: isArabic
       ? "الآراء"
       : "Testimonials",
-
     contact: isArabic
       ? "تواصل"
       : "Contact",
-
     openToOpportunities:
       isArabic
         ? "متاح للفرص"
         : "Open to opportunities",
-
     letsConnect: isArabic
       ? "لنتواصل"
       : "Let's connect",
-
     cloudInfrastructureDevops:
       "Cloud Infrastructure / DevOps",
-
     exploreArchitecture:
       isArabic
         ? "استكشف الـArchitecture"
         : "Explore architecture",
-
     contactMe: isArabic
       ? "تواصل معي"
       : "Contact me",
-
     downloadCv: isArabic
       ? "تحميل CV"
       : "Download CV",
-
     viewLinkedin: "LinkedIn",
-
     viewGithub: "GitHub",
-
     cloudFirst: isArabic
       ? "Cloud أولًا."
       : "Cloud first.",
-
     systemsMinded:
       isArabic
         ? "بعقلية هندسية للأنظمة."
         : "Systems minded.",
-
     engineeringProfile:
       isArabic
         ? "الملف الهندسي"
         : "Engineering profile",
-
     profileHeading:
       isArabic
         ? "أحب أفهم الأنظمة من الداخل وأبني Infrastructure يعتمد عليها."
         : "I like understanding systems from the inside and building infrastructure people can rely on.",
-
     aboutMeLabel: isArabic
       ? "عن نفسي"
       : "A little about me",
-
     awsServicesApplied:
       isArabic
         ? "خدمات AWS مطبقة"
         : "AWS services applied",
-
     trainingTracks:
       isArabic
         ? "مسارات تدريبية"
         : "Training tracks",
-
     expectedGraduation:
       isArabic
         ? "التخرج المتوقع"
         : "Expected graduation",
-
     educationTitle:
       isArabic
         ? "بكالوريوس علوم الحاسب."
         : "Bachelor of Computer Science.",
-
     educationNote:
       isArabic
         ? "الخلفية الأكاديمية والتخصص الحالي مع توضيح موعد التخرج."
         : "Academic background, specialization, and current graduation timeline.",
-
     languages: isArabic
       ? "اللغات"
       : "Languages",
-
     academicFocus:
       isArabic
         ? "التخصص الأكاديمي"
         : "Academic specialization",
-
     certificationTitle:
       isArabic
         ? "تدريب وشهادات Cloud."
         : "Cloud certifications & training.",
-
     certificationNote:
       isArabic
         ? "الشهادات والتدريبات المرتبطة بالـCloud والـInfrastructure."
         : "Formal cloud and infrastructure training.",
-
     skillsTitle:
       isArabic
         ? "التقنيات خلف الـInfrastructure."
         : "The tools behind the infrastructure.",
-
     skillsNote:
       isArabic
         ? "المهارات الأساسية مرتبة بشكل أوضح بين Technical Skills وSoft Skills."
         : "Core capabilities organized across technical and soft skills.",
-
     capabilityMap:
       isArabic
         ? "خريطة المهارات"
         : "Capability map",
-
     capabilityNote:
       isArabic
         ? "مجموعة المهارات العملية المستخدمة في مسار Cloud وDevOps."
         : "A practical map of the capabilities behind my Cloud / DevOps path.",
-
     primaryFocus:
       isArabic
         ? "التركيز الأساسي"
         : "PRIMARY FOCUS",
-
     awsCloudInfrastructure:
       "AWS Cloud Infrastructure",
-
     technicalSkills:
       isArabic
         ? "المهارات التقنية"
         : "Technical skills",
-
     technicalSkillsNote:
       isArabic
         ? "الأدوات والتقنيات التي أبني بها الـCloud Infrastructure والـDevOps workflows."
         : "Tools and technologies used to build cloud infrastructure and DevOps workflows.",
-
     softSkills:
       isArabic
         ? "المهارات الشخصية"
         : "Soft skills",
-
     softSkillsNote:
       isArabic
         ? "مهارات تساعدني على التعلم والتعاون والتعامل مع مشاكل الـInfrastructure بشكل عملي."
         : "The working habits and interpersonal skills that support technical growth and teamwork.",
-
     practicalMindset:
       isArabic
         ? "Practical mindset"
         : "Practical mindset",
-
     practicalMindsetNote:
       isArabic
         ? "بناء، تجربة، حل المشكلة، ثم تحسين الحل."
         : "Build it, test it, solve the issue, then improve the solution.",
-
     experienceTitle:
       isArabic
         ? "خبرة مبنية على التطبيق."
         : "Experience built through practice.",
-
     experienceNote:
       isArabic
         ? "كل تجربة موضحة من التحدي إلى التنفيذ والنتيجة."
         : "Each experience is presented through challenge, action, and result.",
-
     challenge: isArabic
       ? "التحدي"
       : "Challenge",
-
     action: isArabic
       ? "التنفيذ"
       : "Action",
-
     result: isArabic
       ? "النتيجة"
       : "Result",
-
     record: isArabic
       ? "السجل"
       : "Record",
-
     position: isArabic
       ? "المنصب"
       : "Position",
-
     responsibilities:
       isArabic
         ? "المسؤوليات"
         : "Responsibilities",
-
     featuredProject:
       isArabic
         ? "المشروع المميز"
         : "Featured project",
-
     architectureStory:
       isArabic
         ? "Architecture واضحة."
         : "A clear architecture story.",
-
     projectNote:
       isArabic
         ? "مشروع Infrastructure معروض بشكل مختصر وواضح."
         : "A focused infrastructure case study.",
-
     scalableArchitecture:
       isArabic
         ? cv.project.projectLabelAr
         : cv.project.projectLabel,
-
     topology: isArabic
       ? "Cloud Topology"
       : "Cloud topology",
-
     actualProjectElements:
       isArabic
         ? "العناصر الأساسية للمشروع"
         : "Core architecture elements",
-
     cloudEnvironment:
       isArabic
         ? "AWS Environment"
         : "AWS environment",
-
     cloudBoundary:
       isArabic
         ? "حدود الـCloud Infrastructure"
         : "Cloud infrastructure boundary",
-
     applicationCompute:
       isArabic
         ? "Application Compute"
         : "Application compute",
-
     subnetsRouteTables:
       "Public + Private + Isolated Subnets",
-
     controlledAccess:
       isArabic
         ? "Controlled Access"
         : "Controlled access",
-
     cloudStorage:
       isArabic
         ? "Shared Storage & Data Layer"
         : "Shared storage & data layer",
-
     compute: isArabic
       ? "حوسبة"
       : "COMPUTE",
-
     network: isArabic
       ? "شبكة"
       : "NETWORK",
-
     storage: isArabic
       ? "تخزين"
       : "STORAGE",
-
     projectImage:
       isArabic
         ? "صورة المشروع"
         : "Project preview",
-
     projectImageNote:
       isArabic
         ? "لمحة بصرية سريعة عن الـCloud Architecture."
         : "A quick visual overview of the architecture.",
-
     viewProjectImage:
       isArabic
         ? "تكبير الصورة"
         : "Click to enlarge",
-
     servicesTitle:
       isArabic
         ? "مجالات الـInfrastructure التي أعمل عليها."
         : "Infrastructure I work with.",
-
     servicesNote:
       isArabic
         ? "AWS وDevOps وLinux والشبكات والأتمتة."
         : "AWS, DevOps, Linux, networking, automation, and deployment.",
-
     achievementsTitle:
       isArabic
         ? "محطات واضحة في المسار."
         : "Clear milestones in the path.",
-
     achievementsNote:
       isArabic
         ? "مؤشرات مبنية على الخبرة التدريبية والأكاديمية الحالية."
         : "Current academic and training milestones.",
-
     testimonialsTitle:
       isArabic
         ? "توصيات مهنية حقيقية."
         : "Professional recommendations.",
-
     testimonialsNote:
       isArabic
         ? "توصيات LinkedIn من أشخاص قاموا بتدريس Mohamed خلال تدريبات Cloud."
         : "LinkedIn recommendations from instructors who taught Mohamed during Cloud training.",
-
     viewRecommendation:
       isArabic
         ? "عرض الملف"
         : "View profile",
-
     recommendationLabel:
       isArabic
         ? "توصية /"
         : "RECOMMENDATION /",
-
     contactTitle:
       isArabic
         ? "جاهز للخطوة التالية."
         : "Ready for the next step.",
-
     contactNote:
       isArabic
         ? "متاح لفرص Cloud وDevOps المرتبطة بالـAWS والـInfrastructure."
         : "Open to Cloud and DevOps opportunities around AWS and infrastructure.",
-
     openToOpportunitiesAgain:
       isArabic
         ? "متاح للفرص"
         : "Open to opportunities",
-
     letsBuild:
       isArabic
         ? "لنبنِ Infrastructure موثوقة."
         : "Let's build reliable infrastructure.",
-
     contactDescription:
       isArabic
         ? "للتدريب أو النقاشات التقنية أو الفرص المتعلقة بالـCloud Infrastructure وDevOps."
         : "For internships, technical conversations, or opportunities around cloud infrastructure and DevOps.",
-
     sendEmail:
       isArabic
         ? "إرسال Email"
         : "Send email",
-
     copyEmail:
       isArabic
         ? "نسخ Email"
         : "Copy email",
-
     freelancePlatforms:
       isArabic
         ? "منصات العمل الحر"
         : "Freelance platforms",
-
     freelancePlatformsNote:
       isArabic
         ? "كل روابط العمل الحر في مكان واحد، مع الوصول المباشر لكل ملف."
         : "All freelance profiles in one place, with direct access to each profile.",
-
     visitProfile:
       isArabic
         ? "زيارة الملف"
         : "Visit profile",
-
     copied:
       isArabic
         ? "تم النسخ"
         : "Copied",
-
     targetRole:
       isArabic
         ? "الدور المستهدف"
         : "Target role",
-
     coreFocus:
       isArabic
         ? "التركيز الأساسي"
         : "Core focus",
-
     langSwitch:
       isArabic ? "EN" : "AR",
-
     skillsTopics:
       isArabic
         ? "Skills / Topics"
         : "Skills / Topics",
-
     provider:
       isArabic ? "Provider" : "Provider",
-
     training:
       isArabic ? "Training" : "Training",
-
     footerStatus:
       isArabic
         ? "متاح لفرص Cloud وDevOps"
         : "Open to Cloud & DevOps opportunities",
-
     footerConnect:
       isArabic
         ? "لنبنِ شيئًا موثوقًا."
         : "Let's build something reliable.",
-
     footerExplore:
       isArabic
         ? "استكشف"
         : "Explore",
-
     footerContact:
       isArabic
         ? "تواصل"
         : "Contact",
-
     footerSocial:
       isArabic
         ? "روابط"
         : "Links",
-
     footerCopyright:
       isArabic
         ? "جميع الحقوق محفوظة."
         : "All rights reserved.",
   };
-
   const nav = useMemo(
     () => [
       ["home", t.home],
@@ -1482,14 +1269,53 @@ export default function Page() {
     ],
     [language]
   );
+  useEffect(() => {
+    const storageKey =
+      "mohamed-gamal-portfolio-onboarding-v1";
+    let seen = false;
+
+    try {
+      seen =
+        window.sessionStorage.getItem(storageKey) ===
+        "seen";
+    } catch {}
+
+    if (seen) return;
+
+    setShowOnboarding(true);
+
+    const startTimer = window.setTimeout(() => {
+      setOnboardingReady(true);
+    }, 80);
+
+    const exitTimer = window.setTimeout(() => {
+      setOnboardingExit(true);
+    }, 2900);
+
+    const finishTimer = window.setTimeout(() => {
+      try {
+        window.sessionStorage.setItem(
+          storageKey,
+          "seen"
+        );
+      } catch {}
+      setShowOnboarding(false);
+      setOnboardingExit(false);
+      setOnboardingReady(false);
+    }, 3650);
+
+    return () => {
+      window.clearTimeout(startTimer);
+      window.clearTimeout(exitTimer);
+      window.clearTimeout(finishTimer);
+    };
+  }, []);
 
   useEffect(() => {
     const onScroll = () => {
       setScrolled(window.scrollY > 20);
     };
-
     onScroll();
-
     window.addEventListener(
       "scroll",
       onScroll,
@@ -1497,7 +1323,6 @@ export default function Page() {
         passive: true,
       }
     );
-
     return () => {
       window.removeEventListener(
         "scroll",
@@ -1505,19 +1330,15 @@ export default function Page() {
       );
     };
   }, []);
-
   useEffect(() => {
     const sectionIds =
       nav.map(([id]) => id);
-
     const sections = sectionIds
       .map((id) =>
         document.getElementById(id)
       )
       .filter(Boolean) as HTMLElement[];
-
     if (!sections.length) return;
-
     const observer =
       new IntersectionObserver(
         (entries) => {
@@ -1531,7 +1352,6 @@ export default function Page() {
                 b.intersectionRatio -
                 a.intersectionRatio
             );
-
           if (
             visible[0]?.target?.id
           ) {
@@ -1552,37 +1372,44 @@ export default function Page() {
           ],
         }
       );
-
     sections.forEach((section) =>
       observer.observe(section)
     );
-
     return () =>
       observer.disconnect();
   }, [nav]);
-
   useEffect(() => {
     const onKeyDown = (
       event: KeyboardEvent
     ) => {
       if (event.key === "Escape") {
         setMenu(false);
-
+        if (showOnboarding) {
+          setOnboardingExit(true);
+          window.setTimeout(() => {
+            try {
+              window.sessionStorage.setItem(
+                "mohamed-gamal-portfolio-onboarding-v1",
+                "seen"
+              );
+            } catch {}
+            setShowOnboarding(false);
+            setOnboardingExit(false);
+            setOnboardingReady(false);
+          }, 420);
+        }
         if (selectedCertificate) {
           setSelectedCertificate(null);
         }
-
         if (selectedProjectImage) {
           setSelectedProjectImage(null);
         }
       }
     };
-
     window.addEventListener(
       "keydown",
       onKeyDown
     );
-
     return () => {
       window.removeEventListener(
         "keydown",
@@ -1592,16 +1419,16 @@ export default function Page() {
   }, [
     selectedCertificate,
     selectedProjectImage,
+    showOnboarding,
   ]);
-
   useEffect(() => {
     document.body.style.overflow =
       menu ||
       selectedCertificate ||
-      selectedProjectImage
+      selectedProjectImage ||
+      showOnboarding
         ? "hidden"
         : "";
-
     return () => {
       document.body.style.overflow =
         "";
@@ -1610,45 +1437,36 @@ export default function Page() {
     menu,
     selectedCertificate,
     selectedProjectImage,
+    showOnboarding,
   ]);
-
   const go = (id: string) => {
     const element =
       document.getElementById(id);
-
     if (!element) return;
-
     const navOffset = 88;
-
     const top =
       element.getBoundingClientRect()
         .top +
       window.scrollY -
       navOffset;
-
     window.scrollTo({
       top,
       behavior: "smooth",
     });
-
     setActive(id);
     setMenu(false);
   };
-
   const copyEmail = async () => {
     try {
       await navigator.clipboard.writeText(
         cv.email
       );
-
       setCopied(true);
-
       window.setTimeout(() => {
         setCopied(false);
       }, 1600);
     } catch {}
   };
-
   return (
     <main
       className={`site ${
@@ -1656,10 +1474,90 @@ export default function Page() {
       } ${isArabic ? "rtl" : ""}`}
       dir={isArabic ? "rtl" : "ltr"}
     >
+      {showOnboarding && (
+        <div
+          className={`onboarding-overlay ${
+            onboardingReady ? "is-ready" : ""
+          } ${onboardingExit ? "is-exiting" : ""}`}
+          role="dialog"
+          aria-modal="true"
+          aria-label="Mohamed Gamal portfolio introduction"
+        >
+          <div className="onboarding-backdrop" />
+          <div className="onboarding-grid-glow" />
+          <section className="onboarding-content">
+            <div className="onboarding-logo-wrap">
+              <div className="onboarding-logo-ring" />
+              <img
+                src={cv.logo}
+                alt=""
+                className="onboarding-logo"
+                width={360}
+                height={112}
+                decoding="async"
+              />
+            </div>
+
+            <div
+              className="onboarding-name"
+              aria-label={cv.name}
+            >
+              <span>MOHAMED</span>
+              <span>GAMAL</span>
+            </div>
+
+            <div className="onboarding-divider">
+              <span />
+            </div>
+
+            <p
+              className="onboarding-title"
+              dir="ltr"
+            >
+              CLOUD &amp; DEVOPS ENGINEER
+            </p>
+
+            <p
+              className="onboarding-focus"
+              dir="ltr"
+            >
+              Cloud Infrastructure · Automation · Reliability
+            </p>
+
+            <div
+              className="onboarding-progress"
+              aria-hidden="true"
+            >
+              <span />
+            </div>
+
+            <button
+              type="button"
+              className="onboarding-skip"
+              onClick={() => {
+                setOnboardingExit(true);
+                window.setTimeout(() => {
+                  try {
+                    window.sessionStorage.setItem(
+                      "mohamed-gamal-portfolio-onboarding-v1",
+                      "seen"
+                    );
+                  } catch {}
+                  setShowOnboarding(false);
+                  setOnboardingExit(false);
+                  setOnboardingReady(false);
+                }, 420);
+              }}
+            >
+              Skip intro
+            </button>
+          </section>
+        </div>
+      )}
+
       {/* =====================================================
           NAV
-          ===================================================== */}
-
+          \===================================================== */}
       <header
         className={`topbar ${
           scrolled ? "scrolled" : ""
@@ -1673,21 +1571,21 @@ export default function Page() {
             }
             aria-label="Go to home"
           >
-            <span className="brand-mark">
-              {i.cloud}
+            <span className="brand-logo-shell">
+              <img
+                src={cv.logo}
+                alt=""
+                className="brand-logo-image"
+                width={180}
+                height={56}
+                decoding="async"
+                fetchPriority="high"
+              />
             </span>
-
-            <span className="brand-copy">
-              <strong>
-                {cv.name}
-              </strong>
-
-              <span>
-                {cv.title}
-              </span>
+            <span className="sr-only">
+              {cv.name} — {cv.title}
             </span>
           </button>
-
           <div className="nav-center">
             <nav
               className="nav-links"
@@ -1697,7 +1595,6 @@ export default function Page() {
                 ([id, label]) => {
                   const isContact =
                     id === "contact";
-
                   return (
                     <button
                       key={id}
@@ -1723,7 +1620,6 @@ export default function Page() {
                       <span>
                         {label}
                       </span>
-
                       {isContact
                         ? (
                             <span className="nav-contact-icon">
@@ -1737,7 +1633,6 @@ export default function Page() {
               )}
             </nav>
           </div>
-
           <div className="nav-tools">
             <span className="availability">
               <span className="availability-dot" />
@@ -1745,7 +1640,6 @@ export default function Page() {
                 t.openToOpportunities
               }
             </span>
-
             <button
               className="language-button"
               onClick={() =>
@@ -1760,7 +1654,6 @@ export default function Page() {
             >
               {t.langSwitch}
             </button>
-
             <button
               className="theme-button"
               onClick={() =>
@@ -1775,14 +1668,12 @@ export default function Page() {
               }
             >
               <span className="theme-glow" />
-
               <span className="theme-icon">
                 {lightMode
                   ? i.sun
                   : i.light}
               </span>
             </button>
-
             <button
               className="menu-btn"
               onClick={() =>
@@ -1798,11 +1689,9 @@ export default function Page() {
           </div>
         </div>
       </header>
-
       {/* =====================================================
           MOBILE MENU
-          ===================================================== */}
-
+          \===================================================== */}
       {menu && (
         <div
           className="mobile-menu"
@@ -1820,7 +1709,6 @@ export default function Page() {
               ([id, label]) => {
                 const isContact =
                   id === "contact";
-
                 return (
                   <button
                     key={id}
@@ -1841,7 +1729,6 @@ export default function Page() {
                     <span>
                       {label}
                     </span>
-
                     {isContact
                       ? (
                           <span className="nav-contact-icon">
@@ -1856,11 +1743,9 @@ export default function Page() {
           </div>
         </div>
       )}
-
       {/* =====================================================
           00 / HOME
-          ===================================================== */}
-
+          \===================================================== */}
       <section
         id="home"
         className="container hero hero-compact"
@@ -1872,21 +1757,17 @@ export default function Page() {
               t.cloudInfrastructureDevops
             }
           </div>
-
           <h1>
             Mohamed
             <br />
             <span>Gamal.</span>
           </h1>
-
           <h3>{cv.title}</h3>
-
           <p className="hero-description">
             {isArabic
               ? cv.objectiveAr
               : cv.objective}
           </p>
-
           <div className="hero-actions">
             <button
               className="btn primary"
@@ -1897,10 +1778,8 @@ export default function Page() {
               {
                 t.exploreArchitecture
               }
-
               {i.arrow}
             </button>
-
             <a
               className="btn"
               href="/cv.pdf"
@@ -1911,15 +1790,12 @@ export default function Page() {
             </a>
           </div>
         </div>
-
         <div className="hero-art hero-art-compact">
           <div className="art-paper" />
           <div className="art-lines" />
-
           <div className="portrait-wrap">
             <span className="corner a" />
             <span className="corner b" />
-
             <div className="portrait">
               {!profileError ? (
                 <img
@@ -1942,7 +1818,6 @@ export default function Page() {
                       <br />
                       GAMAL
                     </strong>
-
                     <span>
                       Add your portrait at
                       <br />
@@ -1953,7 +1828,6 @@ export default function Page() {
               )}
             </div>
           </div>
-
           <div className="hero-card aws-card">
             <img
               className="aws-logo"
@@ -1962,65 +1836,53 @@ export default function Page() {
               loading="eager"
               decoding="async"
             />
-
             <strong>
               Cloud architecture
             </strong>
-
             <p dir="ltr">
               EC2 · S3 · VPC · RDS ·
               Lambda · SQS
             </p>
           </div>
-
           <div className="hero-card pipeline-card">
             <div className="card-row">
               <span className="card-label">
                 DevOps workflow
               </span>
-
               <span className="status">
                 <span className="status-dot" />
                 Active track
               </span>
             </div>
-
             <div className="pipeline">
               <div className="pipe">
                 <span className="pipe-icon">
                   {i.git}
                 </span>
-
                 <small>
                   Source
                 </small>
               </div>
-
               <div className="pipe">
                 <span className="pipe-icon">
                   {i.bolt}
                 </span>
-
                 <small>
                   CI / CD
                 </small>
               </div>
-
               <div className="pipe">
                 <span className="pipe-icon">
                   {i.cloud}
                 </span>
-
                 <small>
                   Cloud
                 </small>
               </div>
-
               <div className="pipe">
                 <span className="pipe-icon">
                   {i.server}
                 </span>
-
                 <small>
                   Deploy
                 </small>
@@ -2029,11 +1891,9 @@ export default function Page() {
           </div>
         </div>
       </section>
-
       {/* =====================================================
           01 / ABOUT
-          ===================================================== */}
-
+          \===================================================== */}
       <section
         id="about"
         className="section section-tight"
@@ -2044,7 +1904,6 @@ export default function Page() {
               <div className="section-code">
                 01 / {t.about}
               </div>
-
               <h2 className="section-title">
                 {t.cloudFirst}
                 <br />
@@ -2052,7 +1911,6 @@ export default function Page() {
               </h2>
             </div>
           </div>
-
           <div className="profile-grid">
             <div className="paper-card profile-main">
               <div>
@@ -2061,25 +1919,21 @@ export default function Page() {
                     t.engineeringProfile
                   }
                 </div>
-
                 <h3>
                   {
                     t.profileHeading
                   }
                 </h3>
-
                 <p>
                   {isArabic
                     ? cv.aboutMeAr
                     : cv.aboutMe}
                 </p>
-
                 <div className="about-me">
                   <div className="about-me-label">
                     <span className="eyebrow-dot" />
                     {t.aboutMeLabel}
                   </div>
-
                   <p>
                     {isArabic
                       ? "مهتم بالتعلم العملي وبناء الأنظمة، وبحاول دائمًا أربط بين الـCloud والـDevOps بشكل بسيط وفعلي."
@@ -2087,31 +1941,25 @@ export default function Page() {
                   </p>
                 </div>
               </div>
-
               <div className="stats">
                 <div className="stat">
                   <strong>11</strong>
-
                   <span>
                     {
                       t.awsServicesApplied
                     }
                   </span>
                 </div>
-
                 <div className="stat">
                   <strong>02</strong>
-
                   <span>
                     {
                       t.trainingTracks
                     }
                   </span>
                 </div>
-
                 <div className="stat">
                   <strong>2027</strong>
-
                   <span>
                     {
                       t.expectedGraduation
@@ -2120,50 +1968,40 @@ export default function Page() {
                 </div>
               </div>
             </div>
-
             <div className="paper-card profile-side">
               <div>
                 <div className="label-row">
                   <span className="label-icon">
                     {i.layers}
                   </span>
-
                   How I think
                 </div>
-
                 <div className="university">
                   Cloud first.
                 </div>
-
                 <div className="degree">
                   {isArabic
                     ? "أميل لفهم الـInfrastructure كجزء أساسي من جودة أي Software System."
                     : "I see infrastructure as an essential part of building reliable software systems, not just as a deployment step."}
                 </div>
               </div>
-
               <div>
                 <div className="label-row">
                   <span className="label-icon">
                     {i.check}
                   </span>
-
                   Current direction
                 </div>
-
                 <div className="languages">
                   <span className="language">
                     AWS
                   </span>
-
                   <span className="language">
                     Linux
                   </span>
-
                   <span className="language">
                     DevOps
                   </span>
-
                   <span className="language">
                     Networking
                   </span>
@@ -2173,11 +2011,9 @@ export default function Page() {
           </div>
         </div>
       </section>
-
       {/* =====================================================
           02 / EDUCATION
-          ===================================================== */}
-
+          \===================================================== */}
       <section
         id="education"
         className="section section-tight"
@@ -2188,13 +2024,11 @@ export default function Page() {
               <div className="section-code">
                 02 / {t.education}
               </div>
-
               <h2 className="section-title">
                 {t.educationTitle}
               </h2>
             </div>
           </div>
-
           <div className="education-grid">
             <article className="paper-card education-summary">
               <div className="education-header-row">
@@ -2214,12 +2048,10 @@ export default function Page() {
                         mark="MU"
                       />
                     </a>
-
                     <span
                       className="education-logo-divider"
                       aria-hidden="true"
                     />
-
                     <a
                       href={cv.education.facultyUrl}
                       target="_blank"
@@ -2235,39 +2067,32 @@ export default function Page() {
                       />
                     </a>
                   </div>
-
                   <div className="label-row education-label-row">
                     <span className="label-icon">
                       {i.education}
                     </span>
-
                     {t.education}
                   </div>
-
                   <h3>
                     {isArabic
                       ? cv.educationAr.degree
                       : cv.education.degree}
                   </h3>
-
                   <div className="university">
                     {isArabic
                       ? cv.educationAr.school
                       : cv.education.school}
                   </div>
-
                   <div className="degree">
                     {isArabic
                       ? cv.educationAr.specialization
                       : cv.education.specialization}
                   </div>
                 </div>
-
                 <div className="education-date">
                   <small>
                     Graduation
                   </small>
-
                   <strong dir="ltr">
                     {isArabic
                       ? cv.educationAr.graduation
@@ -2275,58 +2100,48 @@ export default function Page() {
                   </strong>
                 </div>
               </div>
-
               <p>
                 {isArabic
                   ? cv.educationAr.summary
                   : cv.education.summary}
               </p>
-
               <div className="education-highlights">
                 <div className="education-highlight">
                   <strong>
                     Information Technology
                   </strong>
-
                   <span>
                     {
                       t.academicFocus
                     }
                   </span>
                 </div>
-
                 <div className="education-highlight">
                   <strong dir="ltr">
                     2023 – 2027
                   </strong>
-
                   <span>
                     Academic timeline
                   </span>
                 </div>
-
                 <div className="education-highlight">
                   <strong>
                     Cloud + DevOps
                   </strong>
-
                   <span>
                     Practical track
                   </span>
                 </div>
               </div>
             </article>
-
             <div className="paper-card profile-side">
               <div>
                 <div className="label-row">
                   <span className="label-icon">
                     {i.terminal}
                   </span>
-
                   {t.languages}
                 </div>
-
                 <div className="languages">
                   {cv.languages.map(
                     (item) => (
@@ -2340,16 +2155,13 @@ export default function Page() {
                   )}
                 </div>
               </div>
-
               <div>
                 <div className="label-row">
                   <span className="label-icon">
                     {i.layers}
                   </span>
-
                   Current direction
                 </div>
-
                 <div className="degree">
                   {isArabic
                     ? "الدراسة الأكاديمية مستمرة بالتوازي مع تطوير Cloud وDevOps بشكل عملي."
@@ -2360,11 +2172,9 @@ export default function Page() {
           </div>
         </div>
       </section>
-
       {/* =====================================================
           03 / CERTIFICATION
-          ===================================================== */}
-
+          \===================================================== */}
       <section
         id="certification"
         className="section section-tight"
@@ -2375,7 +2185,6 @@ export default function Page() {
               <div className="section-code">
                 03 / {t.certification}
               </div>
-
               <h2 className="section-title">
                 {
                   t.certificationTitle
@@ -2383,7 +2192,6 @@ export default function Page() {
               </h2>
             </div>
           </div>
-
           <div className="credentials">
             {cv.certifications.map(
               (
@@ -2418,13 +2226,11 @@ export default function Page() {
                         loading="lazy"
                         decoding="async"
                       />
-
                       <span className="credential-zoom">
                         Click to enlarge
                       </span>
                     </div>
                   </button>
-
                   <div
                     className="credential-text"
                     dir="ltr"
@@ -2434,7 +2240,6 @@ export default function Page() {
                         certificate.name
                       }
                     </strong>
-
                     <div className="credential-meta">
                       {certificate.provider ? (
                         <span>
@@ -2443,41 +2248,34 @@ export default function Page() {
                               t.provider
                             }
                           </small>
-
                           {
                             certificate.provider
                           }
                         </span>
                       ) : null}
-
                       {certificate.date ? (
                         <span>
                           <small>
                             Date
                           </small>
-
                           {
                             certificate.date
                           }
                         </span>
                       ) : null}
-
                       <span>
                         <small>
                           {t.training}
                         </small>
-
                         Cloud / Infrastructure
                       </span>
                     </div>
-
                     <div className="credential-skills">
                       <small>
                         {
                           t.skillsTopics
                         }
                       </small>
-
                       <div className="chips">
                         {certificate.topics.map(
                           (topic) => (
@@ -2491,7 +2289,6 @@ export default function Page() {
                         )}
                       </div>
                     </div>
-
                     <span className="credential-index">
                       CREDENTIAL /{" "}
                       {String(
@@ -2508,11 +2305,9 @@ export default function Page() {
           </div>
         </div>
       </section>
-
       {/* =====================================================
           04 / SKILLS
-          ===================================================== */}
-
+          \===================================================== */}
       <section
         id="skills"
         className="section section-tight skills-section-improved"
@@ -2523,13 +2318,11 @@ export default function Page() {
               <div className="section-code">
                 04 / {t.skills}
               </div>
-
               <h2 className="section-title">
                 {t.skillsTitle}
               </h2>
             </div>
           </div>
-
           <div className="skills-dashboard">
             <div className="technical-skills-panel">
               <div className="skills-panel-header">
@@ -2537,23 +2330,19 @@ export default function Page() {
                   <div className="panel-kicker">
                     TECH / 01
                   </div>
-
                   <h3>
                     {t.technicalSkills}
                   </h3>
-
                   <p>
                     {
                       t.technicalSkillsNote
                     }
                   </p>
                 </div>
-
                 <div className="skills-panel-icon">
                   {i.layers}
                 </div>
               </div>
-
               <div className="technical-skills-grid">
                 {Object.entries(
                   cv.skills
@@ -2580,7 +2369,6 @@ export default function Page() {
                               )
                               ? i.network
                               : i.terminal;
-
                     const categoryDescription =
                       category.includes(
                         "Cloud"
@@ -2609,7 +2397,6 @@ export default function Page() {
                               : isArabic
                                 ? "Linux والأنظمة وحل المشكلات التقنية."
                                 : "Linux, systems thinking, and technical troubleshooting.";
-
                     return (
                       <article
                         className="skill-card-modern"
@@ -2624,26 +2411,21 @@ export default function Page() {
                               "0"
                             )}
                           </span>
-
                           <span className="skill-card-icon">
                             {icon}
                           </span>
                         </div>
-
                         <div className="skill-card-title-row">
                           <h4>
                             {category}
                           </h4>
                         </div>
-
                         <p className="skill-card-description">
                           {
                             categoryDescription
                           }
                         </p>
-
                         <div className="skill-card-divider" />
-
                         <div className="chips skill-chips-modern">
                           {items.map(
                             (
@@ -2677,7 +2459,6 @@ export default function Page() {
                 )}
               </div>
             </div>
-
             <aside className="skills-side-column">
               <div className="soft-skills-card">
                 <div className="soft-skills-header">
@@ -2685,21 +2466,17 @@ export default function Page() {
                     <div className="panel-kicker">
                       PEOPLE / 02
                     </div>
-
                     <h3>
                       {t.softSkills}
                     </h3>
                   </div>
-
                   <span className="soft-skills-icon">
                     {i.people}
                   </span>
                 </div>
-
                 <p className="soft-skills-description">
                   {t.softSkillsNote}
                 </p>
-
                 <div className="soft-skills-list">
                   {cv.softSkills.map(
                     (
@@ -2718,7 +2495,6 @@ export default function Page() {
                             "0"
                           )}
                         </span>
-
                         <span className="soft-skill-name">
                           <SkillLogo label={skill.en} />
                           <span>
@@ -2727,7 +2503,6 @@ export default function Page() {
                               : skill.en}
                           </span>
                         </span>
-
                         <span className="soft-skill-check">
                           {i.check}
                         </span>
@@ -2736,21 +2511,17 @@ export default function Page() {
                   )}
                 </div>
               </div>
-
               <div className="skills-mindset-card">
                 <div className="mindset-icon">
                   {i.bolt}
                 </div>
-
                 <div>
                   <span className="panel-kicker">
                     MINDSET / 03
                   </span>
-
                   <h4>
                     {t.practicalMindset}
                   </h4>
-
                   <p>
                     {
                       t.practicalMindsetNote
@@ -2758,16 +2529,13 @@ export default function Page() {
                   </p>
                 </div>
               </div>
-
               <div className="skills-focus-card">
                 <span className="panel-kicker">
                   PRIMARY FOCUS
                 </span>
-
                 <strong>
                   AWS Cloud Infrastructure
                 </strong>
-
                 <div className="focus-mini-tags">
                   <span>AWS</span>
                   <span>Linux</span>
@@ -2780,11 +2548,9 @@ export default function Page() {
           </div>
         </div>
       </section>
-
       {/* =====================================================
           05 / EXPERIENCE
-          ===================================================== */}
-
+          \===================================================== */}
       <section
         id="experience"
         className="section section-tight"
@@ -2795,7 +2561,6 @@ export default function Page() {
               <div className="section-code">
                 05 / {t.experience}
               </div>
-
               <h2 className="section-title">
                 {
                   t.experienceTitle
@@ -2803,24 +2568,20 @@ export default function Page() {
               </h2>
             </div>
           </div>
-
           <div className="experience">
             <div className="exp-head">
               <span>
                 {t.record}
               </span>
-
               <span>
                 {t.position}
               </span>
-
               <span>
                 {
                   t.responsibilities
                 }
               </span>
             </div>
-
             {cv.experience.map(
               (
                 exp,
@@ -2841,18 +2602,15 @@ export default function Page() {
                       "0"
                     )}
                   </div>
-
                   <div>
                     <div className="exp-role">
                       {isArabic
                         ? exp.roleAr
                         : exp.role}
                     </div>
-
                     <div className="exp-company">
                       {exp.company}
                     </div>
-
                     <img
                       className="exp-logo"
                       src={
@@ -2862,7 +2620,6 @@ export default function Page() {
                       loading="lazy"
                       decoding="async"
                     />
-
                     <div>
                       <span className="exp-date">
                         {isArabic
@@ -2870,51 +2627,43 @@ export default function Page() {
                           : exp.period}
                       </span>
                     </div>
-
                     <span className="focus-tag">
                       {isArabic
                         ? exp.focusAr
                         : exp.focus}
                     </span>
                   </div>
-
                   <div className="experience-story">
                     <div className="story-block">
                       <small>
                         {t.challenge}
                       </small>
-
                       <p>
                         {isArabic
                           ? exp.challengeAr
                           : exp.challenge}
                       </p>
                     </div>
-
                     <div className="story-block">
                       <small>
                         {t.action}
                       </small>
-
                       <p>
                         {isArabic
                           ? exp.actionAr
                           : exp.action}
                       </p>
                     </div>
-
                     <div className="story-block">
                       <small>
                         {t.result}
                       </small>
-
                       <p>
                         {isArabic
                           ? exp.resultAr
                           : exp.result}
                       </p>
                     </div>
-
                     <ul className="exp-list">
                       {(isArabic
                         ? exp.bulletsAr
@@ -2942,11 +2691,9 @@ export default function Page() {
           </div>
         </div>
       </section>
-
       {/* =====================================================
           06 / PROJECT
-          ===================================================== */}
-
+          \===================================================== */}
       <section
         id="project"
         className="section section-tight"
@@ -2958,71 +2705,58 @@ export default function Page() {
                 06 /{" "}
                 {t.featuredProject}
               </div>
-
               <h2 className="section-title">
                 {isArabic
                   ? "مشروع واحد."
                   : "One project."}
-
                 <br />
-
                 {
                   t.architectureStory
                 }
               </h2>
             </div>
           </div>
-
           <article className="project">
             <div className="project-main">
               <div className="project-label">
                 <span className="eyebrow-dot" />
-
                 {
                   t.scalableArchitecture
                 }
               </div>
-
               <h3 className="project-title-compact">
                 {cv.project.name}
               </h3>
-
               <p>
                 {isArabic
                   ? cv.project.descriptionAr
                   : cv.project.description}
               </p>
-
               <div className="project-story">
                 <div className="story-block">
                   <small>
                     {t.challenge}
                   </small>
-
                   <p>
                     {isArabic
                       ? cv.project.challengeAr
                       : cv.project.challenge}
                   </p>
                 </div>
-
                 <div className="story-block">
                   <small>
                     {t.action}
                   </small>
-
                   <p>
                     {isArabic
                       ? cv.project.actionAr
                       : cv.project.action}
                   </p>
                 </div>
-
                 <div className="story-block">
                   <small>
                     {t.result}
                   </small>
-
                   <p>
                     {isArabic
                       ? cv.project.resultAr
@@ -3030,7 +2764,6 @@ export default function Page() {
                   </p>
                 </div>
               </div>
-
               <div className="project-points">
                 {(isArabic
                   ? cv.project.pointsAr
@@ -3044,7 +2777,6 @@ export default function Page() {
                       <span className="check">
                         {i.check}
                       </span>
-
                       <span>
                         {point}
                       </span>
@@ -3052,7 +2784,6 @@ export default function Page() {
                   )
                 )}
               </div>
-
               <div className="project-stack">
                 {cv.project.stack.map(
                   (item) => (
@@ -3067,7 +2798,6 @@ export default function Page() {
                 )}
               </div>
             </div>
-
             <div className="topology">
               <div className="topology-content">
                 <div className="project-image-card project-image-card-compact">
@@ -3078,19 +2808,16 @@ export default function Page() {
                           t.projectImage
                         }
                       </strong>
-
                       <span>
                         {
                           t.projectImageNote
                         }
                       </span>
                     </div>
-
                     <span className="project-image-id">
                       PROJECT / 001
                     </span>
                   </div>
-
                   <button
                     type="button"
                     className="project-image-button"
@@ -3116,7 +2843,6 @@ export default function Page() {
                         loading="lazy"
                         decoding="async"
                       />
-
                       <span className="project-image-zoom">
                         {
                           t.viewProjectImage
@@ -3125,38 +2851,32 @@ export default function Page() {
                     </div>
                   </button>
                 </div>
-
                 <div className="topology-head">
                   <div>
                     <h4>
                       {t.topology}
                     </h4>
-
                     <p>
                       {
                         t.actualProjectElements
                       }
                     </p>
                   </div>
-
                   <span className="topology-id">
                     AWS / 001
                   </span>
                 </div>
-
                 <div className="flow">
                   <div className="flow-row">
                     <span className="flow-icon">
                       {i.cloud}
                     </span>
-
                     <div className="flow-copy">
                       <strong>
                         {
                           t.cloudEnvironment
                         }
                       </strong>
-
                       <span>
                         {
                           t.cloudBoundary
@@ -3164,19 +2884,15 @@ export default function Page() {
                       </span>
                     </div>
                   </div>
-
                   <div className="flow-line" />
-
                   <div className="flow-row">
                     <span className="flow-icon">
                       {i.server}
                     </span>
-
                     <div className="flow-copy">
                       <strong dir="ltr">
                         ALB + EC2 + Auto Scaling
                       </strong>
-
                       <span>
                         {
                           t.applicationCompute
@@ -3184,19 +2900,15 @@ export default function Page() {
                       </span>
                     </div>
                   </div>
-
                   <div className="flow-line" />
-
                   <div className="flow-row">
                     <span className="flow-icon">
                       {i.network}
                     </span>
-
                     <div className="flow-copy">
                       <strong dir="ltr">
                         Multi-AZ VPC
                       </strong>
-
                       <span dir="ltr">
                         {
                           t.subnetsRouteTables
@@ -3204,19 +2916,15 @@ export default function Page() {
                       </span>
                     </div>
                   </div>
-
                   <div className="flow-line" />
-
                   <div className="flow-row">
                     <span className="flow-icon">
                       {i.shield}
                     </span>
-
                     <div className="flow-copy">
                       <strong dir="ltr">
                         WAF + Shield + Security Groups
                       </strong>
-
                       <span>
                         {
                           t.controlledAccess
@@ -3224,19 +2932,15 @@ export default function Page() {
                       </span>
                     </div>
                   </div>
-
                   <div className="flow-line" />
-
                   <div className="flow-row">
                     <span className="flow-icon">
                       {i.database}
                     </span>
-
                     <div className="flow-copy">
                       <strong dir="ltr">
                         Multi-AZ Database + EFS
                       </strong>
-
                       <span>
                         {
                           t.cloudStorage
@@ -3245,33 +2949,27 @@ export default function Page() {
                     </div>
                   </div>
                 </div>
-
                 <div className="topology-footer">
                   <div className="topology-stat">
                     <strong dir="ltr">
                       EC2
                     </strong>
-
                     <span>
                       {t.compute}
                     </span>
                   </div>
-
                   <div className="topology-stat">
                     <strong dir="ltr">
                       VPC
                     </strong>
-
                     <span>
                       {t.network}
                     </span>
                   </div>
-
                   <div className="topology-stat">
                     <strong dir="ltr">
                       EFS / RDS
                     </strong>
-
                     <span>
                       {t.storage}
                     </span>
@@ -3282,11 +2980,9 @@ export default function Page() {
           </article>
         </div>
       </section>
-
       {/* =====================================================
           07 / SERVICES
-          ===================================================== */}
-
+          \===================================================== */}
       <section
         id="services"
         className="section section-tight"
@@ -3297,13 +2993,11 @@ export default function Page() {
               <div className="section-code">
                 07 / {t.services}
               </div>
-
               <h2 className="section-title">
                 {t.servicesTitle}
               </h2>
             </div>
           </div>
-
           <div className="services-grid">
             {cv.services.map(
               (
@@ -3328,7 +3022,6 @@ export default function Page() {
                           ? i.server
                           : i.network}
                   </div>
-
                   <div className="service-number">
                     SERVICE /{" "}
                     {String(
@@ -3338,13 +3031,11 @@ export default function Page() {
                       "0"
                     )}
                   </div>
-
                   <h3>
                     {isArabic
                       ? service.titleAr
                       : service.title}
                   </h3>
-
                   <p>
                     {isArabic
                       ? service.descriptionAr
@@ -3356,11 +3047,9 @@ export default function Page() {
           </div>
         </div>
       </section>
-
       {/* =====================================================
           08 / ACHIEVEMENTS
-          ===================================================== */}
-
+          \===================================================== */}
       <section
         id="achievements"
         className="section section-tight"
@@ -3372,7 +3061,6 @@ export default function Page() {
                 08 /{" "}
                 {t.achievements}
               </div>
-
               <h2 className="section-title">
                 {
                   t.achievementsTitle
@@ -3380,7 +3068,6 @@ export default function Page() {
               </h2>
             </div>
           </div>
-
           <div className="achievements-grid">
             {cv.achievements.map(
               (
@@ -3398,19 +3085,16 @@ export default function Page() {
                       achievement.number
                     }
                   </div>
-
                   <h3>
                     {isArabic
                       ? achievement.titleAr
                       : achievement.title}
                   </h3>
-
                   <p>
                     {isArabic
                       ? achievement.descriptionAr
                       : achievement.description}
                   </p>
-
                   <span className="credential-index">
                     MILESTONE /{" "}
                     {String(
@@ -3426,11 +3110,9 @@ export default function Page() {
           </div>
         </div>
       </section>
-
       {/* =====================================================
           09 / TESTIMONIALS
-          ===================================================== */}
-
+          \===================================================== */}
       <section
         id="testimonials"
         className="section section-tight"
@@ -3442,7 +3124,6 @@ export default function Page() {
                 09 /{" "}
                 {t.testimonials}
               </div>
-
               <h2 className="section-title">
                 {
                   t.testimonialsTitle
@@ -3450,7 +3131,6 @@ export default function Page() {
               </h2>
             </div>
           </div>
-
           <div className="testimonials-grid testimonials-grid-compact recommendation-grid">
             {cv.testimonials.map(
               (testimonial, index) => (
@@ -3462,18 +3142,15 @@ export default function Page() {
                     <span className="testimonial-quote-icon">
                       {i.quote}
                     </span>
-
                     <span className="testimonial-index">
                       {t.recommendationLabel}{" "}
                       {String(index + 1).padStart(2, "0")}
                     </span>
                   </div>
-
                   <div className="recommendation-author-block">
                     <strong dir="ltr">
                       {testimonial.name}
                     </strong>
-
                     <span
                       className="recommendation-role"
                       dir="ltr"
@@ -3482,7 +3159,6 @@ export default function Page() {
                         ? testimonial.roleAr
                         : testimonial.role}
                     </span>
-
                     <span
                       className="recommendation-meta"
                       dir="ltr"
@@ -3496,7 +3172,6 @@ export default function Page() {
                         : testimonial.date}
                     </span>
                   </div>
-
                   <div className="testimonial-quote recommendation-quote">
                     {(isArabic
                       ? testimonial.quoteAr
@@ -3507,12 +3182,10 @@ export default function Page() {
                       </p>
                     ))}
                   </div>
-
                   <div className="testimonial-source recommendation-source">
                     <span className="testimonial-source-label">
                       {testimonial.source}
                     </span>
-
                     <a
                       href={testimonial.profileUrl}
                       target="_blank"
@@ -3530,11 +3203,9 @@ export default function Page() {
           </div>
         </div>
       </section>
-
       {/* =====================================================
           10 / CONTACT
-          ===================================================== */}
-
+          \===================================================== */}
       <section
         id="contact"
         className="section section-tight contact-section"
@@ -3545,31 +3216,25 @@ export default function Page() {
               <div className="section-code">
                 10 / {t.contact}
               </div>
-
               <h2 className="section-title">
                 {t.contactTitle}
               </h2>
             </div>
           </div>
-
           <div className="contact contact-compact">
             <div className="contact-main contact-main-enhanced">
               <div className="eyebrow">
                 <span className="eyebrow-dot" />
-
                 {
                   t.openToOpportunitiesAgain
                 }
               </div>
-
               <h3>
                 {t.letsBuild}
               </h3>
-
               <p>
                 {t.contactDescription}
               </p>
-
               <div className="contact-actions">
                 <a
                   className="btn primary"
@@ -3578,7 +3243,6 @@ export default function Page() {
                   {t.sendEmail}
                   {i.external}
                 </a>
-
                 <button
                   className="btn"
                   onClick={copyEmail}
@@ -3587,7 +3251,6 @@ export default function Page() {
                     ? t.copied
                     : t.copyEmail}
                 </button>
-
                 <a
                   className="btn"
                   href="/cv.pdf"
@@ -3598,13 +3261,11 @@ export default function Page() {
                 </a>
               </div>
             </div>
-
             <div className="contact-side contact-side-enhanced">
               <div className="contact-item">
                 <span className="contact-label">
                   Email
                 </span>
-
                 <a
                   className="contact-value"
                   href={`mailto:${cv.email}`}
@@ -3613,12 +3274,10 @@ export default function Page() {
                   {cv.email}
                 </a>
               </div>
-
               <div className="contact-item">
                 <span className="contact-label">
                   LinkedIn
                 </span>
-
                 <a
                   className="contact-value"
                   href={
@@ -3631,13 +3290,11 @@ export default function Page() {
                   linkedin.com/in/mohamed-gamal-devops
                 </a>
               </div>
-
               {cv.github ? (
                 <div className="contact-item">
                   <span className="contact-label">
                     GitHub
                   </span>
-
                   <a
                     className="contact-value"
                     href={
@@ -3656,12 +3313,10 @@ export default function Page() {
                   </a>
                 </div>
               ) : null}
-
               <div className="contact-item">
                 <span className="contact-label">
                   Phone
                 </span>
-
                 <a
                   className="contact-value"
                   href={`tel:${cv.phone.replace(
@@ -3673,12 +3328,10 @@ export default function Page() {
                   {cv.phone}
                 </a>
               </div>
-
               <div className="contact-item">
                 <span className="contact-label">
                   {t.targetRole}
                 </span>
-
                 <span
                   className="contact-value"
                   dir="ltr"
@@ -3688,12 +3341,10 @@ export default function Page() {
                   }
                 </span>
               </div>
-
               <div className="contact-item">
                 <span className="contact-label">
                   {t.coreFocus}
                 </span>
-
                 <span
                   className="contact-value"
                   dir="ltr"
@@ -3703,11 +3354,525 @@ export default function Page() {
               </div>
             </div>
           </div>
-
         </div>
       </section>
-
       <style jsx>{`
+        .onboarding-overlay {
+          position: fixed;
+          inset: 0;
+          z-index: 1000;
+          display: grid;
+          place-items: center;
+          overflow: hidden;
+          isolation: isolate;
+          opacity: 0;
+          visibility: hidden;
+          pointer-events: none;
+          transition: opacity 520ms cubic-bezier(.22,1,.36,1), visibility 520ms ease;
+        }
+        .onboarding-overlay.is-ready {
+          opacity: 1;
+          visibility: visible;
+          pointer-events: auto;
+        }
+        .onboarding-overlay.is-exiting {
+          opacity: 0;
+          pointer-events: none;
+        }
+        .onboarding-backdrop {
+          position: absolute;
+          inset: 0;
+          background: ${lightMode ? "rgba(248,250,252,.965)" : "rgba(7,8,16,.985)"};
+          backdrop-filter: blur(18px);
+          -webkit-backdrop-filter: blur(18px);
+        }
+        .onboarding-grid-glow {
+          position: absolute;
+          width: min(62vw, 760px);
+          aspect-ratio: 1;
+          border-radius: 50%;
+          background: radial-gradient(circle, rgba(167,131,255,.16) 0%, rgba(167,131,255,.05) 34%, transparent 70%);
+          filter: blur(7px);
+          transform: scale(.72);
+          opacity: 0;
+          transition: transform 1200ms cubic-bezier(.16,1,.3,1), opacity 900ms ease;
+        }
+        .onboarding-overlay.is-ready .onboarding-grid-glow {
+          transform: scale(1);
+          opacity: 1;
+        }
+        .onboarding-content {
+          position: relative;
+          z-index: 2;
+          width: min(92vw, 760px);
+          padding: 44px 28px 26px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          transform: translateY(24px) scale(.94);
+          opacity: 0;
+          filter: blur(7px);
+          transition: transform 900ms cubic-bezier(.16,1,.3,1), opacity 720ms ease, filter 720ms ease;
+        }
+        .onboarding-overlay.is-ready .onboarding-content {
+          transform: none;
+          opacity: 1;
+          filter: none;
+        }
+        .onboarding-overlay.is-exiting .onboarding-content {
+          transform: translateY(-16px) scale(1.045);
+          opacity: 0;
+          filter: blur(6px);
+          transition-duration: 470ms;
+        }
+        .onboarding-logo-wrap {
+          position: relative;
+          display: grid;
+          place-items: center;
+          min-height: 88px;
+          margin-bottom: 24px;
+          transform: translateY(12px) scale(.8);
+          opacity: 0;
+          transition: transform 900ms 70ms cubic-bezier(.16,1,.3,1), opacity 600ms 70ms ease;
+        }
+        .onboarding-overlay.is-ready .onboarding-logo-wrap {
+          transform: none;
+          opacity: 1;
+        }
+        .onboarding-logo-ring {
+          position: absolute;
+          width: 116px;
+          height: 116px;
+          border: 1px solid ${lightMode ? "rgba(167,131,255,.18)" : "rgba(167,131,255,.21)"};
+          border-radius: 50%;
+          box-shadow: 0 0 0 10px rgba(167,131,255,.025), 0 0 54px rgba(167,131,255,.17);
+          animation: onboarding-pulse 2.2s ease-in-out infinite;
+        }
+        .onboarding-logo {
+          position: relative;
+          z-index: 1;
+          display: block;
+          width: min(350px, 72vw);
+          max-height: 108px;
+          height: auto;
+          object-fit: contain;
+          filter: drop-shadow(0 14px 38px rgba(167,131,255,.17));
+        }
+        .onboarding-name {
+          display: flex;
+          flex-direction: column;
+          font-size: clamp(36px, 6.1vw, 74px);
+          line-height: .96;
+          font-weight: 900;
+          letter-spacing: .16em;
+          text-indent: .16em;
+          color: ${lightMode ? "#11131b" : "#f7f4ff"};
+          overflow: hidden;
+        }
+        .onboarding-name span {
+          display: block;
+          transform: translateY(100%);
+          opacity: 0;
+          transition: transform 820ms cubic-bezier(.16,1,.3,1), opacity 560ms ease;
+        }
+        .onboarding-name span:first-child { transition-delay: 220ms; }
+        .onboarding-name span:last-child { transition-delay: 310ms; }
+        .onboarding-overlay.is-ready .onboarding-name span {
+          transform: none;
+          opacity: 1;
+        }
+        .onboarding-divider {
+          width: min(280px, 52vw);
+          height: 1px;
+          margin: 22px 0 17px;
+          overflow: hidden;
+          background: ${lightMode ? "rgba(17,19,27,.10)" : "rgba(255,255,255,.10)"};
+        }
+        .onboarding-divider span {
+          display: block;
+          width: 100%;
+          height: 100%;
+          transform: translateX(-105%);
+          background: linear-gradient(90deg, transparent, #A783FF, transparent);
+          transition: transform 900ms 410ms cubic-bezier(.16,1,.3,1);
+        }
+        .onboarding-overlay.is-ready .onboarding-divider span { transform: translateX(105%); }
+        .onboarding-title {
+          margin: 0;
+          font-size: clamp(12px, 1.8vw, 16px);
+          line-height: 1.35;
+          font-weight: 800;
+          letter-spacing: .24em;
+          text-indent: .24em;
+          color: #A783FF;
+          transform: translateY(10px);
+          opacity: 0;
+          transition: transform 650ms 470ms cubic-bezier(.16,1,.3,1), opacity 520ms 470ms ease;
+        }
+        .onboarding-overlay.is-ready .onboarding-title {
+          transform: none;
+          opacity: 1;
+        }
+        .onboarding-focus {
+          margin: 11px 0 0;
+          max-width: 520px;
+          font-size: 10px;
+          line-height: 1.45;
+          letter-spacing: .13em;
+          text-transform: uppercase;
+          color: ${lightMode ? "rgba(17,19,27,.48)" : "rgba(255,255,255,.46)"};
+          transform: translateY(8px);
+          opacity: 0;
+          transition: transform 650ms 560ms cubic-bezier(.16,1,.3,1), opacity 520ms 560ms ease;
+        }
+        .onboarding-overlay.is-ready .onboarding-focus {
+          transform: none;
+          opacity: 1;
+        }
+        .onboarding-progress {
+          position: relative;
+          width: min(320px, 60vw);
+          height: 2px;
+          margin-top: 28px;
+          border-radius: 999px;
+          overflow: hidden;
+          background: ${lightMode ? "rgba(17,19,27,.08)" : "rgba(255,255,255,.08)"};
+          transform: scaleX(.35);
+          opacity: 0;
+          transition: transform 900ms 680ms cubic-bezier(.16,1,.3,1), opacity 520ms 680ms ease;
+        }
+        .onboarding-overlay.is-ready .onboarding-progress {
+          transform: scaleX(1);
+          opacity: 1;
+        }
+        .onboarding-progress span {
+          display: block;
+          width: 32%;
+          height: 100%;
+          border-radius: inherit;
+          background: linear-gradient(90deg, transparent, #A783FF, #C1AAFF, transparent);
+          animation: onboarding-scan 1.5s ease-in-out infinite;
+        }
+        .onboarding-skip {
+          margin-top: 17px;
+          padding: 8px 12px;
+          border: 1px solid ${lightMode ? "rgba(17,19,27,.10)" : "rgba(255,255,255,.10)"};
+          border-radius: 999px;
+          background: transparent;
+          color: ${lightMode ? "rgba(17,19,27,.44)" : "rgba(255,255,255,.44)"};
+          font: inherit;
+          font-size: 10px;
+          letter-spacing: .11em;
+          text-transform: uppercase;
+          cursor: pointer;
+          opacity: 0;
+          transform: translateY(6px);
+          transition: opacity 450ms 850ms ease, transform 450ms 850ms cubic-bezier(.16,1,.3,1), color 180ms ease, border-color 180ms ease, background 180ms ease;
+        }
+        .onboarding-overlay.is-ready .onboarding-skip {
+          opacity: 1;
+          transform: none;
+        }
+        .onboarding-skip:hover {
+          color: #A783FF;
+          border-color: rgba(167,131,255,.34);
+          background: rgba(167,131,255,.07);
+        }
+
+        .topbar {
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          z-index: 120;
+          padding: 14px 18px;
+          transition: padding 220ms ease;
+        }
+        .topbar-inner {
+          position: relative;
+          width: min(1440px,100%);
+          min-height: 58px;
+          margin: 0 auto;
+          padding: 0 12px 0 18px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 18px;
+          border: 1px solid ${lightMode ? "rgba(15,23,42,.08)" : "rgba(255,255,255,.08)"};
+          border-radius: 18px;
+          background: ${lightMode ? "rgba(255,255,255,.84)" : "rgba(9,10,20,.70)"};
+          box-shadow: 0 16px 44px ${lightMode ? "rgba(15,23,42,.08)" : "rgba(0,0,0,.24)"};
+          backdrop-filter: blur(20px) saturate(150%);
+          -webkit-backdrop-filter: blur(20px) saturate(150%);
+        }
+        .topbar.scrolled {
+          padding-top: 9px;
+        }
+        .topbar.scrolled .topbar-inner {
+          min-height: 54px;
+          border-color: ${lightMode ? "rgba(15,23,42,.11)" : "rgba(255,255,255,.11)"};
+          background: ${lightMode ? "rgba(255,255,255,.92)" : "rgba(9,10,20,.88)"};
+        }
+        .brand {
+          position: relative;
+          min-width: 0;
+          flex: 0 0 auto;
+          display: inline-flex;
+          align-items: center;
+          padding: 0;
+          border: 0;
+          background: transparent;
+          color: inherit;
+          cursor: pointer;
+        }
+        .brand-logo-shell {
+          position: relative;
+          display: inline-flex;
+          align-items: center;
+          width: clamp(132px,13vw,182px);
+          height: 42px;
+          overflow: hidden;
+          border-radius: 10px;
+          flex: 0 0 auto;
+        }
+        .brand-logo-image {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+          object-position: left center;
+          transition: transform 220ms ease, filter 220ms ease;
+        }
+        .brand:hover .brand-logo-image {
+          transform: translateY(-1px) scale(1.015);
+          filter: drop-shadow(0 7px 18px rgba(167,131,255,.20));
+        }
+        .brand:focus-visible {
+          outline: 2px solid ${lightMode ? "rgba(167,131,255,.40)" : "rgba(167,131,255,.55)"};
+          outline-offset: 5px;
+          border-radius: 10px;
+        }
+        .nav-center {
+          flex: 1 1 auto;
+          min-width: 0;
+          display: flex;
+          justify-content: center;
+        }
+        .nav-links {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 3px;
+          min-width: 0;
+          overflow-x: auto;
+          scrollbar-width: none;
+        }
+        .nav-links::-webkit-scrollbar { display: none; }
+        .nav-links button {
+          position: relative;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          gap: 7px;
+          min-height: 38px;
+          padding: 8px 10px;
+          border: 0;
+          border-radius: 11px;
+          background: transparent;
+          color: ${lightMode ? "rgba(15,23,42,.62)" : "rgba(255,255,255,.64)"};
+          font: inherit;
+          font-size: 11px;
+          font-weight: 650;
+          white-space: nowrap;
+          cursor: pointer;
+          transition: color 180ms ease, background 180ms ease, transform 180ms ease;
+        }
+        .nav-links button::after {
+          content: "";
+          position: absolute;
+          left: 12px;
+          right: 12px;
+          bottom: 4px;
+          height: 1px;
+          border-radius: 999px;
+          background: #A783FF;
+          transform: scaleX(0);
+          transition: transform 180ms ease;
+        }
+        .nav-links button:hover {
+          color: ${lightMode ? "#11131b" : "#f6f3ff"};
+          background: rgba(167,131,255,.08);
+          transform: translateY(-1px);
+        }
+        .nav-links button.active {
+          color: #A783FF;
+          background: rgba(167,131,255,.10);
+        }
+        .nav-links button.active::after { transform: scaleX(1); }
+        .nav-contact { color: #A783FF !important; }
+        .nav-contact-icon { display: inline-flex; opacity: .86; }
+        .nav-tools {
+          flex: 0 0 auto;
+          display: flex;
+          align-items: center;
+          gap: 8px;
+        }
+        .availability {
+          display: inline-flex;
+          align-items: center;
+          gap: 7px;
+          min-height: 32px;
+          padding: 7px 10px;
+          border-radius: 999px;
+          color: ${lightMode ? "rgba(15,23,42,.60)" : "rgba(255,255,255,.58)"};
+          background: ${lightMode ? "rgba(15,23,42,.035)" : "rgba(255,255,255,.045)"};
+          border: 1px solid ${lightMode ? "rgba(15,23,42,.07)" : "rgba(255,255,255,.08)"};
+          font-size: 9px;
+          font-weight: 700;
+          letter-spacing: .08em;
+          text-transform: uppercase;
+          white-space: nowrap;
+        }
+        .availability-dot {
+          width: 6px;
+          height: 6px;
+          flex: 0 0 6px;
+          border-radius: 50%;
+          background: #A783FF;
+          box-shadow: 0 0 0 4px rgba(167,131,255,.09), 0 0 16px rgba(167,131,255,.28);
+          animation: availability-pulse 2.2s ease-in-out infinite;
+        }
+        .language-button,
+        .theme-button,
+        .menu-btn {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          min-width: 34px;
+          height: 34px;
+          padding: 0 9px;
+          border: 1px solid ${lightMode ? "rgba(15,23,42,.09)" : "rgba(255,255,255,.10)"};
+          border-radius: 10px;
+          background: ${lightMode ? "rgba(255,255,255,.50)" : "rgba(255,255,255,.035)"};
+          color: ${lightMode ? "rgba(15,23,42,.66)" : "rgba(255,255,255,.70)"};
+          font: inherit;
+          font-size: 10px;
+          font-weight: 750;
+          cursor: pointer;
+          transition: transform 180ms ease, border-color 180ms ease, background 180ms ease, color 180ms ease;
+        }
+        .language-button:hover,
+        .theme-button:hover,
+        .menu-btn:hover {
+          transform: translateY(-1px);
+          border-color: rgba(167,131,255,.34);
+          background: rgba(167,131,255,.08);
+          color: #A783FF;
+        }
+        .theme-button { position: relative; overflow: hidden; }
+        .theme-glow {
+          position: absolute;
+          inset: 4px;
+          border-radius: 8px;
+          background: radial-gradient(circle at center, rgba(167,131,255,.12), transparent 68%);
+          pointer-events: none;
+        }
+        .theme-icon { position: relative; z-index: 1; display: inline-flex; }
+        .menu-btn {
+          display: none;
+          font-size: 17px;
+          line-height: 1;
+        }
+        .mobile-menu {
+          position: fixed;
+          inset: 76px 18px auto;
+          z-index: 119;
+          max-height: calc(100vh - 92px);
+          overflow: auto;
+          padding: 12px;
+          border: 1px solid ${lightMode ? "rgba(15,23,42,.09)" : "rgba(255,255,255,.09)"};
+          border-radius: 18px;
+          background: ${lightMode ? "rgba(255,255,255,.95)" : "rgba(9,10,20,.96)"};
+          box-shadow: 0 24px 70px ${lightMode ? "rgba(15,23,42,.15)" : "rgba(0,0,0,.34)"};
+          backdrop-filter: blur(18px);
+          -webkit-backdrop-filter: blur(18px);
+        }
+        .mobile-menu .nav-links {
+          display: flex;
+          flex-direction: column;
+          align-items: stretch;
+        }
+        .mobile-menu .nav-links button {
+          justify-content: flex-start;
+          width: 100%;
+          min-height: 46px;
+          padding: 11px 12px;
+        }
+        @keyframes onboarding-pulse {
+          0%, 100% { transform: scale(.96); opacity: .7; }
+          50% { transform: scale(1.03); opacity: 1; }
+        }
+        @keyframes onboarding-scan {
+          0% { transform: translateX(-340%); }
+          100% { transform: translateX(420%); }
+        }
+        @keyframes availability-pulse {
+          0%, 100% { transform: scale(1); opacity: .85; }
+          50% { transform: scale(1.22); opacity: 1; }
+        }
+        @media (max-width: 1180px) {
+          .nav-links { gap: 0; }
+          .nav-links button { padding-inline: 8px; font-size: 10px; }
+          .availability { display: none; }
+        }
+        @media (max-width: 980px) {
+          .nav-center { display: none; }
+          .menu-btn { display: inline-flex; }
+          .topbar-inner { padding-left: 14px; }
+        }
+        @media (max-width: 620px) {
+          .topbar { padding-inline: 10px; }
+          .topbar-inner { min-height: 54px; padding: 0 9px 0 12px; border-radius: 15px; }
+          .brand-logo-shell { width: 132px; height: 38px; }
+          .language-button { min-width: 31px; padding-inline: 7px; }
+          .theme-button { display: none; }
+          .mobile-menu { inset-inline: 10px; top: 70px; }
+          .onboarding-content { padding-inline: 18px; }
+          .onboarding-logo { width: min(290px, 76vw); }
+        }
+        @media (prefers-reduced-motion: reduce) {
+          .onboarding-overlay,
+          .onboarding-content,
+          .onboarding-logo-wrap,
+          .onboarding-name span,
+          .onboarding-divider span,
+          .onboarding-title,
+          .onboarding-focus,
+          .onboarding-progress,
+          .onboarding-skip,
+          .brand-logo-image,
+          .nav-links button,
+          .language-button,
+          .theme-button,
+          .menu-btn {
+            animation: none !important;
+            transition-duration: 1ms !important;
+          }
+          .onboarding-overlay.is-ready .onboarding-content,
+          .onboarding-overlay.is-ready .onboarding-logo-wrap,
+          .onboarding-overlay.is-ready .onboarding-name span,
+          .onboarding-overlay.is-ready .onboarding-title,
+          .onboarding-overlay.is-ready .onboarding-focus,
+          .onboarding-overlay.is-ready .onboarding-progress,
+          .onboarding-overlay.is-ready .onboarding-skip {
+            transform: none !important;
+            opacity: 1 !important;
+            filter: none !important;
+          }
+        }
+
+
         :global(.sr-only) {
           position: absolute;
           width: 1px;
@@ -3719,11 +3884,9 @@ export default function Page() {
           white-space: nowrap;
           border: 0;
         }
-
         .education-main-info {
           min-width: 0;
         }
-
         .education-institution-logos {
           display: inline-flex;
           align-items: center;
@@ -3741,7 +3904,6 @@ export default function Page() {
               : "rgba(255,255,255,0.025)"};
           width: fit-content;
         }
-
         .education-logo-link {
           display: inline-flex;
           align-items: center;
@@ -3749,7 +3911,6 @@ export default function Page() {
           text-decoration: none;
           border-radius: 11px;
         }
-
         .education-logo {
           width: 56px;
           height: 56px;
@@ -3767,21 +3928,18 @@ export default function Page() {
               ? "rgba(15, 23, 42, 0.08)"
               : "rgba(255,255,255,0.08)"};
         }
-
         .education-logo img {
           width: 46px;
           height: 46px;
           display: block;
           object-fit: contain;
         }
-
         .education-logo-fallback {
           font-size: 11px;
           font-weight: 800;
           letter-spacing: 0.02em;
           opacity: 0.72;
         }
-
         .education-logo-divider {
           width: 1px;
           height: 34px;
@@ -3790,11 +3948,9 @@ export default function Page() {
               ? "rgba(15, 23, 42, 0.12)"
               : "rgba(255,255,255,0.12)"};
         }
-
         .education-label-row {
           margin-top: 2px;
         }
-
         .education-logo-link:hover .education-logo,
         .education-logo-link:focus-visible .education-logo {
           transform: translateY(-1px);
@@ -3803,40 +3959,33 @@ export default function Page() {
               ? "rgba(15, 23, 42, 0.18)"
               : "rgba(255,255,255,0.18)"};
         }
-
         @media (max-width: 700px) {
           .education-institution-logos {
             gap: 10px;
             margin-bottom: 15px;
             padding: 7px 8px;
           }
-
           .education-logo {
             width: 50px;
             height: 50px;
             flex-basis: 50px;
           }
-
           .education-logo img {
             width: 40px;
             height: 40px;
           }
-
           .education-logo-divider {
             height: 30px;
           }
         }
-
         .skill-chip {
           display: inline-flex;
           align-items: center;
           gap: 7px;
         }
-
         .skill-chip-label {
           min-width: 0;
         }
-
         .skill-logo-mini {
           width: 16px;
           height: 16px;
@@ -3854,14 +4003,12 @@ export default function Page() {
               : "rgba(255,255,255,0.04)"};
           overflow: hidden;
         }
-
         .skill-logo-mini img {
           width: 11px;
           height: 11px;
           display: block;
           object-fit: contain;
         }
-
         .skill-logo-mini span {
           font-size: 7px;
           line-height: 1;
@@ -3869,40 +4016,33 @@ export default function Page() {
           letter-spacing: -0.02em;
           opacity: 0.72;
         }
-
         .soft-skill-name {
           display: inline-flex;
           align-items: center;
           gap: 8px;
           min-width: 0;
         }
-
         .recommendation-grid {
           grid-template-columns: repeat(2, minmax(0, 1fr));
         }
-
         .recommendation-top {
           margin-bottom: 18px;
         }
-
         .recommendation-author-block {
           display: flex;
           flex-direction: column;
           gap: 5px;
           margin-bottom: 16px;
         }
-
         .recommendation-author-block strong {
           font-size: 17px;
           line-height: 1.15;
         }
-
         .recommendation-role {
           font-size: 12px;
           line-height: 1.45;
           opacity: 0.68;
         }
-
         .recommendation-meta {
           display: inline-flex;
           align-items: center;
@@ -3911,27 +4051,22 @@ export default function Page() {
           font-size: 11px;
           opacity: 0.52;
         }
-
         .recommendation-quote {
           display: flex;
           flex-direction: column;
           gap: 11px;
         }
-
         .recommendation-quote p {
           margin: 0;
         }
-
         .recommendation-source {
           margin-top: 20px;
         }
-
         @media (max-width: 900px) {
           .recommendation-grid {
             grid-template-columns: 1fr;
           }
         }
-
         .footer-freelance-links {
           margin-top: 30px;
           padding-top: 22px;
@@ -3940,7 +4075,6 @@ export default function Page() {
               ? "rgba(15, 23, 42, 0.07)"
               : "rgba(255, 255, 255, 0.075)"};
         }
-
         .footer-freelance-head {
           display: flex;
           align-items: center;
@@ -3948,14 +4082,12 @@ export default function Page() {
           gap: 16px;
           margin-bottom: 12px;
         }
-
         .footer-freelance-note {
           margin: 4px 0 0;
           font-size: 11px;
           line-height: 1.45;
           opacity: 0.5;
         }
-
         .footer-freelance-count {
           flex: 0 0 auto;
           font-size: 9px;
@@ -3964,7 +4096,6 @@ export default function Page() {
           opacity: 0.38;
           white-space: nowrap;
         }
-
         .footer-freelance-grid {
           display: flex;
           flex-wrap: wrap;
@@ -3973,7 +4104,6 @@ export default function Page() {
           padding: 2px 0 4px;
           margin: 0;
         }
-
         .footer-freelance-link {
           position: relative;
           display: inline-flex;
@@ -4004,7 +4134,6 @@ export default function Page() {
             background 160ms ease,
             box-shadow 160ms ease;
         }
-
         .footer-freelance-link:hover {
           transform: translateY(-2px);
           border-color:
@@ -4021,7 +4150,6 @@ export default function Page() {
                 ? "rgba(15, 23, 42, 0.09)"
                 : "rgba(0, 0, 0, 0.16)"};
         }
-
         .footer-freelance-link:focus-visible {
           outline: 2px solid
             ${lightMode
@@ -4029,7 +4157,6 @@ export default function Page() {
               : "rgba(105, 224, 255, 0.52)"};
           outline-offset: 3px;
         }
-
         .footer-freelance-link .freelance-logo {
           position: relative;
           z-index: 1;
@@ -4043,14 +4170,12 @@ export default function Page() {
           background: transparent;
           box-shadow: none;
         }
-
         .footer-freelance-link .freelance-logo img {
           display: block;
           width: 25px;
           height: 25px;
           object-fit: contain;
         }
-
         .footer-freelance-link .freelance-logo-fallback {
           display: inline-flex;
           align-items: center;
@@ -4062,7 +4187,6 @@ export default function Page() {
           font-weight: 800;
           letter-spacing: -0.02em;
         }
-
         .footer-freelance-name,
         .footer-freelance-arrow {
           position: absolute;
@@ -4075,42 +4199,34 @@ export default function Page() {
           white-space: nowrap;
           border: 0;
         }
-
         .rtl .footer-freelance-head {
           flex-direction: row-reverse;
         }
-
         .rtl .footer-freelance-grid {
           justify-content: flex-start;
         }
-
         @media (max-width: 700px) {
           .footer-freelance-links {
             margin-top: 26px;
             padding-top: 18px;
           }
-
           .footer-freelance-head {
             align-items: flex-start;
             flex-direction: column;
             gap: 5px;
             margin-bottom: 11px;
           }
-
           .footer-freelance-count {
             display: none;
           }
-
           .footer-freelance-grid {
             gap: 9px;
           }
-
           .footer-freelance-link {
             width: 42px;
             height: 42px;
             border-radius: 11px;
           }
-
           .footer-freelance-link .freelance-logo,
           .footer-freelance-link .freelance-logo img,
           .footer-freelance-link .freelance-logo-fallback {
@@ -4119,11 +4235,9 @@ export default function Page() {
           }
         }
       `}</style>
-
       {/* =====================================================
           FOOTER
-          ===================================================== */}
-
+          \===================================================== */}
       <footer className="site-footer">
         <div className="container">
           <div className="footer-main">
@@ -4137,36 +4251,29 @@ export default function Page() {
                 <span className="footer-brand-mark">
                   {i.cloud}
                 </span>
-
                 <span>
                   <strong>
                     {cv.name}
                   </strong>
-
                   <small>
                     {cv.title}
                   </small>
                 </span>
               </button>
-
               <p>
                 {t.footerConnect}
               </p>
-
               <div className="footer-status">
                 <span className="availability-dot" />
-
                 <span>
                   {t.footerStatus}
                 </span>
               </div>
             </div>
-
             <div className="footer-column">
               <span className="footer-heading">
                 {t.footerExplore}
               </span>
-
               <button
                 onClick={() =>
                   go("about")
@@ -4174,7 +4281,6 @@ export default function Page() {
               >
                 {t.about}
               </button>
-
               <button
                 onClick={() =>
                   go("skills")
@@ -4182,7 +4288,6 @@ export default function Page() {
               >
                 {t.skills}
               </button>
-
               <button
                 onClick={() =>
                   go("experience")
@@ -4190,7 +4295,6 @@ export default function Page() {
               >
                 {t.experience}
               </button>
-
               <button
                 onClick={() =>
                   go("project")
@@ -4199,19 +4303,16 @@ export default function Page() {
                 {t.project}
               </button>
             </div>
-
             <div className="footer-column">
               <span className="footer-heading">
                 {t.footerContact}
               </span>
-
               <a
                 href={`mailto:${cv.email}`}
                 dir="ltr"
               >
                 {cv.email}
               </a>
-
               <a
                 href={`tel:${cv.phone.replace(
                   /\s/g,
@@ -4221,7 +4322,6 @@ export default function Page() {
               >
                 {cv.phone}
               </a>
-
               <button
                 onClick={() =>
                   go("contact")
@@ -4230,12 +4330,10 @@ export default function Page() {
                 {t.contact}
               </button>
             </div>
-
             <div className="footer-column">
               <span className="footer-heading">
                 {t.footerSocial}
               </span>
-
               <a
                 href={cv.linkedin}
                 target="_blank"
@@ -4245,12 +4343,10 @@ export default function Page() {
                 <span>
                   {i.linkedin}
                 </span>
-
                 <span>
                   LinkedIn
                 </span>
               </a>
-
               <a
                 href={cv.github}
                 target="_blank"
@@ -4260,29 +4356,23 @@ export default function Page() {
                 <span>
                   {i.github}
                 </span>
-
                 <span>
                   GitHub
                 </span>
               </a>
             </div>
           </div>
-
           <div className="footer-freelance-links">
             <div className="footer-freelance-head">
               <div>
                 <span className="footer-heading">
                   {t.freelancePlatforms}
                 </span>
-
                 <p className="footer-freelance-note">
                   {t.freelancePlatformsNote}
                 </p>
               </div>
-
-
             </div>
-
             <div className="footer-freelance-grid">
               {cv.freelanceLinks.map((platform) => (
                 <a
@@ -4300,11 +4390,9 @@ export default function Page() {
                     mark={platform.mark}
                     name={platform.name}
                   />
-
                   <span className="footer-freelance-name">
                     {isArabic ? platform.nameAr : platform.name}
                   </span>
-
                   <span className="footer-freelance-arrow" aria-hidden="true">
                     {i.external}
                   </span>
@@ -4312,7 +4400,6 @@ export default function Page() {
               ))}
             </div>
           </div>
-
           <div className="footer-bottom">
             <span>
               ©{" "}
@@ -4320,7 +4407,6 @@ export default function Page() {
               {cv.name}.{" "}
               {t.footerCopyright}
             </span>
-
             <span
               dir="ltr"
               className="footer-stack"
@@ -4331,11 +4417,9 @@ export default function Page() {
           </div>
         </div>
       </footer>
-
       {/* =====================================================
           CERTIFICATE LIGHTBOX
-          ===================================================== */}
-
+          \===================================================== */}
       {selectedCertificate && (
         <div
           className="certificate-modal"
@@ -4360,7 +4444,6 @@ export default function Page() {
           >
             ×
           </button>
-
           <div
             className="certificate-modal-content"
             onClick={(event) =>
@@ -4398,11 +4481,9 @@ export default function Page() {
           </div>
         </div>
       )}
-
       {/* =====================================================
           PROJECT IMAGE LIGHTBOX
-          ===================================================== */}
-
+          \===================================================== */}
       {selectedProjectImage && (
         <div
           className="certificate-modal project-image-modal"
@@ -4427,7 +4508,6 @@ export default function Page() {
           >
             ×
           </button>
-
           <div
             className="certificate-modal-content project-image-modal-content"
             onClick={(event) =>
@@ -4448,8 +4528,6 @@ export default function Page() {
           </div>
         </div>
       )}
-
-
     </main>
   );
 }
