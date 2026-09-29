@@ -1652,9 +1652,8 @@ export default function Page() {
                 </a>
               </div>
             </div>
-          
+
             <div className="contact-side contact-side-enhanced">
-              <div className="h-4" />
               <a className="contact-item-card" href={`mailto:${cv.email}`} dir="ltr">
                 <div className="contact-icon-box">{i.email}</div>
                 <div className="contact-text-stack">
@@ -1689,22 +1688,12 @@ export default function Page() {
                   <span className="contact-value">{cv.phone}</span>
                 </div>
               </a>
-              {/* <a className="contact-item-card"
-                href={`https://wa.me/${cv.phone.replace(/[^0-9]/g, "")}`}
-                target="_blank" rel="noreferrer" dir="ltr">
-                <div className="contact-icon-box">{i.whatsapp}</div>
-                <div className="contact-text-stack">
-                  <span className="contact-label">Phone / WhatsApp</span>
-                  <span className="contact-value">{cv.phone}</span>
-                </div>
-              </a> */}
               <div className="contact-item-card" dir="ltr">
                 <div className="contact-icon-box">{i.cloud}</div>
                 <div className="contact-text-stack">
                   <span className="contact-label">{t.coreFocus}</span>
                   <span className="contact-value">AWS · Linux · IaC · CI/CD</span>
                 </div>
-                <div className="h-4" />
               </div>
             </div>
           </div>
@@ -2454,9 +2443,15 @@ export default function Page() {
         /* =====================================================
            CONTACT CARD STYLES
            ===================================================== */
-        .contact-side-enhanced { display: flex; flex-direction: column; gap: 12px; }
+        .contact-side-enhanced {
+          display: flex;
+          flex-direction: column;
+          gap: 14px;
+          padding-top: 12px;
+        }
         .contact-item-card {
-          display: flex; align-items: center; gap: 16px; padding: 16px;
+          display: flex; align-items: center; gap: 16px;
+          padding: 18px 20px;
           border-radius: 14px;
           border: 1px solid ${lightMode ? "rgba(15,23,42,.08)" : "rgba(255,255,255,.08)"};
           background: ${lightMode ? "rgba(255,255,255,.72)" : "rgba(255,255,255,.03)"};
@@ -2491,9 +2486,13 @@ export default function Page() {
           color: ${lightMode ? "#11131b" : "#f7f4ff"};
           overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
         }
+        @media (max-width: 900px) {
+          .contact-side-enhanced { padding-top: 4px; }
+        }
         @media (max-width: 600px) {
           .contact-text-stack .contact-value { font-size: 12px; }
           .contact-icon-box { width: 38px; height: 38px; flex-basis: 38px; }
+          .contact-item-card { padding: 14px 16px; gap: 14px; }
         }
       `}</style>
 
