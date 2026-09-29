@@ -30,7 +30,7 @@ const cv = {
     {
       name: "Mostaql",
       nameAr: "مستقل",
-      url: "https://mostaql.com/onboarding/reviewing",
+      url: "https://mostaql.com/u/Mohamedd_Gamal",
       logo:
         "https://www.google.com/s2/favicons?domain=mostaql.com&sz=128",
       mark: "M",
