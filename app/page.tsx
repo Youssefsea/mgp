@@ -395,11 +395,11 @@ const cv = {
   },
   softSkills: [
     { en: "Problem Solving", ar: "حل المشكلات" },
-    { en: "Continuous Learning", ar: "التعلم المستمر" },
+  
     { en: "Communication", ar: "التواصل" },
     { en: "Teamwork", ar: "العمل الجماعي" },
-    { en: "Attention to Detail", ar: "الاهتمام بالتفاصيل" },
-    { en: "Adaptability", ar: "القدرة على التكيف" },
+
+   
     { en: "Responsibility", ar: "تحمل المسؤولية" },
     { en: "Time Management", ar: "إدارة الوقت" },
   ],
