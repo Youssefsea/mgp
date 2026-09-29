@@ -11,68 +11,80 @@ const cv = {
     "https://linkedin.com/in/mohamed-gamal-devops",
   github:
     "https://github.com/mohamedgamal-35",
-  freelanceLinks: [
-    {
-      name: "Khamsat",
-      nameAr: "خمسات",
-      url: "https://khamsat.com/user/mohamed_gamal35",
-      logo:
-        "https://www.google.com/s2/favicons?domain=khamsat.com&sz=128",
-      mark: "5",
-      description:
-        "Freelance profile on Khamsat.",
-      descriptionAr:
-        "الملف الشخصي على خمسات.",
-    },
-    {
-      name: "Mostaql",
-      nameAr: "مستقل",
-      url: "https://mostaql.com/u/Mohamedd_Gamal",
-      logo:
-        "https://www.google.com/s2/favicons?domain=mostaql.com&sz=128",
-      mark: "M",
-      description:
-        "Mostaql freelance account.",
-      descriptionAr:
-        "حساب العمل الحر على مستقل.",
-    },
-    {
-      name: "Nafezly",
-      nameAr: "نفذلي",
-      url: "https://nafezly.com/u/Mohamed_Gamal01",
-      logo:
-        "https://www.google.com/s2/favicons?domain=nafezly.com&sz=128",
-      mark: "N",
-      description:
-        "Freelance profile on Nafezly.",
-      descriptionAr:
-        "الملف الشخصي على نفذلي.",
-    },
-    {
-      name: "Kafiil",
-      nameAr: "كفيل",
-      url: "https://kafiil.com/u/Mohamedgamal013",
-      logo:
-        "https://www.google.com/s2/favicons?domain=kafiil.com&sz=128",
-      mark: "K",
-      description:
-        "Freelance profile on Kafiil.",
-      descriptionAr:
-        "الملف الشخصي على كفيل.",
-    },
-    {
-      name: "Freelanceyard",
-      nameAr: "Freelanceyard",
-      url: "https://freelanceyard.com/ar/freelancers/mohamed-gamal-87",
-      logo:
-        "https://freelanceyard.com/images/favicon.png",
-      mark: "FY",
-      description:
-        "Freelance profile on Freelanceyard.",
-      descriptionAr:
-        "الملف الشخصي على Freelanceyard.",
-    },
-  ],
+freelanceLinks: [
+  {
+    name: "Khamsat",
+    nameAr: "خمسات",
+    url: "https://khamsat.com/user/mohamed_gamal35",
+    logo:
+      "https://www.google.com/s2/favicons?domain=khamsat.com&sz=128",
+    mark: "5",
+    description:
+      "Freelance profile on Khamsat.",
+    descriptionAr:
+      "الملف الشخصي على خمسات.",
+  },
+  {
+    name: "Mostaql",
+    nameAr: "مستقل",
+    url: "https://mostaql.com/u/Mohamedd_Gamal",
+    logo:
+      "https://www.google.com/s2/favicons?domain=mostaql.com&sz=128",
+    mark: "M",
+    description:
+      "Mostaql freelance account.",
+    descriptionAr:
+      "حساب العمل الحر على مستقل.",
+  },
+  {
+    name: "Nafezly",
+    nameAr: "نفذلي",
+    url: "https://nafezly.com/u/Mohamed_Gamal01",
+    logo:
+      "https://www.google.com/s2/favicons?domain=nafezly.com&sz=128",
+    mark: "N",
+    description:
+      "Freelance profile on Nafezly.",
+    descriptionAr:
+      "الملف الشخصي على نفذلي.",
+  },
+  {
+    name: "Kafiil",
+    nameAr: "كفيل",
+    url: "https://kafiil.com/u/Mohamedgamal013",
+    logo:
+      "https://www.google.com/s2/favicons?domain=kafiil.com&sz=128",
+    mark: "K",
+    description:
+      "Freelance profile on Kafiil.",
+    descriptionAr:
+      "الملف الشخصي على كفيل.",
+  },
+  {
+    name: "Freelanceyard",
+    nameAr: "Freelanceyard",
+    url: "https://freelanceyard.com/ar/freelancers/mohamed-gamal-87",
+    logo:
+      "https://freelanceyard.com/images/favicon.png",
+    mark: "FY",
+    description:
+      "Freelance profile on Freelanceyard.",
+    descriptionAr:
+      "الملف الشخصي على Freelanceyard.",
+  },
+  {
+    name: "Upwork",
+    nameAr: "Upwork",
+    url: "https://www.upwork.com/freelancers/~0118cb90c5c257edb1/modal-hourly-rate-set?pageTitle=Change%20hourly%20rate&_modalInfo=%5B%7B%22navType%22%3A%22modal%22,%22title%22%3A%22Change%20hourly%20rate%22,%22modalId%22%3A%221790708835711%22%7D%5D",
+    logo:
+      "https://www.google.com/s2/favicons?domain=upwork.com&sz=128",
+    mark: "U",
+    description:
+      "Freelance profile on Upwork.",
+    descriptionAr:
+      "الملف الشخصي على Upwork.",
+  },
+],
   title: "Cloud & DevOps Engineer",
   secondaryTitle:
     "Cloud Infrastructure / DevOps Intern",
