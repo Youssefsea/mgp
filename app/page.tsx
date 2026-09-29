@@ -3194,7 +3194,7 @@ export default function Page() {
       {/* =====================================================
     10 / CONTACT
     ===================================================== */}
-<section
+  <section
   id="contact"
   className="section section-tight contact-section"
 >
@@ -3719,6 +3719,9 @@ export default function Page() {
     .c-card-arrow {
       transition-duration: 1ms !important;
     }
+.contact-section {
+  padding-top: 48px;
+}
   }
 `}</style>
       {/* =====================================================
