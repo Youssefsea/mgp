@@ -378,125 +378,43 @@ const cv = {
 
   testimonials: [
     {
-      name: "Krishnakumar Kesavan",
-      role:
-        "AWS/GCP Cloud Architect",
-      roleAr:
-        "AWS/GCP Cloud Architect",
-
+      name: "Fatma Mohamed",
+      role: "Teaching Assistant at BFCAI",
+      roleAr: "Teaching Assistant at BFCAI",
+      connection: "2nd-degree connection",
+      connectionAr: "اتصال من الدرجة الثانية",
+      date: "September 29, 2026",
+      dateAr: "29 سبتمبر 2026",
       quote:
-        "Is a high score the best indicator of true understanding in complex areas like cloud computing?",
-
+        "I had the pleasure of teaching Mohamed during the HCIA Cloud Computing V5 course at NTI. He was dedicated, attentive, and showed a strong interest in Cloud Computing throughout the training. I appreciated his commitment to learning and his active engagement during the course.\n\nI’m happy to recommend Mohamed and wish him all the best in his Cloud Computing career.",
       quoteAr:
-        "هل الدرجة العالية هي أفضل مؤشر على الفهم الحقيقي في مجالات معقدة مثل Cloud Computing؟",
-
-      postUrl:
-        "https://lnkd.in/p/dU7wAPXJ",
-
+        "I had the pleasure of teaching Mohamed during the HCIA Cloud Computing V5 course at NTI. He was dedicated, attentive, and showed a strong interest in Cloud Computing throughout the training. I appreciated his commitment to learning and his active engagement during the course.\n\nI’m happy to recommend Mohamed and wish him all the best in his Cloud Computing career.",
+      profileUrl:
+        "https://www.linkedin.com/in/fatma-mohamed-049405208/",
       source: "LinkedIn",
       sourceAr: "LinkedIn",
     },
-
     {
-      name: "SHAHAB AHMAD",
+      name: "Ahmed Abd Elhamid",
       role:
-        "Software Engineering & Technical Architect",
+        "Cloud DevOps Accelerator | 2x AWS | 1x KCNA | 1x GHAS | NTI Cloud DevOps Accelerator Graduate |",
       roleAr:
-        "Software Engineering & Technical Architect",
-
+        "Cloud DevOps Accelerator | 2x AWS | 1x KCNA | 1x GHAS | NTI Cloud DevOps Accelerator Graduate |",
+      connection: "2nd-degree connection",
+      connectionAr: "اتصال من الدرجة الثانية",
+      date: "September 28, 2026",
+      dateAr: "28 سبتمبر 2026",
       quote:
-        "The 90 hours of technical training seem thorough and beneficial.",
-
+        "It is my pleasure to recommend Mohamed, whom I had the opportunity to teach during an AWS Cloud course. He demonstrated strong technical aptitude, a genuine passion for cloud technologies, and a great commitment to learning. His professionalism, positive attitude, and willingness to grow truly stood out. I highly recommend Mohamed and am confident he will excel in his cloud role. Wishing you all the best, Mohamed, and continued success in your journey!",
       quoteAr:
-        "يبدو أن الـ90 ساعة من التدريب التقني كانت شاملة ومفيدة.",
-
-      postUrl:
-        "https://lnkd.in/p/dU7wAPXJ",
-
-      source: "LinkedIn",
-      sourceAr: "LinkedIn",
-    },
-
-    {
-      name: "Youssef Yasser",
-      role:
-        "Fullstack Developer",
-      roleAr:
-        "Fullstack Developer",
-
-      quote:
-        "Congratulations 🎊",
-
-      quoteAr:
-        "مبروك 🎊",
-
-      postUrl:
-        "https://lnkd.in/p/dU7wAPXJ",
-
-      source: "LinkedIn",
-      sourceAr: "LinkedIn",
-    },
-
-    {
-      name: "Ahmed Hossam",
-      role:
-        "Junior Backend .NET Developer",
-      roleAr:
-        "Junior Backend .NET Developer",
-
-      quote:
-        "Congratulations 🎊",
-
-      quoteAr:
-        "مبروك 🎊",
-
-      postUrl:
-        "https://lnkd.in/p/dU7wAPXJ",
-
-      source: "LinkedIn",
-      sourceAr: "LinkedIn",
-    },
-
-    {
-      name: "Omar Saleh",
-      role:
-        "Data Analyst & ML",
-      roleAr:
-        "Data Analyst & ML",
-
-      quote:
-        "Congrats 👏",
-
-      quoteAr:
-        "مبروك 👏",
-
-      postUrl:
-        "https://lnkd.in/p/dU7wAPXJ",
-
-      source: "LinkedIn",
-      sourceAr: "LinkedIn",
-    },
-
-    {
-      name: "Ahmed Maghrabi",
-      role:
-        "Data Analyst",
-      roleAr:
-        "Data Analyst",
-
-      quote:
-        "Congratulations 👏",
-
-      quoteAr:
-        "مبروك 👏",
-
-      postUrl:
-        "https://lnkd.in/p/dU7wAPXJ",
-
+        "It is my pleasure to recommend Mohamed, whom I had the opportunity to teach during an AWS Cloud course. He demonstrated strong technical aptitude, a genuine passion for cloud technologies, and a great commitment to learning. His professionalism, positive attitude, and willingness to grow truly stood out. I highly recommend Mohamed and am confident he will excel in his cloud role. Wishing you all the best, Mohamed, and continued success in your journey!",
+      profileUrl:
+        "https://www.linkedin.com/in/a7md-3bdelhamid/",
       source: "LinkedIn",
       sourceAr: "LinkedIn",
     },
   ],
+
 
   certifications: [
     {
@@ -741,8 +659,8 @@ function PlatformLogo({
         <img
           src={src}
           alt=""
-          width={32}
-          height={32}
+          width={22}
+          height={22}
           loading="lazy"
           decoding="async"
           onError={() => setFailed(true)}
@@ -753,6 +671,46 @@ function PlatformLogo({
         </span>
       )}
       <span className="sr-only">{name}</span>
+    </span>
+  );
+}
+
+const skillLogoSlugs: Record<string, string> = {
+  AWS: "aws",
+  "Huawei Cloud": "huaweicloud",
+  "Serverless Architecture": "serverless",
+  Linux: "linux",
+  "Amazon RDS": "amazonrds",
+  Terraform: "terraform",
+  Ansible: "ansible",
+  "GitHub Actions": "githubactions",
+  "GitLab": "gitlab",
+  Docker: "docker",
+};
+
+function SkillLogo({
+  label,
+  slug,
+}: {
+  label: string;
+  slug?: string;
+}) {
+  const [failed, setFailed] = useState(false);
+  const mark = label.trim().replace(/[^A-Za-z0-9]/g, "").slice(0, 2).toUpperCase() || "•";
+
+  return (
+    <span className="skill-logo-mini" aria-hidden="true">
+      {slug && !failed ? (
+        <img
+          src={`https://cdn.simpleicons.org/${slug}`}
+          alt=""
+          loading="lazy"
+          decoding="async"
+          onError={() => setFailed(true)}
+        />
+      ) : (
+        <span>{mark}</span>
+      )}
     </span>
   );
 }
@@ -1338,23 +1296,23 @@ export default function Page() {
 
     testimonialsTitle:
       isArabic
-        ? "ماذا يقول الناس."
-        : "What people say.",
+        ? "توصيات مهنية حقيقية."
+        : "Professional recommendations.",
 
     testimonialsNote:
       isArabic
-        ? "تعليقات فعلية من LinkedIn مرتبطة بالمصدر."
-        : "Real LinkedIn comments linked to the source.",
+        ? "توصيات LinkedIn من أشخاص قاموا بتدريس Mohamed خلال تدريبات Cloud."
+        : "LinkedIn recommendations from instructors who taught Mohamed during Cloud training.",
 
-    viewPost:
+    viewRecommendation:
       isArabic
-        ? "عرض المنشور"
-        : "View post",
+        ? "عرض الملف"
+        : "View profile",
 
-    linkedinComment:
+    recommendationLabel:
       isArabic
-        ? "تعليق على LinkedIn"
-        : "LinkedIn comment",
+        ? "توصية /"
+        : "RECOMMENDATION /",
 
     contactTitle:
       isArabic
@@ -2615,7 +2573,7 @@ export default function Page() {
                             ) => (
                               <span
                                 key={item}
-                                className={`chip ${
+                                className={`chip skill-chip ${
                                   itemIndex ===
                                   0
                                     ? "main"
@@ -2623,7 +2581,13 @@ export default function Page() {
                                 }`}
                                 dir="ltr"
                               >
-                                {item}
+                                <SkillLogo
+                                  label={item}
+                                  slug={skillLogoSlugs[item]}
+                                />
+                                <span className="skill-chip-label">
+                                  {item}
+                                </span>
                               </span>
                             )
                           )}
@@ -2677,9 +2641,12 @@ export default function Page() {
                         </span>
 
                         <span className="soft-skill-name">
-                          {isArabic
-                            ? skill.ar
-                            : skill.en}
+                          <SkillLogo label={skill.en} />
+                          <span>
+                            {isArabic
+                              ? skill.ar
+                              : skill.en}
+                          </span>
                         </span>
 
                         <span className="soft-skill-check">
@@ -3405,69 +3372,76 @@ export default function Page() {
             </div>
           </div>
 
-          <div className="testimonials-grid testimonials-grid-compact">
+          <div className="testimonials-grid testimonials-grid-compact recommendation-grid">
             {cv.testimonials.map(
-              (
-                testimonial,
-                index
-              ) => (
+              (testimonial, index) => (
                 <article
-                  className="testimonial testimonial-compact"
+                  className="testimonial testimonial-compact recommendation-card"
                   key={`${testimonial.name}-${index}`}
                 >
-                  <div className="testimonial-top">
+                  <div className="testimonial-top recommendation-top">
                     <span className="testimonial-quote-icon">
                       {i.quote}
                     </span>
 
                     <span className="testimonial-index">
-                      COMMENT /{" "}
-                      {String(
-                        index + 1
-                      ).padStart(
-                        2,
-                        "0"
-                      )}
+                      {t.recommendationLabel}{" "}
+                      {String(index + 1).padStart(2, "0")}
                     </span>
                   </div>
 
-                  <p className="testimonial-quote">
-                    {isArabic
-                      ? testimonial.quoteAr
-                      : testimonial.quote}
-                  </p>
-
-                  <div className="testimonial-author">
+                  <div className="recommendation-author-block">
                     <strong dir="ltr">
-                      {
-                        testimonial.name
-                      }
+                      {testimonial.name}
                     </strong>
 
-                    <span>
+                    <span
+                      className="recommendation-role"
+                      dir="ltr"
+                    >
                       {isArabic
                         ? testimonial.roleAr
                         : testimonial.role}
                     </span>
+
+                    <span
+                      className="recommendation-meta"
+                      dir="ltr"
+                    >
+                      {isArabic
+                        ? testimonial.connectionAr
+                        : testimonial.connection}
+                      <span>•</span>
+                      {isArabic
+                        ? testimonial.dateAr
+                        : testimonial.date}
+                    </span>
                   </div>
 
-                  <div className="testimonial-source">
+                  <div className="testimonial-quote recommendation-quote">
+                    {(isArabic
+                      ? testimonial.quoteAr
+                      : testimonial.quote
+                    ).split("\n\n").map((paragraph, paragraphIndex) => (
+                      <p key={paragraphIndex}>
+                        {paragraph}
+                      </p>
+                    ))}
+                  </div>
+
+                  <div className="testimonial-source recommendation-source">
                     <span className="testimonial-source-label">
-                      {
-                        testimonial.source
-                      }
+                      {testimonial.source}
                     </span>
 
                     <a
-                      href={
-                        testimonial.postUrl
-                      }
+                      href={testimonial.profileUrl}
                       target="_blank"
-                      rel="noreferrer"
+                      rel="noopener noreferrer"
                       className="testimonial-post-link"
                       dir="ltr"
                     >
-                      {t.viewPost}
+                      {t.viewRecommendation}
                       {i.external}
                     </a>
                   </div>
@@ -3739,7 +3713,112 @@ export default function Page() {
           border: 0;
         }
 
-        .freelance-platforms {
+        .skill-chip {
+          display: inline-flex;
+          align-items: center;
+          gap: 7px;
+        }
+
+        .skill-chip-label {
+          min-width: 0;
+        }
+
+        .skill-logo-mini {
+          width: 16px;
+          height: 16px;
+          display: inline-grid;
+          place-items: center;
+          flex: 0 0 16px;
+          border-radius: 5px;
+          border: 1px solid
+            ${lightMode
+              ? "rgba(15, 23, 42, 0.10)"
+              : "rgba(255, 255, 255, 0.11)"};
+          background:
+            ${lightMode
+              ? "rgba(15, 23, 42, 0.035)"
+              : "rgba(255,255,255,0.04)"};
+          overflow: hidden;
+        }
+
+        .skill-logo-mini img {
+          width: 11px;
+          height: 11px;
+          display: block;
+          object-fit: contain;
+        }
+
+        .skill-logo-mini span {
+          font-size: 7px;
+          line-height: 1;
+          font-weight: 800;
+          letter-spacing: -0.02em;
+          opacity: 0.72;
+        }
+
+        .soft-skill-name {
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+          min-width: 0;
+        }
+
+        .recommendation-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .recommendation-top {
+          margin-bottom: 18px;
+        }
+
+        .recommendation-author-block {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+          margin-bottom: 16px;
+        }
+
+        .recommendation-author-block strong {
+          font-size: 17px;
+          line-height: 1.15;
+        }
+
+        .recommendation-role {
+          font-size: 12px;
+          line-height: 1.45;
+          opacity: 0.68;
+        }
+
+        .recommendation-meta {
+          display: inline-flex;
+          align-items: center;
+          gap: 7px;
+          flex-wrap: wrap;
+          font-size: 11px;
+          opacity: 0.52;
+        }
+
+        .recommendation-quote {
+          display: flex;
+          flex-direction: column;
+          gap: 11px;
+        }
+
+        .recommendation-quote p {
+          margin: 0;
+        }
+
+        .recommendation-source {
+          margin-top: 20px;
+        }
+
+        @media (max-width: 900px) {
+          .recommendation-grid {
+            grid-template-columns: 1fr;
+          }
+        }
+
+${style_needle}
           margin-top: 28px;
           padding-top: 28px;
           border-top: 1px solid
@@ -3800,8 +3879,8 @@ export default function Page() {
           align-items: center;
           gap: 10px 12px;
           min-width: 0;
-          min-height: 96px;
-          padding: 15px;
+          min-height: 82px;
+          padding: 12px;
           text-decoration: none;
           color: inherit;
           border: 1px solid
@@ -3851,8 +3930,8 @@ export default function Page() {
 
         .freelance-logo {
           grid-area: logo;
-          width: 48px;
-          height: 48px;
+          width: 36px;
+          height: 36px;
           display: grid;
           place-items: center;
           border-radius: 14px;
@@ -3869,8 +3948,8 @@ export default function Page() {
         }
 
         .freelance-logo img {
-          width: 32px;
-          height: 32px;
+          width: 22px;
+          height: 22px;
           display: block;
           object-fit: contain;
         }
@@ -3878,14 +3957,14 @@ export default function Page() {
         .freelance-logo-fallback {
           display: grid;
           place-items: center;
-          width: 34px;
-          height: 34px;
+          width: 25px;
+          height: 25px;
           border-radius: 10px;
           border: 1px solid
             ${lightMode
               ? "rgba(15, 23, 42, 0.14)"
               : "rgba(255, 255, 255, 0.14)"};
-          font-size: 13px;
+          font-size: 10px;
           font-weight: 800;
           letter-spacing: -0.02em;
         }
@@ -3961,13 +4040,13 @@ export default function Page() {
 
         @media (max-width: 520px) {
           .freelance-platform-card {
-            min-height: 90px;
-            padding: 13px;
+            min-height: 78px;
+            padding: 11px;
           }
 
           .freelance-logo {
-            width: 44px;
-            height: 44px;
+            width: 32px;
+            height: 32px;
           }
         }
       `}</style>
