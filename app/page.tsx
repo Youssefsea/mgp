@@ -66,7 +66,7 @@ const cv = {
     {
       name: "Freelanceyard",
       nameAr: "Freelanceyard",
-      url: "https://freelanceyard.com/en/account/profile",
+      url: "https://freelanceyard.com/ar/freelancers/mohamed-gamal-87",
       logo:
         "https://freelanceyard.com/images/favicon.png",
       mark: "FY",
