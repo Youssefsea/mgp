@@ -14,6 +14,69 @@ const cv = {
   github:
     "https://github.com/mohamedgamal-35",
 
+  freelanceLinks: [
+    {
+      name: "Khamsat",
+      nameAr: "خمسات",
+      url: "https://khamsat.com/user/mohamed_gamal35",
+      logo:
+        "https://www.google.com/s2/favicons?domain=khamsat.com&sz=128",
+      mark: "5",
+      description:
+        "Freelance profile on Khamsat.",
+      descriptionAr:
+        "الملف الشخصي على خمسات.",
+    },
+    {
+      name: "Mostaql",
+      nameAr: "مستقل",
+      url: "https://mostaql.com/onboarding/reviewing",
+      logo:
+        "https://www.google.com/s2/favicons?domain=mostaql.com&sz=128",
+      mark: "M",
+      description:
+        "Mostaql freelance account.",
+      descriptionAr:
+        "حساب العمل الحر على مستقل.",
+    },
+    {
+      name: "Nafezly",
+      nameAr: "نفذلي",
+      url: "https://nafezly.com/u/Mohamed_Gamal01",
+      logo:
+        "https://www.google.com/s2/favicons?domain=nafezly.com&sz=128",
+      mark: "N",
+      description:
+        "Freelance profile on Nafezly.",
+      descriptionAr:
+        "الملف الشخصي على نفذلي.",
+    },
+    {
+      name: "Kafiil",
+      nameAr: "كفيل",
+      url: "https://kafiil.com/u/Mohamedgamal013",
+      logo:
+        "https://www.google.com/s2/favicons?domain=kafiil.com&sz=128",
+      mark: "K",
+      description:
+        "Freelance profile on Kafiil.",
+      descriptionAr:
+        "الملف الشخصي على كفيل.",
+    },
+    {
+      name: "Freelanceyard",
+      nameAr: "Freelanceyard",
+      url: "https://freelanceyard.com/en/account/profile",
+      logo:
+        "https://www.google.com/s2/favicons?domain=freelanceyard.com&sz=128",
+      mark: "FY",
+      description:
+        "Freelance profile on Freelanceyard.",
+      descriptionAr:
+        "الملف الشخصي على Freelanceyard.",
+    },
+  ],
+
   title: "Cloud & DevOps Engineer",
 
   secondaryTitle:
@@ -661,6 +724,39 @@ function Icon({
   );
 }
 
+function PlatformLogo({
+  src,
+  mark,
+  name,
+}: {
+  src: string;
+  mark: string;
+  name: string;
+}) {
+  const [failed, setFailed] = useState(false);
+
+  return (
+    <span className="freelance-logo" aria-hidden="true">
+      {!failed ? (
+        <img
+          src={src}
+          alt=""
+          width={32}
+          height={32}
+          loading="lazy"
+          decoding="async"
+          onError={() => setFailed(true)}
+        />
+      ) : (
+        <span className="freelance-logo-fallback">
+          {mark}
+        </span>
+      )}
+      <span className="sr-only">{name}</span>
+    </span>
+  );
+}
+
 const i = {
   arrow: (
     <Icon>
@@ -1294,6 +1390,21 @@ export default function Page() {
       isArabic
         ? "نسخ Email"
         : "Copy email",
+
+    freelancePlatforms:
+      isArabic
+        ? "منصات العمل الحر"
+        : "Freelance platforms",
+
+    freelancePlatformsNote:
+      isArabic
+        ? "كل روابط العمل الحر في مكان واحد، مع الوصول المباشر لكل ملف."
+        : "All freelance profiles in one place, with direct access to each profile.",
+
+    visitProfile:
+      isArabic
+        ? "زيارة الملف"
+        : "Visit profile",
 
     copied:
       isArabic
@@ -3539,8 +3650,327 @@ export default function Page() {
               </div>
             </div>
           </div>
+
+          <div
+            className="freelance-platforms"
+            aria-labelledby="freelance-platforms-title"
+          >
+            <div className="freelance-platforms-head">
+              <div>
+                <span
+                  className="section-code"
+                  id="freelance-platforms-title"
+                >
+                  LINKS / 05
+                </span>
+
+                <h3>
+                  {t.freelancePlatforms}
+                </h3>
+
+                <p>
+                  {t.freelancePlatformsNote}
+                </p>
+              </div>
+
+              <span className="freelance-platforms-count" dir="ltr">
+                {cv.freelanceLinks.length.toString().padStart(2, "0")}{" "}
+                profiles
+              </span>
+            </div>
+
+            <div className="freelance-platform-grid">
+              {cv.freelanceLinks.map(
+                (platform) => (
+                  <a
+                    key={platform.name}
+                    href={platform.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="freelance-platform-card"
+                    dir="ltr"
+                    aria-label={`${platform.name} profile`}
+                  >
+                    <PlatformLogo
+                      src={platform.logo}
+                      mark={platform.mark}
+                      name={platform.name}
+                    />
+
+                    <span className="freelance-platform-copy">
+                      <strong>
+                        {isArabic
+                          ? platform.nameAr
+                          : platform.name}
+                      </strong>
+
+                      <span>
+                        {isArabic
+                          ? platform.descriptionAr
+                          : platform.description}
+                      </span>
+                    </span>
+
+                    <span className="freelance-platform-arrow">
+                      {i.external}
+                    </span>
+
+                    <span className="freelance-platform-cta">
+                      {t.visitProfile}
+                    </span>
+                  </a>
+                )
+              )}
+            </div>
+          </div>
         </div>
       </section>
+
+      <style jsx>{`
+        :global(.sr-only) {
+          position: absolute;
+          width: 1px;
+          height: 1px;
+          padding: 0;
+          margin: -1px;
+          overflow: hidden;
+          clip: rect(0, 0, 0, 0);
+          white-space: nowrap;
+          border: 0;
+        }
+
+        .freelance-platforms {
+          margin-top: 28px;
+          padding-top: 28px;
+          border-top: 1px solid
+            ${lightMode
+              ? "rgba(15, 23, 42, 0.10)"
+              : "rgba(255, 255, 255, 0.10)"};
+        }
+
+        .freelance-platforms-head {
+          display: flex;
+          align-items: flex-end;
+          justify-content: space-between;
+          gap: 20px;
+          margin-bottom: 18px;
+        }
+
+        .freelance-platforms-head h3 {
+          margin: 7px 0 6px;
+          font-size: clamp(22px, 2.5vw, 30px);
+          line-height: 1.05;
+          letter-spacing: -0.03em;
+        }
+
+        .freelance-platforms-head p {
+          margin: 0;
+          max-width: 720px;
+          opacity: 0.68;
+        }
+
+        .freelance-platforms-count {
+          flex: 0 0 auto;
+          padding: 8px 11px;
+          border: 1px solid
+            ${lightMode
+              ? "rgba(15, 23, 42, 0.10)"
+              : "rgba(255, 255, 255, 0.12)"};
+          border-radius: 999px;
+          font-size: 12px;
+          letter-spacing: 0.08em;
+          opacity: 0.72;
+          white-space: nowrap;
+        }
+
+        .freelance-platform-grid {
+          display: grid;
+          grid-template-columns:
+            repeat(auto-fit, minmax(210px, 1fr));
+          gap: 12px;
+        }
+
+        .freelance-platform-card {
+          position: relative;
+          display: grid;
+          grid-template-columns: auto 1fr auto;
+          grid-template-areas:
+            "logo copy arrow"
+            "logo copy cta";
+          align-items: center;
+          gap: 10px 12px;
+          min-width: 0;
+          min-height: 96px;
+          padding: 15px;
+          text-decoration: none;
+          color: inherit;
+          border: 1px solid
+            ${lightMode
+              ? "rgba(15, 23, 42, 0.10)"
+              : "rgba(255, 255, 255, 0.10)"};
+          background:
+            ${lightMode
+              ? "rgba(255,255,255,0.72)"
+              : "rgba(255,255,255,0.035)"};
+          border-radius: 18px;
+          box-shadow:
+            ${lightMode
+              ? "0 12px 30px rgba(15, 23, 42, 0.05)"
+              : "0 14px 35px rgba(0, 0, 0, 0.18)"};
+          overflow: hidden;
+          transition:
+            transform 180ms ease,
+            border-color 180ms ease,
+            background 180ms ease;
+        }
+
+        .freelance-platform-card::before {
+          content: "";
+          position: absolute;
+          inset: 0;
+          background:
+            linear-gradient(
+              120deg,
+              rgba(255, 255, 255, 0.10),
+              transparent 40%
+            );
+          pointer-events: none;
+        }
+
+        .freelance-platform-card:hover {
+          transform: translateY(-3px);
+          border-color:
+            ${lightMode
+              ? "rgba(15, 23, 42, 0.22)"
+              : "rgba(255, 255, 255, 0.22)"};
+          background:
+            ${lightMode
+              ? "rgba(255,255,255,0.96)"
+              : "rgba(255,255,255,0.065)"};
+        }
+
+        .freelance-logo {
+          grid-area: logo;
+          width: 48px;
+          height: 48px;
+          display: grid;
+          place-items: center;
+          border-radius: 14px;
+          border: 1px solid
+            ${lightMode
+              ? "rgba(15, 23, 42, 0.10)"
+              : "rgba(255, 255, 255, 0.10)"};
+          background:
+            ${lightMode
+              ? "#ffffff"
+              : "rgba(255,255,255,0.045)"};
+          overflow: hidden;
+          flex: 0 0 auto;
+        }
+
+        .freelance-logo img {
+          width: 32px;
+          height: 32px;
+          display: block;
+          object-fit: contain;
+        }
+
+        .freelance-logo-fallback {
+          display: grid;
+          place-items: center;
+          width: 34px;
+          height: 34px;
+          border-radius: 10px;
+          border: 1px solid
+            ${lightMode
+              ? "rgba(15, 23, 42, 0.14)"
+              : "rgba(255, 255, 255, 0.14)"};
+          font-size: 13px;
+          font-weight: 800;
+          letter-spacing: -0.02em;
+        }
+
+        .freelance-platform-copy {
+          grid-area: copy;
+          display: flex;
+          min-width: 0;
+          flex-direction: column;
+          gap: 5px;
+        }
+
+        .freelance-platform-copy strong {
+          font-size: 15px;
+          line-height: 1.15;
+        }
+
+        .freelance-platform-copy span {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          font-size: 12px;
+          opacity: 0.62;
+        }
+
+        .freelance-platform-arrow {
+          grid-area: arrow;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          opacity: 0.72;
+        }
+
+        .freelance-platform-cta {
+          grid-area: cta;
+          justify-self: end;
+          font-size: 11px;
+          font-weight: 700;
+          letter-spacing: 0.04em;
+          opacity: 0.58;
+          white-space: nowrap;
+        }
+
+        .rtl .freelance-platforms-head {
+          flex-direction: row-reverse;
+        }
+
+        .rtl .freelance-platform-card {
+          direction: rtl;
+          grid-template-areas:
+            "arrow copy logo"
+            "cta copy logo";
+        }
+
+        .rtl .freelance-platform-cta {
+          justify-self: start;
+        }
+
+        @media (max-width: 760px) {
+          .freelance-platforms-head {
+            align-items: flex-start;
+            flex-direction: column;
+          }
+
+          .freelance-platforms-count {
+            align-self: flex-start;
+          }
+
+          .freelance-platform-grid {
+            grid-template-columns: 1fr;
+          }
+        }
+
+        @media (max-width: 520px) {
+          .freelance-platform-card {
+            min-height: 90px;
+            padding: 13px;
+          }
+
+          .freelance-logo {
+            width: 44px;
+            height: 44px;
+          }
+        }
+      `}</style>
 
       {/* =====================================================
           FOOTER
