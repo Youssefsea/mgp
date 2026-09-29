@@ -3818,7 +3818,7 @@ export default function Page() {
           }
         }
 
-${style_needle}
+.freelance-platforms {
           margin-top: 28px;
           padding-top: 28px;
           border-top: 1px solid
