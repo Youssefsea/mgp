@@ -3782,78 +3782,120 @@ export default function Page() {
         .footer-freelance-grid {
           display: flex;
           flex-wrap: wrap;
-          gap: 7px;
+          align-items: center;
+          gap: 10px;
         }
 
         .footer-freelance-link {
-          display: inline-flex;
-          align-items: center;
-          gap: 7px;
-          min-height: 34px;
-          padding: 6px 9px;
+          position: relative;
+          display: inline-grid;
+          place-items: center;
+          width: 52px;
+          height: 52px;
+          padding: 5px;
           border: 1px solid
             ${lightMode
-              ? "rgba(15, 23, 42, 0.10)"
-              : "rgba(255, 255, 255, 0.10)"};
-          border-radius: 10px;
+              ? "rgba(15, 23, 42, 0.16)"
+              : "rgba(255, 255, 255, 0.13)"};
+          border-radius: 15px;
           text-decoration: none;
           color: inherit;
           background:
             ${lightMode
-              ? "rgba(255,255,255,0.58)"
-              : "rgba(255,255,255,0.028)"};
+              ? "rgba(255,255,255,0.62)"
+              : "rgba(8, 18, 34, 0.42)"};
+          box-shadow:
+            inset 0 1px 0
+              ${lightMode
+                ? "rgba(255,255,255,0.72)"
+                : "rgba(255,255,255,0.055)"},
+            0 7px 18px
+              ${lightMode
+                ? "rgba(15, 23, 42, 0.08)"
+                : "rgba(0, 0, 0, 0.12)"};
           transition:
-            transform 160ms ease,
-            border-color 160ms ease,
-            background 160ms ease;
+            transform 180ms ease,
+            border-color 180ms ease,
+            background 180ms ease,
+            box-shadow 180ms ease;
+        }
+
+        .footer-freelance-link::after {
+          content: "";
+          position: absolute;
+          inset: 5px;
+          border-radius: 10px;
+          border: 1px solid
+            ${lightMode
+              ? "rgba(15, 23, 42, 0.07)"
+              : "rgba(255, 255, 255, 0.055)"};
+          pointer-events: none;
         }
 
         .footer-freelance-link:hover {
-          transform: translateY(-1px);
+          transform: translateY(-3px);
           border-color:
             ${lightMode
-              ? "rgba(15, 23, 42, 0.20)"
-              : "rgba(255, 255, 255, 0.20)"};
+              ? "rgba(15, 23, 42, 0.28)"
+              : "rgba(255, 255, 255, 0.26)"};
           background:
             ${lightMode
               ? "rgba(255,255,255,0.90)"
-              : "rgba(255,255,255,0.05)"};
+              : "rgba(255,255,255,0.055)"};
+          box-shadow:
+            inset 0 1px 0
+              ${lightMode
+                ? "rgba(255,255,255,0.90)"
+                : "rgba(255,255,255,0.09)"},
+            0 10px 22px
+              ${lightMode
+                ? "rgba(15, 23, 42, 0.11)"
+                : "rgba(0, 0, 0, 0.18)"};
         }
 
         .footer-freelance-link .freelance-logo {
-          width: 20px;
-          height: 20px;
-          border-radius: 6px;
-          border-width: 1px;
+          position: relative;
+          z-index: 1;
+          width: 34px;
+          height: 34px;
+          border: 0;
+          border-radius: 10px;
+          background:
+            ${lightMode
+              ? "rgba(15, 23, 42, 0.055)"
+              : "rgba(255,255,255,0.055)"};
+          box-shadow:
+            inset 0 1px 0
+              ${lightMode
+                ? "rgba(255,255,255,0.76)"
+                : "rgba(255,255,255,0.045)"};
         }
 
         .footer-freelance-link .freelance-logo img {
-          width: 13px;
-          height: 13px;
+          width: 22px;
+          height: 22px;
+          object-fit: contain;
         }
 
         .footer-freelance-link .freelance-logo-fallback {
-          width: 15px;
-          height: 15px;
-          border-radius: 5px;
-          font-size: 7px;
+          width: 24px;
+          height: 24px;
+          border-radius: 7px;
+          font-size: 10px;
+          font-weight: 800;
         }
 
-        .footer-freelance-name {
-          font-size: 11px;
-          font-weight: 700;
-          line-height: 1;
-          white-space: nowrap;
-        }
-
+        .footer-freelance-name,
         .footer-freelance-arrow {
-          display: inline-flex;
-          opacity: 0.52;
-        }
-
-        .footer-freelance-arrow svg {
-          width: 12px;
-          height: 12px;
+          position: absolute;
+          width: 1px;
+          height: 1px;
+          padding: 0;
+          margin: -1px;
+          overflow: hidden;
+          clip: rect(0, 0, 0, 0);
+          white-space: nowrap;
+          border: 0;
         }
 
         .rtl .footer-freelance-head {
@@ -3872,6 +3914,27 @@ export default function Page() {
 
           .footer-freelance-count {
             align-self: flex-start;
+          }
+
+          .footer-freelance-grid {
+            gap: 8px;
+          }
+
+          .footer-freelance-link {
+            width: 48px;
+            height: 48px;
+            border-radius: 14px;
+          }
+
+          .footer-freelance-link .freelance-logo {
+            width: 31px;
+            height: 31px;
+            border-radius: 9px;
+          }
+
+          .footer-freelance-link .freelance-logo img {
+            width: 20px;
+            height: 20px;
           }
         }
       `}</style>
@@ -4051,6 +4114,7 @@ export default function Page() {
                   className="footer-freelance-link"
                   dir="ltr"
                   aria-label={`${platform.name} profile`}
+                  title={isArabic ? platform.nameAr : platform.name}
                 >
                   <PlatformLogo
                     src={platform.logo}
@@ -4062,7 +4126,7 @@ export default function Page() {
                     {isArabic ? platform.nameAr : platform.name}
                   </span>
 
-                  <span className="footer-freelance-arrow">
+                  <span className="footer-freelance-arrow" aria-hidden="true">
                     {i.external}
                   </span>
                 </a>
