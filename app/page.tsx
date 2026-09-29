@@ -3625,78 +3625,6 @@ export default function Page() {
             </div>
           </div>
 
-          <div
-            className="freelance-platforms"
-            aria-labelledby="freelance-platforms-title"
-          >
-            <div className="freelance-platforms-head">
-              <div>
-                <span
-                  className="section-code"
-                  id="freelance-platforms-title"
-                >
-                  LINKS / 05
-                </span>
-
-                <h3>
-                  {t.freelancePlatforms}
-                </h3>
-
-                <p>
-                  {t.freelancePlatformsNote}
-                </p>
-              </div>
-
-              <span className="freelance-platforms-count" dir="ltr">
-                {cv.freelanceLinks.length.toString().padStart(2, "0")}{" "}
-                profiles
-              </span>
-            </div>
-
-            <div className="freelance-platform-grid">
-              {cv.freelanceLinks.map(
-                (platform) => (
-                  <a
-                    key={platform.name}
-                    href={platform.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="freelance-platform-card"
-                    dir="ltr"
-                    aria-label={`${platform.name} profile`}
-                  >
-                    <PlatformLogo
-                      src={platform.logo}
-                      mark={platform.mark}
-                      name={platform.name}
-                    />
-
-                    <span className="freelance-platform-copy">
-                      <strong>
-                        {isArabic
-                          ? platform.nameAr
-                          : platform.name}
-                      </strong>
-
-                      <span>
-                        {isArabic
-                          ? platform.descriptionAr
-                          : platform.description}
-                      </span>
-                    </span>
-
-                    <span className="freelance-platform-arrow">
-                      {i.external}
-                    </span>
-
-                    <span className="freelance-platform-cta">
-                      {t.visitProfile}
-                    </span>
-                  </a>
-                )
-              )}
-            </div>
-          </div>
         </div>
       </section>
 
@@ -3818,235 +3746,132 @@ export default function Page() {
           }
         }
 
-.freelance-platforms {
-          margin-top: 28px;
-          padding-top: 28px;
+        .footer-freelance-links {
+          margin-top: 34px;
+          padding-top: 24px;
           border-top: 1px solid
             ${lightMode
               ? "rgba(15, 23, 42, 0.10)"
               : "rgba(255, 255, 255, 0.10)"};
         }
 
-        .freelance-platforms-head {
+        .footer-freelance-head {
           display: flex;
-          align-items: flex-end;
-          justify-content: space-between;
-          gap: 20px;
-          margin-bottom: 18px;
-        }
-
-        .freelance-platforms-head h3 {
-          margin: 7px 0 6px;
-          font-size: clamp(22px, 2.5vw, 30px);
-          line-height: 1.05;
-          letter-spacing: -0.03em;
-        }
-
-        .freelance-platforms-head p {
-          margin: 0;
-          max-width: 720px;
-          opacity: 0.68;
-        }
-
-        .freelance-platforms-count {
-          flex: 0 0 auto;
-          padding: 8px 11px;
-          border: 1px solid
-            ${lightMode
-              ? "rgba(15, 23, 42, 0.10)"
-              : "rgba(255, 255, 255, 0.12)"};
-          border-radius: 999px;
-          font-size: 12px;
-          letter-spacing: 0.08em;
-          opacity: 0.72;
-          white-space: nowrap;
-        }
-
-        .freelance-platform-grid {
-          display: grid;
-          grid-template-columns:
-            repeat(auto-fit, minmax(210px, 1fr));
-          gap: 12px;
-        }
-
-        .freelance-platform-card {
-          position: relative;
-          display: grid;
-          grid-template-columns: auto 1fr auto;
-          grid-template-areas:
-            "logo copy arrow"
-            "logo copy cta";
           align-items: center;
-          gap: 10px 12px;
-          min-width: 0;
-          min-height: 82px;
-          padding: 12px;
-          text-decoration: none;
-          color: inherit;
-          border: 1px solid
-            ${lightMode
-              ? "rgba(15, 23, 42, 0.10)"
-              : "rgba(255, 255, 255, 0.10)"};
-          background:
-            ${lightMode
-              ? "rgba(255,255,255,0.72)"
-              : "rgba(255,255,255,0.035)"};
-          border-radius: 18px;
-          box-shadow:
-            ${lightMode
-              ? "0 12px 30px rgba(15, 23, 42, 0.05)"
-              : "0 14px 35px rgba(0, 0, 0, 0.18)"};
-          overflow: hidden;
-          transition:
-            transform 180ms ease,
-            border-color 180ms ease,
-            background 180ms ease;
+          justify-content: space-between;
+          gap: 16px;
+          margin-bottom: 13px;
         }
 
-        .freelance-platform-card::before {
-          content: "";
-          position: absolute;
-          inset: 0;
-          background:
-            linear-gradient(
-              120deg,
-              rgba(255, 255, 255, 0.10),
-              transparent 40%
-            );
-          pointer-events: none;
-        }
-
-        .freelance-platform-card:hover {
-          transform: translateY(-3px);
-          border-color:
-            ${lightMode
-              ? "rgba(15, 23, 42, 0.22)"
-              : "rgba(255, 255, 255, 0.22)"};
-          background:
-            ${lightMode
-              ? "rgba(255,255,255,0.96)"
-              : "rgba(255,255,255,0.065)"};
-        }
-
-        .freelance-logo {
-          grid-area: logo;
-          width: 36px;
-          height: 36px;
-          display: grid;
-          place-items: center;
-          border-radius: 14px;
-          border: 1px solid
-            ${lightMode
-              ? "rgba(15, 23, 42, 0.10)"
-              : "rgba(255, 255, 255, 0.10)"};
-          background:
-            ${lightMode
-              ? "#ffffff"
-              : "rgba(255,255,255,0.045)"};
-          overflow: hidden;
-          flex: 0 0 auto;
-        }
-
-        .freelance-logo img {
-          width: 22px;
-          height: 22px;
-          display: block;
-          object-fit: contain;
-        }
-
-        .freelance-logo-fallback {
-          display: grid;
-          place-items: center;
-          width: 25px;
-          height: 25px;
-          border-radius: 10px;
-          border: 1px solid
-            ${lightMode
-              ? "rgba(15, 23, 42, 0.14)"
-              : "rgba(255, 255, 255, 0.14)"};
-          font-size: 10px;
-          font-weight: 800;
-          letter-spacing: -0.02em;
-        }
-
-        .freelance-platform-copy {
-          grid-area: copy;
-          display: flex;
-          min-width: 0;
-          flex-direction: column;
-          gap: 5px;
-        }
-
-        .freelance-platform-copy strong {
-          font-size: 15px;
-          line-height: 1.15;
-        }
-
-        .freelance-platform-copy span {
-          overflow: hidden;
-          text-overflow: ellipsis;
-          white-space: nowrap;
+        .footer-freelance-note {
+          margin: 5px 0 0;
           font-size: 12px;
-          opacity: 0.62;
+          line-height: 1.5;
+          opacity: 0.58;
         }
 
-        .freelance-platform-arrow {
-          grid-area: arrow;
+        .footer-freelance-count {
+          flex: 0 0 auto;
+          font-size: 10px;
+          letter-spacing: 0.08em;
+          text-transform: uppercase;
+          opacity: 0.48;
+          white-space: nowrap;
+        }
+
+        .footer-freelance-grid {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 7px;
+        }
+
+        .footer-freelance-link {
           display: inline-flex;
           align-items: center;
-          justify-content: center;
-          opacity: 0.72;
+          gap: 7px;
+          min-height: 34px;
+          padding: 6px 9px;
+          border: 1px solid
+            ${lightMode
+              ? "rgba(15, 23, 42, 0.10)"
+              : "rgba(255, 255, 255, 0.10)"};
+          border-radius: 10px;
+          text-decoration: none;
+          color: inherit;
+          background:
+            ${lightMode
+              ? "rgba(255,255,255,0.58)"
+              : "rgba(255,255,255,0.028)"};
+          transition:
+            transform 160ms ease,
+            border-color 160ms ease,
+            background 160ms ease;
         }
 
-        .freelance-platform-cta {
-          grid-area: cta;
-          justify-self: end;
+        .footer-freelance-link:hover {
+          transform: translateY(-1px);
+          border-color:
+            ${lightMode
+              ? "rgba(15, 23, 42, 0.20)"
+              : "rgba(255, 255, 255, 0.20)"};
+          background:
+            ${lightMode
+              ? "rgba(255,255,255,0.90)"
+              : "rgba(255,255,255,0.05)"};
+        }
+
+        .footer-freelance-link .freelance-logo {
+          width: 20px;
+          height: 20px;
+          border-radius: 6px;
+          border-width: 1px;
+        }
+
+        .footer-freelance-link .freelance-logo img {
+          width: 13px;
+          height: 13px;
+        }
+
+        .footer-freelance-link .freelance-logo-fallback {
+          width: 15px;
+          height: 15px;
+          border-radius: 5px;
+          font-size: 7px;
+        }
+
+        .footer-freelance-name {
           font-size: 11px;
           font-weight: 700;
-          letter-spacing: 0.04em;
-          opacity: 0.58;
+          line-height: 1;
           white-space: nowrap;
         }
 
-        .rtl .freelance-platforms-head {
+        .footer-freelance-arrow {
+          display: inline-flex;
+          opacity: 0.52;
+        }
+
+        .footer-freelance-arrow svg {
+          width: 12px;
+          height: 12px;
+        }
+
+        .rtl .footer-freelance-head {
           flex-direction: row-reverse;
         }
 
-        .rtl .freelance-platform-card {
-          direction: rtl;
-          grid-template-areas:
-            "arrow copy logo"
-            "cta copy logo";
+        .rtl .footer-freelance-grid {
+          justify-content: flex-start;
         }
 
-        .rtl .freelance-platform-cta {
-          justify-self: start;
-        }
-
-        @media (max-width: 760px) {
-          .freelance-platforms-head {
+        @media (max-width: 700px) {
+          .footer-freelance-head {
             align-items: flex-start;
             flex-direction: column;
           }
 
-          .freelance-platforms-count {
+          .footer-freelance-count {
             align-self: flex-start;
-          }
-
-          .freelance-platform-grid {
-            grid-template-columns: 1fr;
-          }
-        }
-
-        @media (max-width: 520px) {
-          .freelance-platform-card {
-            min-height: 78px;
-            padding: 11px;
-          }
-
-          .freelance-logo {
-            width: 32px;
-            height: 32px;
           }
         }
       `}</style>
@@ -4196,6 +4021,52 @@ export default function Page() {
                   GitHub
                 </span>
               </a>
+            </div>
+          </div>
+
+          <div className="footer-freelance-links">
+            <div className="footer-freelance-head">
+              <div>
+                <span className="footer-heading">
+                  {t.freelancePlatforms}
+                </span>
+
+                <p className="footer-freelance-note">
+                  {t.freelancePlatformsNote}
+                </p>
+              </div>
+
+              <span className="footer-freelance-count" dir="ltr">
+                {cv.freelanceLinks.length.toString().padStart(2, "0")} profiles
+              </span>
+            </div>
+
+            <div className="footer-freelance-grid">
+              {cv.freelanceLinks.map((platform) => (
+                <a
+                  key={platform.name}
+                  href={platform.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="footer-freelance-link"
+                  dir="ltr"
+                  aria-label={`${platform.name} profile`}
+                >
+                  <PlatformLogo
+                    src={platform.logo}
+                    mark={platform.mark}
+                    name={platform.name}
+                  />
+
+                  <span className="footer-freelance-name">
+                    {isArabic ? platform.nameAr : platform.name}
+                  </span>
+
+                  <span className="footer-freelance-arrow">
+                    {i.external}
+                  </span>
+                </a>
+              ))}
             </div>
           </div>
 
