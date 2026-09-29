@@ -1687,7 +1687,7 @@ export default function Page() {
                   <span className="contact-value">{cv.phone}</span>
                 </div>
               </a>
-              <a className="contact-item-card"
+              {/* <a className="contact-item-card"
                 href={`https://wa.me/${cv.phone.replace(/[^0-9]/g, "")}`}
                 target="_blank" rel="noreferrer" dir="ltr">
                 <div className="contact-icon-box">{i.whatsapp}</div>
@@ -1695,7 +1695,7 @@ export default function Page() {
                   <span className="contact-label">Phone / WhatsApp</span>
                   <span className="contact-value">{cv.phone}</span>
                 </div>
-              </a>
+              </a> */}
               <div className="contact-item-card" dir="ltr">
                 <div className="contact-icon-box">{i.cloud}</div>
                 <div className="contact-text-stack">
