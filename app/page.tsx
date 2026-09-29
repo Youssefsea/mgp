@@ -68,7 +68,7 @@ const cv = {
       nameAr: "Freelanceyard",
       url: "https://freelanceyard.com/en/account/profile",
       logo:
-        "https://www.google.com/s2/favicons?domain=freelanceyard.com&sz=128",
+        "https://freelanceyard.com/images/logo-dark.png",
       mark: "FY",
       description:
         "Freelance profile on Freelanceyard.",
