@@ -12,6 +12,8 @@ const cv = {
     "https://linkedin.com/in/mohamed-gamal-devops",
   github:
     "https://github.com/mohamedgamal-35",
+  location: "Egypt",
+  locationAr: "مصر",
   freelanceLinks: [
     {
       name: "Khamsat",
@@ -395,11 +397,8 @@ const cv = {
   },
   softSkills: [
     { en: "Problem Solving", ar: "حل المشكلات" },
-  
     { en: "Communication", ar: "التواصل" },
     { en: "Teamwork", ar: "العمل الجماعي" },
-
-   
     { en: "Responsibility", ar: "تحمل المسؤولية" },
     { en: "Time Management", ar: "إدارة الوقت" },
   ],
@@ -640,6 +639,7 @@ export default function Page() {
     contact: isArabic ? "تواصل" : "Contact",
     openToOpportunities: isArabic ? "متاح للفرص" : "Open to opportunities",
     letsConnect: isArabic ? "لنتواصل" : "Let's connect",
+    whoAmI: isArabic ? "من أنا؟" : "Who am I?",
     cloudInfrastructureDevops: "Cloud Infrastructure / DevOps",
     exploreArchitecture: isArabic ? "استكشف الـArchitecture" : "Explore architecture",
     contactMe: isArabic ? "تواصل معي" : "Contact me",
@@ -760,11 +760,23 @@ export default function Page() {
     provider: isArabic ? "Provider" : "Provider",
     training: isArabic ? "Training" : "Training",
     footerStatus: isArabic ? "متاح لفرص Cloud وDevOps" : "Open to Cloud & DevOps opportunities",
-    footerConnect: isArabic ? "لنبنِ شيئًا موثوقًا." : "Let's build something reliable.",
+    footerConnect: isArabic
+      ? "أنا دايمًا منفتح للنقاش حول فرص Cloud وDevOps، والعمل الحر، والتعاون في مشاريع Infrastructure."
+      : "I'm always open to discussing Cloud & DevOps opportunities, freelance work, and collaborations on infrastructure projects.",
+    footerAbout: isArabic ? (
+      <>
+        أنا <strong>Mohamed Gamal</strong>، Cloud &amp; DevOps Engineer أركز على تحويل الـDeployments اليدوية إلى Pipelines مؤتمتة وموثوقة باستخدام AWS وLinux والـInfrastructure as Code.
+      </>
+    ) : (
+      <>
+        I&apos;m <strong>Mohamed Gamal</strong>, a Cloud &amp; DevOps Engineer focused on turning manual deployments into automated, reliable pipelines using AWS, Linux, and Infrastructure as Code.
+      </>
+    ),
     footerExplore: isArabic ? "استكشف" : "Explore",
     footerContact: isArabic ? "تواصل" : "Contact",
     footerSocial: isArabic ? "روابط" : "Links",
     footerCopyright: isArabic ? "جميع الحقوق محفوظة." : "All rights reserved.",
+    footerBuiltWith: isArabic ? "مبني بـ Next.js وTypeScript" : "Built with Next.js & TypeScript",
   };
 
   const nav = useMemo(
@@ -848,7 +860,7 @@ export default function Page() {
   const go = (id: string) => {
     const element = document.getElementById(id);
     if (!element) return;
-    const navOffset = 88;
+    const navOffset = 100;
     const top = element.getBoundingClientRect().top + window.scrollY - navOffset;
     window.scrollTo({ top, behavior: "smooth" });
     setActive(id);
@@ -903,7 +915,7 @@ export default function Page() {
           <button className="brand" onClick={() => go("home")} aria-label="Go to home">
             <span className="brand-logo-shell">
               <img src={cv.logo} alt="" className="brand-logo-image"
-                width={180} height={56} decoding="async" fetchPriority="high" />
+                width={240} height={72} decoding="async" fetchPriority="high" />
             </span>
             <span className="sr-only">{cv.name} — {cv.title}</span>
           </button>
@@ -1737,13 +1749,13 @@ export default function Page() {
         }
         .onboarding-logo-wrap {
           position: relative; display: grid; place-items: center;
-          min-height: 88px; margin-bottom: 24px;
+          min-height: 108px; margin-bottom: 24px;
           transform: translateY(12px) scale(.8); opacity: 0;
           transition: transform 900ms 70ms cubic-bezier(.16,1,.3,1), opacity 600ms 70ms ease;
         }
         .onboarding-overlay.is-ready .onboarding-logo-wrap { transform: none; opacity: 1; }
         .onboarding-logo-ring {
-          position: absolute; width: 116px; height: 116px;
+          position: absolute; width: 150px; height: 150px;
           border: 1px solid ${lightMode ? "rgba(167,131,255,.18)" : "rgba(167,131,255,.21)"};
           border-radius: 50%;
           box-shadow: 0 0 0 10px rgba(167,131,255,.025), 0 0 54px rgba(167,131,255,.17);
@@ -1751,7 +1763,7 @@ export default function Page() {
         }
         .onboarding-logo {
           position: relative; z-index: 1; display: block;
-          width: min(350px, 72vw); max-height: 108px; height: auto;
+          width: min(420px, 82vw); max-height: 132px; height: auto;
           object-fit: contain;
           filter: drop-shadow(0 14px 38px rgba(167,131,255,.17));
         }
@@ -1814,12 +1826,12 @@ export default function Page() {
           padding: 14px 18px; transition: padding 220ms ease;
         }
         .topbar-inner {
-          position: relative; width: min(1440px,100%); min-height: 58px;
-          margin: 0 auto; padding: 0 12px 0 18px;
+          position: relative; width: min(1440px,100%); min-height: 72px;
+          margin: 0 auto; padding: 0 14px 0 22px;
           display: flex; align-items: center; justify-content: space-between;
           gap: 18px;
           border: 1px solid ${lightMode ? "rgba(15,23,42,.08)" : "rgba(255,255,255,.08)"};
-          border-radius: 18px;
+          border-radius: 20px;
           background: ${lightMode ? "rgba(255,255,255,.84)" : "rgba(9,10,20,.70)"};
           box-shadow: 0 16px 44px ${lightMode ? "rgba(15,23,42,.08)" : "rgba(0,0,0,.24)"};
           backdrop-filter: blur(20px) saturate(150%);
@@ -1827,7 +1839,7 @@ export default function Page() {
         }
         .topbar.scrolled { padding-top: 9px; }
         .topbar.scrolled .topbar-inner {
-          min-height: 54px;
+          min-height: 66px;
           border-color: ${lightMode ? "rgba(15,23,42,.11)" : "rgba(255,255,255,.11)"};
           background: ${lightMode ? "rgba(255,255,255,.92)" : "rgba(9,10,20,.88)"};
         }
@@ -1838,8 +1850,8 @@ export default function Page() {
         }
         .brand-logo-shell {
           position: relative; display: inline-flex; align-items: center;
-          width: clamp(132px,13vw,182px); height: 42px;
-          overflow: hidden; border-radius: 10px; flex: 0 0 auto;
+          width: clamp(180px,18vw,260px); height: 58px;
+          overflow: hidden; border-radius: 12px; flex: 0 0 auto;
         }
         .brand-logo-image {
           display: block; width: 100%; height: 100%;
@@ -1902,7 +1914,7 @@ export default function Page() {
         }
         .language-button, .theme-button, .menu-btn {
           display: inline-flex; align-items: center; justify-content: center;
-          min-width: 34px; height: 34px; padding: 0 9px;
+          min-width: 36px; height: 36px; padding: 0 10px;
           border: 1px solid ${lightMode ? "rgba(15,23,42,.09)" : "rgba(255,255,255,.10)"};
           border-radius: 10px;
           background: ${lightMode ? "rgba(255,255,255,.50)" : "rgba(255,255,255,.035)"};
@@ -1923,8 +1935,8 @@ export default function Page() {
         .theme-icon { position: relative; z-index: 1; display: inline-flex; }
         .menu-btn { display: none; font-size: 17px; line-height: 1; }
         .mobile-menu {
-          position: fixed; inset: 76px 18px auto; z-index: 119;
-          max-height: calc(100vh - 92px); overflow: auto; padding: 12px;
+          position: fixed; inset: 94px 18px auto; z-index: 119;
+          max-height: calc(100vh - 110px); overflow: auto; padding: 12px;
           border: 1px solid ${lightMode ? "rgba(15,23,42,.09)" : "rgba(255,255,255,.09)"};
           border-radius: 18px;
           background: ${lightMode ? "rgba(255,255,255,.95)" : "rgba(9,10,20,.96)"};
@@ -1963,17 +1975,17 @@ export default function Page() {
         @media (max-width: 980px) {
           .nav-center { display: none; }
           .menu-btn { display: inline-flex; }
-          .topbar-inner { padding-left: 14px; }
+          .topbar-inner { padding-left: 16px; }
         }
         @media (max-width: 620px) {
           .topbar { padding-inline: 10px; }
-          .topbar-inner { min-height: 54px; padding: 0 9px 0 12px; border-radius: 15px; }
-          .brand-logo-shell { width: 132px; height: 38px; }
-          .language-button { min-width: 31px; padding-inline: 7px; }
+          .topbar-inner { min-height: 60px; padding: 0 9px 0 12px; border-radius: 15px; }
+          .brand-logo-shell { width: 150px; height: 46px; }
+          .language-button { min-width: 33px; padding-inline: 7px; }
           .theme-button { display: none; }
-          .mobile-menu { inset-inline: 10px; top: 70px; }
+          .mobile-menu { inset-inline: 10px; top: 82px; }
           .onboarding-content { padding-inline: 18px; }
-          .onboarding-logo { width: min(290px, 76vw); }
+          .onboarding-logo { width: min(300px, 80vw); }
         }
         @media (prefers-reduced-motion: reduce) {
           .onboarding-overlay, .onboarding-content, .onboarding-logo-wrap,
@@ -2361,85 +2373,6 @@ export default function Page() {
           .recommendation-grid { grid-template-columns: 1fr; }
         }
 
-        .footer-freelance-links {
-          margin-top: 30px; padding-top: 22px;
-          border-top: 1px solid
-            ${lightMode ? "rgba(15, 23, 42, 0.07)" : "rgba(255, 255, 255, 0.075)"};
-        }
-        .footer-freelance-head {
-          display: flex; align-items: center; justify-content: space-between;
-          gap: 16px; margin-bottom: 12px;
-        }
-        .footer-freelance-note { margin: 4px 0 0; font-size: 11px; line-height: 1.45; opacity: 0.5; }
-        .footer-freelance-count {
-          flex: 0 0 auto; font-size: 9px; letter-spacing: 0.1em;
-          text-transform: uppercase; opacity: 0.38; white-space: nowrap;
-        }
-        .footer-freelance-grid {
-          display: flex; flex-wrap: wrap; align-items: center; gap: 11px;
-          padding: 2px 0 4px; margin: 0;
-        }
-        .footer-freelance-link {
-          position: relative; display: inline-flex; align-items: center;
-          justify-content: center; width: 44px; height: 44px; padding: 0;
-          border: 1px solid
-            ${lightMode ? "rgba(15, 23, 42, 0.11)" : "rgba(255, 255, 255, 0.10)"};
-          border-radius: 12px; text-decoration: none; color: inherit;
-          background: ${lightMode ? "rgba(255,255,255,0.55)" : "rgba(255,255,255,0.025)"};
-          box-shadow: 0 2px 8px
-            ${lightMode ? "rgba(15, 23, 42, 0.045)" : "rgba(0, 0, 0, 0.10)"};
-          transition: transform 160ms ease, border-color 160ms ease,
-            background 160ms ease, box-shadow 160ms ease;
-        }
-        .footer-freelance-link:hover {
-          transform: translateY(-2px);
-          border-color: ${lightMode ? "rgba(15, 23, 42, 0.22)" : "rgba(255, 255, 255, 0.22)"};
-          background: ${lightMode ? "rgba(255,255,255,0.88)" : "rgba(255,255,255,0.055)"};
-          box-shadow: 0 7px 16px
-            ${lightMode ? "rgba(15, 23, 42, 0.09)" : "rgba(0, 0, 0, 0.16)"};
-        }
-        .footer-freelance-link:focus-visible {
-          outline: 2px solid
-            ${lightMode ? "rgba(46, 103, 224, 0.48)" : "rgba(105, 224, 255, 0.52)"};
-          outline-offset: 3px;
-        }
-        .footer-freelance-link .freelance-logo {
-          position: relative; z-index: 1; display: inline-flex;
-          align-items: center; justify-content: center;
-          width: 27px; height: 27px; border: 0; border-radius: 7px;
-          background: transparent; box-shadow: none;
-        }
-        .footer-freelance-link .freelance-logo img {
-          display: block; width: 25px; height: 25px; object-fit: contain;
-        }
-        .footer-freelance-link .freelance-logo-fallback {
-          display: inline-flex; align-items: center; justify-content: center;
-          width: 25px; height: 25px; border-radius: 7px;
-          font-size: 9px; font-weight: 800; letter-spacing: -0.02em;
-        }
-        .footer-freelance-name, .footer-freelance-arrow {
-          position: absolute; width: 1px; height: 1px; padding: 0;
-          margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0);
-          white-space: nowrap; border: 0;
-        }
-        .rtl .footer-freelance-head { flex-direction: row-reverse; }
-        .rtl .footer-freelance-grid { justify-content: flex-start; }
-        @media (max-width: 700px) {
-          .footer-freelance-links { margin-top: 26px; padding-top: 18px; }
-          .footer-freelance-head {
-            align-items: flex-start; flex-direction: column;
-            gap: 5px; margin-bottom: 11px;
-          }
-          .footer-freelance-count { display: none; }
-          .footer-freelance-grid { gap: 9px; }
-          .footer-freelance-link { width: 42px; height: 42px; border-radius: 11px; }
-          .footer-freelance-link .freelance-logo,
-          .footer-freelance-link .freelance-logo img,
-          .footer-freelance-link .freelance-logo-fallback {
-            width: 24px; height: 24px;
-          }
-        }
-
         /* =====================================================
            CONTACT CARD STYLES
            ===================================================== */
@@ -2494,77 +2427,372 @@ export default function Page() {
           .contact-icon-box { width: 38px; height: 38px; flex-basis: 38px; }
           .contact-item-card { padding: 14px 16px; gap: 14px; }
         }
+
+        /* =====================================================
+           FOOTER — REDESIGNED (3-column, matching reference)
+           ===================================================== */
+        .site-footer {
+          position: relative;
+          margin-top: 80px;
+          padding: 0;
+          border-top: 1px solid
+            ${lightMode ? "rgba(15, 23, 42, 0.08)" : "rgba(255, 255, 255, 0.08)"};
+          background: ${lightMode
+            ? "linear-gradient(180deg, rgba(255,255,255,0.6), rgba(245,246,250,0.9))"
+            : "linear-gradient(180deg, rgba(9,10,20,0.55), rgba(6,7,14,0.9))"};
+        }
+        .footer-inner {
+          max-width: 1280px;
+          margin: 0 auto;
+          padding: 0 32px;
+        }
+        .footer-top {
+          display: grid;
+          grid-template-columns: 1fr minmax(320px, 400px) 1fr;
+          gap: 0;
+          padding: 64px 0;
+          align-items: stretch;
+        }
+        .footer-col {
+          display: flex;
+          flex-direction: column;
+          padding: 0 44px;
+          min-width: 0;
+        }
+        .footer-col:first-child { padding-inline-start: 0; }
+        .footer-col:last-child { padding-inline-end: 0; }
+
+        .footer-center-col {
+          padding: 0 44px;
+          border-left: 1px solid
+            ${lightMode ? "rgba(15, 23, 42, 0.08)" : "rgba(255, 255, 255, 0.08)"};
+          border-right: 1px solid
+            ${lightMode ? "rgba(15, 23, 42, 0.08)" : "rgba(255, 255, 255, 0.08)"};
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          min-width: 0;
+        }
+
+        .footer-heading-row {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          margin-bottom: 20px;
+        }
+        .footer-heading-line {
+          width: 26px;
+          height: 2px;
+          background: #A783FF;
+          border-radius: 999px;
+          flex: 0 0 auto;
+        }
+        .footer-heading {
+          font-size: 11px;
+          font-weight: 800;
+          letter-spacing: 0.18em;
+          text-transform: uppercase;
+          color: #A783FF;
+        }
+
+        .footer-connect-text {
+          margin: 0;
+          font-size: 14px;
+          line-height: 1.7;
+          color: ${lightMode ? "rgba(15,23,42,.72)" : "rgba(240,238,255,.72)"};
+          max-width: 380px;
+        }
+        .footer-connect-text strong,
+        .footer-who-text strong {
+          color: ${lightMode ? "#11131b" : "#f7f4ff"};
+          font-weight: 700;
+        }
+        .footer-socials {
+          display: flex;
+          gap: 12px;
+          margin-top: 26px;
+          flex-wrap: wrap;
+        }
+        .footer-socials a {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          width: 44px;
+          height: 44px;
+          border-radius: 12px;
+          border: 1px solid
+            ${lightMode ? "rgba(15, 23, 42, 0.10)" : "rgba(255, 255, 255, 0.10)"};
+          background: ${lightMode ? "rgba(255,255,255,.7)" : "rgba(255,255,255,.035)"};
+          color: ${lightMode ? "rgba(15,23,42,.72)" : "rgba(240,238,255,.75)"};
+          text-decoration: none;
+          transition: transform 180ms ease, border-color 180ms ease,
+            background 180ms ease, color 180ms ease, box-shadow 180ms ease;
+        }
+        .footer-socials a:hover {
+          transform: translateY(-2px);
+          border-color: rgba(167, 131, 255, 0.4);
+          background: rgba(167, 131, 255, 0.08);
+          color: #A783FF;
+          box-shadow: 0 8px 22px rgba(167, 131, 255, 0.14);
+        }
+
+        .footer-center-mark {
+          display: inline-grid;
+          place-items: center;
+          width: 60px;
+          height: 60px;
+          border-radius: 16px;
+          background: linear-gradient(135deg, #A783FF 0%, #6366f1 100%);
+          color: #ffffff;
+          font-size: 20px;
+          font-weight: 900;
+          letter-spacing: 0.02em;
+          box-shadow: 0 14px 32px rgba(167, 131, 255, 0.32);
+          margin-bottom: 18px;
+        }
+        .footer-center-name {
+          display: block;
+          font-size: 20px;
+          font-weight: 800;
+          letter-spacing: -0.01em;
+          color: ${lightMode ? "#11131b" : "#f7f4ff"};
+          margin-bottom: 4px;
+        }
+        .footer-center-title {
+          display: block;
+          font-size: 14px;
+          font-weight: 600;
+          color: #A783FF;
+          margin-bottom: 2px;
+        }
+        .footer-center-location {
+          display: block;
+          font-size: 12px;
+          font-weight: 500;
+          color: ${lightMode ? "rgba(15,23,42,.5)" : "rgba(255,255,255,.45)"};
+        }
+
+        .footer-freelance-grid {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 10px;
+          margin-top: 26px;
+          max-width: 340px;
+        }
+        .footer-freelance-link {
+          position: relative;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          width: 46px;
+          height: 46px;
+          padding: 0;
+          border: 1px solid
+            ${lightMode ? "rgba(15, 23, 42, 0.10)" : "rgba(255, 255, 255, 0.10)"};
+          border-radius: 12px;
+          text-decoration: none;
+          color: inherit;
+          background: ${lightMode ? "rgba(255,255,255,.72)" : "rgba(255,255,255,.04)"};
+          box-shadow: 0 3px 10px
+            ${lightMode ? "rgba(15, 23, 42, 0.05)" : "rgba(0, 0, 0, 0.14)"};
+          transition: transform 160ms ease, border-color 160ms ease,
+            background 160ms ease, box-shadow 160ms ease;
+        }
+        .footer-freelance-link:hover {
+          transform: translateY(-2px);
+          border-color: rgba(167, 131, 255, 0.4);
+          background: rgba(167, 131, 255, 0.08);
+          box-shadow: 0 8px 20px rgba(167, 131, 255, 0.18);
+        }
+        .footer-freelance-link:focus-visible {
+          outline: 2px solid rgba(167, 131, 255, 0.5);
+          outline-offset: 3px;
+        }
+        .footer-freelance-link .freelance-logo {
+          position: relative;
+          z-index: 1;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          width: 28px;
+          height: 28px;
+          border: 0;
+          border-radius: 7px;
+          background: transparent;
+        }
+        .footer-freelance-link .freelance-logo img {
+          display: block;
+          width: 26px;
+          height: 26px;
+          object-fit: contain;
+        }
+        .footer-freelance-link .freelance-logo-fallback {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          width: 26px;
+          height: 26px;
+          border-radius: 7px;
+          font-size: 10px;
+          font-weight: 800;
+          letter-spacing: -0.02em;
+        }
+        .footer-freelance-name,
+        .footer-freelance-arrow {
+          position: absolute;
+          width: 1px; height: 1px; padding: 0; margin: -1px;
+          overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
+        }
+
+        .footer-who-text {
+          margin: 0;
+          font-size: 14px;
+          line-height: 1.7;
+          color: ${lightMode ? "rgba(15,23,42,.72)" : "rgba(240,238,255,.72)"};
+          max-width: 380px;
+        }
+
+        .footer-bottom {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 16px;
+          flex-wrap: wrap;
+          padding: 24px 0 32px;
+          border-top: 1px solid
+            ${lightMode ? "rgba(15, 23, 42, 0.08)" : "rgba(255, 255, 255, 0.08)"};
+          font-size: 12px;
+          color: ${lightMode ? "rgba(15,23,42,.55)" : "rgba(255,255,255,.5)"};
+        }
+        .footer-bottom .footer-stack {
+          font-size: 11px;
+          letter-spacing: 0.06em;
+          opacity: 0.75;
+        }
+
+        .rtl .footer-top { direction: rtl; }
+        .rtl .footer-heading-row { flex-direction: row-reverse; }
+
+        @media (max-width: 1024px) {
+          .footer-top {
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            padding: 56px 0;
+          }
+          .footer-center-col {
+            grid-column: 1 / -1;
+            grid-row: 1;
+            padding: 0 0 40px;
+            border-left: 0;
+            border-right: 0;
+            border-bottom: 1px solid
+              ${lightMode ? "rgba(15, 23, 42, 0.08)" : "rgba(255, 255, 255, 0.08)"};
+          }
+          .footer-col { padding: 0; }
+        }
+        @media (max-width: 700px) {
+          .footer-inner { padding: 0 22px; }
+          .footer-top {
+            grid-template-columns: 1fr;
+            gap: 36px;
+            padding: 48px 0;
+          }
+          .footer-center-col {
+            padding-bottom: 32px;
+            margin-bottom: 4px;
+          }
+          .footer-connect-text,
+          .footer-who-text { max-width: none; }
+          .footer-freelance-grid { max-width: none; }
+          .footer-bottom {
+            flex-direction: column;
+            align-items: flex-start;
+            text-align: start;
+            padding: 20px 0 28px;
+            gap: 8px;
+          }
+        }
+        @media (max-width: 480px) {
+          .footer-inner { padding: 0 18px; }
+          .footer-socials a { width: 40px; height: 40px; }
+          .footer-freelance-link { width: 42px; height: 42px; border-radius: 11px; }
+          .footer-freelance-link .freelance-logo,
+          .footer-freelance-link .freelance-logo img,
+          .footer-freelance-link .freelance-logo-fallback {
+            width: 24px; height: 24px;
+          }
+          .footer-center-mark { width: 54px; height: 54px; font-size: 18px; }
+        }
       `}</style>
 
-      {/* FOOTER */}
+      {/* FOOTER — REDESIGNED */}
       <footer className="site-footer">
-        <div className="container">
-          <div className="footer-main">
-            <div className="footer-brand">
-              <button className="footer-brand-button" onClick={() => go("home")}>
-                <span className="footer-brand-mark">{i.cloud}</span>
-                <span>
-                  <strong>{cv.name}</strong>
-                  <small>{cv.title}</small>
-                </span>
-              </button>
-              <p>{t.footerConnect}</p>
-              <div className="footer-status">
-                <span className="availability-dot" />
-                <span>{t.footerStatus}</span>
+        <div className="footer-inner">
+          <div className="footer-top">
+            {/* LEFT — LET'S CONNECT */}
+            <div className="footer-col">
+              <div className="footer-heading-row">
+                <span className="footer-heading-line" />
+                <span className="footer-heading">{t.letsConnect}</span>
               </div>
-            </div>
-            <div className="footer-column">
-              <span className="footer-heading">{t.footerExplore}</span>
-              <button onClick={() => go("about")}>{t.about}</button>
-              <button onClick={() => go("skills")}>{t.skills}</button>
-              <button onClick={() => go("experience")}>{t.experience}</button>
-              <button onClick={() => go("project")}>{t.project}</button>
-            </div>
-            <div className="footer-column">
-              <span className="footer-heading">{t.footerContact}</span>
-              <a href={`mailto:${cv.email}`} dir="ltr">{cv.email}</a>
-              <a href={`tel:${cv.phone.replace(/\s/g, "")}`} dir="ltr">{cv.phone}</a>
-              <button onClick={() => go("contact")}>{t.contact}</button>
-            </div>
-            <div className="footer-column">
-              <span className="footer-heading">{t.footerSocial}</span>
-              <a href={cv.linkedin} target="_blank" rel="noreferrer" className="footer-social-link">
-                <span>{i.linkedin}</span><span>LinkedIn</span>
-              </a>
-              <a href={cv.github} target="_blank" rel="noreferrer" className="footer-social-link">
-                <span>{i.github}</span><span>GitHub</span>
-              </a>
-            </div>
-          </div>
-          <div className="footer-freelance-links">
-            <div className="footer-freelance-head">
-              <div>
-                <span className="footer-heading">{t.freelancePlatforms}</span>
-                <p className="footer-freelance-note">{t.freelancePlatformsNote}</p>
-              </div>
-            </div>
-            <div className="footer-freelance-grid">
-              {cv.freelanceLinks.map((platform) => (
-                <a key={platform.name} href={platform.url} target="_blank"
-                  rel="noopener noreferrer" className="footer-freelance-link"
-                  dir="ltr" aria-label={`${platform.name} profile`}
-                  title={isArabic ? platform.nameAr : platform.name}>
-                  <PlatformLogo src={platform.logo} mark={platform.mark} name={platform.name} />
-                  <span className="footer-freelance-name">
-                    {isArabic ? platform.nameAr : platform.name}
-                  </span>
-                  <span className="footer-freelance-arrow" aria-hidden="true">
-                    {i.external}
-                  </span>
+              <p className="footer-connect-text">{t.footerConnect}</p>
+              <div className="footer-socials">
+                <a href={cv.github} target="_blank" rel="noreferrer" aria-label="GitHub">
+                  {i.github}
                 </a>
-              ))}
+                <a href={cv.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn">
+                  {i.linkedin}
+                </a>
+                <a href={`mailto:${cv.email}`} aria-label="Email">
+                  {i.email}
+                </a>
+              </div>
+            </div>
+
+            {/* CENTER — BRAND + FREELANCE */}
+            <div className="footer-center-col">
+              <span className="footer-center-mark" aria-hidden="true">MG</span>
+              <strong className="footer-center-name">{cv.name}</strong>
+              <span className="footer-center-title">{cv.title}</span>
+              <span className="footer-center-location">
+                {isArabic ? cv.locationAr : cv.location}
+              </span>
+              <div className="footer-freelance-grid">
+                {cv.freelanceLinks.map((platform) => (
+                  <a key={platform.name} href={platform.url} target="_blank"
+                    rel="noopener noreferrer" className="footer-freelance-link"
+                    dir="ltr" aria-label={`${platform.name} profile`}
+                    title={isArabic ? platform.nameAr : platform.name}>
+                    <PlatformLogo src={platform.logo} mark={platform.mark} name={platform.name} />
+                    <span className="footer-freelance-name">
+                      {isArabic ? platform.nameAr : platform.name}
+                    </span>
+                    <span className="footer-freelance-arrow" aria-hidden="true">
+                      {i.external}
+                    </span>
+                  </a>
+                ))}
+              </div>
+            </div>
+
+            {/* RIGHT — WHO AM I */}
+            <div className="footer-col">
+              <div className="footer-heading-row">
+                <span className="footer-heading-line" />
+                <span className="footer-heading">{t.whoAmI}</span>
+              </div>
+              <p className="footer-who-text">{t.footerAbout}</p>
             </div>
           </div>
+
           <div className="footer-bottom">
-            <span>© {new Date().getFullYear()} {cv.name}. {t.footerCopyright}</span>
+            <span>
+              © {new Date().getFullYear()} {cv.name}. {t.footerCopyright} · {t.footerBuiltWith}
+            </span>
             <span dir="ltr" className="footer-stack">
-              Cloud & DevOps · AWS · Linux · Networking · IaC
+              Cloud &amp; DevOps · AWS · Linux · Networking · IaC
             </span>
           </div>
         </div>
