@@ -1841,7 +1841,7 @@ export default function Page() {
           position: relative; width: min(1900px,100%); min-height: 74px;
           margin: 0 auto; padding: 0 14px 0 20px;
           display: flex; align-items: center; justify-content: space-between;
-          gap: 20px;
+          gap: 14px;
           border: 1px solid ${lightMode ? "rgba(15,23,42,.08)" : "rgba(255,255,255,.08)"};
           border-radius: 20px;
           background: ${lightMode ? "rgba(255,255,255,.84)" : "rgba(9,10,20,.70)"};
@@ -1879,29 +1879,30 @@ export default function Page() {
           outline-offset: 5px; border-radius: 10px;
         }
 
-        /* Keep the full desktop navigation visible from the first item.
-           The old centered overflow container could clip "Home" at the left edge. */
+        /* Desktop navigation: keep every item visible and centered without clipping. */
         .nav-center {
           flex: 1 1 auto; min-width: 0; min-height: 0;
           display: flex; align-items: center; justify-content: center;
           overflow: hidden;
         }
         .nav-links {
-          display: flex; align-items: center; justify-content: center;
-          gap: 6px; width: max-content; max-width: 100%;
-          min-width: 0; overflow-x: auto; overflow-y: hidden;
-          padding-inline: 2px; scrollbar-width: none;
-          scroll-behavior: smooth; overscroll-behavior-inline: contain;
+          display: flex; align-items: center; justify-content: space-between;
+          gap: clamp(0px, .25vw, 4px);
+          width: 100%; min-width: 0;
+          overflow: hidden;
+          padding-inline: 2px;
+          scrollbar-width: none;
         }
         .nav-links::-webkit-scrollbar { display: none; }
         .nav-links button {
           position: relative; display: inline-flex; align-items: center;
-          justify-content: center; gap: 8px; min-height: 44px;
-          padding: 10px 12px; flex: 0 0 auto;
+          justify-content: center; gap: 6px; min-height: 44px;
+          padding: 10px clamp(4px, .45vw, 9px);
+          flex: 1 1 auto; min-width: 0;
           border: 0; border-radius: 11px;
           background: transparent;
           color: ${lightMode ? "rgba(15,23,42,.62)" : "rgba(255,255,255,.64)"};
-          font: inherit; font-size: 15px; font-weight: 700;
+          font: inherit; font-size: clamp(12px, .75vw, 15px); font-weight: 700;
           letter-spacing: -.012em;
           white-space: nowrap; cursor: pointer;
           transition: color 180ms ease, background 180ms ease, transform 180ms ease;
@@ -1927,7 +1928,7 @@ export default function Page() {
           color: ${lightMode ? "rgba(15,23,42,.60)" : "rgba(255,255,255,.58)"};
           background: ${lightMode ? "rgba(15,23,42,.035)" : "rgba(255,255,255,.045)"};
           border: 1px solid ${lightMode ? "rgba(15,23,42,.07)" : "rgba(255,255,255,.08)"};
-          font-size: 11.5px; font-weight: 730; letter-spacing: .055em;
+          font-size: 10.5px; font-weight: 730; letter-spacing: .045em;
           text-transform: uppercase; white-space: nowrap;
         }
         .availability-dot {
@@ -1938,7 +1939,7 @@ export default function Page() {
         }
         .language-button, .theme-button, .menu-btn {
           display: inline-flex; align-items: center; justify-content: center;
-          min-width: 42px; height: 42px; padding: 0 12px;
+          min-width: 42px; height: 42px; padding: 0 10px;
           border: 1px solid ${lightMode ? "rgba(15,23,42,.09)" : "rgba(255,255,255,.10)"};
           border-radius: 10px;
           background: ${lightMode ? "rgba(255,255,255,.50)" : "rgba(255,255,255,.035)"};
@@ -1991,10 +1992,37 @@ export default function Page() {
           0%, 100% { opacity: .55; transform: scale(1); }
           50% { opacity: .85; transform: scale(1.06); }
         }
-        @media (max-width: 1180px) {
+        @media (max-width: 1500px) and (min-width: 981px) {
+          .topbar-inner { gap: 12px; padding-inline: 12px; }
+          .brand-logo-shell { width: 205px; }
+          .nav-links { gap: 0; }
+          .nav-links button {
+            min-height: 42px;
+            padding-inline: 4px;
+            font-size: clamp(11px, .78vw, 14px);
+          }
+          .nav-tools { gap: 6px; }
+          .availability {
+            padding-inline: 8px;
+            font-size: 10px;
+          }
+        }
+        @media (max-width: 1180px) and (min-width: 981px) {
+          .brand-logo-shell { width: 185px; }
           .nav-center { justify-content: flex-start; }
-          .nav-links { justify-content: flex-start; gap: 2px; }
-          .nav-links button { padding-inline: 9px; font-size: 13px; min-height: 42px; }
+          .nav-links {
+            justify-content: flex-start;
+            width: max-content;
+            max-width: 100%;
+            overflow-x: auto;
+            gap: 2px;
+          }
+          .nav-links button {
+            flex: 0 0 auto;
+            min-width: auto;
+            padding-inline: 8px;
+            font-size: 12px;
+          }
           .availability { display: none; }
         }
         @media (max-width: 980px) {
