@@ -1926,10 +1926,12 @@ export default function Page() {
           height: 100%;
           object-fit: contain;
           object-position: left center;
+          transform: scale(1.12);
+          transform-origin: left center;
           transition: transform 220ms ease, filter 220ms ease;
         }
         .brand:hover .brand-logo-image {
-          transform: translateY(-1px) scale(1.015);
+          transform: translateY(-1px) scale(1.135);
           filter: drop-shadow(0 7px 18px rgba(167,131,255,.20));
         }
         .brand:focus-visible {
@@ -2843,6 +2845,29 @@ export default function Page() {
           font-weight: 500;
           color: ${lightMode ? "rgba(15,23,42,.5)" : "rgba(255,255,255,.45)"};
         }
+        .footer-brand-logo-wrap {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: min(210px, 100%);
+          height: 64px;
+          margin-top: 14px;
+          overflow: hidden;
+          border-radius: 12px;
+        }
+        .footer-brand-logo {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+          object-position: center;
+          transform: scale(1.08);
+          transition: transform 220ms ease, filter 220ms ease;
+        }
+        .footer-brand-logo-wrap:hover .footer-brand-logo {
+          transform: scale(1.12);
+          filter: drop-shadow(0 8px 20px rgba(167,131,255,.16));
+        }
 
         .footer-freelance-grid {
           display: flex;
@@ -2995,6 +3020,7 @@ export default function Page() {
             width: 24px; height: 24px;
           }
           .footer-center-mark { width: 54px; height: 54px; font-size: 18px; }
+          .footer-brand-logo-wrap { width: min(190px, 100%); height: 58px; }
         }
       `}</style>
 
@@ -3030,6 +3056,17 @@ export default function Page() {
               <span className="footer-center-location">
                 {isArabic ? cv.locationAr : cv.location}
               </span>
+              <div className="footer-brand-logo-wrap" aria-hidden="true">
+                <img
+                  src={cv.logo}
+                  alt=""
+                  className="footer-brand-logo"
+                  width={210}
+                  height={64}
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
               <div className="footer-freelance-grid">
                 {cv.freelanceLinks.map((platform) => (
                   <a key={platform.name} href={platform.url} target="_blank"
