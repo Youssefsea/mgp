@@ -1004,7 +1004,7 @@ export default function Page() {
             <div className="hero-portrait-ring" />
             <div className="portrait">
               {!profileError ? (
-                <img src="/profile-cutout.png" alt={`${cv.name} portrait`}
+                <img src="/profile.png" alt={`${cv.name} portrait`}
                   fetchPriority="high" loading="eager" decoding="async"
                   onError={(event) => {
                     // Keep the page resilient when the transparent cut-out has
