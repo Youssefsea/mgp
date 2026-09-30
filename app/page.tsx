@@ -3050,13 +3050,7 @@ export default function Page() {
 
             {/* CENTER — BRAND + FREELANCE */}
             <div className="footer-center-col">
-              <span className="footer-center-mark" aria-hidden="true">MG</span>
-              <strong className="footer-center-name">{cv.name}</strong>
-              <span className="footer-center-title">{cv.title}</span>
-              <span className="footer-center-location">
-                {isArabic ? cv.locationAr : cv.location}
-              </span>
-              <div className="footer-brand-logo-wrap" aria-hidden="true">
+                <div className="footer-brand-logo-wrap" aria-hidden="true">
                 <img
                   src={cv.logo}
                   alt=""
@@ -3067,6 +3061,12 @@ export default function Page() {
                   decoding="async"
                 />
               </div>
+              <strong className="footer-center-name">{cv.name}</strong>
+              <span className="footer-center-title">{cv.title}</span>
+              <span className="footer-center-location">
+                {isArabic ? cv.locationAr : cv.location}
+              </span>
+            
               <div className="footer-freelance-grid">
                 {cv.freelanceLinks.map((platform) => (
                   <a key={platform.name} href={platform.url} target="_blank"
