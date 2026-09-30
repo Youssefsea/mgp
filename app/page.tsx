@@ -1230,11 +1230,9 @@ export default function Page() {
       )}
 
       {/* NAV */}
-      <header
-        className={`topbar ${
-          scrolled ? "scrolled" : ""
-        }`}
-      >
+    <header
+  className={`topbar ${scrolled ? "is-scrolled" : ""}`}
+>
         <div className="topbar-inner">
           <button
             className="brand"
@@ -5589,6 +5587,101 @@ export default function Page() {
             width: min(190px, 100%);
             height: 58px;
           }
+/* =====================================================
+   NAVBAR — KEEP EXACT SAME SIZE ON SCROLL
+   ===================================================== */
+
+/*
+  IMPORTANT:
+  .scrolled is no longer used by the header.
+  Only .is-scrolled is used for visual changes.
+
+  This means:
+  - width stays exactly the same
+  - height stays exactly the same
+  - padding stays exactly the same
+  - logo size stays exactly the same
+  - nav text spacing stays exactly the same
+  - buttons do not shrink
+*/
+
+.site .topbar.is-scrolled {
+  /*
+    Visual changes only.
+    No width / height / padding changes here.
+  */
+  background: color-mix(
+    in srgb,
+    var(--bg) 90%,
+    transparent
+  );
+
+  box-shadow:
+    0 10px 32px
+      color-mix(
+        in srgb,
+        #000 9%,
+        transparent
+      );
+}
+
+/*
+  Explicitly prevent any old .scrolled rules
+  from affecting the navbar if they exist elsewhere.
+*/
+.site .topbar.is-scrolled .topbar-inner {
+  width: inherit;
+  min-height: inherit;
+}
+
+/*
+  Keep navigation buttons from changing size.
+*/
+.site .topbar.is-scrolled .nav-links button {
+  transform: none;
+}
+
+/*
+  Keep the nav layout stable.
+*/
+.site .topbar.is-scrolled .nav-links {
+  width: 100%;
+}
+
+/*
+  Mobile:
+  the existing responsive sizes remain untouched.
+*/
+@media (max-width: 1100px) {
+  .site .topbar.is-scrolled .nav-center {
+    display: none;
+  }
+
+  .site .topbar.is-scrolled .menu-btn {
+    display: inline-grid;
+    place-items: center;
+  }
+}
+
+/*
+  Extra safety for very small screens.
+  Nothing gets resized during scroll.
+*/
+@media (max-width: 700px) {
+  .site .topbar.is-scrolled .topbar-inner {
+    width: inherit;
+    min-height: inherit;
+    padding: inherit;
+    border-radius: inherit;
+  }
+
+  .site .topbar.is-scrolled .language-button,
+  .site .topbar.is-scrolled .theme-button,
+  .site .topbar.is-scrolled .menu-btn {
+    transform: none;
+  }
+}
+          
         }
       `}</style>
 
