@@ -2159,7 +2159,13 @@ export default function Page() {
             padding-inline: 8px;
             font-size: 11px;
           }
-          .theme-button { display: none; }
+          .theme-button {
+            display: inline-flex;
+            min-width: 36px;
+            width: 36px;
+            height: 36px;
+            padding: 0;
+          }
           .mobile-menu {
             inset-inline: 10px;
             top: 82px;
@@ -2170,6 +2176,34 @@ export default function Page() {
           }
           .onboarding-content { padding-inline: 18px; }
           .onboarding-logo { width: min(300px, 80vw); }
+        }
+
+        @media (max-width: 420px) {
+          .topbar { padding-inline: 7px; }
+          .topbar-inner {
+            min-height: 58px;
+            padding: 0 7px 0 9px;
+            gap: 6px;
+          }
+          .brand-logo-shell {
+            width: 132px;
+            height: 42px;
+          }
+          .nav-tools { gap: 5px; }
+          .language-button,
+          .theme-button {
+            min-width: 34px;
+            width: 34px;
+            height: 34px;
+            padding: 0;
+          }
+          .theme-icon svg { width: 18px; height: 18px; }
+          .menu-btn {
+            min-width: 34px;
+            width: 34px;
+            height: 34px;
+            padding: 0;
+          }
         }
 
         @keyframes onboarding-pulse {
