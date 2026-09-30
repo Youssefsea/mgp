@@ -1004,7 +1004,7 @@ export default function Page() {
             <div className="hero-portrait-ring" />
             <div className="portrait">
               {!profileError ? (
-                <img src="/profile.png" alt={`${cv.name} portrait`}
+                <img src="/profile-cutout.png" alt={`${cv.name} portrait`}
                   fetchPriority="high" loading="eager" decoding="async"
                   onError={(event) => {
                     // Keep the page resilient when the transparent cut-out has
@@ -1838,10 +1838,10 @@ export default function Page() {
           padding: 14px 18px; transition: padding 220ms ease;
         }
         .topbar-inner {
-          position: relative; width: min(1680px,100%); min-height: 72px;
+          position: relative; width: min(1900px,100%); min-height: 74px;
           margin: 0 auto; padding: 0 14px 0 20px;
           display: flex; align-items: center; justify-content: space-between;
-          gap: 16px;
+          gap: 20px;
           border: 1px solid ${lightMode ? "rgba(15,23,42,.08)" : "rgba(255,255,255,.08)"};
           border-radius: 20px;
           background: ${lightMode ? "rgba(255,255,255,.84)" : "rgba(9,10,20,.70)"};
@@ -1862,7 +1862,7 @@ export default function Page() {
         }
         .brand-logo-shell {
           position: relative; display: inline-flex; align-items: center;
-          width: clamp(170px,16vw,235px); height: 58px;
+          width: clamp(180px,15vw,245px); height: 60px;
           overflow: hidden; border-radius: 12px; flex: 0 0 auto;
         }
         .brand-logo-image {
@@ -1888,7 +1888,7 @@ export default function Page() {
         }
         .nav-links {
           display: flex; align-items: center; justify-content: center;
-          gap: 2px; width: max-content; max-width: 100%;
+          gap: 6px; width: max-content; max-width: 100%;
           min-width: 0; overflow-x: auto; overflow-y: hidden;
           padding-inline: 2px; scrollbar-width: none;
           scroll-behavior: smooth; overscroll-behavior-inline: contain;
@@ -1896,13 +1896,13 @@ export default function Page() {
         .nav-links::-webkit-scrollbar { display: none; }
         .nav-links button {
           position: relative; display: inline-flex; align-items: center;
-          justify-content: center; gap: 6px; min-height: 38px;
-          padding: 8px 8px; flex: 0 0 auto;
+          justify-content: center; gap: 8px; min-height: 44px;
+          padding: 10px 12px; flex: 0 0 auto;
           border: 0; border-radius: 11px;
           background: transparent;
           color: ${lightMode ? "rgba(15,23,42,.62)" : "rgba(255,255,255,.64)"};
-          font: inherit; font-size: 10.5px; font-weight: 650;
-          letter-spacing: -.005em;
+          font: inherit; font-size: 15px; font-weight: 700;
+          letter-spacing: -.012em;
           white-space: nowrap; cursor: pointer;
           transition: color 180ms ease, background 180ms ease, transform 180ms ease;
         }
@@ -1927,7 +1927,7 @@ export default function Page() {
           color: ${lightMode ? "rgba(15,23,42,.60)" : "rgba(255,255,255,.58)"};
           background: ${lightMode ? "rgba(15,23,42,.035)" : "rgba(255,255,255,.045)"};
           border: 1px solid ${lightMode ? "rgba(15,23,42,.07)" : "rgba(255,255,255,.08)"};
-          font-size: 9px; font-weight: 700; letter-spacing: .08em;
+          font-size: 11.5px; font-weight: 730; letter-spacing: .055em;
           text-transform: uppercase; white-space: nowrap;
         }
         .availability-dot {
@@ -1938,12 +1938,12 @@ export default function Page() {
         }
         .language-button, .theme-button, .menu-btn {
           display: inline-flex; align-items: center; justify-content: center;
-          min-width: 36px; height: 36px; padding: 0 10px;
+          min-width: 42px; height: 42px; padding: 0 12px;
           border: 1px solid ${lightMode ? "rgba(15,23,42,.09)" : "rgba(255,255,255,.10)"};
           border-radius: 10px;
           background: ${lightMode ? "rgba(255,255,255,.50)" : "rgba(255,255,255,.035)"};
           color: ${lightMode ? "rgba(15,23,42,.66)" : "rgba(255,255,255,.70)"};
-          font: inherit; font-size: 10px; font-weight: 750; cursor: pointer;
+          font: inherit; font-size: 12px; font-weight: 760; cursor: pointer;
           transition: transform 180ms ease, border-color 180ms ease, background 180ms ease, color 180ms ease;
         }
         .language-button:hover, .theme-button:hover, .menu-btn:hover {
@@ -1993,8 +1993,8 @@ export default function Page() {
         }
         @media (max-width: 1180px) {
           .nav-center { justify-content: flex-start; }
-          .nav-links { justify-content: flex-start; gap: 0; }
-          .nav-links button { padding-inline: 7px; font-size: 10px; }
+          .nav-links { justify-content: flex-start; gap: 2px; }
+          .nav-links button { padding-inline: 9px; font-size: 13px; min-height: 42px; }
           .availability { display: none; }
         }
         @media (max-width: 980px) {
@@ -2006,7 +2006,7 @@ export default function Page() {
           .topbar { padding-inline: 10px; }
           .topbar-inner { min-height: 60px; padding: 0 9px 0 12px; border-radius: 15px; }
           .brand-logo-shell { width: 150px; height: 46px; }
-          .language-button { min-width: 33px; padding-inline: 7px; }
+          .language-button { min-width: 36px; padding-inline: 8px; font-size: 11px; }
           .theme-button { display: none; }
           .mobile-menu { inset-inline: 10px; top: 82px; }
           .onboarding-content { padding-inline: 18px; }
