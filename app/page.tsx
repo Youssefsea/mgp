@@ -1004,9 +1004,21 @@ export default function Page() {
             <div className="hero-portrait-ring" />
             <div className="portrait">
               {!profileError ? (
-                <img src="/profile.jpg" alt={`${cv.name} portrait`}
+                <img src="/profile-cutout.png" alt={`${cv.name} portrait`}
                   fetchPriority="high" loading="eager" decoding="async"
-                  onError={() => setProfileError(true)} />
+                  onError={(event) => {
+                    // Keep the page resilient when the transparent cut-out has
+                    // not been added yet.
+                    const img = event.currentTarget;
+                    if (img.dataset.fallbackApplied === "1") {
+                      setProfileError(true);
+                      return;
+                    }
+                    img.dataset.fallbackApplied = "1";
+                    img.src = "/profile.jpg";
+                    img.style.objectFit = "cover";
+                    img.style.objectPosition = "center 20%";
+                  }} />
               ) : (
                 <div className="portrait-placeholder">
                   <div>
@@ -1826,10 +1838,10 @@ export default function Page() {
           padding: 14px 18px; transition: padding 220ms ease;
         }
         .topbar-inner {
-          position: relative; width: min(1440px,100%); min-height: 72px;
-          margin: 0 auto; padding: 0 14px 0 22px;
+          position: relative; width: min(1680px,100%); min-height: 72px;
+          margin: 0 auto; padding: 0 14px 0 20px;
           display: flex; align-items: center; justify-content: space-between;
-          gap: 18px;
+          gap: 16px;
           border: 1px solid ${lightMode ? "rgba(15,23,42,.08)" : "rgba(255,255,255,.08)"};
           border-radius: 20px;
           background: ${lightMode ? "rgba(255,255,255,.84)" : "rgba(9,10,20,.70)"};
@@ -1850,7 +1862,7 @@ export default function Page() {
         }
         .brand-logo-shell {
           position: relative; display: inline-flex; align-items: center;
-          width: clamp(180px,18vw,260px); height: 58px;
+          width: clamp(170px,16vw,235px); height: 58px;
           overflow: hidden; border-radius: 12px; flex: 0 0 auto;
         }
         .brand-logo-image {
@@ -1866,50 +1878,37 @@ export default function Page() {
           outline: 2px solid ${lightMode ? "rgba(167,131,255,.40)" : "rgba(167,131,255,.55)"};
           outline-offset: 5px; border-radius: 10px;
         }
+
+        /* Keep the full desktop navigation visible from the first item.
+           The old centered overflow container could clip "Home" at the left edge. */
         .nav-center {
-          flex: 1 1 auto;
-          min-width: 0;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          height: 44px;
+          flex: 1 1 auto; min-width: 0; min-height: 0;
+          display: flex; align-items: center; justify-content: center;
+          overflow: hidden;
         }
         .nav-links {
           display: flex; align-items: center; justify-content: center;
-          gap: 3px; min-width: 0; overflow-x: auto;
-          overflow-y: visible;
-          scrollbar-width: none;
-          padding: 3px 0;
+          gap: 2px; width: max-content; max-width: 100%;
+          min-width: 0; overflow-x: auto; overflow-y: hidden;
+          padding-inline: 2px; scrollbar-width: none;
+          scroll-behavior: smooth; overscroll-behavior-inline: contain;
         }
         .nav-links::-webkit-scrollbar { display: none; }
         .nav-links button {
-          position: relative;
-          display: inline-flex;
-          align-items: center;
-          justify-content: center;
-          gap: 7px;
-          height: 38px;
-          padding: 0 12px;
-          border: 0;
-          border-radius: 11px;
+          position: relative; display: inline-flex; align-items: center;
+          justify-content: center; gap: 6px; min-height: 38px;
+          padding: 8px 8px; flex: 0 0 auto;
+          border: 0; border-radius: 11px;
           background: transparent;
           color: ${lightMode ? "rgba(15,23,42,.62)" : "rgba(255,255,255,.64)"};
-          font: inherit;
-          font-size: 11px;
-          font-weight: 650;
-          line-height: 1;
-          white-space: nowrap;
-          cursor: pointer;
+          font: inherit; font-size: 10.5px; font-weight: 650;
+          letter-spacing: -.005em;
+          white-space: nowrap; cursor: pointer;
           transition: color 180ms ease, background 180ms ease, transform 180ms ease;
-        }
-        .nav-links button > span {
-          display: inline-flex;
-          align-items: center;
-          line-height: 1;
         }
         .nav-links button::after {
           content: ""; position: absolute; left: 12px; right: 12px;
-          bottom: 5px; height: 1px; border-radius: 999px;
+          bottom: 4px; height: 1px; border-radius: 999px;
           background: #A783FF; transform: scaleX(0);
           transition: transform 180ms ease;
         }
@@ -1920,7 +1919,7 @@ export default function Page() {
         .nav-links button.active { color: #A783FF; background: rgba(167,131,255,.10); }
         .nav-links button.active::after { transform: scaleX(1); }
         .nav-contact { color: #A783FF !important; }
-        .nav-contact-icon { display: inline-flex; opacity: .86; align-items: center; }
+        .nav-contact-icon { display: inline-flex; opacity: .86; }
         .nav-tools { flex: 0 0 auto; display: flex; align-items: center; gap: 8px; }
         .availability {
           display: inline-flex; align-items: center; gap: 7px;
@@ -1945,7 +1944,6 @@ export default function Page() {
           background: ${lightMode ? "rgba(255,255,255,.50)" : "rgba(255,255,255,.035)"};
           color: ${lightMode ? "rgba(15,23,42,.66)" : "rgba(255,255,255,.70)"};
           font: inherit; font-size: 10px; font-weight: 750; cursor: pointer;
-          line-height: 1;
           transition: transform 180ms ease, border-color 180ms ease, background 180ms ease, color 180ms ease;
         }
         .language-button:hover, .theme-button:hover, .menu-btn:hover {
@@ -1972,7 +1970,6 @@ export default function Page() {
         .mobile-menu .nav-links { display: flex; flex-direction: column; align-items: stretch; }
         .mobile-menu .nav-links button {
           justify-content: flex-start; width: 100%; min-height: 46px; padding: 11px 12px;
-          height: auto;
         }
         @keyframes onboarding-pulse {
           0%, 100% { transform: scale(.96); opacity: .7; }
@@ -1995,8 +1992,9 @@ export default function Page() {
           50% { opacity: .85; transform: scale(1.06); }
         }
         @media (max-width: 1180px) {
-          .nav-links { gap: 0; }
-          .nav-links button { padding-inline: 8px; font-size: 10px; }
+          .nav-center { justify-content: flex-start; }
+          .nav-links { justify-content: flex-start; gap: 0; }
+          .nav-links button { padding-inline: 7px; font-size: 10px; }
           .availability { display: none; }
         }
         @media (max-width: 980px) {
@@ -2075,48 +2073,44 @@ export default function Page() {
           z-index: 0;
           pointer-events: none;
         }
+        /* Portrait is now a transparent cut-out layer, so the photo background
+           does not become a second circle inside the hero. */
         :global(.hero-art .portrait) {
           position: relative;
           z-index: 1;
           width: 100%;
           height: 100%;
           aspect-ratio: 1 / 1;
-          border-radius: 50%;
-          overflow: hidden;
-          display: block;
-          border: 3px solid ${lightMode ? "rgba(255,255,255,.85)" : "rgba(255,255,255,.10)"};
-          box-shadow:
-            0 22px 60px rgba(167,131,255,.22),
-            0 8px 24px ${lightMode ? "rgba(15,23,42,.12)" : "rgba(0,0,0,.42)"};
-          background: ${lightMode ? "#f3f4f8" : "#0d0e1a"};
+          display: grid;
+          place-items: end center;
+          overflow: visible;
+          background: transparent;
+          border: 0;
+          box-shadow: none;
         }
         :global(.hero-art .portrait img) {
           width: 100%;
           height: 100%;
           display: block;
-          object-fit: cover;
-          object-position: center 20%;
-          border-radius: 50%;
-          position: relative;
-          z-index: 1;
+          object-fit: contain;
+          object-position: center bottom;
+          border-radius: 0;
+          background: transparent;
+          filter: drop-shadow(0 20px 28px rgba(0,0,0,.28));
         }
-        /* Dark gradient overlay that hides the photo's background */
-        :global(.hero-art .portrait::after) {
-          content: "";
-          position: absolute;
-          inset: 0;
+        :global(.hero-art .portrait-placeholder) {
+          width: 100%;
+          height: 100%;
           border-radius: 50%;
-          background: radial-gradient(
-            circle at 50% 70%,
-            transparent 0%,
-            transparent 20%,
-            ${lightMode ? "rgba(243,244,248,0.35)" : "rgba(13,14,26,0.35)"} 42%,
-            ${lightMode ? "rgba(243,244,248,0.7)" : "rgba(13,14,26,0.7)"} 65%,
-            ${lightMode ? "rgba(243,244,248,0.92)" : "rgba(13,14,26,0.92)"} 85%,
-            ${lightMode ? "rgba(243,244,248,1)" : "rgba(13,14,26,1)"} 100%
-          );
-          pointer-events: none;
-          z-index: 2;
+          display: grid;
+          place-items: center;
+          text-align: center;
+          padding: 18px;
+          font-size: 11px;
+          line-height: 1.45;
+          color: ${lightMode ? "rgba(15,23,42,.55)" : "rgba(255,255,255,.55)"};
+          background: ${lightMode ? "#f3f4f8" : "#0d0e1a"};
+          border: 1px solid ${lightMode ? "rgba(15,23,42,.08)" : "rgba(255,255,255,.08)"};
         }
         :global(.hero-art .portrait-placeholder) {
           width: 100%;
