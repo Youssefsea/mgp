@@ -999,10 +999,28 @@ export default function Page() {
         </div>
 
         <div className="hero-art">
-          <div className="hero-portrait-stage">
+          <div
+            className="hero-portrait-stage"
+            style={{
+              width: "min(340px, 78vw)",
+              aspectRatio: "1 / 1",
+              position: "relative",
+            }}
+          >
             <div className="hero-portrait-glow" />
             <div className="hero-portrait-ring" />
-            <div className="portrait">
+            <div
+              className="portrait"
+              style={{
+                width: "100%",
+                height: "100%",
+                aspectRatio: "1 / 1",
+                borderRadius: "50%",
+                overflow: "hidden",
+                clipPath: "circle(50% at 50% 50%)",
+                WebkitClipPath: "circle(50% at 50% 50%)",
+              }}
+            >
               {!profileError ? (
                 <img
                   src="/profile.jpg"
@@ -1010,10 +1028,28 @@ export default function Page() {
                   fetchPriority="high"
                   loading="eager"
                   decoding="async"
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    display: "block",
+                    objectFit: "cover",
+                    objectPosition: "center 20%",
+                    borderRadius: "50%",
+                    clipPath: "circle(50% at 50% 50%)",
+                    WebkitClipPath: "circle(50% at 50% 50%)",
+                  }}
                   onError={() => setProfileError(true)}
                 />
               ) : (
-                <div className="portrait-placeholder">
+                <div
+                  className="portrait-placeholder"
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    borderRadius: "50%",
+                    overflow: "hidden",
+                  }}
+                >
                   <div>
                     <strong>MOHAMED<br />GAMAL</strong>
                     <span>Add your portrait at<br />/public/profile.jpg</span>
@@ -2274,6 +2310,8 @@ export default function Page() {
           display: block;
           overflow: hidden;
           border-radius: 50%;
+          clip-path: circle(50% at 50% 50%);
+          -webkit-clip-path: circle(50% at 50% 50%);
           background: ${lightMode ? "#f3f4f8" : "#0d0e1a"};
           border: 3px solid ${lightMode ? "rgba(255,255,255,.86)" : "rgba(255,255,255,.11)"};
           box-shadow:
