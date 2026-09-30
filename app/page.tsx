@@ -5,7 +5,7 @@ import type { ReactNode } from "react";
 const cv = {
   name: "Mohamed Gamal",
   logo:
-    "https://res.cloudinary.com/dcxgjpps8/image/upload/v1790708378/bc66457f-fb06-49fc-979f-a95aa250eb5a_n34bcg.png",
+    "https://res.cloudinary.com/dcxgjpps8/image/upload/v1790780215/WhatsApp_Image_2026-09-30_at_5.53.55_PM-removebg-preview_yozeg9.png",
   phone: "+20 1553194093",
   email: "mohamed987gamal2005@gmail.com",
   linkedin:
