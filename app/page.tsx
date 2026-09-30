@@ -381,7 +381,11 @@ const cv = {
       name: "General Knowledge of Cloud Computing",
       provider: "Huawei ICT Academy",
       date: "2026-08-28",
-      topics: ["Cloud Computing", "Cloud Fundamentals", "Core Cloud Concepts"],
+      topics: [
+        "Cloud Computing",
+        "Cloud Fundamentals",
+        "Core Cloud Concepts",
+      ],
       image: "/certificates/Screenshot 2026-09-15 200419.png",
     },
     {
@@ -517,12 +521,21 @@ const skillLogoSlugs: Record<string, string> = {
   Docker: "docker",
 };
 
-function SkillLogo({ label, slug }: { label: string; slug?: string }) {
+function SkillLogo({
+  label,
+  slug,
+}: {
+  label: string;
+  slug?: string;
+}) {
   const [failed, setFailed] = useState(false);
 
   const mark =
-    label.trim().replace(/[^A-Za-z0-9]/g, "").slice(0, 2).toUpperCase() ||
-    "•";
+    label
+      .trim()
+      .replace(/[^A-Za-z0-9]/g, "")
+      .slice(0, 2)
+      .toUpperCase() || "•";
 
   return (
     <span className="skill-logo-mini" aria-hidden="true">
@@ -578,7 +591,6 @@ const i = {
       <path d="M13 6l6 6-6 6" />
     </Icon>
   ),
-
   contact: (
     <Icon>
       <path d="M20 11.2c0 4.5-3.6 8.1-8 8.1-1.1 0-2.2-.2-3.1-.6L4 20l1.3-3.7A8 8 0 1 1 20 11.2Z" />
@@ -587,19 +599,16 @@ const i = {
       <path d="M15.8 11.2h.01" />
     </Icon>
   ),
-
   phone: (
     <Icon>
       <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
     </Icon>
   ),
-
   whatsapp: (
     <Icon>
       <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
     </Icon>
   ),
-
   external: (
     <Icon>
       <path d="M14 5h5v5" />
@@ -607,21 +616,18 @@ const i = {
       <path d="M18 13v5a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5" />
     </Icon>
   ),
-
   email: (
     <Icon>
       <rect x="3" y="5" width="18" height="14" rx="2.5" />
       <path d="m4.5 7 7.5 6 7.5-6" />
     </Icon>
   ),
-
   github: (
     <Icon>
       <path d="M15.5 22v-4.2c2.5.4 4-1 4.5-2.7.5-1.3.2-2.6-.8-3.5.3-.8.4-1.7.2-2.6-.2-1-1-2-2.2-2.4.2-.8.1-1.7-.3-2.5-1 .1-2.2.6-3.2 1.3a11.7 11.7 0 0 0-3.4 0c-1-.7-2.2-1.2-3.2-1.3-.4.8-.5 1.7-.3 2.5-1.2.4-2 1.4-2.2 2.4-.2.9-.1 1.8.2 2.6-1 .9-1.3 2.2-.8 3.5.5 1.7 2 3.1 4.5 2.7V22" />
       <path d="M9 18c-3.5 1.2-4-1.5-5.5-1.5" />
     </Icon>
   ),
-
   linkedin: (
     <Icon>
       <rect x="3.5" y="3.5" width="17" height="17" rx="3" />
@@ -631,14 +637,12 @@ const i = {
       <path d="M12 13.2a3 3 0 0 1 6 0v3.3" />
     </Icon>
   ),
-
   cloud: (
     <Icon>
       <path d="M7.2 18.5h9.6a4.2 4.2 0 0 0 .7-8.3 5.7 5.7 0 0 0-10.8 1.5A3.4 3.4 0 0 0 7.2 18.5Z" />
       <path d="M12 18.5v2.5" />
     </Icon>
   ),
-
   server: (
     <Icon>
       <rect x="3" y="3.5" width="18" height="6.5" rx="2" />
@@ -649,7 +653,6 @@ const i = {
       <path d="M11 17.25h7" />
     </Icon>
   ),
-
   network: (
     <Icon>
       <circle cx="5" cy="5" r="2.2" />
@@ -660,14 +663,12 @@ const i = {
       <path d="M7.3 5h9.4" />
     </Icon>
   ),
-
   terminal: (
     <Icon>
       <path d="m5 7.5 4.5 4.5L5 16.5" />
       <path d="M12 16.5h7" />
     </Icon>
   ),
-
   git: (
     <Icon>
       <circle cx="6" cy="6" r="2.1" />
@@ -677,7 +678,6 @@ const i = {
       <path d="m7.8 16.8 8.4-3.6" />
     </Icon>
   ),
-
   database: (
     <Icon>
       <ellipse cx="12" cy="5" rx="7" ry="2.8" />
@@ -685,20 +685,17 @@ const i = {
       <path d="M5 12v7c0 1.7 3.1 3 7 3s7-1.3 7-3v-7" />
     </Icon>
   ),
-
   shield: (
     <Icon>
       <path d="M12 3.2 19 6v4.8c0 4.2-2.5 8-7 10-4.5-2-7-5.8-7-10V6l7-2.8Z" />
       <path d="m9 12 2 2.2 4.2-4.4" />
     </Icon>
   ),
-
   bolt: (
     <Icon>
       <path d="M13.2 2.5 5.5 13.3h6.8l-1 8.2 7.7-10.8h-6.8l1-8.2Z" />
     </Icon>
   ),
-
   layers: (
     <Icon>
       <path d="m12 3 8 4.5-8 4.5-8-4.5L12 3Z" />
@@ -706,7 +703,6 @@ const i = {
       <path d="m4 16.5 8 4.5 8-4.5" />
     </Icon>
   ),
-
   education: (
     <Icon>
       <path d="m3 9 9-5 9 5-9 5-9-5Z" />
@@ -714,20 +710,17 @@ const i = {
       <path d="M21 9v6" />
     </Icon>
   ),
-
   check: (
     <Icon size={14}>
       <path d="m5 12 4 4 10-10" />
     </Icon>
   ),
-
   quote: (
     <Icon>
       <path d="M9.8 10.8H5.7A2.7 2.7 0 0 0 3 13.5v1.8A2.7 2.7 0 0 0 5.7 18h1A3.1 3.1 0 0 0 9.8 15v-4.2Z" />
       <path d="M21 10.8h-4.1a2.7 2.7 0 0 0-2.7 2.7v1.8a2.7 2.7 0 0 0 2.7 2.7h1a3.1 3.1 0 0 0 3.1-3.1v-4.1Z" />
     </Icon>
   ),
-
   sun: (
     <Icon>
       <circle cx="12" cy="12" r="4" />
@@ -741,7 +734,6 @@ const i = {
       <path d="m17.66 6.34 1.41-1.41" />
     </Icon>
   ),
-
   light: (
     <Icon>
       <path d="M9 18h6" />
@@ -754,7 +746,6 @@ const i = {
       <path d="M21 12h1" />
     </Icon>
   ),
-
   people: (
     <Icon>
       <circle cx="9" cy="8" r="3" />
@@ -773,12 +764,10 @@ export default function Page() {
   const [lightMode, setLightMode] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [language, setLanguage] = useState<"en" | "ar">("en");
-  const [selectedCertificate, setSelectedCertificate] = useState<
-    string | null
-  >(null);
-  const [selectedProjectImage, setSelectedProjectImage] = useState<
-    string | null
-  >(null);
+  const [selectedCertificate, setSelectedCertificate] =
+    useState<string | null>(null);
+  const [selectedProjectImage, setSelectedProjectImage] =
+    useState<string | null>(null);
   const [showOnboarding, setShowOnboarding] = useState(false);
   const [onboardingExit, setOnboardingExit] = useState(false);
   const [onboardingReady, setOnboardingReady] = useState(false);
@@ -797,7 +786,9 @@ export default function Page() {
     achievements: isArabic ? "الإنجازات" : "Achievements",
     testimonials: isArabic ? "الآراء" : "Testimonials",
     contact: isArabic ? "تواصل" : "Contact",
-    openToOpportunities: isArabic ? "متاح للفرص" : "Open to opportunities",
+    openToOpportunities: isArabic
+      ? "متاح للفرص"
+      : "Open to opportunities",
     letsConnect: isArabic ? "لنتواصل" : "Let's connect",
     whoAmI: isArabic ? "من أنا؟" : "Who am I?",
     cloudInfrastructureDevops: "Cloud Infrastructure / DevOps",
@@ -819,7 +810,9 @@ export default function Page() {
       ? "أحب أفهم الأنظمة من الداخل وأبني Infrastructure يعتمد عليها."
       : "I like understanding systems from the inside and building infrastructure people can rely on.",
     aboutMeLabel: isArabic ? "عن نفسي" : "A little about me",
-    awsServicesApplied: isArabic ? "خدمات AWS مطبقة" : "AWS services applied",
+    awsServicesApplied: isArabic
+      ? "خدمات AWS مطبقة"
+      : "AWS services applied",
     trainingTracks: isArabic ? "مسارات تدريبية" : "Training tracks",
     expectedGraduation: isArabic
       ? "التخرج المتوقع"
@@ -831,7 +824,9 @@ export default function Page() {
       ? "الخلفية الأكاديمية والتخصص الحالي مع توضيح موعد التخرج."
       : "Academic background, specialization, and current graduation timeline.",
     languages: isArabic ? "اللغات" : "Languages",
-    academicFocus: isArabic ? "التخصص الأكاديمي" : "Academic specialization",
+    academicFocus: isArabic
+      ? "التخصص الأكاديمي"
+      : "Academic specialization",
     certificationTitle: isArabic
       ? "تدريب وشهادات Cloud."
       : "Cloud certifications & training.",
@@ -844,21 +839,31 @@ export default function Page() {
     skillsNote: isArabic
       ? "المهارات الأساسية مرتبة بشكل أوضح بين Technical Skills وSoft Skills."
       : "Core capabilities organized across technical and soft skills.",
-    capabilityMap: isArabic ? "خريطة المهارات" : "Capability map",
+    capabilityMap: isArabic
+      ? "خريطة المهارات"
+      : "Capability map",
     capabilityNote: isArabic
       ? "مجموعة المهارات العملية المستخدمة في مسار Cloud وDevOps."
       : "A practical map of the capabilities behind my Cloud / DevOps path.",
-    primaryFocus: isArabic ? "التركيز الأساسي" : "PRIMARY FOCUS",
+    primaryFocus: isArabic
+      ? "التركيز الأساسي"
+      : "PRIMARY FOCUS",
     awsCloudInfrastructure: "AWS Cloud Infrastructure",
-    technicalSkills: isArabic ? "المهارات التقنية" : "Technical skills",
+    technicalSkills: isArabic
+      ? "المهارات التقنية"
+      : "Technical skills",
     technicalSkillsNote: isArabic
       ? "الأدوات والتقنيات التي أبني بها الـCloud Infrastructure والـDevOps workflows."
       : "Tools and technologies used to build cloud infrastructure and DevOps workflows.",
-    softSkills: isArabic ? "المهارات الشخصية" : "Soft skills",
+    softSkills: isArabic
+      ? "المهارات الشخصية"
+      : "Soft skills",
     softSkillsNote: isArabic
       ? "مهارات تساعدني على التعلم والتعاون والتعامل مع مشاكل الـInfrastructure بشكل عملي."
       : "The working habits and interpersonal skills that support technical growth and teamwork.",
-    practicalMindset: isArabic ? "Practical mindset" : "Practical mindset",
+    practicalMindset: isArabic
+      ? "Practical mindset"
+      : "Practical mindset",
     practicalMindsetNote: isArabic
       ? "بناء، تجربة، حل المشكلة، ثم تحسين الحل."
       : "Build it, test it, solve the issue, then improve the solution.",
@@ -873,8 +878,12 @@ export default function Page() {
     result: isArabic ? "النتيجة" : "Result",
     record: isArabic ? "السجل" : "Record",
     position: isArabic ? "المنصب" : "Position",
-    responsibilities: isArabic ? "المسؤوليات" : "Responsibilities",
-    featuredProject: isArabic ? "المشروع المميز" : "Featured project",
+    responsibilities: isArabic
+      ? "المسؤوليات"
+      : "Responsibilities",
+    featuredProject: isArabic
+      ? "المشروع المميز"
+      : "Featured project",
     architectureStory: isArabic
       ? "Architecture واضحة."
       : "A clear architecture story.",
@@ -884,18 +893,23 @@ export default function Page() {
     scalableArchitecture: isArabic
       ? cv.project.projectLabelAr
       : cv.project.projectLabel,
-    topology: isArabic ? "Cloud Topology" : "Cloud topology",
+    topology: isArabic
+      ? "Cloud Topology"
+      : "Cloud topology",
     actualProjectElements: isArabic
       ? "العناصر الأساسية للمشروع"
       : "Core architecture elements",
-    cloudEnvironment: isArabic ? "AWS Environment" : "AWS environment",
+    cloudEnvironment: isArabic
+      ? "AWS Environment"
+      : "AWS environment",
     cloudBoundary: isArabic
       ? "حدود الـCloud Infrastructure"
       : "Cloud infrastructure boundary",
     applicationCompute: isArabic
       ? "Application Compute"
       : "Application compute",
-    subnetsRouteTables: "Public + Private + Isolated Subnets",
+    subnetsRouteTables:
+      "Public + Private + Isolated Subnets",
     controlledAccess: isArabic
       ? "Controlled Access"
       : "Controlled access",
@@ -905,11 +919,15 @@ export default function Page() {
     compute: isArabic ? "حوسبة" : "COMPUTE",
     network: isArabic ? "شبكة" : "NETWORK",
     storage: isArabic ? "تخزين" : "STORAGE",
-    projectImage: isArabic ? "صورة المشروع" : "Project preview",
+    projectImage: isArabic
+      ? "صورة المشروع"
+      : "Project preview",
     projectImageNote: isArabic
       ? "لمحة بصرية سريعة عن الـCloud Architecture."
       : "A quick visual overview of the architecture.",
-    viewProjectImage: isArabic ? "تكبير الصورة" : "Click to enlarge",
+    viewProjectImage: isArabic
+      ? "تكبير الصورة"
+      : "Click to enlarge",
     servicesTitle: isArabic
       ? "مجالات الـInfrastructure التي أعمل عليها."
       : "Infrastructure I work with.",
@@ -928,9 +946,15 @@ export default function Page() {
     testimonialsNote: isArabic
       ? "توصيات LinkedIn من أشخاص قاموا بتدريس Mohamed خلال تدريبات Cloud."
       : "LinkedIn recommendations from instructors who taught Mohamed during Cloud training.",
-    viewRecommendation: isArabic ? "عرض الملف" : "View profile",
-    recommendationLabel: isArabic ? "توصية /" : "RECOMMENDATION /",
-    contactTitle: isArabic ? "جاهز للخطوة التالية." : "Ready for the next step.",
+    viewRecommendation: isArabic
+      ? "عرض الملف"
+      : "View profile",
+    recommendationLabel: isArabic
+      ? "توصية /"
+      : "RECOMMENDATION /",
+    contactTitle: isArabic
+      ? "جاهز للخطوة التالية."
+      : "Ready for the next step.",
     contactNote: isArabic
       ? "متاح لفرص Cloud وDevOps المرتبطة بالـAWS والـInfrastructure."
       : "Open to Cloud and DevOps opportunities around AWS and infrastructure.",
@@ -953,10 +977,16 @@ export default function Page() {
       : "All freelance profiles in one place, with direct access to each profile.",
     visitProfile: isArabic ? "زيارة الملف" : "Visit profile",
     copied: isArabic ? "تم النسخ" : "Copied",
-    targetRole: isArabic ? "الدور المستهدف" : "Target role",
-    coreFocus: isArabic ? "التركيز الأساسي" : "Core focus",
+    targetRole: isArabic
+      ? "الدور المستهدف"
+      : "Target role",
+    coreFocus: isArabic
+      ? "التركيز الأساسي"
+      : "Core focus",
     langSwitch: isArabic ? "EN" : "AR",
-    skillsTopics: isArabic ? "Skills / Topics" : "Skills / Topics",
+    skillsTopics: isArabic
+      ? "Skills / Topics"
+      : "Skills / Topics",
     provider: isArabic ? "Provider" : "Provider",
     training: isArabic ? "Training" : "Training",
     footerStatus: isArabic
@@ -967,21 +997,19 @@ export default function Page() {
       : "I'm always open to discussing Cloud & DevOps opportunities, freelance work, and collaborations on infrastructure projects.",
     footerAbout: isArabic ? (
       <>
-        أنا <strong>Mohamed Gamal</strong>، Cloud &amp; DevOps Engineer أركز على
-        تحويل الـDeployments اليدوية إلى Pipelines مؤتمتة وموثوقة باستخدام AWS
-        وLinux والـInfrastructure as Code.
+        أنا <strong>Mohamed Gamal</strong>، Cloud &amp; DevOps Engineer أركز على تحويل الـDeployments اليدوية إلى Pipelines مؤتمتة وموثوقة باستخدام AWS وLinux والـInfrastructure as Code.
       </>
     ) : (
       <>
-        I&apos;m <strong>Mohamed Gamal</strong>, a Cloud &amp; DevOps Engineer
-        focused on turning manual deployments into automated, reliable
-        pipelines using AWS, Linux, and Infrastructure as Code.
+        I&apos;m <strong>Mohamed Gamal</strong>, a Cloud &amp; DevOps Engineer focused on turning manual deployments into automated, reliable pipelines using AWS, Linux, and Infrastructure as Code.
       </>
     ),
     footerExplore: isArabic ? "استكشف" : "Explore",
     footerContact: isArabic ? "تواصل" : "Contact",
     footerSocial: isArabic ? "روابط" : "Links",
-    footerCopyright: isArabic ? "جميع الحقوق محفوظة." : "All rights reserved.",
+    footerCopyright: isArabic
+      ? "جميع الحقوق محفوظة."
+      : "All rights reserved.",
     footerBuiltWith: isArabic
       ? "مبني بـ Next.js وTypeScript"
       : "Built with Next.js & TypeScript",
@@ -1005,11 +1033,15 @@ export default function Page() {
   );
 
   useEffect(() => {
-    const storageKey = "mohamed-gamal-portfolio-onboarding-v1";
+    const storageKey =
+      "mohamed-gamal-portfolio-onboarding-v1";
+
     let seen = false;
 
     try {
-      seen = window.sessionStorage.getItem(storageKey) === "seen";
+      seen =
+        window.sessionStorage.getItem(storageKey) ===
+        "seen";
     } catch {}
 
     if (seen) return;
@@ -1028,7 +1060,10 @@ export default function Page() {
 
     const finishTimer = window.setTimeout(() => {
       try {
-        window.sessionStorage.setItem(storageKey, "seen");
+        window.sessionStorage.setItem(
+          storageKey,
+          "seen"
+        );
       } catch {}
 
       setShowOnboarding(false);
@@ -1044,49 +1079,76 @@ export default function Page() {
   }, []);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 20);
+    const onScroll = () =>
+      setScrolled(window.scrollY > 20);
 
     onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
 
-    return () => window.removeEventListener("scroll", onScroll);
+    window.addEventListener("scroll", onScroll, {
+      passive: true,
+    });
+
+    return () =>
+      window.removeEventListener(
+        "scroll",
+        onScroll
+      );
   }, []);
 
   useEffect(() => {
     const sectionIds = nav.map(([id]) => id);
 
     const sections = sectionIds
-      .map((id) => document.getElementById(id))
+      .map((id) =>
+        document.getElementById(id)
+      )
       .filter(Boolean) as HTMLElement[];
 
     if (!sections.length) return;
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const visible = entries
-          .filter((entry) => entry.isIntersecting)
-          .sort(
-            (a, b) =>
-              b.intersectionRatio - a.intersectionRatio
-          );
+    const observer =
+      new IntersectionObserver(
+        (entries) => {
+          const visible = entries
+            .filter(
+              (entry) => entry.isIntersecting
+            )
+            .sort(
+              (a, b) =>
+                b.intersectionRatio -
+                a.intersectionRatio
+            );
 
-        if (visible[0]?.target?.id) {
-          setActive(visible[0].target.id);
+          if (visible[0]?.target?.id) {
+            setActive(
+              visible[0].target.id
+            );
+          }
+        },
+        {
+          rootMargin:
+            "-96px 0px -58% 0px",
+          threshold: [
+            0.05,
+            0.12,
+            0.2,
+            0.35,
+            0.5,
+          ],
         }
-      },
-      {
-        rootMargin: "-96px 0px -58% 0px",
-        threshold: [0.05, 0.12, 0.2, 0.35, 0.5],
-      }
-    );
+      );
 
-    sections.forEach((section) => observer.observe(section));
+    sections.forEach((section) =>
+      observer.observe(section)
+    );
 
     return () => observer.disconnect();
   }, [nav]);
 
   useEffect(() => {
-    const onKeyDown = (event: KeyboardEvent) => {
+    const onKeyDown = (
+      event: KeyboardEvent
+    ) => {
       if (event.key === "Escape") {
         setMenu(false);
 
@@ -1100,11 +1162,20 @@ export default function Page() {
       }
     };
 
-    window.addEventListener("keydown", onKeyDown);
+    window.addEventListener(
+      "keydown",
+      onKeyDown
+    );
 
     return () =>
-      window.removeEventListener("keydown", onKeyDown);
-  }, [selectedCertificate, selectedProjectImage]);
+      window.removeEventListener(
+        "keydown",
+        onKeyDown
+      );
+  }, [
+    selectedCertificate,
+    selectedProjectImage,
+  ]);
 
   useEffect(() => {
     document.body.style.overflow =
@@ -1126,11 +1197,13 @@ export default function Page() {
   ]);
 
   const go = (id: string) => {
-    const element = document.getElementById(id);
+    const element =
+      document.getElementById(id);
 
     if (!element) return;
 
     const navOffset = 100;
+
     const top =
       element.getBoundingClientRect().top +
       window.scrollY -
@@ -1147,7 +1220,9 @@ export default function Page() {
 
   const copyEmail = async () => {
     try {
-      await navigator.clipboard.writeText(cv.email);
+      await navigator.clipboard.writeText(
+        cv.email
+      );
 
       setCopied(true);
 
@@ -1216,7 +1291,8 @@ export default function Page() {
               className="onboarding-focus"
               dir="ltr"
             >
-              Cloud Infrastructure · Automation · Reliability
+              Cloud Infrastructure · Automation ·
+              Reliability
             </p>
 
             <div
@@ -1232,7 +1308,7 @@ export default function Page() {
       {/* NAV */}
       <header
         className={`topbar ${
-          scrolled ? "scrolled" : ""
+          scrolled ? "is-scrolled" : ""
         }`}
       >
         <div className="topbar-inner">
@@ -1264,18 +1340,25 @@ export default function Page() {
               aria-label="Main navigation"
             >
               {nav.map(([id, label]) => {
-                const isContact = id === "contact";
+                const isContact =
+                  id === "contact";
 
                 return (
                   <button
                     key={id}
                     className={[
-                      active === id ? "active" : "",
-                      isContact ? "nav-contact" : "",
+                      active === id
+                        ? "active"
+                        : "",
+                      isContact
+                        ? "nav-contact"
+                        : "",
                     ]
                       .filter(Boolean)
                       .join(" ")}
-                    onClick={() => go(id)}
+                    onClick={() =>
+                      go(id)
+                    }
                     aria-current={
                       active === id
                         ? "page"
@@ -1327,7 +1410,9 @@ export default function Page() {
               <span className="theme-glow" />
 
               <span className="theme-icon">
-                {lightMode ? i.sun : i.light}
+                {lightMode
+                  ? i.sun
+                  : i.light}
               </span>
             </button>
 
@@ -1350,27 +1435,35 @@ export default function Page() {
         <div
           className="mobile-menu"
           onClick={(e) => {
-            if (e.target === e.currentTarget) {
+            if (
+              e.target ===
+              e.currentTarget
+            ) {
               setMenu(false);
             }
           }}
         >
           <div className="mobile-menu-inner">
             {nav.map(([id, label]) => {
-              const isContact = id === "contact";
+              const isContact =
+                id === "contact";
 
               return (
                 <button
                   key={id}
                   className={[
-                    active === id ? "active" : "",
+                    active === id
+                      ? "active"
+                      : "",
                     isContact
                       ? "nav-contact mobile-nav-contact"
                       : "",
                   ]
                     .filter(Boolean)
                     .join(" ")}
-                  onClick={() => go(id)}
+                  onClick={() =>
+                    go(id)
+                  }
                 >
                   <span>{label}</span>
 
@@ -1386,7 +1479,7 @@ export default function Page() {
         </div>
       )}
 
-      {/* HOME — REDESIGNED HERO */}
+      {/* HOME */}
       <section
         id="home"
         className="container hero hero-compact"
@@ -1414,7 +1507,9 @@ export default function Page() {
           <div className="hero-actions">
             <button
               className="btn primary"
-              onClick={() => go("project")}
+              onClick={() =>
+                go("project")
+              }
             >
               {t.exploreArchitecture}
               {i.arrow}
@@ -1469,7 +1564,8 @@ export default function Page() {
                     height: "100%",
                     display: "block",
                     objectFit: "cover",
-                    objectPosition: "center 20%",
+                    objectPosition:
+                      "center 20%",
                     borderRadius: "50%",
                     clipPath:
                       "circle(50% at 50% 50%)",
@@ -1517,10 +1613,13 @@ export default function Page() {
               decoding="async"
             />
 
-            <strong>Cloud architecture</strong>
+            <strong>
+              Cloud architecture
+            </strong>
 
             <p dir="ltr">
-              EC2 · S3 · VPC · RDS · Lambda · SQS
+              EC2 · S3 · VPC · RDS · Lambda ·
+              SQS
             </p>
           </div>
 
@@ -1596,7 +1695,9 @@ export default function Page() {
                   {t.engineeringProfile}
                 </div>
 
-                <h3>{t.profileHeading}</h3>
+                <h3>
+                  {t.profileHeading}
+                </h3>
 
                 <p>
                   {isArabic
@@ -1622,19 +1723,25 @@ export default function Page() {
                 <div className="stat">
                   <strong>11</strong>
                   <span>
-                    {t.awsServicesApplied}
+                    {
+                      t.awsServicesApplied
+                    }
                   </span>
                 </div>
 
                 <div className="stat">
                   <strong>02</strong>
-                  <span>{t.trainingTracks}</span>
+                  <span>
+                    {t.trainingTracks}
+                  </span>
                 </div>
 
                 <div className="stat">
                   <strong>2027</strong>
                   <span>
-                    {t.expectedGraduation}
+                    {
+                      t.expectedGraduation
+                    }
                   </span>
                 </div>
               </div>
@@ -1672,15 +1779,12 @@ export default function Page() {
                   <span className="language">
                     AWS
                   </span>
-
                   <span className="language">
                     Linux
                   </span>
-
                   <span className="language">
                     DevOps
                   </span>
-
                   <span className="language">
                     Networking
                   </span>
@@ -1768,24 +1872,28 @@ export default function Page() {
                     <span className="label-icon">
                       {i.education}
                     </span>
+
                     {t.education}
                   </div>
 
                   <h3>
                     {isArabic
-                      ? cv.educationAr.degree
+                      ? cv.educationAr
+                          .degree
                       : cv.education.degree}
                   </h3>
 
                   <div className="university">
                     {isArabic
-                      ? cv.educationAr.school
+                      ? cv.educationAr
+                          .school
                       : cv.education.school}
                   </div>
 
                   <div className="degree">
                     {isArabic
-                      ? cv.educationAr.specialization
+                      ? cv.educationAr
+                          .specialization
                       : cv.education
                           .specialization}
                   </div>
@@ -1796,8 +1904,10 @@ export default function Page() {
 
                   <strong dir="ltr">
                     {isArabic
-                      ? cv.educationAr.graduation
-                      : cv.education.graduation}
+                      ? cv.educationAr
+                          .graduation
+                      : cv.education
+                          .graduation}
                   </strong>
                 </div>
               </div>
@@ -1813,6 +1923,7 @@ export default function Page() {
                   <strong>
                     Information Technology
                   </strong>
+
                   <span>
                     {t.academicFocus}
                   </span>
@@ -1822,6 +1933,7 @@ export default function Page() {
                   <strong dir="ltr">
                     2023 – 2027
                   </strong>
+
                   <span>
                     Academic timeline
                   </span>
@@ -1831,6 +1943,7 @@ export default function Page() {
                   <strong>
                     Cloud + DevOps
                   </strong>
+
                   <span>
                     Practical track
                   </span>
@@ -1844,6 +1957,7 @@ export default function Page() {
                   <span className="label-icon">
                     {i.terminal}
                   </span>
+
                   {t.languages}
                 </div>
 
@@ -1866,6 +1980,7 @@ export default function Page() {
                   <span className="label-icon">
                     {i.layers}
                   </span>
+
                   Current direction
                 </div>
 
@@ -1918,7 +2033,9 @@ export default function Page() {
                     <div className="credential-image-wrap">
                       <img
                         className="credential-image"
-                        src={certificate.image}
+                        src={
+                          certificate.image
+                        }
                         alt={
                           certificate.name
                         }
@@ -1946,7 +2063,10 @@ export default function Page() {
                           <small>
                             {t.provider}
                           </small>
-                          {certificate.provider}
+
+                          {
+                            certificate.provider
+                          }
                         </span>
                       ) : null}
 
@@ -1955,6 +2075,7 @@ export default function Page() {
                           <small>
                             Date
                           </small>
+
                           {certificate.date}
                         </span>
                       ) : null}
@@ -1963,6 +2084,7 @@ export default function Page() {
                         <small>
                           {t.training}
                         </small>
+
                         Cloud / Infrastructure
                       </span>
                     </div>
@@ -1988,10 +2110,9 @@ export default function Page() {
 
                     <span className="credential-index">
                       CREDENTIAL /{" "}
-                      {String(index + 1).padStart(
-                        2,
-                        "0"
-                      )}
+                      {String(
+                        index + 1
+                      ).padStart(2, "0")}
                     </span>
                   </div>
                 </article>
@@ -2042,13 +2163,17 @@ export default function Page() {
               </div>
 
               <div className="technical-skills-grid">
-                {Object.entries(cv.skills).map(
+                {Object.entries(
+                  cv.skills
+                ).map(
                   (
                     [category, items],
                     index
                   ) => {
                     const icon =
-                      category.includes("Cloud")
+                      category.includes(
+                        "Cloud"
+                      )
                         ? i.cloud
                         : category.includes(
                             "AWS"
@@ -2120,7 +2245,9 @@ export default function Page() {
                         </div>
 
                         <p className="skill-card-description">
-                          {categoryDescription}
+                          {
+                            categoryDescription
+                          }
                         </p>
 
                         <div className="skill-card-divider" />
@@ -2134,7 +2261,8 @@ export default function Page() {
                               <span
                                 key={item}
                                 className={`chip skill-chip ${
-                                  itemIndex === 0
+                                  itemIndex ===
+                                  0
                                     ? "main"
                                     : ""
                                 }`}
@@ -2173,7 +2301,9 @@ export default function Page() {
                       PEOPLE / 02
                     </div>
 
-                    <h3>{t.softSkills}</h3>
+                    <h3>
+                      {t.softSkills}
+                    </h3>
                   </div>
 
                   <span className="soft-skills-icon">
@@ -2256,7 +2386,9 @@ export default function Page() {
                 <div className="focus-mini-tags">
                   <span>AWS</span>
                   <span>Linux</span>
-                  <span>Networking</span>
+                  <span>
+                    Networking
+                  </span>
                   <span>IaC</span>
                   <span>CI/CD</span>
                 </div>
@@ -2381,11 +2513,13 @@ export default function Page() {
                       {(isArabic
                         ? exp.bulletsAr
                         : exp.bullets
-                      ).map((bullet) => (
-                        <li key={bullet}>
-                          {bullet}
-                        </li>
-                      ))}
+                      ).map(
+                        (bullet) => (
+                          <li key={bullet}>
+                            {bullet}
+                          </li>
+                        )
+                      )}
                     </ul>
                   </div>
                 </article>
@@ -2421,7 +2555,9 @@ export default function Page() {
             <div className="project-main">
               <div className="project-label">
                 <span className="eyebrow-dot" />
-                {t.scalableArchitecture}
+                {
+                  t.scalableArchitecture
+                }
               </div>
 
               <h3 className="project-title-compact">
@@ -2456,7 +2592,8 @@ export default function Page() {
 
                   <p>
                     {isArabic
-                      ? cv.project.actionAr
+                      ? cv.project
+                          .actionAr
                       : cv.project.action}
                   </p>
                 </div>
@@ -2468,7 +2605,8 @@ export default function Page() {
 
                   <p>
                     {isArabic
-                      ? cv.project.resultAr
+                      ? cv.project
+                          .resultAr
                       : cv.project.result}
                   </p>
                 </div>
@@ -2517,7 +2655,9 @@ export default function Page() {
                       </strong>
 
                       <span>
-                        {t.projectImageNote}
+                        {
+                          t.projectImageNote
+                        }
                       </span>
                     </div>
 
@@ -2540,7 +2680,9 @@ export default function Page() {
                   >
                     <div className="project-image-frame">
                       <img
-                        src={cv.project.image}
+                        src={
+                          cv.project.image
+                        }
                         alt={
                           isArabic
                             ? cv.project
@@ -2553,7 +2695,9 @@ export default function Page() {
                       />
 
                       <span className="project-image-zoom">
-                        {t.viewProjectImage}
+                        {
+                          t.viewProjectImage
+                        }
                       </span>
                     </div>
                   </button>
@@ -2562,6 +2706,7 @@ export default function Page() {
                 <div className="topology-head">
                   <div>
                     <h4>{t.topology}</h4>
+
                     <p>
                       {
                         t.actualProjectElements
@@ -2626,7 +2771,9 @@ export default function Page() {
                       </strong>
 
                       <span dir="ltr">
-                        {t.subnetsRouteTables}
+                        {
+                          t.subnetsRouteTables
+                        }
                       </span>
                     </div>
                   </div>
@@ -2644,7 +2791,9 @@ export default function Page() {
                       </strong>
 
                       <span>
-                        {t.controlledAccess}
+                        {
+                          t.controlledAccess
+                        }
                       </span>
                     </div>
                   </div>
@@ -2853,7 +3002,9 @@ export default function Page() {
                     </span>
 
                     <span className="testimonial-index">
-                      {t.recommendationLabel}{" "}
+                      {
+                        t.recommendationLabel
+                      }{" "}
                       {String(
                         index + 1
                       ).padStart(2, "0")}
@@ -2968,7 +3119,9 @@ export default function Page() {
                 }
               </div>
 
-              <h3>{t.letsBuild}</h3>
+              <h3>
+                {t.letsBuild}
+              </h3>
 
               <p>
                 {t.contactDescription}
@@ -3120,6 +3273,24 @@ export default function Page() {
       </section>
 
       <style jsx>{`
+        /* =====================================================
+           GLOBAL STABILITY
+           ===================================================== */
+
+        :global(html) {
+          scrollbar-gutter: stable;
+          overflow-x: hidden;
+        }
+
+        :global(body) {
+          margin: 0;
+          overflow-x: hidden;
+        }
+
+        /* =====================================================
+           ONBOARDING
+           ===================================================== */
+
         .onboarding-overlay {
           position: fixed;
           inset: 0;
@@ -3150,9 +3321,10 @@ export default function Page() {
         .onboarding-backdrop {
           position: absolute;
           inset: 0;
-          background: ${lightMode
-            ? "rgba(248,250,252,.965)"
-            : "rgba(7,8,16,.985)"};
+          background:
+            ${lightMode
+              ? "rgba(248,250,252,.965)"
+              : "rgba(7,8,16,.985)"};
           backdrop-filter: blur(18px);
           -webkit-backdrop-filter: blur(18px);
         }
@@ -3192,7 +3364,9 @@ export default function Page() {
           flex-direction: column;
           align-items: center;
           text-align: center;
-          transform: translateY(24px) scale(.94);
+          transform:
+            translateY(24px)
+            scale(.94);
           opacity: 0;
           filter: blur(7px);
           transition:
@@ -3243,17 +3417,20 @@ export default function Page() {
           position: absolute;
           width: 150px;
           height: 150px;
-          border: 1px solid
+          border:
+            1px solid
             ${lightMode
               ? "rgba(167,131,255,.18)"
               : "rgba(167,131,255,.21)"};
           border-radius: 50%;
           box-shadow:
-            0 0 0 10px rgba(167,131,255,.025),
-            0 0 54px rgba(167,131,255,.17);
+            0 0 0 10px
+              rgba(167,131,255,.025),
+            0 0 54px
+              rgba(167,131,255,.17);
           animation:
-            onboarding-pulse 2.2s ease-in-out
-            infinite;
+            onboarding-pulse 2.2s
+            ease-in-out infinite;
         }
 
         .onboarding-logo {
@@ -3336,7 +3513,8 @@ export default function Page() {
               transparent
             );
           transition:
-            transform 900ms 410ms cubic-bezier(.16,1,.3,1);
+            transform 900ms 410ms
+            cubic-bezier(.16,1,.3,1);
         }
 
         .onboarding-overlay.is-ready
@@ -3356,7 +3534,8 @@ export default function Page() {
           transform: translateY(10px);
           opacity: 0;
           transition:
-            transform 650ms 470ms cubic-bezier(.16,1,.3,1),
+            transform 650ms 470ms
+              cubic-bezier(.16,1,.3,1),
             opacity 520ms 470ms ease;
         }
 
@@ -3380,7 +3559,8 @@ export default function Page() {
           transform: translateY(8px);
           opacity: 0;
           transition:
-            transform 650ms 560ms cubic-bezier(.16,1,.3,1),
+            transform 650ms 560ms
+              cubic-bezier(.16,1,.3,1),
             opacity 520ms 560ms ease;
         }
 
@@ -3404,7 +3584,8 @@ export default function Page() {
           transform: scaleX(.35);
           opacity: 0;
           transition:
-            transform 900ms 680ms cubic-bezier(.16,1,.3,1),
+            transform 900ms 680ms
+              cubic-bezier(.16,1,.3,1),
             opacity 520ms 680ms ease;
         }
 
@@ -3433,7 +3614,7 @@ export default function Page() {
         }
 
         /* =====================================================
-           NAV — FIXED SIZE / NO SHRINK ON SCROLL
+           NAV — FULLY FIXED DURING SCROLL
            ===================================================== */
 
         .topbar {
@@ -3441,30 +3622,59 @@ export default function Page() {
           top: 0;
           left: 0;
           right: 0;
+
+          width: 100%;
+          max-width: none;
+
           z-index: 120;
 
-          /* ثابت — لا يتغير أثناء الـscroll */
+          /*
+            ثابت دائمًا.
+            لا نغير padding عند scroll.
+          */
           padding: 14px 18px;
 
-          /* لا يوجد transition على أبعاد الـnavbar */
+          box-sizing: border-box;
+
+          /*
+            مهم:
+            لا يوجد transition للحجم أو الـpadding.
+          */
           transition: none;
+
+          transform: translateZ(0);
+          backface-visibility: hidden;
         }
 
         .topbar-inner {
           position: relative;
+
           width: min(1900px, 100%);
+          max-width: 1900px;
+
           min-height: 74px;
+
           margin: 0 auto;
-          padding: 0 12px 0 18px;
+
+          padding:
+            0 12px 0 18px;
+
+          box-sizing: border-box;
 
           display: grid;
+
+          /*
+            الـnav في المنتصف يأخذ المساحة المتبقية فقط.
+          */
           grid-template-columns:
             auto minmax(0, 1fr) auto;
 
           align-items: center;
+
           gap: 14px;
 
-          border: 1px solid
+          border:
+            1px solid
             ${lightMode
               ? "rgba(15,23,42,.08)"
               : "rgba(255,255,255,.08)"};
@@ -3483,23 +3693,33 @@ export default function Page() {
               : "rgba(0,0,0,.24)"};
 
           backdrop-filter:
-            blur(20px) saturate(150%);
+            blur(20px)
+            saturate(150%);
 
           -webkit-backdrop-filter:
-            blur(20px) saturate(150%);
+            blur(20px)
+            saturate(150%);
 
           overflow: visible;
         }
 
         /*
-          مهم جدًا:
-          الـscrolled هنا يغير اللون فقط.
-          لا يغير padding
-          ولا min-height
-          ولا width
-          وبالتالي الـnav لا يصغر أثناء النزول.
+          حالة الـscroll تغير الشكل فقط.
+          لا height.
+          لا width.
+          لا padding.
+          لا gap.
         */
-        .topbar.scrolled .topbar-inner {
+        .topbar.is-scrolled {
+          padding: 14px 18px;
+        }
+
+        .topbar.is-scrolled .topbar-inner {
+          min-height: 74px;
+
+          padding-top: 0;
+          padding-bottom: 0;
+
           border-color:
             ${lightMode
               ? "rgba(15,23,42,.11)"
@@ -3509,50 +3729,78 @@ export default function Page() {
             ${lightMode
               ? "rgba(255,255,255,.92)"
               : "rgba(9,10,20,.88)"};
+
+          box-shadow:
+            0 16px 44px
+            ${lightMode
+              ? "rgba(15,23,42,.08)"
+              : "rgba(0,0,0,.28)"};
         }
 
         .brand {
           position: relative;
+
           min-width: 0;
+
           display: inline-flex;
           align-items: center;
+
           padding: 0;
+
           border: 0;
+
           background: transparent;
+
           color: inherit;
+
           cursor: pointer;
+
           flex: 0 0 auto;
         }
 
         .brand-logo-shell {
           position: relative;
+
           display: inline-flex;
           align-items: center;
 
           width:
-            clamp(170px, 13.5vw, 235px);
+            clamp(
+              170px,
+              13.5vw,
+              235px
+            );
 
           height: 60px;
 
           overflow: hidden;
+
           border-radius: 12px;
+
           flex: 0 0 auto;
         }
 
         .brand-logo-image {
           display: block;
+
           width: 100%;
           height: 100%;
+
           object-fit: contain;
+
           object-position: left center;
+
           transform: scale(1.12);
+
           transform-origin: left center;
+
           transition:
             transform 220ms ease,
             filter 220ms ease;
         }
 
-        .brand:hover .brand-logo-image {
+        .brand:hover
+          .brand-logo-image {
           transform:
             translateY(-1px)
             scale(1.135);
@@ -3572,27 +3820,39 @@ export default function Page() {
               : "rgba(167,131,255,.55)"};
 
           outline-offset: 5px;
+
           border-radius: 10px;
         }
 
         .nav-center {
           min-width: 0;
+
           display: flex;
+
           align-items: center;
           justify-content: center;
-          overflow: visible;
+
+          overflow: hidden;
         }
 
         .nav-links {
           width: 100%;
+
           min-width: 0;
 
           display: flex;
+
           align-items: center;
           justify-content: center;
 
+          /*
+            لا يوجد shrink للـbuttons.
+          */
+          flex-wrap: nowrap;
+
           gap: 1px;
-          overflow: visible;
+
+          overflow: hidden;
 
           scrollbar-width: none;
         }
@@ -3605,20 +3865,29 @@ export default function Page() {
           position: relative;
 
           display: inline-flex;
+
           align-items: center;
           justify-content: center;
 
           gap: 6px;
 
           min-height: 44px;
-          min-width: 0;
 
-          flex: 1 1 auto;
+          /*
+            مهم جدًا:
+            الزر لا ينكمش حسب باقي العناصر.
+          */
+          min-width: max-content;
+
+          flex: 0 0 auto;
 
           padding:
-            10px clamp(3px, .42vw, 8px);
+            10px clamp(5px, .42vw, 8px);
+
+          box-sizing: border-box;
 
           border: 0;
+
           border-radius: 11px;
 
           background: transparent;
@@ -3644,6 +3913,7 @@ export default function Page() {
           line-height: 1.15;
 
           white-space: nowrap;
+
           cursor: pointer;
 
           transition:
@@ -3653,7 +3923,9 @@ export default function Page() {
         }
 
         .nav-links button span:first-child {
-          min-width: 0;
+          min-width: max-content;
+
+          flex: 0 0 auto;
         }
 
         .nav-links button::after {
@@ -3692,6 +3964,7 @@ export default function Page() {
 
         .nav-links button.active {
           color: #A783FF;
+
           background:
             rgba(167,131,255,.10);
         }
@@ -3706,7 +3979,9 @@ export default function Page() {
 
         .nav-contact-icon {
           display: inline-flex;
+
           flex: 0 0 auto;
+
           opacity: .86;
         }
 
@@ -3714,15 +3989,18 @@ export default function Page() {
           flex: 0 0 auto;
 
           display: flex;
+
           align-items: center;
           justify-content: flex-end;
 
           gap: 7px;
+
           min-width: max-content;
         }
 
         .availability {
           display: inline-flex;
+
           align-items: center;
           justify-content: center;
 
@@ -3744,13 +4022,18 @@ export default function Page() {
               ? "rgba(15,23,42,.035)"
               : "rgba(255,255,255,.045)"};
 
-          border: 1px solid
+          border:
+            1px solid
             ${lightMode
               ? "rgba(15,23,42,.07)"
               : "rgba(255,255,255,.08)"};
 
           font-size:
-            clamp(9px, .61vw, 11px);
+            clamp(
+              9px,
+              .61vw,
+              11px
+            );
 
           font-weight: 760;
 
@@ -3759,6 +4042,8 @@ export default function Page() {
           text-transform: uppercase;
 
           white-space: nowrap;
+
+          flex: 0 0 auto;
         }
 
         .availability-dot {
@@ -3787,10 +4072,13 @@ export default function Page() {
         .theme-button,
         .menu-btn {
           display: inline-flex;
+
           align-items: center;
           justify-content: center;
 
           min-width: 42px;
+          width: 42px;
+
           height: 42px;
 
           padding: 0 10px;
@@ -3816,7 +4104,9 @@ export default function Page() {
               : "rgba(255,255,255,.72)"};
 
           font: inherit;
+
           font-size: 12px;
+
           font-weight: 760;
 
           cursor: pointer;
@@ -3845,12 +4135,15 @@ export default function Page() {
 
         .theme-button {
           position: relative;
+
           overflow: hidden;
         }
 
         .theme-glow {
           position: absolute;
+
           inset: 4px;
+
           border-radius: 8px;
 
           background:
@@ -3865,6 +4158,7 @@ export default function Page() {
 
         .theme-icon {
           position: relative;
+
           z-index: 1;
 
           display: inline-flex;
@@ -3872,12 +4166,19 @@ export default function Page() {
 
         .menu-btn {
           display: none;
+
           font-size: 18px;
+
           line-height: 1;
         }
 
+        /* =====================================================
+           MOBILE MENU
+           ===================================================== */
+
         .mobile-menu {
           position: fixed;
+
           inset: 94px 18px auto;
 
           z-index: 119;
@@ -3909,26 +4210,33 @@ export default function Page() {
               : "rgba(0,0,0,.34)"};
 
           backdrop-filter: blur(18px);
-          -webkit-backdrop-filter: blur(18px);
+
+          -webkit-backdrop-filter:
+            blur(18px);
         }
 
         .mobile-menu-inner {
           display: flex;
+
           flex-direction: column;
+
           gap: 4px;
         }
 
         .mobile-menu-inner button {
           display: flex;
+
           align-items: center;
           justify-content: space-between;
 
           width: 100%;
+
           min-height: 48px;
 
           padding: 11px 13px;
 
           border: 0;
+
           border-radius: 11px;
 
           background: transparent;
@@ -3939,19 +4247,27 @@ export default function Page() {
               : "rgba(255,255,255,.70)"};
 
           font: inherit;
+
           font-size: 15px;
+
           font-weight: 720;
 
           text-align: start;
+
           cursor: pointer;
         }
 
         .mobile-menu-inner button:hover,
         .mobile-menu-inner button.active {
           color: #A783FF;
+
           background:
             rgba(167,131,255,.09);
         }
+
+        /* =====================================================
+           DESKTOP
+           ===================================================== */
 
         @media (min-width: 1501px) {
           .topbar-inner {
@@ -4011,6 +4327,10 @@ export default function Page() {
           }
         }
 
+        /* =====================================================
+           TABLET
+           ===================================================== */
+
         @media (max-width: 1220px) {
           .topbar-inner {
             grid-template-columns:
@@ -4040,15 +4360,32 @@ export default function Page() {
           }
         }
 
+        /* =====================================================
+           SMALL MOBILE
+           ===================================================== */
+
         @media (max-width: 620px) {
           .topbar {
-            padding-inline: 10px;
+            left: 10px;
+            right: 10px;
+
+            padding:
+              10px 0;
+          }
+
+          .topbar.is-scrolled {
+            padding:
+              10px 0;
           }
 
           .topbar-inner {
             min-height: 60px;
-            padding: 0 9px 0 12px;
+
+            padding:
+              0 9px 0 12px;
+
             border-radius: 15px;
+
             gap: 8px;
           }
 
@@ -4059,15 +4396,19 @@ export default function Page() {
 
           .language-button {
             min-width: 36px;
+            width: 36px;
             padding-inline: 8px;
             font-size: 11px;
           }
 
           .theme-button {
             display: inline-flex;
+
             min-width: 36px;
             width: 36px;
+
             height: 36px;
+
             padding: 0;
           }
 
@@ -4092,12 +4433,24 @@ export default function Page() {
 
         @media (max-width: 420px) {
           .topbar {
-            padding-inline: 7px;
+            left: 7px;
+            right: 7px;
+
+            padding:
+              7px 0;
+          }
+
+          .topbar.is-scrolled {
+            padding:
+              7px 0;
           }
 
           .topbar-inner {
             min-height: 58px;
-            padding: 0 7px 0 9px;
+
+            padding:
+              0 7px 0 9px;
+
             gap: 6px;
           }
 
@@ -4113,8 +4466,10 @@ export default function Page() {
           .language-button,
           .theme-button {
             min-width: 34px;
+
             width: 34px;
             height: 34px;
+
             padding: 0;
           }
 
@@ -4125,11 +4480,17 @@ export default function Page() {
 
           .menu-btn {
             min-width: 34px;
+
             width: 34px;
             height: 34px;
+
             padding: 0;
           }
         }
+
+        /* =====================================================
+           ANIMATIONS
+           ===================================================== */
 
         @keyframes onboarding-pulse {
           0%,
@@ -4146,11 +4507,13 @@ export default function Page() {
 
         @keyframes onboarding-scan {
           0% {
-            transform: translateX(-340%);
+            transform:
+              translateX(-340%);
           }
 
           100% {
-            transform: translateX(420%);
+            transform:
+              translateX(420%);
           }
         }
 
@@ -4170,11 +4533,13 @@ export default function Page() {
         @keyframes portrait-float {
           0%,
           100% {
-            transform: translateY(0);
+            transform:
+              translateY(0);
           }
 
           50% {
-            transform: translateY(-10px);
+            transform:
+              translateY(-10px);
           }
         }
 
@@ -4193,37 +4558,60 @@ export default function Page() {
 
         :global(.sr-only) {
           position: absolute;
+
           width: 1px;
           height: 1px;
+
           padding: 0;
           margin: -1px;
+
           overflow: hidden;
-          clip: rect(0, 0, 0, 0);
+
+          clip:
+            rect(0, 0, 0, 0);
+
           white-space: nowrap;
+
           border: 0;
         }
 
+        /* =====================================================
+           HERO ART
+           ===================================================== */
+
         :global(.hero-art) {
           position: relative;
+
           display: flex;
+
           align-items: center;
           justify-content: center;
+
           min-height: 520px;
+
           padding: 40px 20px;
         }
 
         :global(.hero-portrait-stage) {
           position: relative;
-          width: min(340px, 78vw);
+
+          width:
+            min(340px, 78vw);
+
           aspect-ratio: 1 / 1;
+
           display: grid;
+
           place-items: center;
         }
 
         :global(.hero-portrait-glow) {
           position: absolute;
+
           inset: -18%;
+
           border-radius: 50%;
+
           background:
             radial-gradient(
               circle at center,
@@ -4231,50 +4619,69 @@ export default function Page() {
               rgba(167,131,255,.10) 40%,
               transparent 70%
             );
+
           filter: blur(24px);
+
           z-index: 0;
+
           animation:
-            glow-pulse
-            5s ease-in-out
-            infinite;
+            glow-pulse 5s
+            ease-in-out infinite;
+
           pointer-events: none;
         }
 
         :global(.hero-portrait-ring) {
           position: absolute;
+
           inset: -6px;
+
           border-radius: 50%;
+
           border:
             1px solid
             ${lightMode
               ? "rgba(167,131,255,.32)"
               : "rgba(167,131,255,.28)"};
+
           z-index: 0;
+
           pointer-events: none;
         }
 
         :global(.hero-art .portrait) {
           position: relative;
+
           z-index: 1;
+
           width: 100%;
           height: 100%;
+
           aspect-ratio: 1 / 1;
+
           display: block;
+
           overflow: hidden;
+
           border-radius: 50%;
+
           clip-path:
             circle(50% at 50% 50%);
+
           -webkit-clip-path:
             circle(50% at 50% 50%);
+
           background:
             ${lightMode
               ? "#f3f4f8"
               : "#0d0e1a"};
+
           border:
             3px solid
             ${lightMode
               ? "rgba(255,255,255,.86)"
               : "rgba(255,255,255,.11)"};
+
           box-shadow:
             0 22px 60px
               rgba(167,131,255,.22),
@@ -4287,35 +4694,52 @@ export default function Page() {
         :global(.hero-art .portrait img) {
           width: 100%;
           height: 100%;
+
           display: block;
+
           object-fit: cover;
-          object-position: center 20%;
+
+          object-position:
+            center 20%;
+
           border-radius: 50%;
+
           background:
             ${lightMode
               ? "#f3f4f8"
               : "#0d0e1a"};
+
           filter: none;
         }
 
         :global(.hero-art .portrait-placeholder) {
           width: 100%;
           height: 100%;
+
           border-radius: 50%;
+
           display: grid;
+
           place-items: center;
+
           text-align: center;
+
           padding: 18px;
+
           font-size: 11px;
+
           line-height: 1.45;
+
           color:
             ${lightMode
               ? "rgba(15,23,42,.55)"
               : "rgba(255,255,255,.55)"};
+
           background:
             ${lightMode
               ? "#f3f4f8"
               : "#0d0e1a"};
+
           border:
             1px solid
             ${lightMode
@@ -4325,9 +4749,13 @@ export default function Page() {
 
         :global(.hero-art .portrait-placeholder strong) {
           display: block;
+
           font-size: 14px;
+
           letter-spacing: .14em;
+
           margin-bottom: 8px;
+
           color:
             ${lightMode
               ? "#11131b"
@@ -4336,15 +4764,21 @@ export default function Page() {
 
         :global(.hero-art .aws-card) {
           position: absolute;
+
           top: 8%;
+
           inset-inline-end: 0;
+
           z-index: 3;
 
           display: flex;
+
           flex-direction: column;
+
           gap: 6px;
 
           padding: 16px 18px;
+
           border-radius: 16px;
 
           border:
@@ -4358,8 +4792,11 @@ export default function Page() {
               ? "rgba(255,255,255,.92)"
               : "rgba(13,14,26,.90)"};
 
-          backdrop-filter: blur(14px);
-          -webkit-backdrop-filter: blur(14px);
+          backdrop-filter:
+            blur(14px);
+
+          -webkit-backdrop-filter:
+            blur(14px);
 
           box-shadow:
             0 18px 44px
@@ -4372,14 +4809,19 @@ export default function Page() {
 
         :global(.hero-art .aws-logo) {
           width: 62px;
+
           height: auto;
+
           display: block;
+
           margin-bottom: 2px;
         }
 
         :global(.hero-art .aws-card strong) {
           font-size: 14px;
+
           letter-spacing: -.01em;
+
           color:
             ${lightMode
               ? "#11131b"
@@ -4388,9 +4830,13 @@ export default function Page() {
 
         :global(.hero-art .aws-card p) {
           margin: 0;
+
           font-size: 10.5px;
+
           letter-spacing: .02em;
+
           line-height: 1.5;
+
           color:
             ${lightMode
               ? "rgba(15,23,42,.55)"
@@ -4399,11 +4845,15 @@ export default function Page() {
 
         :global(.hero-art .pipeline-card) {
           position: absolute;
+
           bottom: 6%;
+
           inset-inline-start: 0;
+
           z-index: 3;
 
           padding: 16px 18px;
+
           border-radius: 16px;
 
           border:
@@ -4417,8 +4867,11 @@ export default function Page() {
               ? "rgba(255,255,255,.92)"
               : "rgba(13,14,26,.90)"};
 
-          backdrop-filter: blur(14px);
-          -webkit-backdrop-filter: blur(14px);
+          backdrop-filter:
+            blur(14px);
+
+          -webkit-backdrop-filter:
+            blur(14px);
 
           box-shadow:
             0 18px 44px
@@ -4431,17 +4884,25 @@ export default function Page() {
 
         :global(.hero-art .pipeline-card .card-row) {
           display: flex;
+
           align-items: center;
+
           justify-content: space-between;
+
           gap: 10px;
+
           margin-bottom: 12px;
         }
 
         :global(.hero-art .pipeline-card .card-label) {
           font-size: 10px;
+
           font-weight: 700;
+
           letter-spacing: .10em;
+
           text-transform: uppercase;
+
           color:
             ${lightMode
               ? "rgba(15,23,42,.55)"
@@ -4450,12 +4911,17 @@ export default function Page() {
 
         :global(.hero-art .pipeline-card .status) {
           display: inline-flex;
+
           align-items: center;
+
           gap: 6px;
 
           font-size: 9px;
+
           font-weight: 700;
+
           letter-spacing: .08em;
+
           text-transform: uppercase;
 
           color: #A783FF;
@@ -4476,16 +4942,23 @@ export default function Page() {
 
         :global(.hero-art .pipeline-card .pipeline) {
           display: flex;
+
           align-items: center;
+
           justify-content: space-between;
+
           gap: 6px;
         }
 
         :global(.hero-art .pipeline-card .pipe) {
           display: flex;
+
           flex-direction: column;
+
           align-items: center;
+
           gap: 5px;
+
           flex: 1;
         }
 
@@ -4494,6 +4967,7 @@ export default function Page() {
           height: 28px;
 
           display: grid;
+
           place-items: center;
 
           border-radius: 8px;
@@ -4514,8 +4988,11 @@ export default function Page() {
 
         :global(.hero-art .pipeline-card .pipe small) {
           font-size: 9px;
+
           font-weight: 600;
+
           letter-spacing: .04em;
+
           color:
             ${lightMode
               ? "rgba(15,23,42,.55)"
@@ -4525,14 +5002,21 @@ export default function Page() {
         @media (max-width: 900px) {
           :global(.hero-art) {
             min-height: 460px;
-            padding: 30px 10px 60px;
+
+            padding:
+              30px 10px 60px;
           }
 
           :global(.hero-art .aws-card) {
             top: 0;
+
             inset-inline-end: 0;
-            width: min(210px, 55vw);
-            padding: 12px 14px;
+
+            width:
+              min(210px, 55vw);
+
+            padding:
+              12px 14px;
           }
 
           :global(.hero-art .aws-logo) {
@@ -4549,9 +5033,14 @@ export default function Page() {
 
           :global(.hero-art .pipeline-card) {
             bottom: 0;
+
             inset-inline-start: 0;
-            width: min(210px, 55vw);
-            padding: 12px 14px;
+
+            width:
+              min(210px, 55vw);
+
+            padding:
+              12px 14px;
           }
 
           :global(.hero-art .pipeline-card .pipe-icon) {
@@ -4567,17 +5056,24 @@ export default function Page() {
         @media (max-width: 560px) {
           :global(.hero-art) {
             min-height: 420px;
-            padding: 20px 6px 70px;
+
+            padding:
+              20px 6px 70px;
           }
 
           :global(.hero-portrait-stage) {
-            width: min(240px, 72vw);
+            width:
+              min(240px, 72vw);
           }
 
           :global(.hero-art .aws-card) {
             top: -6px;
+
             width: 46vw;
-            padding: 10px 12px;
+
+            padding:
+              10px 12px;
+
             border-radius: 12px;
           }
 
@@ -4587,8 +5083,12 @@ export default function Page() {
 
           :global(.hero-art .pipeline-card) {
             bottom: -6px;
+
             width: 46vw;
-            padding: 10px 12px;
+
+            padding:
+              10px 12px;
+
             border-radius: 12px;
           }
 
@@ -4602,6 +5102,10 @@ export default function Page() {
           }
         }
 
+        /* =====================================================
+           COMPACT SIDE CARDS
+           ===================================================== */
+
         :global(.profile-grid),
         :global(.education-grid) {
           align-items: start;
@@ -4609,15 +5113,21 @@ export default function Page() {
 
         :global(.compact-side) {
           display: flex;
+
           flex-direction: column;
+
           gap: 14px;
+
           padding: 22px 24px;
+
           align-self: start;
         }
 
         :global(.compact-side .side-block) {
           display: flex;
+
           flex-direction: column;
+
           gap: 6px;
         }
 
@@ -4627,26 +5137,35 @@ export default function Page() {
 
         :global(.compact-side .university) {
           font-size: 17px;
+
           line-height: 1.25;
+
           margin: 0;
         }
 
         :global(.compact-side .degree) {
           font-size: 12.5px;
+
           line-height: 1.5;
+
           margin: 0;
         }
 
         :global(.compact-side .languages) {
           display: flex;
+
           flex-wrap: wrap;
+
           gap: 6px;
+
           margin-top: 2px;
         }
 
         :global(.compact-side .language) {
           padding: 5px 10px;
+
           font-size: 11px;
+
           border-radius: 8px;
         }
 
@@ -4656,10 +5175,13 @@ export default function Page() {
 
         .education-institution-logos {
           display: inline-flex;
+
           align-items: center;
+
           gap: 14px;
 
           margin-bottom: 18px;
+
           padding: 8px 10px;
 
           border: 1px solid
@@ -4679,9 +5201,12 @@ export default function Page() {
 
         .education-logo-link {
           display: inline-flex;
+
           align-items: center;
           justify-content: center;
+
           text-decoration: none;
+
           border-radius: 11px;
         }
 
@@ -4690,9 +5215,11 @@ export default function Page() {
           height: 56px;
 
           display: grid;
+
           place-items: center;
 
           flex: 0 0 56px;
+
           overflow: hidden;
 
           border-radius: 11px;
@@ -4711,14 +5238,19 @@ export default function Page() {
         .education-logo img {
           width: 46px;
           height: 46px;
+
           display: block;
+
           object-fit: contain;
         }
 
         .education-logo-fallback {
           font-size: 11px;
+
           font-weight: 800;
+
           letter-spacing: 0.02em;
+
           opacity: 0.72;
         }
 
@@ -4740,7 +5272,8 @@ export default function Page() {
           .education-logo,
         .education-logo-link:focus-visible
           .education-logo {
-          transform: translateY(-1px);
+          transform:
+            translateY(-1px);
 
           border-color:
             ${lightMode
@@ -4751,13 +5284,16 @@ export default function Page() {
         @media (max-width: 700px) {
           .education-institution-logos {
             gap: 10px;
+
             margin-bottom: 15px;
+
             padding: 7px 8px;
           }
 
           .education-logo {
             width: 50px;
             height: 50px;
+
             flex-basis: 50px;
           }
 
@@ -4771,9 +5307,15 @@ export default function Page() {
           }
         }
 
+        /* =====================================================
+           SKILLS
+           ===================================================== */
+
         .skill-chip {
           display: inline-flex;
+
           align-items: center;
+
           gap: 7px;
         }
 
@@ -4786,6 +5328,7 @@ export default function Page() {
           height: 16px;
 
           display: inline-grid;
+
           place-items: center;
 
           flex: 0 0 16px;
@@ -4809,28 +5352,40 @@ export default function Page() {
         .skill-logo-mini img {
           width: 11px;
           height: 11px;
+
           display: block;
+
           object-fit: contain;
         }
 
         .skill-logo-mini span {
           font-size: 7px;
+
           line-height: 1;
+
           font-weight: 800;
+
           letter-spacing: -0.02em;
+
           opacity: 0.72;
         }
 
         .soft-skill-name {
           display: inline-flex;
+
           align-items: center;
+
           gap: 8px;
+
           min-width: 0;
         }
 
         .recommendation-grid {
           grid-template-columns:
-            repeat(2, minmax(0, 1fr));
+            repeat(
+              2,
+              minmax(0, 1fr)
+            );
         }
 
         .recommendation-top {
@@ -4839,34 +5394,48 @@ export default function Page() {
 
         .recommendation-author-block {
           display: flex;
+
           flex-direction: column;
+
           gap: 5px;
+
           margin-bottom: 16px;
         }
 
-        .recommendation-author-block strong {
+        .recommendation-author-block
+          strong {
           font-size: 17px;
+
           line-height: 1.15;
         }
 
         .recommendation-role {
           font-size: 12px;
+
           line-height: 1.45;
+
           opacity: 0.68;
         }
 
         .recommendation-meta {
           display: inline-flex;
+
           align-items: center;
+
           gap: 7px;
+
           flex-wrap: wrap;
+
           font-size: 11px;
+
           opacity: 0.52;
         }
 
         .recommendation-quote {
           display: flex;
+
           flex-direction: column;
+
           gap: 11px;
         }
 
@@ -4884,16 +5453,25 @@ export default function Page() {
           }
         }
 
+        /* =====================================================
+           CONTACT
+           ===================================================== */
+
         .contact-side-enhanced {
           display: flex;
+
           flex-direction: column;
+
           gap: 14px;
+
           padding-top: 12px;
         }
 
         .contact-item-card {
           display: flex;
+
           align-items: center;
+
           gap: 16px;
 
           padding: 18px 20px;
@@ -4912,6 +5490,7 @@ export default function Page() {
               : "rgba(255,255,255,.03)"};
 
           text-decoration: none;
+
           color: inherit;
 
           transition:
@@ -4945,9 +5524,11 @@ export default function Page() {
         .contact-icon-box {
           width: 44px;
           height: 44px;
+
           flex: 0 0 44px;
 
           display: grid;
+
           place-items: center;
 
           border-radius: 12px;
@@ -4959,7 +5540,8 @@ export default function Page() {
 
           color: #A783FF;
 
-          border: 1px solid
+          border:
+            1px solid
             ${lightMode
               ? "rgba(167,131,255,.2)"
               : "rgba(167,131,255,.25)"};
@@ -4967,16 +5549,22 @@ export default function Page() {
 
         .contact-text-stack {
           display: flex;
+
           flex-direction: column;
+
           gap: 3px;
+
           min-width: 0;
         }
 
         .contact-text-stack
           .contact-label {
           font-size: 11px;
+
           font-weight: 600;
+
           text-transform: uppercase;
+
           letter-spacing: .05em;
 
           color:
@@ -4988,6 +5576,7 @@ export default function Page() {
         .contact-text-stack
           .contact-value {
           font-size: 13px;
+
           font-weight: 500;
 
           color:
@@ -4996,7 +5585,9 @@ export default function Page() {
               : "#f7f4ff"};
 
           overflow: hidden;
+
           text-overflow: ellipsis;
+
           white-space: nowrap;
         }
 
@@ -5015,18 +5606,27 @@ export default function Page() {
           .contact-icon-box {
             width: 38px;
             height: 38px;
+
             flex-basis: 38px;
           }
 
           .contact-item-card {
-            padding: 14px 16px;
+            padding:
+              14px 16px;
+
             gap: 14px;
           }
         }
 
+        /* =====================================================
+           FOOTER
+           ===================================================== */
+
         .site-footer {
           position: relative;
+
           margin-top: 80px;
+
           padding: 0;
 
           border-top:
@@ -5043,23 +5643,34 @@ export default function Page() {
 
         .footer-inner {
           max-width: 1280px;
+
           margin: 0 auto;
+
           padding: 0 32px;
         }
 
         .footer-top {
           display: grid;
+
           grid-template-columns:
-            1fr minmax(320px, 400px) 1fr;
+            1fr
+            minmax(320px, 400px)
+            1fr;
+
           gap: 0;
+
           padding: 64px 0;
+
           align-items: stretch;
         }
 
         .footer-col {
           display: flex;
+
           flex-direction: column;
+
           padding: 0 44px;
+
           min-width: 0;
         }
 
@@ -5087,8 +5698,11 @@ export default function Page() {
               : "rgba(255, 255, 255, 0.08)"};
 
           display: flex;
+
           flex-direction: column;
+
           align-items: center;
+
           text-align: center;
 
           min-width: 0;
@@ -5096,30 +5710,42 @@ export default function Page() {
 
         .footer-heading-row {
           display: flex;
+
           align-items: center;
+
           gap: 12px;
+
           margin-bottom: 20px;
         }
 
         .footer-heading-line {
           width: 26px;
           height: 2px;
+
           background: #A783FF;
+
           border-radius: 999px;
+
           flex: 0 0 auto;
         }
 
         .footer-heading {
           font-size: 11px;
+
           font-weight: 800;
+
           letter-spacing: 0.18em;
+
           text-transform: uppercase;
+
           color: #A783FF;
         }
 
         .footer-connect-text {
           margin: 0;
+
           font-size: 14px;
+
           line-height: 1.7;
 
           color:
@@ -5142,13 +5768,17 @@ export default function Page() {
 
         .footer-socials {
           display: flex;
+
           gap: 12px;
+
           margin-top: 26px;
+
           flex-wrap: wrap;
         }
 
         .footer-socials a {
           display: inline-flex;
+
           align-items: center;
           justify-content: center;
 
@@ -5184,7 +5814,9 @@ export default function Page() {
         }
 
         .footer-socials a:hover {
-          transform: translateY(-2px);
+          transform:
+            translateY(-2px);
+
           border-color:
             rgba(167, 131, 255, 0.4);
 
@@ -5200,6 +5832,7 @@ export default function Page() {
 
         .footer-center-mark {
           display: inline-grid;
+
           place-items: center;
 
           width: 60px;
@@ -5217,7 +5850,9 @@ export default function Page() {
           color: #ffffff;
 
           font-size: 20px;
+
           font-weight: 900;
+
           letter-spacing: 0.02em;
 
           box-shadow:
@@ -5229,8 +5864,11 @@ export default function Page() {
 
         .footer-center-name {
           display: block;
+
           font-size: 20px;
+
           font-weight: 800;
+
           letter-spacing: -0.01em;
 
           color:
@@ -5243,15 +5881,21 @@ export default function Page() {
 
         .footer-center-title {
           display: block;
+
           font-size: 14px;
+
           font-weight: 600;
+
           color: #A783FF;
+
           margin-bottom: 2px;
         }
 
         .footer-center-location {
           display: block;
+
           font-size: 12px;
+
           font-weight: 500;
 
           color:
@@ -5262,24 +5906,31 @@ export default function Page() {
 
         .footer-brand-logo-wrap {
           display: flex;
+
           align-items: center;
+
           justify-content: center;
 
-          width: min(210px, 100%);
+          width:
+            min(210px, 100%);
+
           height: 64px;
 
           margin-top: 14px;
 
           overflow: hidden;
+
           border-radius: 12px;
         }
 
         .footer-brand-logo {
           display: block;
+
           width: 100%;
           height: 100%;
 
           object-fit: contain;
+
           object-position: center;
 
           transform: scale(1.08);
@@ -5291,7 +5942,8 @@ export default function Page() {
 
         .footer-brand-logo-wrap:hover
           .footer-brand-logo {
-          transform: scale(1.12);
+          transform:
+            scale(1.12);
 
           filter:
             drop-shadow(
@@ -5302,6 +5954,7 @@ export default function Page() {
 
         .footer-freelance-grid {
           display: flex;
+
           flex-wrap: wrap;
 
           justify-content: center;
@@ -5317,7 +5970,9 @@ export default function Page() {
           position: relative;
 
           display: inline-flex;
+
           align-items: center;
+
           justify-content: center;
 
           width: 46px;
@@ -5334,6 +5989,7 @@ export default function Page() {
           border-radius: 12px;
 
           text-decoration: none;
+
           color: inherit;
 
           background:
@@ -5355,7 +6011,8 @@ export default function Page() {
         }
 
         .footer-freelance-link:hover {
-          transform: translateY(-2px);
+          transform:
+            translateY(-2px);
 
           border-color:
             rgba(167, 131, 255, 0.4);
@@ -5379,16 +6036,20 @@ export default function Page() {
         .footer-freelance-link
           .freelance-logo {
           position: relative;
+
           z-index: 1;
 
           display: inline-flex;
+
           align-items: center;
+
           justify-content: center;
 
           width: 28px;
           height: 28px;
 
           border: 0;
+
           border-radius: 7px;
 
           background: transparent;
@@ -5407,7 +6068,9 @@ export default function Page() {
         .footer-freelance-link
           .freelance-logo-fallback {
           display: inline-flex;
+
           align-items: center;
+
           justify-content: center;
 
           width: 26px;
@@ -5416,7 +6079,9 @@ export default function Page() {
           border-radius: 7px;
 
           font-size: 10px;
+
           font-weight: 800;
+
           letter-spacing: -0.02em;
         }
 
@@ -5431,15 +6096,20 @@ export default function Page() {
           margin: -1px;
 
           overflow: hidden;
-          clip: rect(0, 0, 0, 0);
+
+          clip:
+            rect(0, 0, 0, 0);
 
           white-space: nowrap;
+
           border: 0;
         }
 
         .footer-who-text {
           margin: 0;
+
           font-size: 14px;
+
           line-height: 1.7;
 
           color:
@@ -5452,14 +6122,17 @@ export default function Page() {
 
         .footer-bottom {
           display: flex;
+
           align-items: center;
+
           justify-content: space-between;
 
           gap: 16px;
 
           flex-wrap: wrap;
 
-          padding: 24px 0 32px;
+          padding:
+            24px 0 32px;
 
           border-top:
             1px solid
@@ -5478,7 +6151,9 @@ export default function Page() {
         .footer-bottom
           .footer-stack {
           font-size: 11px;
+
           letter-spacing: 0.06em;
+
           opacity: 0.75;
         }
 
@@ -5492,16 +6167,21 @@ export default function Page() {
 
         @media (max-width: 1024px) {
           .footer-top {
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns:
+              1fr 1fr;
+
             gap: 40px;
+
             padding: 56px 0;
           }
 
           .footer-center-col {
             grid-column: 1 / -1;
+
             grid-row: 1;
 
-            padding: 0 0 40px;
+            padding:
+              0 0 40px;
 
             border-left: 0;
             border-right: 0;
@@ -5525,12 +6205,15 @@ export default function Page() {
 
           .footer-top {
             grid-template-columns: 1fr;
+
             gap: 36px;
+
             padding: 48px 0;
           }
 
           .footer-center-col {
             padding-bottom: 32px;
+
             margin-bottom: 4px;
           }
 
@@ -5545,10 +6228,14 @@ export default function Page() {
 
           .footer-bottom {
             flex-direction: column;
+
             align-items: flex-start;
+
             text-align: start;
 
-            padding: 20px 0 28px;
+            padding:
+              20px 0 28px;
+
             gap: 8px;
           }
         }
@@ -5566,6 +6253,7 @@ export default function Page() {
           .footer-freelance-link {
             width: 42px;
             height: 42px;
+
             border-radius: 11px;
           }
 
@@ -5582,24 +6270,128 @@ export default function Page() {
           .footer-center-mark {
             width: 54px;
             height: 54px;
+
             font-size: 18px;
           }
 
           .footer-brand-logo-wrap {
-            width: min(190px, 100%);
+            width:
+              min(190px, 100%);
+
             height: 58px;
           }
         }
+
+        /* =====================================================
+           EXISTING GLOBAL MODAL SUPPORT
+           ===================================================== */
+
+        :global(.certificate-modal) {
+          position: fixed;
+          inset: 0;
+          z-index: 999;
+
+          display: grid;
+          place-items: center;
+
+          padding: 20px;
+
+          background:
+            rgba(4,5,10,.88);
+
+          backdrop-filter:
+            blur(14px);
+
+          -webkit-backdrop-filter:
+            blur(14px);
+        }
+
+        :global(.certificate-modal-close) {
+          position: fixed;
+
+          top: 18px;
+          inset-inline-end: 18px;
+
+          width: 44px;
+          height: 44px;
+
+          display: grid;
+          place-items: center;
+
+          border: 1px solid
+            rgba(255,255,255,.16);
+
+          border-radius: 12px;
+
+          background:
+            rgba(255,255,255,.06);
+
+          color: #fff;
+
+          font-size: 28px;
+
+          cursor: pointer;
+
+          z-index: 2;
+        }
+
+        :global(.certificate-modal-content) {
+          position: relative;
+        }
+
+        :global(.certificate-modal-image) {
+          display: block;
+
+          max-width: 100%;
+          max-height: 100%;
+
+          border-radius: 12px;
+
+          box-shadow:
+            0 24px 80px
+            rgba(0,0,0,.4);
+        }
+
+        :global(.project-image-modal-content) {
+          display: flex;
+
+          align-items: center;
+
+          justify-content: center;
+
+          width: min(95vw, 1500px);
+
+          max-height: 92vh;
+        }
+
+        :global(.project-image-modal-image) {
+          display: block;
+
+          max-width: 100%;
+
+          max-height: 90vh;
+
+          width: auto;
+          height: auto;
+
+          object-fit: contain;
+
+          border-radius: 14px;
+
+          box-shadow:
+            0 24px 80px
+            rgba(0,0,0,.45);
+        }
       `}</style>
 
-      {/* FOOTER — REDESIGNED */}
+      {/* FOOTER */}
       <footer className="site-footer">
         <div className="footer-inner">
           <div className="footer-top">
-            {/* LEFT — LET'S CONNECT */}
             <div className="footer-col">
               <div className="footer-heading-row">
                 <span className="footer-heading-line" />
+
                 <span className="footer-heading">
                   {t.letsConnect}
                 </span>
@@ -5637,7 +6429,6 @@ export default function Page() {
               </div>
             </div>
 
-            {/* CENTER — BRAND + FREELANCE */}
             <div className="footer-center-col">
               <div
                 className="footer-brand-logo-wrap"
@@ -5686,8 +6477,12 @@ export default function Page() {
                       }
                     >
                       <PlatformLogo
-                        src={platform.logo}
-                        mark={platform.mark}
+                        src={
+                          platform.logo
+                        }
+                        mark={
+                          platform.mark
+                        }
                         name={
                           platform.name
                         }
@@ -5711,7 +6506,6 @@ export default function Page() {
               </div>
             </div>
 
-            {/* RIGHT — WHO AM I */}
             <div className="footer-col">
               <div className="footer-heading-row">
                 <span className="footer-heading-line" />
@@ -5730,7 +6524,8 @@ export default function Page() {
           <div className="footer-bottom">
             <span>
               © {new Date().getFullYear()}{" "}
-              {cv.name}. {t.footerCopyright} ·{" "}
+              {cv.name}.{" "}
+              {t.footerCopyright} ·{" "}
               {t.footerBuiltWith}
             </span>
 
@@ -5773,8 +6568,10 @@ export default function Page() {
               event.stopPropagation()
             }
             style={{
-              width: "min(94vw, 1500px)",
-              height: "min(92vh, 1000px)",
+              width:
+                "min(94vw, 1500px)",
+              height:
+                "min(92vh, 1000px)",
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
@@ -5782,7 +6579,9 @@ export default function Page() {
           >
             <img
               className="certificate-modal-image"
-              src={selectedCertificate}
+              src={
+                selectedCertificate
+              }
               alt="Certificate enlarged preview"
               style={{
                 maxWidth: "100%",
@@ -5804,14 +6603,18 @@ export default function Page() {
           aria-modal="true"
           aria-label="Project image preview"
           onClick={() =>
-            setSelectedProjectImage(null)
+            setSelectedProjectImage(
+              null
+            )
           }
         >
           <button
             type="button"
             className="certificate-modal-close"
             onClick={() =>
-              setSelectedProjectImage(null)
+              setSelectedProjectImage(
+                null
+              )
             }
             aria-label="Close project image preview"
           >
@@ -5825,10 +6628,13 @@ export default function Page() {
             }
           >
             <img
-              src={selectedProjectImage}
+              src={
+                selectedProjectImage
+              }
               alt={
                 isArabic
-                  ? cv.project.imageAltAr
+                  ? cv.project
+                      .imageAltAr
                   : cv.project.imageAlt
               }
               className="project-image-modal-image"
