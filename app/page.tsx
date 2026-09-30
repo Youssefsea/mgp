@@ -1004,21 +1004,14 @@ export default function Page() {
             <div className="hero-portrait-ring" />
             <div className="portrait">
               {!profileError ? (
-                <img src="/profile.png" alt={`${cv.name} portrait`}
-                  fetchPriority="high" loading="eager" decoding="async"
-                  onError={(event) => {
-                    // Keep the page resilient when the transparent cut-out has
-                    // not been added yet.
-                    const img = event.currentTarget;
-                    if (img.dataset.fallbackApplied === "1") {
-                      setProfileError(true);
-                      return;
-                    }
-                    img.dataset.fallbackApplied = "1";
-                    img.src = "/profile.jpg";
-                    img.style.objectFit = "cover";
-                    img.style.objectPosition = "center 20%";
-                  }} />
+                <img
+                  src="/profile.jpg"
+                  alt={`${cv.name} portrait`}
+                  fetchPriority="high"
+                  loading="eager"
+                  decoding="async"
+                  onError={() => setProfileError(true)}
+                />
               ) : (
                 <div className="portrait-placeholder">
                   <div>
@@ -2278,22 +2271,24 @@ export default function Page() {
           width: 100%;
           height: 100%;
           aspect-ratio: 1 / 1;
-          display: grid;
-          place-items: end center;
-          overflow: visible;
-          background: transparent;
-          border: 0;
-          box-shadow: none;
+          display: block;
+          overflow: hidden;
+          border-radius: 50%;
+          background: ${lightMode ? "#f3f4f8" : "#0d0e1a"};
+          border: 3px solid ${lightMode ? "rgba(255,255,255,.86)" : "rgba(255,255,255,.11)"};
+          box-shadow:
+            0 22px 60px rgba(167,131,255,.22),
+            0 8px 24px ${lightMode ? "rgba(15,23,42,.12)" : "rgba(0,0,0,.42)"};
         }
         :global(.hero-art .portrait img) {
           width: 100%;
           height: 100%;
           display: block;
-          object-fit: contain;
-          object-position: center bottom;
-          border-radius: 0;
-          background: transparent;
-          filter: drop-shadow(0 20px 28px rgba(0,0,0,.28));
+          object-fit: cover;
+          object-position: center 20%;
+          border-radius: 50%;
+          background: ${lightMode ? "#f3f4f8" : "#0d0e1a"};
+          filter: none;
         }
         :global(.hero-art .portrait-placeholder) {
           width: 100%;
