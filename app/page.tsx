@@ -337,66 +337,125 @@ const cv = {
       sourceAr: "LinkedIn",
     },
   ],
-  certifications: [
-    {
-      name: "Red Hat System Administration",
-      provider: "Red Hat",
-      date: "",
-      topics: ["Linux", "System Administration", "Red Hat"],
-      image: "/certificates/Screenshot 2026-09-14 203632.png",
-    },
-    {
-      name: "Linux Red Hat Administration",
-      provider: "Red Hat",
-      date: "",
-      topics: ["Linux", "Red Hat", "System Administration"],
-      image: "/certificates/Screenshot 2026-09-14 203713.png",
-    },
-    {
-      name: "Cloud Services Management and Operation",
-      provider: "",
-      date: "",
-      topics: [
-        "Cloud Services",
-        "Infrastructure Operations",
-        "Cloud Management",
-      ],
-      image: "/certificates/Screenshot 2026-09-14 203745.png",
-    },
-    {
-      name: "AWS Academy Graduate - Cloud Architecting",
-      provider: "AWS Academy",
-      date: "",
-      topics: ["AWS", "Cloud Architecture", "Infrastructure Design"],
-      image: "/certificates/Screenshot 2026-09-14 203815.png",
-    },
-    {
-      name: "AWS Academy Graduate - Cloud Foundations",
-      provider: "AWS Academy",
-      date: "",
-      topics: ["AWS", "Cloud Fundamentals", "Core Cloud Concepts"],
-      image: "/certificates/Screenshot 2026-09-14 203847.png",
-    },
-    {
-      name: "General Knowledge of Cloud Computing",
-      provider: "Huawei ICT Academy",
-      date: "2026-08-28",
-      topics: ["Cloud Computing", "Cloud Fundamentals", "Core Cloud Concepts"],
-      image: "/certificates/Screenshot 2026-09-15 200419.png",
-    },
-    {
-      name: "HCIA-Cloud Service V3.5 Course",
-      provider: "Huawei ICT Academy",
-      date: "2026-08-27",
-      topics: [
-        "Huawei Cloud",
-        "Cloud Services",
-        "Cloud Computing",
-        "Cloud Architecture",
-      ],
-      image: "/certificates/Screenshot 2026-09-15 200432.png",
-    },
-  ],
+ certifications: [
+  // =========================
+  // NTI
+  // =========================
+  {
+    name: "Cloud Services Management and Operation",
+    provider: "NTI",
+    date: "",
+    topics: [
+      "Cloud Services",
+      "Infrastructure Operations",
+      "Cloud Management",
+    ],
+    image: "/certificates/Screenshot 2026-09-14 203745.png",
+  },
+  {
+    name: "Linux Red Hat Administration",
+    provider: "NTI",
+    date: "",
+    topics: [
+      "Linux",
+      "Red Hat",
+      "System Administration",
+    ],
+    image: "/certificates/Screenshot 2026-09-14 203713.png",
+  },
+
+  // =========================
+  // AWS Academy
+  // =========================
+  {
+    name: "AWS Academy Graduate - Cloud Architecting",
+    provider: "AWS Academy",
+    date: "",
+    topics: [
+      "AWS",
+      "Cloud Architecture",
+      "Infrastructure Design",
+    ],
+    image: "/certificates/Screenshot 2026-09-14 203815.png",
+  },
+  {
+    name: "AWS Academy Graduate - Cloud Foundations",
+    provider: "AWS Academy",
+    date: "",
+    topics: [
+      "AWS",
+      "Cloud Fundamentals",
+      "Core Cloud Concepts",
+    ],
+    image: "/certificates/Screenshot 2026-09-14 203847.png",
+  },
+
+  // =========================
+  // Red Hat
+  // =========================
+  {
+    name: "Red Hat System Administration II (RH134 - RHA) - Ver. 10",
+    provider: "Red Hat",
+    date: "2026-10-02",
+    topics: [
+      "Linux",
+      "Red Hat",
+      "System Administration",
+      "RHEL",
+    ],
+    image: "/certificates/Screenshot 2026-10-02 160435.png",
+  },
+  {
+    name: "Red Hat System Administration",
+    provider: "Red Hat",
+    date: "",
+    topics: [
+      "Linux",
+      "System Administration",
+      "Red Hat",
+    ],
+    image: "/certificates/Screenshot 2026-09-14 203632.png",
+  },
+
+  // =========================
+  // Huawei ICT Academy
+  // =========================
+  {
+    name: "HCIA-Cloud Computing V5.5 Course",
+    provider: "Huawei ICT Academy",
+    date: "2026-09-21",
+    topics: [
+      "Huawei Cloud",
+      "Cloud Computing",
+      "Cloud Architecture",
+      "Cloud Services",
+    ],
+    image: "/certificates/Screenshot 2026-10-02 160450.png",
+  },
+  {
+    name: "HCIA-Cloud Service V3.5 Course",
+    provider: "Huawei ICT Academy",
+    date: "2026-08-27",
+    topics: [
+      "Huawei Cloud",
+      "Cloud Services",
+      "Cloud Computing",
+      "Cloud Architecture",
+    ],
+    image: "/certificates/Screenshot 2026-09-15 200432.png",
+  },
+  {
+    name: "General Knowledge of Cloud Computing",
+    provider: "Huawei ICT Academy",
+    date: "2026-08-28",
+    topics: [
+      "Cloud Computing",
+      "Cloud Fundamentals",
+      "Core Cloud Concepts",
+    ],
+    image: "/certificates/Screenshot 2026-09-15 200419.png",
+  },
+],
   skills: {
     "Cloud & Architecture": [
       "AWS",
