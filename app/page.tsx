@@ -15,66 +15,96 @@ const cv = {
   location: "Egypt",
   locationAr: "مصر",
   freelanceLinks: [
-    {
-      name: "Khamsat",
-      nameAr: "خمسات",
-      url: "https://khamsat.com/user/mohamed_gamal35",
-      logo:
-        "https://www.google.com/s2/favicons?domain=khamsat.com&sz=128",
-      mark: "5",
-      description: "Freelance profile on Khamsat.",
-      descriptionAr: "الملف الشخصي على خمسات.",
-    },
-    {
-      name: "Mostaql",
-      nameAr: "مستقل",
-      url: "https://mostaql.com/u/Mohamedd_Gamal",
-      logo:
-        "https://www.google.com/s2/favicons?domain=mostaql.com&sz=128",
-      mark: "M",
-      description: "Mostaql freelance account.",
-      descriptionAr: "حساب العمل الحر على مستقل.",
-    },
-    {
-      name: "Nafezly",
-      nameAr: "نفذلي",
-      url: "https://nafezly.com/u/Mohamed_Gamal01",
-      logo:
-        "https://www.google.com/s2/favicons?domain=nafezly.com&sz=128",
-      mark: "N",
-      description: "Freelance profile on Nafezly.",
-      descriptionAr: "الملف الشخصي على نفذلي.",
-    },
-    {
-      name: "Kafiil",
-      nameAr: "كفيل",
-      url: "https://kafiil.com/u/Mohamedgamal013",
-      logo:
-        "https://www.google.com/s2/favicons?domain=kafiil.com&sz=128",
-      mark: "K",
-      description: "Freelance profile on Kafiil.",
-      descriptionAr: "الملف الشخصي على كفيل.",
-    },
-    {
-      name: "Freelanceyard",
-      nameAr: "Freelanceyard",
-      url: "https://freelanceyard.com/ar/freelancers/mohamed-gamal-87",
-      logo: "https://freelanceyard.com/images/favicon.png",
-      mark: "FY",
-      description: "Freelance profile on Freelanceyard.",
-      descriptionAr: "الملف الشخصي على Freelanceyard.",
-    },
-    {
-      name: "Upwork",
-      nameAr: "Upwork",
-      url: "https://www.upwork.com/freelancers/~0118cb90c5c257edb1/modal-hourly-rate-set?pageTitle=Change%20hourly%20rate&_modalInfo=%5B%7B%22navType%22%3A%22modal%22,%22title%22%3A%22Change%20hourly%20rate%22,%22modalId%22%3A%221790708835711%22%7D%5D",
-      logo:
-        "https://www.google.com/s2/favicons?domain=upwork.com&sz=128",
-      mark: "U",
-      description: "Freelance profile on Upwork.",
-      descriptionAr: "الملف الشخصي على Upwork.",
-    },
-  ],
+  {
+    name: "Khamsat",
+    nameAr: "خمسات",
+    url: "https://khamsat.com/user/mohamed_gamal35",
+    logo:
+      "https://www.google.com/s2/favicons?domain=khamsat.com&sz=128",
+    mark: "5",
+    description: "Freelance profile on Khamsat.",
+    descriptionAr: "الملف الشخصي على خمسات.",
+  },
+  {
+    name: "Mostaql",
+    nameAr: "مستقل",
+    url: "https://mostaql.com/u/Mohamedd_Gamal",
+    logo:
+      "https://www.google.com/s2/favicons?domain=mostaql.com&sz=128",
+    mark: "M",
+    description: "Mostaql freelance account.",
+    descriptionAr: "حساب العمل الحر على مستقل.",
+  },
+  {
+    name: "Nafezly",
+    nameAr: "نفذلي",
+    url: "https://nafezly.com/u/Mohamed_Gamal01",
+    logo:
+      "https://www.google.com/s2/favicons?domain=nafezly.com&sz=128",
+    mark: "N",
+    description: "Freelance profile on Nafezly.",
+    descriptionAr: "الملف الشخصي على نفذلي.",
+  },
+  {
+    name: "Kafiil",
+    nameAr: "كفيل",
+    url: "https://kafiil.com/u/Mohamedgamal013",
+    logo:
+      "https://www.google.com/s2/favicons?domain=kafiil.com&sz=128",
+    mark: "K",
+    description: "Freelance profile on Kafiil.",
+    descriptionAr: "الملف الشخصي على كفيل.",
+  },
+  {
+    name: "Freelanceyard",
+    nameAr: "Freelanceyard",
+    url: "https://freelanceyard.com/ar/freelancers/mohamed-gamal-87",
+    logo: "https://freelanceyard.com/images/favicon.png",
+    mark: "FY",
+    description: "Freelance profile on Freelanceyard.",
+    descriptionAr: "الملف الشخصي على Freelanceyard.",
+  },
+  {
+    name: "Upwork",
+    nameAr: "Upwork",
+    url: "https://www.upwork.com/freelancers/~0118cb90c5c257edb1?mp_source=share",
+    logo:
+      "https://www.google.com/s2/favicons?domain=upwork.com&sz=128",
+    mark: "U",
+    description: "Freelance profile on Upwork.",
+    descriptionAr: "الملف الشخصي على Upwork.",
+  },
+  {
+    name: "Baaeed",
+    nameAr: "بعيد",
+    url: "https://baaeed.com/u/mohamed_gamal35",
+    logo:
+      "https://www.google.com/s2/favicons?domain=baaeed.com&sz=128",
+    mark: "B",
+    description: "Professional profile on Baaeed.",
+    descriptionAr: "الملف الشخصي على بعيد.",
+  },
+  {
+    name: "Ureed",
+    nameAr: "Ureed",
+    url: "https://app.ureed.com/profile/mohamed-274397",
+    logo:
+      "https://www.google.com/s2/favicons?domain=ureed.com&sz=128",
+    mark: "U",
+    description: "Freelance profile on Ureed.",
+    descriptionAr: "الملف الشخصي على Ureed.",
+  },
+  {
+    name: "ArabiFreelance",
+    nameAr: "عربي فريلانس",
+    url: "https://arabifreelance.com/freelancer/profile-details/Mohamed_Gamal35",
+    logo:
+      "https://www.google.com/s2/favicons?domain=arabifreelance.com&sz=128",
+    mark: "AF",
+    description: "Freelance profile on ArabiFreelance.",
+    descriptionAr: "الملف الشخصي على عربي فريلانس.",
+  },
+],
   title: "Cloud & DevOps Engineer",
   secondaryTitle: "Cloud Infrastructure / DevOps Intern",
   objective:
